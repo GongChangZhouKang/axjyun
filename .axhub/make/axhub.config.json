@@ -1,0 +1,43 @@
+{
+  "server": {
+    "host": "localhost",
+    "allowLAN": true,
+    "enableCommandAPI": false
+  },
+  "projectDefaults": {
+    "defaultTheme": null
+  },
+  "projectInfo": {
+    "description": null
+  },
+  "cloudPublishing": {
+    "vercel": {
+      "token": "vcp_052lyMHCLR3MPQPjTZdqBd7jq3gEHDy6qdQZae9gYV1RfXcHBJ0T2YPC",
+      "projectName": "axhub-make",
+      "teamId": ""
+    },
+    "cloudflarePages": {
+      "apiToken": "",
+      "accountId": "",
+      "projectName": "",
+      "productionBranch": "main"
+    },
+    "s3": {
+      "accessKeyId": "",
+      "secretAccessKey": "",
+      "region": "",
+      "bucket": "",
+      "prefix": "",
+      "baseUrl": "",
+      "endpoint": ""
+    },
+    "githubPages": {
+      "repository": "",
+      "branch": "gh-pages",
+      "sourceDirectory": "/"
+    },
+    "publishSettings": {
+      "includeSource": false
+    }
+  }
+}
