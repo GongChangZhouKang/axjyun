@@ -1,7 +1,31 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-18T06:49:58.938Z",
+  "updatedAt": "2026-06-23T02:36:19.164Z",
   "prototypes": [
+    {
+      "id": "item-prototypes-untitled-5",
+      "kind": "item",
+      "title": "untitled 5",
+      "itemKey": "prototypes/untitled-5"
+    },
+    {
+      "id": "item-prototypes-annotation-demo",
+      "kind": "item",
+      "title": "annotation demo",
+      "itemKey": "prototypes/annotation-demo"
+    },
+    {
+      "id": "item-prototypes-beginner-guide",
+      "kind": "item",
+      "title": "beginner guide",
+      "itemKey": "prototypes/beginner-guide"
+    },
+    {
+      "id": "item-prototypes-touch-and-talk-annotation-demo",
+      "kind": "item",
+      "title": "touch and talk annotation demo",
+      "itemKey": "prototypes/touch-and-talk-annotation-demo"
+    },
     {
       "id": "item:prototypes:untitled",
       "kind": "item",
