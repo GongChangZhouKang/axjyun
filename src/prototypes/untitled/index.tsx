@@ -30,11 +30,15 @@ type PageId =
     | 'warehouses'
     | 'inventory'
     | 'purchase'
+    | 'purchase-demand-create'
+    | 'purchase-plan-create'
     | 'inbound'
     | 'transfer'
     | 'stocktake'
     | 'issue'
     | 'costs';
+
+type PurchaseTab = 'demand' | 'plans' | 'orders';
 
 type StatusTone = 'blue' | 'green' | 'orange' | 'red' | 'gray' | 'purple';
 
@@ -47,6 +51,7 @@ interface EquipmentItem {
     costMethod: string;
     depreciation: string;
     depreciationRule: string;
+    status: string;
     key: boolean;
     standard: string;
     stock: number;
@@ -215,6 +220,8 @@ const pageMeta: Record<PageId, { label: string; icon: React.ElementType; group: 
     warehouses: { label: '仓库管理', icon: Warehouse, group: '基础资料' },
     inventory: { label: '库存管理', icon: Boxes, group: '仓储运营' },
     purchase: { label: '采购管理', icon: ShoppingCart, group: '装备管理' },
+    'purchase-demand-create': { label: '新增采购需求', icon: ShoppingCart, group: '装备管理' },
+    'purchase-plan-create': { label: '新增采购计划', icon: ClipboardList, group: '装备管理' },
     inbound: { label: '入库管理', icon: PackageCheck, group: '仓储运营' },
     transfer: { label: '调拨管理', icon: ArrowLeftRight, group: '仓储运营' },
     stocktake: { label: '库存盘点', icon: ClipboardCheck, group: '仓储运营' },
@@ -259,6 +266,7 @@ const equipmentItems: EquipmentItem[] = [
         costMethod: '移动加权平均',
         depreciation: '否',
         depreciationRule: '领用即归集',
+        status: '启用',
         key: false,
         standard: '固定岗、巡逻岗',
         stock: 428,
@@ -272,6 +280,7 @@ const equipmentItems: EquipmentItem[] = [
         costMethod: '移动加权平均',
         depreciation: '否',
         depreciationRule: '领用即归集',
+        status: '启用',
         key: false,
         standard: '巡逻岗、夜班岗',
         stock: 186,
@@ -285,6 +294,7 @@ const equipmentItems: EquipmentItem[] = [
         costMethod: '单件折旧',
         depreciation: '是',
         depreciationRule: '直线法 / 36个月 / 残值率5%',
+        status: '启用',
         key: true,
         standard: '固定岗、巡逻岗、秩序维护',
         stock: 73,
@@ -298,6 +308,7 @@ const equipmentItems: EquipmentItem[] = [
         costMethod: '批次管理',
         depreciation: '否',
         depreciationRule: '按实际领用批次归集',
+        status: '启用',
         key: true,
         standard: '重点项目、风险岗位',
         stock: 46,
@@ -311,6 +322,7 @@ const equipmentItems: EquipmentItem[] = [
         costMethod: '批次管理',
         depreciation: '否',
         depreciationRule: '按实际领用批次归集',
+        status: '启用',
         key: true,
         standard: '固定岗、巡逻岗',
         stock: 96,
@@ -324,6 +336,7 @@ const equipmentItems: EquipmentItem[] = [
         costMethod: '移动加权平均',
         depreciation: '否',
         depreciationRule: '领用即归集',
+        status: '启用',
         key: false,
         standard: '应急队、消防值守',
         stock: 31,
@@ -337,6 +350,7 @@ const equipmentItems: EquipmentItem[] = [
         costMethod: '单件折旧',
         depreciation: '是',
         depreciationRule: '直线法 / 60个月 / 残值率5%',
+        status: '启用',
         key: true,
         standard: '安检岗、活动保障',
         stock: 18,
@@ -740,6 +754,7 @@ const statusTone: Record<string, StatusTone> = {
     已出库: 'green',
     在库: 'green',
     待汇总: 'orange',
+    待审核: 'orange',
     待采购: 'orange',
     待导入订单: 'orange',
     待商品匹配: 'orange',
@@ -747,11 +762,13 @@ const statusTone: Record<string, StatusTone> = {
     待入库: 'orange',
     待确认: 'orange',
     待出库: 'orange',
+    审核中: 'blue',
     部分入库: 'blue',
     入库中: 'blue',
     在途: 'blue',
     项目在用: 'blue',
     已领用资产: 'blue',
+    已审核: 'green',
     低库存: 'red',
     差异待处理: 'red',
     盘盈审核中: 'purple',
@@ -819,6 +836,15 @@ function StatusTag({ value }: { value: string }) {
     return <Tag tone={statusTone[value] || 'gray'}>{value}</Tag>;
 }
 
+function StatusSwitch({ enabled }: { enabled: boolean }) {
+    return (
+        <span className={enabled ? 'status-switch status-switch-on' : 'status-switch'} aria-label={enabled ? '启用' : '停用'}>
+            <span />
+            <em>{enabled ? '启用' : '停用'}</em>
+        </span>
+    );
+}
+
 function StatCard({
     title,
     value,
@@ -846,11 +872,18 @@ function StatCard({
     );
 }
 
-function FilterBar({ children, action }: { children: React.ReactNode; action?: React.ReactNode }) {
+function FilterBar({ children, action, className }: { children: React.ReactNode; action?: React.ReactNode; className?: string }) {
     return (
-        <div className="filter-bar">
+        <div className={className ? `filter-bar ${className}` : 'filter-bar'}>
             <div className="filter-grid">{children}</div>
-            <div className="filter-actions">{action || <button type="button" className="primary-btn">查询</button>}</div>
+            <div className="filter-actions">
+                {action || (
+                    <>
+                        <button type="button" className="primary-btn">查询</button>
+                        <button type="button" className="secondary-btn">重置</button>
+                    </>
+                )}
+            </div>
         </div>
     );
 }
@@ -876,6 +909,123 @@ function SelectLike({ label, value, options, onChange }: { label: string; value:
                 ))}
             </select>
         </label>
+    );
+}
+
+function CreateField({
+    label,
+    value,
+    required,
+    wide,
+    multiline,
+    options,
+    helper,
+}: {
+    label: string;
+    value: string;
+    required?: boolean;
+    wide?: boolean;
+    multiline?: boolean;
+    options?: string[];
+    helper?: string;
+}) {
+    const list = options && options.length ? options : [value];
+    const className = [
+        'create-field',
+        wide ? 'create-field-wide' : '',
+        multiline ? 'create-field-multiline' : '',
+    ].filter(Boolean).join(' ');
+
+    return (
+        <label className={className}>
+            <span>{required && <b>*</b>}{label}</span>
+            {multiline ? (
+                <textarea value={value} readOnly />
+            ) : options ? (
+                <select value={value} onChange={() => undefined}>
+                    {list.map((option) => (
+                        <option key={option}>{option}</option>
+                    ))}
+                </select>
+            ) : (
+                <input value={value} readOnly />
+            )}
+            {helper && <em>{helper}</em>}
+        </label>
+    );
+}
+
+function CreateSection({
+    title,
+    subtitle,
+    action,
+    children,
+}: {
+    title: string;
+    subtitle?: string;
+    action?: React.ReactNode;
+    children: React.ReactNode;
+}) {
+    return (
+        <section className="create-section">
+            <div className="create-section-title">
+                <div>
+                    <h2>{title}</h2>
+                    {subtitle && <p>{subtitle}</p>}
+                </div>
+                {action}
+            </div>
+            {children}
+        </section>
+    );
+}
+
+function CreateDetailTable({
+    columns,
+    rows,
+    emptyText = '暂无数据',
+    renderRow,
+}: {
+    columns: string[];
+    rows: unknown[];
+    emptyText?: string;
+    renderRow?: (row: any, index: number) => React.ReactNode;
+}) {
+    return (
+        <div className="create-table-wrap">
+            <table className="create-table">
+                <thead>
+                    <tr>
+                        {columns.map((column) => (
+                            <th key={column}>{column}</th>
+                        ))}
+                    </tr>
+                </thead>
+                <tbody>
+                    {rows.length && renderRow ? rows.map(renderRow) : (
+                        <tr className="create-empty-row">
+                            <td colSpan={columns.length}>{emptyText}</td>
+                        </tr>
+                    )}
+                </tbody>
+            </table>
+        </div>
+    );
+}
+
+function CreatePageActions({
+    onCancel,
+    primary,
+}: {
+    onCancel: () => void;
+    primary: string;
+}) {
+    return (
+        <div className="create-page-actions">
+            <button type="button" className="secondary-btn" onClick={onCancel}>取消</button>
+            <button type="button" className="secondary-btn">保存草稿</button>
+            <button type="button" className="primary-btn" onClick={onCancel}>{primary}</button>
+        </div>
     );
 }
 
@@ -915,6 +1065,8 @@ function DataTable({
 interface ActionItem {
     label: string;
     danger?: boolean;
+    disabled?: boolean;
+    title?: string;
     onClick?: () => void;
 }
 
@@ -935,6 +1087,8 @@ function RowActions({ allowDelete = true, actions }: { allowDelete?: boolean; ac
                     type="button"
                     key={action.label}
                     className={action.danger ? 'danger-link' : undefined}
+                    disabled={action.disabled}
+                    title={action.title}
                     onClick={action.onClick}
                 >
                     {action.label}
@@ -1333,9 +1487,17 @@ function Dashboard({ openPage }: { openPage: (page: PageId) => void }) {
     );
 }
 
-function PurchasePage({ openPage, openWindow }: { openPage: (page: PageId) => void; openWindow: OpenBusinessWindow }) {
-    const [tab, setTab] = useState<'demand' | 'plans' | 'orders'>('demand');
-
+function PurchasePage({
+    openPage,
+    openWindow,
+    tab,
+    setTab,
+}: {
+    openPage: (page: PageId) => void;
+    openWindow: OpenBusinessWindow;
+    tab: PurchaseTab;
+    setTab: (tab: PurchaseTab) => void;
+}) {
     return (
         <>
             <div className="sub-tabs">
@@ -1349,8 +1511,20 @@ function PurchasePage({ openPage, openWindow }: { openPage: (page: PageId) => vo
                     订单导入
                 </button>
             </div>
-            {tab === 'demand' && <DemandPage openPlans={() => setTab('plans')} openWindow={openWindow} />}
-            {tab === 'plans' && <PlanPage openOrders={() => setTab('orders')} openWindow={openWindow} />}
+            {tab === 'demand' && (
+                <DemandPage
+                    openCreateDemand={() => openPage('purchase-demand-create')}
+                    openPlans={() => setTab('plans')}
+                    openWindow={openWindow}
+                />
+            )}
+            {tab === 'plans' && (
+                <PlanPage
+                    openCreatePlan={() => openPage('purchase-plan-create')}
+                    openOrders={() => setTab('orders')}
+                    openWindow={openWindow}
+                />
+            )}
             {tab === 'orders' && <OrderPage openInbound={() => openPage('inbound')} openWindow={openWindow} />}
         </>
     );
@@ -1361,6 +1535,88 @@ function ArchivePage({ openWindow }: { openWindow: OpenBusinessWindow }) {
     const [showCreateModal, setShowCreateModal] = useState(false);
     const [showCategoryModal, setShowCategoryModal] = useState(false);
     const [createCostMethod, setCreateCostMethod] = useState('单件折旧');
+    const statusNote = '停用后不再用于新增采购、入库和领用，历史库存、单据和成本记录继续保留。';
+
+    function openEquipmentDelete(row: EquipmentItem) {
+        openWindow({
+            title: `删除装备 - ${row.name}`,
+            subtitle: '删除前会校验库存和历史业务记录。',
+            primary: '确认删除',
+            body: <DetailGrid rows={[
+                ['装备名称', row.name],
+                ['当前库存', numberText(row.stock)],
+                ['删除条件', '仅无库存且未产生采购、入库、领用等业务记录的装备可以删除'],
+            ]} />,
+        });
+    }
+
+    function openEquipmentEdit(row: EquipmentItem) {
+        openWindow({
+            title: `编辑装备 - ${row.name}`,
+            subtitle: '维护装备品类的基础信息、成本规则、启用状态和备注。',
+            primary: '保存修改',
+            body: (
+                <div className="modal-form embedded-form">
+                    <div className="form-section-title">基础信息</div>
+                    <Field label="装备名称" value={row.name} />
+                    <SelectLike label="装备分类" value={row.category} options={['保安员服装', '执勤装备', '被动防护装备', '主动防卫装备', '防护装备', '消防装备', '安检装备']} />
+                    <Field label="规格型号" value={row.spec} />
+                    <SelectLike label="单位" value={row.unit} options={['台', '套', '件', '个', '根', '张', '顶', '双']} />
+                    <SelectLike label="状态" value={row.status} options={['启用', '停用']} />
+                    <div className="field-note">{statusNote}</div>
+                    <div className="form-section-title">管理规则</div>
+                    <SelectLike label="成本计算方式" value={row.costMethod} options={['移动加权平均', '批次管理', '单件折旧']} />
+                    <SelectLike label="是否一物一码管理" value={row.oneCode ? '是' : '否'} options={['是', '否']} />
+                    {row.costMethod === '单件折旧' && (
+                        <>
+                            <div className="form-section-title">折旧信息</div>
+                            <Field label="折旧年限（月）" value={row.depreciationRule.includes('60个月') ? '60' : '36'} />
+                            <Field label="残值率" value="5%" />
+                            <div className="field-note">目前仅支持直线法，项目或人员确认领用后才开始按单件装备归集折旧成本。</div>
+                        </>
+                    )}
+                    <div className="form-section-title">图片与备注</div>
+                    <Field label="适用岗位/场景" value={row.standard} wide />
+                    <div className="image-upload-field">
+                        <span>装备图片</span>
+                        <button type="button" className="secondary-btn">上传图片</button>
+                        <em>支持用于采购、入库和领用时核对外观</em>
+                    </div>
+                    <label className="textarea-field">
+                        <span>备注</span>
+                        <textarea value="如需特殊尺码、定制标识或供应商备注，可在此说明。" readOnly />
+                    </label>
+                </div>
+            ),
+        });
+    }
+
+    function openCategoryEdit(row: CategoryRow) {
+        openWindow({
+            title: `编辑分类 - ${row.name}`,
+            subtitle: '维护装备分类层级、编码、排序和启用状态。',
+            primary: '保存修改',
+            body: (
+                <div className="modal-form embedded-form">
+                    <div className="form-section-title">分类信息</div>
+                    <Field label="分类名称" value={row.name} />
+                    <SelectLike
+                        label="上级分类"
+                        value={row.parent === '-' ? '无上级分类' : row.parent}
+                        options={['无上级分类', '执勤装备', '保安员服装', '防护装备', '消防装备', '安检装备']}
+                    />
+                    <Field label="分类编码" value={row.code} />
+                    <SelectLike label="分类层级" value={row.level} options={['一级分类', '二级分类', '三级分类']} />
+                    <SelectLike label="状态" value={row.status} options={['启用', '停用']} />
+                    <Field label="排序" value="10" />
+                    <label className="textarea-field">
+                        <span>备注</span>
+                        <textarea value="用于装备建档、库存筛选和采购需求归类。" readOnly />
+                    </label>
+                </div>
+            ),
+        });
+    }
 
     return (
         <>
@@ -1376,7 +1632,7 @@ function ArchivePage({ openWindow }: { openWindow: OpenBusinessWindow }) {
             {tab === 'items' && (
                 <>
                     <FilterBar>
-                        <Field label="装备名称" value="请输入装备名称" wide />
+                        <Field label="装备名称" value="请输入装备名称" />
                         <SelectLike label="装备分类" value="全部分类" />
                         <SelectLike label="是否一物一码管理" value="全部" />
                         <SelectLike label="成本方式" value="全部方式" />
@@ -1400,7 +1656,7 @@ function ArchivePage({ openWindow }: { openWindow: OpenBusinessWindow }) {
                             })}>导出</button>
                         </div>
                         <DataTable
-                            columns={['装备名称', '装备分类', '规格型号', '单位', '一物一码', '成本计算方式', '折旧', '折旧规则', '库存', '操作']}
+                            columns={['装备名称', '装备分类', '规格型号', '单位', '一物一码', '成本计算方式', '折旧', '折旧规则', '启用状态', '库存', '操作']}
                             rows={equipmentItems}
                             renderRow={(row: EquipmentItem) => (
                                 <tr key={row.name}>
@@ -1412,27 +1668,23 @@ function ArchivePage({ openWindow }: { openWindow: OpenBusinessWindow }) {
                                     <td>{row.costMethod}</td>
                                     <td>{row.depreciation === '是' ? <Tag tone="purple">是</Tag> : <Tag>否</Tag>}</td>
                                     <td>{row.depreciationRule}</td>
+                                    <td><StatusSwitch enabled={row.status === '启用'} /></td>
                                     <td>{numberText(row.stock)}</td>
                                     <td>
                                         <RowActions
                                             allowDelete={false}
                                             actions={[
                                                 {
-                                                    label: '成本规则',
-                                                    onClick: () => openWindow({
-                                                        title: `${row.name}成本规则`,
-                                                        subtitle: '装备档案决定入库、领用、折旧和项目归集时的默认成本口径。',
-                                                        body: <DetailGrid rows={[
-                                                            ['装备分类', row.category],
-                                                            ['是否一物一码', row.oneCode ? '是' : '否'],
-                                                            ['计价方式', row.costMethod],
-                                                            ['是否折旧', row.depreciation],
-                                                            ['折旧规则', row.depreciationRule],
-                                                            ['适用岗位/场景', row.standard],
-                                                        ]} />,
-                                                    }),
+                                                    label: '编辑',
+                                                    onClick: () => openEquipmentEdit(row),
                                                 },
-                                                { label: '编辑' },
+                                                {
+                                                    label: '删除',
+                                                    danger: true,
+                                                    disabled: row.stock > 0,
+                                                    title: row.stock > 0 ? '已有库存或业务记录，无法删除' : '删除装备',
+                                                    onClick: row.stock > 0 ? undefined : () => openEquipmentDelete(row),
+                                                },
                                             ]}
                                         />
                                     </td>
@@ -1446,7 +1698,7 @@ function ArchivePage({ openWindow }: { openWindow: OpenBusinessWindow }) {
             {tab === 'categories' && (
                 <>
                     <FilterBar>
-                        <Field label="分类名称" value="请输入分类名称" wide />
+                        <Field label="分类名称" value="请输入分类名称" />
                         <SelectLike label="分类层级" value="全部层级" />
                         <SelectLike label="状态" value="启用" />
                     </FilterBar>
@@ -1472,7 +1724,12 @@ function ArchivePage({ openWindow }: { openWindow: OpenBusinessWindow }) {
                                     <td>{row.code}</td>
                                     <td>{row.itemCount}</td>
                                     <td><StatusTag value={row.status} /></td>
-                                    <td><RowActions allowDelete={row.itemCount === 0} /></td>
+                                    <td>
+                                        <RowActions
+                                            allowDelete={row.itemCount === 0}
+                                            actions={[{ label: '编辑', onClick: () => openCategoryEdit(row) }]}
+                                        />
+                                    </td>
                                 </tr>
                             )}
                         />
@@ -1502,6 +1759,8 @@ function ArchivePage({ openWindow }: { openWindow: OpenBusinessWindow }) {
                             <SelectLike label="单位" value="台" options={['台', '套', '件', '个', '根', '张', '顶', '双']} />
                             <Field label="参考价格" value="386" />
                             <SelectLike label="供应商" value="京东慧采-易安通设备" options={['京东慧采-易安通设备', '京东慧采-三棵树安保用品', '安豹', '三棵树', '其他供应商']} />
+                            <SelectLike label="状态" value="启用" options={['启用', '停用']} />
+                            <div className="field-note">{statusNote}</div>
                             <div className="form-section-title">管理规则</div>
                             <SelectLike
                                 label="成本计算方式"
@@ -1511,19 +1770,16 @@ function ArchivePage({ openWindow }: { openWindow: OpenBusinessWindow }) {
                             />
                             <SelectLike label="是否一物一码管理" value={createCostMethod === '单件折旧' ? '是' : '否'} options={['是', '否']} />
                             <div className="field-note">成本计算方式统一为「移动加权平均、批次管理、单件折旧」。选择「单件折旧」时必须启用一物一码管理；选择「批次管理」时，出库按先进先出优先扣减较早入库批次。</div>
-                            <SelectLike label="是否重点装备" value="是" options={['是', '否']} />
-                            <SelectLike label="状态" value="启用" options={['启用', '停用']} />
-                            <Field label="适用岗位/场景" value="固定岗、巡逻岗、秩序维护" wide />
                             {createCostMethod === '单件折旧' && (
                                 <>
                                     <div className="form-section-title">折旧信息</div>
-                                    <SelectLike label="折旧方式" value="直线法" options={['直线法']} />
                                     <Field label="折旧年限（月）" value="36" />
                                     <Field label="残值率" value="5%" />
-                                    <SelectLike label="折旧开始时点" value="项目/人员确认领用" options={['项目/人员确认领用', '入库即开始', '手工指定']} />
+                                    <div className="field-note">目前仅支持直线法，系统按采购原值、残值率和折旧年限计提；项目或人员确认领用后才开始归集折旧成本。</div>
                                 </>
                             )}
                             <div className="form-section-title">图片与备注</div>
+                            <Field label="适用岗位/场景" value="固定岗、巡逻岗、秩序维护" wide />
                             <div className="image-upload-field">
                                 <span>装备图片</span>
                                 <button type="button" className="secondary-btn">上传图片</button>
@@ -1536,7 +1792,7 @@ function ArchivePage({ openWindow }: { openWindow: OpenBusinessWindow }) {
                         </div>
                         <div className="modal-tip">
                             {createCostMethod === '单件折旧'
-                                ? '选择「单件折旧」后，入库扫码或录码会写入采购原值、折旧规则和折旧开始时点，可在库存管理的「一物一码装备」中查看折旧记录。'
+                                ? '选择「单件折旧」后，入库扫码或录码会写入采购原值和折旧规则；项目或人员确认领用后开始按直线法计算折旧，可在库存管理的「一物一码装备」中查看折旧记录。'
                                 : createCostMethod === '批次管理'
                                     ? '选择「批次管理」后，入库确认时生成批次号、入库单价和订单来源；出库按先进先出优先扣减较早入库批次。'
                                     : '选择「移动加权平均」后，系统按当前库存总金额和库存数量计算加权单价，项目领用时一次归集成本。'}
@@ -1595,7 +1851,7 @@ function WarehousePage({ openWindow }: { openWindow: OpenBusinessWindow }) {
         <>
             <FilterBar>
                 <SelectLike label="仓库类型" value="全部类型" />
-                <Field label="仓库名称" value="请输入仓库名称" wide />
+                <Field label="仓库名称" value="请输入仓库名称" />
                 <SelectLike label="所属组织" value="全部组织" />
                 <SelectLike label="状态" value="启用" />
             </FilterBar>
@@ -1674,15 +1930,21 @@ function WarehousePage({ openWindow }: { openWindow: OpenBusinessWindow }) {
     );
 }
 
-function DemandPage({ openPlans, openWindow }: { openPlans: () => void; openWindow: OpenBusinessWindow }) {
-    const [showDemandModal, setShowDemandModal] = useState(false);
-
+function DemandPage({
+    openPlans,
+    openCreateDemand,
+    openWindow,
+}: {
+    openPlans: () => void;
+    openCreateDemand: () => void;
+    openWindow: OpenBusinessWindow;
+}) {
     return (
         <>
-            <FilterBar>
+            <FilterBar className="purchase-demand-filter">
                 <SelectLike label="分公司" value="全部分公司" />
                 <SelectLike label="需求类型" value="全部类型" />
-                <Field label="装备名称" value="请输入装备名称" wide />
+                <Field label="装备名称" value="请输入装备名称" />
                 <SelectLike label="状态" value="全部状态" />
             </FilterBar>
             <section className="panel">
@@ -1691,7 +1953,7 @@ function DemandPage({ openPlans, openWindow }: { openPlans: () => void; openWind
                     subtitle="集团接收分公司需求后，通用物资汇总采购，紧急和项目专属需求拆分单采"
                 />
                 <div className="table-toolbar">
-                    <button type="button" className="primary-btn" onClick={() => setShowDemandModal(true)}>新增需求</button>
+                    <button type="button" className="primary-btn" onClick={openCreateDemand}>新增采购需求</button>
                     <button type="button" className="secondary-btn" onClick={() => openWindow({
                         title: '导出采购需求',
                         subtitle: '导出分公司需求、预算金额和汇总状态。',
@@ -1746,51 +2008,19 @@ function DemandPage({ openPlans, openWindow }: { openPlans: () => void; openWind
                     )}
                 />
             </section>
-
-            {showDemandModal && (
-                <div className="modal-backdrop" role="presentation">
-                    <div className="modal-panel" role="dialog" aria-modal="true" aria-label="新增需求">
-                        <div className="modal-header">
-                            <div>
-                                <h2>新增需求</h2>
-                                <p>支持手工填写，也可从库存预警装备或京东慧采选品结果生成需求明细。</p>
-                            </div>
-                            <button type="button" className="modal-close" onClick={() => setShowDemandModal(false)}>×</button>
-                        </div>
-                        <div className="modal-form">
-                            <div className="form-section-title">需求信息</div>
-                            <SelectLike label="分公司" value="历下分公司" options={['历下分公司', '高新分公司', '历城分公司']} />
-                            <Field label="需求范围" value="金融中心项目" />
-                            <SelectLike label="需求类型" value="集团集采" options={['集团集采', '项目专属', '紧急补货', '特殊尺码']} />
-                            <Field label="期望到货" value="2026-06-28" />
-                            <div className="form-section-title">明细来源</div>
-                            <SelectLike
-                                label="拉取方式"
-                                value="从库存预警装备拉取"
-                                options={['从库存预警装备拉取', '从京东慧采选品导入', '手工录入明细']}
-                            />
-                            <SelectLike label="库存预警范围" value="全部低库存装备" options={['全部低库存装备', '仅当前分公司', '仅当前项目']} />
-                            <Field label="京东选品文件" value="导入京东慧采导出的选品 Excel" wide />
-                            <label className="textarea-field">
-                                <span>需求说明</span>
-                                <textarea value="可先从库存预警装备生成建议明细；如已在京东慧采完成选品，可导出后在此导入形成需求明细。" readOnly />
-                            </label>
-                        </div>
-                        <div className="modal-tip">
-                            从库存预警拉取会带出装备、建议数量和所属仓库；京东慧采选品导入仅生成需求明细，价格以采购计划和订单导入结果为准。
-                        </div>
-                        <div className="modal-actions">
-                            <button type="button" className="secondary-btn" onClick={() => setShowDemandModal(false)}>取消</button>
-                            <button type="button" className="primary-btn" onClick={() => setShowDemandModal(false)}>保存</button>
-                        </div>
-                    </div>
-                </div>
-            )}
         </>
     );
 }
 
-function PlanPage({ openOrders, openWindow }: { openOrders: () => void; openWindow: OpenBusinessWindow }) {
+function PlanPage({
+    openOrders,
+    openCreatePlan,
+    openWindow,
+}: {
+    openOrders: () => void;
+    openCreatePlan: () => void;
+    openWindow: OpenBusinessWindow;
+}) {
     return (
         <>
             <FilterBar>
@@ -1805,22 +2035,7 @@ function PlanPage({ openOrders, openWindow }: { openOrders: () => void; openWind
                     subtitle="计划阶段记录预算价格，订单导入后对比订单价格"
                 />
                 <div className="table-toolbar">
-                    <button type="button" className="primary-btn" onClick={() => openWindow({
-                        title: '生成采购计划',
-                        subtitle: '将待汇总需求按通用物资、项目专属和紧急需求拆分生成计划。',
-                        primary: '生成计划',
-                        body: (
-                            <div className="detail-stack">
-                                <DetailGrid rows={[
-                                    ['汇总范围', '待汇总采购需求'],
-                                    ['合并规则', '通用物资合并，项目专属和紧急需求单独采购'],
-                                    ['价格口径', '使用需求预算价格生成计划金额'],
-                                    ['下一步', '导入京东慧采订单后锁定订单价格'],
-                                ]} />
-                                <MiniLineTable items={demands.flatMap((demand) => demand.items).slice(0, 5)} amountLabel="预算金额" />
-                            </div>
-                        ),
-                    })}>生成采购计划</button>
+                    <button type="button" className="primary-btn" onClick={openCreatePlan}>新增采购计划</button>
                     <button type="button" className="secondary-btn" onClick={() => openWindow({
                         title: '导出采购计划',
                         subtitle: '导出当前采购计划及预算/订单差异。',
@@ -1879,6 +2094,206 @@ function PlanPage({ openOrders, openWindow }: { openOrders: () => void; openWind
     );
 }
 
+function PurchaseDemandCreatePage({ onCancel }: { onCancel: () => void }) {
+    return (
+        <div className="create-page">
+            <CreateSection title="基本信息">
+                <div className="create-form-grid">
+                    <CreateField
+                        label="需求分公司"
+                        value="历下分公司"
+                        required
+                        options={['历下分公司', '高新区分公司', '章丘分公司', '山东振邦保安服务有限公司']}
+                    />
+                    <CreateField
+                        label="需求范围"
+                        value="CBD园区项目点"
+                        required
+                        options={['CBD园区项目点', '会展中心项目点', '分公司日常库存补货', '集团通用库存']}
+                    />
+                    <CreateField
+                        label="需求类型"
+                        value="集团集采"
+                        required
+                        options={['集团集采', '项目专属', '紧急补货', '特殊尺码']}
+                    />
+                    <CreateField label="期望到货" value="2026-06-28" required />
+                    <CreateField
+                        label="明细来源"
+                        value="手工录入明细"
+                        options={['手工录入明细', '从库存预警装备拉取', '从京东慧采选品导入']}
+                    />
+                    <CreateField
+                        label="归属仓库"
+                        value="历下分公司仓"
+                        options={['历下分公司仓', '集团总仓', 'CBD园区项目点', '会展中心项目点']}
+                    />
+                    <CreateField
+                        label="预算口径"
+                        value="按申请预算价生成需求金额，计划阶段复核"
+                        wide
+                        helper="需求预算只作为审批和汇总依据，京东订单导入后再锁定实际采购成本。"
+                    />
+                    <CreateField
+                        label="需求说明"
+                        value="填写本次采购用途、现场缺口和特殊要求，例如尺码、颜色、合规备案要求。"
+                        wide
+                        multiline
+                    />
+                </div>
+            </CreateSection>
+
+            <CreateSection
+                title="明细"
+                action={<button type="button" className="primary-btn">添加装备</button>}
+            >
+                <CreateDetailTable
+                    columns={['装备名称', '装备分类', '供应商', '单位', '当前库存', '需求数量', '预算单价', '预算金额', '操作']}
+                    rows={[]}
+                    emptyText="请点击“添加装备”维护采购需求明细"
+                />
+            </CreateSection>
+
+            <CreatePageActions onCancel={onCancel} primary="提交需求" />
+        </div>
+    );
+}
+
+function PurchasePlanCreatePage({ onCancel }: { onCancel: () => void }) {
+    const approvalRows = [
+        { node: '分公司复核', role: '分公司负责人', reviewer: '王敏', condition: '确认需求真实、库存不足', limit: '1 个工作日', status: '待审核' },
+        { node: '采购部审核', role: '采购经理', reviewer: '赵静', condition: '确认供应商、数量和采购方式', limit: '1 个工作日', status: '待审核' },
+        { node: '财务预算审核', role: '财务负责人', reviewer: '刘洋', condition: '确认预算占用和价差阈值', limit: '2 个工作日', status: '待审核' },
+    ];
+
+    return (
+        <div className="create-page">
+            <CreateSection title="基本信息">
+                <div className="create-form-grid">
+                    <CreateField
+                        label="计划组织"
+                        value="山东振邦保安服务有限公司"
+                        required
+                        options={['山东振邦保安服务有限公司', '历下分公司', '高新区分公司', '章丘分公司']}
+                    />
+                    <CreateField
+                        label="采购模式"
+                        value="集团集采"
+                        required
+                        options={['集团集采', '项目专属采购', '紧急单采', '特殊尺码采购']}
+                    />
+                    <CreateField
+                        label="需求来源"
+                        value="待汇总采购需求"
+                        required
+                        options={['待汇总采购需求', '单独采购需求', '库存预警需求', '手工新增']}
+                    />
+                    <CreateField
+                        label="采购入口"
+                        value="京东慧采"
+                        options={['京东慧采', '线下供应商', '历史订单复购']}
+                    />
+                    <CreateField label="计划到货" value="2026-06-30" required />
+                    <CreateField
+                        label="价格口径"
+                        value="预算价格"
+                        options={['预算价格', '最近采购价', '供应商报价']}
+                    />
+                    <CreateField
+                        label="合并规则"
+                        value="通用物资合并采购，项目专属、紧急和特殊尺码需求单独成计划"
+                        wide
+                    />
+                    <CreateField
+                        label="计划说明"
+                        value="说明本次采购计划的覆盖范围、拆分原因和需要采购部重点复核的事项。"
+                        wide
+                        multiline
+                    />
+                </div>
+            </CreateSection>
+
+            <CreateSection
+                title="明细"
+                subtitle="计划阶段记录预算价格，订单导入后再与实际订单价格对比"
+                action={(
+                    <div className="create-section-actions">
+                        <button type="button" className="secondary-btn">添加需求</button>
+                        <button type="button" className="primary-btn">添加装备</button>
+                    </div>
+                )}
+            >
+                <CreateDetailTable
+                    columns={['需求单号', '装备名称', '装备分类', '采购模式', '需求数量', '建议采购', '预算单价', '预算金额', '操作']}
+                    rows={[]}
+                    emptyText="请点击“添加需求”或“添加装备”维护采购计划明细"
+                />
+            </CreateSection>
+
+            <CreateSection title="审核" subtitle="采购计划提交后先走内部审核，审核通过后再进入京东订单导入">
+                <div className="create-form-grid approval-form">
+                    <CreateField
+                        label="审核流程"
+                        value="分公司复核 → 采购部审核 → 财务预算审核"
+                        required
+                        wide
+                    />
+                    <CreateField
+                        label="审核方式"
+                        value="逐级审核"
+                        options={['逐级审核', '会签审核', '采购部单审']}
+                    />
+                    <CreateField
+                        label="当前状态"
+                        value="待提交审核"
+                        options={['待提交审核', '审核中', '已审核']}
+                    />
+                    <CreateField
+                        label="价差重审"
+                        value="订单金额较预算金额浮动超过 5% 时重新提交审核"
+                        wide
+                        helper="用于承接后续订单导入后的价格差异复核。"
+                    />
+                </div>
+                <div className="approval-path">
+                    <div className="approval-step-card">
+                        <span>01</span>
+                        <strong>分公司复核</strong>
+                        <em>确认需求真实、库存不足和到货时间</em>
+                    </div>
+                    <div className="approval-step-card">
+                        <span>02</span>
+                        <strong>采购部审核</strong>
+                        <em>确认采购模式、供应商入口和明细数量</em>
+                    </div>
+                    <div className="approval-step-card">
+                        <span>03</span>
+                        <strong>财务预算审核</strong>
+                        <em>确认预算占用、价格阈值和重审规则</em>
+                    </div>
+                </div>
+                <CreateDetailTable
+                    columns={['审核节点', '审核角色', '审核人', '审核条件', '处理时限', '状态', '操作']}
+                    rows={approvalRows}
+                    renderRow={(row) => (
+                        <tr key={row.node}>
+                            <td>{row.node}</td>
+                            <td>{row.role}</td>
+                            <td>{row.reviewer}</td>
+                            <td>{row.condition}</td>
+                            <td>{row.limit}</td>
+                            <td><StatusTag value={row.status} /></td>
+                            <td><button type="button" className="table-link">调整</button></td>
+                        </tr>
+                    )}
+                />
+            </CreateSection>
+
+            <CreatePageActions onCancel={onCancel} primary="提交审核" />
+        </div>
+    );
+}
+
 function OrderPage({ openInbound, openWindow }: { openInbound: () => void; openWindow: OpenBusinessWindow }) {
     return (
         <>
@@ -1903,7 +2318,7 @@ function OrderPage({ openInbound, openWindow }: { openInbound: () => void; openW
                 })}>选择 Excel 文件</button>
             </div>
             <FilterBar>
-                <Field label="京东订单号" value="请输入京东订单号" wide />
+                <Field label="京东订单号" value="请输入京东订单号" />
                 <SelectLike label="匹配状态" value="全部状态" />
                 <SelectLike label="入库状态" value="全部状态" />
             </FilterBar>
@@ -1966,7 +2381,6 @@ function InventoryPage({ openWindow }: { openWindow: OpenBusinessWindow }) {
 
     return (
         <>
-            <WarehouseScope />
             <div className="sub-tabs">
                 <button type="button" className={tab === 'stock' ? 'active' : ''} onClick={() => setTab('stock')}>
                     库存台账
@@ -1978,8 +2392,9 @@ function InventoryPage({ openWindow }: { openWindow: OpenBusinessWindow }) {
             {tab === 'stock' && (
                 <>
             <FilterBar>
+                <SelectLike label="所属仓库" value="全部仓库" />
                 <SelectLike label="装备分类" value="全部分类" />
-                <Field label="装备名称" value="请输入装备名称" wide />
+                <Field label="装备名称" value="请输入装备名称" />
                 <SelectLike label="库存预警" value="全部" />
             </FilterBar>
             <section className="panel">
@@ -2127,8 +2542,8 @@ function InventoryPage({ openWindow }: { openWindow: OpenBusinessWindow }) {
 function InboundPage({ openInventory, openWindow }: { openInventory: () => void; openWindow: OpenBusinessWindow }) {
     return (
         <>
-            <WarehouseScope />
             <FilterBar>
+                <SelectLike label="入库仓库" value="全部仓库" />
                 <Field label="入库单号" value="请输入入库单号" />
                 <SelectLike label="入库状态" value="全部状态" />
                 <SelectLike label="成本来源" value="京东订单价格" />
@@ -2223,7 +2638,6 @@ function InboundPage({ openInventory, openWindow }: { openInventory: () => void;
 function TransferPage({ openCosts, openWindow }: { openCosts: () => void; openWindow: OpenBusinessWindow }) {
     return (
         <>
-            <WarehouseScope />
             <FilterBar>
                 <Field label="调拨单号" value="请输入调拨单号" />
                 <SelectLike label="调出仓" value="全部" />
@@ -2311,8 +2725,8 @@ function TransferPage({ openCosts, openWindow }: { openCosts: () => void; openWi
 function StocktakePage({ openCosts, openWindow }: { openCosts: () => void; openWindow: OpenBusinessWindow }) {
     return (
         <>
-            <WarehouseScope />
             <FilterBar>
+                <SelectLike label="盘点仓库" value="全部仓库" />
                 <Field label="盘点任务号" value="请输入任务号" />
                 <SelectLike label="盘点范围" value="全部范围" />
                 <SelectLike label="差异状态" value="全部状态" />
@@ -2403,8 +2817,8 @@ function StocktakePage({ openCosts, openWindow }: { openCosts: () => void; openW
 function IssuePage({ openCosts, openWindow }: { openCosts: () => void; openWindow: OpenBusinessWindow }) {
     return (
         <>
-            <WarehouseScope />
             <FilterBar>
+                <SelectLike label="来源仓库" value="全部仓库" />
                 <Field label="领用单号" value="请输入领用单号" />
                 <SelectLike label="领用对象" value="全部对象" />
                 <SelectLike label="状态" value="全部状态" />
@@ -2589,7 +3003,24 @@ function CostPage({ openWindow }: { openWindow: OpenBusinessWindow }) {
     );
 }
 
-function PageContent({ page, openPage, openWindow }: { page: PageId; openPage: (page: PageId) => void; openWindow: OpenBusinessWindow }) {
+function PageContent({
+    page,
+    openPage,
+    openWindow,
+    purchaseTab,
+    setPurchaseTab,
+}: {
+    page: PageId;
+    openPage: (page: PageId) => void;
+    openWindow: OpenBusinessWindow;
+    purchaseTab: PurchaseTab;
+    setPurchaseTab: (tab: PurchaseTab) => void;
+}) {
+    function returnToPurchase(tab: PurchaseTab) {
+        setPurchaseTab(tab);
+        openPage('purchase');
+    }
+
     switch (page) {
         case 'dashboard':
             return <Dashboard openPage={openPage} />;
@@ -2600,7 +3031,11 @@ function PageContent({ page, openPage, openWindow }: { page: PageId; openPage: (
         case 'inventory':
             return <InventoryPage openWindow={openWindow} />;
         case 'purchase':
-            return <PurchasePage openPage={openPage} openWindow={openWindow} />;
+            return <PurchasePage openPage={openPage} openWindow={openWindow} tab={purchaseTab} setTab={setPurchaseTab} />;
+        case 'purchase-demand-create':
+            return <PurchaseDemandCreatePage onCancel={() => returnToPurchase('demand')} />;
+        case 'purchase-plan-create':
+            return <PurchasePlanCreatePage onCancel={() => returnToPurchase('plans')} />;
         case 'inbound':
             return <InboundPage openInventory={() => openPage('inventory')} openWindow={openWindow} />;
         case 'transfer':
@@ -2620,9 +3055,11 @@ export default function EquipmentManagementPrototype() {
     const { page: routePage, setPage } = useHashPage(equipmentRoute);
     const page = pageMeta[routePage as PageId] ? routePage as PageId : 'dashboard';
     const [visited, setVisited] = useState<PageId[]>(['dashboard']);
+    const [purchaseTab, setPurchaseTab] = useState<PurchaseTab>('demand');
     const [businessWindow, setBusinessWindow] = useState<BusinessWindowState | null>(null);
 
     const current = pageMeta[page];
+    const activeMenuPage = page.startsWith('purchase-') ? 'purchase' : page;
     const tabs = useMemo(() => visited.map((id) => ({ id, label: pageMeta[id].label })), [visited]);
 
     useEffect(() => {
@@ -2664,7 +3101,7 @@ export default function EquipmentManagementPrototype() {
                             <button
                                 type="button"
                                 key={id}
-                                className={page === id ? 'active submenu-item' : 'submenu-item'}
+                                className={activeMenuPage === id ? 'active submenu-item' : 'submenu-item'}
                                 onClick={() => openPage(id)}
                             >
                                 <Icon size={15} />
@@ -2701,14 +3138,22 @@ export default function EquipmentManagementPrototype() {
                     ))}
                 </div>
 
-                <main className="main-content">
-                    <div className="page-heading">
-                        <div>
-                            <span>{current.group}</span>
-                            <h1>{current.label}</h1>
+                <main className={page === 'dashboard' ? 'main-content is-dashboard' : 'main-content is-work-page'}>
+                    {page === 'dashboard' && (
+                        <div className="page-heading">
+                            <div>
+                                <span>{current.group}</span>
+                                <h1>{current.label}</h1>
+                            </div>
                         </div>
-                    </div>
-                    <PageContent page={page} openPage={openPage} openWindow={setBusinessWindow} />
+                    )}
+                    <PageContent
+                        page={page}
+                        openPage={openPage}
+                        openWindow={setBusinessWindow}
+                        purchaseTab={purchaseTab}
+                        setPurchaseTab={setPurchaseTab}
+                    />
                 </main>
             </div>
             {businessWindow && <BusinessWindow window={businessWindow} onClose={() => setBusinessWindow(null)} />}
