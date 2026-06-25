@@ -1,31 +1,7 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-23T02:36:19.164Z",
+  "updatedAt": "2026-06-25T03:02:02.349Z",
   "prototypes": [
-    {
-      "id": "item-prototypes-untitled-5",
-      "kind": "item",
-      "title": "untitled 5",
-      "itemKey": "prototypes/untitled-5"
-    },
-    {
-      "id": "item-prototypes-annotation-demo",
-      "kind": "item",
-      "title": "annotation demo",
-      "itemKey": "prototypes/annotation-demo"
-    },
-    {
-      "id": "item-prototypes-beginner-guide",
-      "kind": "item",
-      "title": "beginner guide",
-      "itemKey": "prototypes/beginner-guide"
-    },
-    {
-      "id": "item-prototypes-touch-and-talk-annotation-demo",
-      "kind": "item",
-      "title": "touch and talk annotation demo",
-      "itemKey": "prototypes/touch-and-talk-annotation-demo"
-    },
     {
       "id": "item:prototypes:untitled",
       "kind": "item",
@@ -35,7 +11,7 @@
     {
       "id": "item:prototypes:untitled-3",
       "kind": "item",
-      "title": "项目管理-项目装备标签页",
+      "title": "项目-装备标签页",
       "itemKey": "prototypes/untitled-3"
     },
     {
@@ -43,6 +19,24 @@
       "kind": "item",
       "title": "移动端-装备管理",
       "itemKey": "prototypes/untitled-2"
+    },
+    {
+      "id": "item:prototypes:annotation-demo",
+      "kind": "item",
+      "title": "标注演示",
+      "itemKey": "prototypes/annotation-demo"
+    },
+    {
+      "id": "item:prototypes:beginner-guide",
+      "kind": "item",
+      "title": "新手指导",
+      "itemKey": "prototypes/beginner-guide"
+    },
+    {
+      "id": "item:prototypes:touch-and-talk-annotation-demo",
+      "kind": "item",
+      "title": "批注演示",
+      "itemKey": "prototypes/touch-and-talk-annotation-demo"
     },
     {
       "id": "item:prototypes:untitled-4",

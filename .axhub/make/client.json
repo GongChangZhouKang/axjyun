@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "kind": "axhub-make-client",
   "repository": "https://github.com/lintendo/Axhub-Make/tree/main/client",
-  "templateUrl": "https://github.com/lintendo/Axhub-Make/releases/download/make-client-template-v0.1.8/axhub-make-client-template.zip",
-  "templateVersion": "0.1.8",
+  "templateUrl": "https://github.com/lintendo/Axhub-Make/releases/download/make-client-template-v0.1.10/axhub-make-client-template.zip",
+  "templateVersion": "0.1.10",
   "project": {
     "id": "newmake0.6.1",
     "name": "newmake0.6.1"
