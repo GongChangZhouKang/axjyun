@@ -275,7 +275,7 @@ export default function EquipmentManagementPrototype() {
                         <div className="page-heading">
                             <div>
                                 <span>{current.group}</span>
-                                <h1>{page === 'dashboard' ? '装备概览' : current.label}</h1>
+                                <h1>{current.label}</h1>
                             </div>
                         </div>
                     )}

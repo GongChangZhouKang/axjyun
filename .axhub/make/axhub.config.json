@@ -2,6 +2,7 @@
   "server": {
     "host": "localhost",
     "allowLAN": true,
+    "lanHost": "198.18.0.1",
     "enableCommandAPI": false
   },
   "projectDefaults": {
