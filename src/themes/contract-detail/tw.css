@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+/*
+ * Generated from DESIGN.md tokens using the Google DESIGN.md 0.3.0
+ * Tailwind v4 namespace model, then extended with captured shadow/motion tokens.
+ */
+@theme {
+  --color-primary: #096dd9;
+  --color-primary-hover: #075eb8;
+  --color-on-primary: #ffffff;
+  --color-primary-source: #129bff;
+  --color-accent: #2d8cf0;
+  --color-ink: #515a6e;
+  --color-ink-strong: #4b4949;
+  --color-ink-secondary: #666666;
+  --color-ink-muted: #808695;
+  --color-ink-subtle: #999999;
+  --color-ink-disabled: #c5c8ce;
+  --color-canvas: #f5f7f9;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f2f2f2;
+  --color-surface-soft: #f5f7fb;
+  --color-surface-table: #f4f5f7;
+  --color-surface-row-alt: #f8f8f9;
+  --color-surface-selected: #f0faff;
+  --color-surface-disabled: #f7f7f7;
+  --color-border: #dcdee2;
+  --color-border-strong: #c5c8ce;
+  --color-success-source: #6ce21f;
+  --color-success-ink: #1f2a10;
+  --color-success-surface: #f6ffed;
+  --color-success-text: #237804;
+  --color-success-text-source: #23d170;
+  --color-warning-source: #f59a23;
+  --color-warning-surface: #fff7e6;
+  --color-warning-text: #ad4e00;
+  --color-danger-source: #ed4014;
+  --color-danger-strong: #ff0000;
+  --color-danger-surface: #fff1f0;
+  --color-danger-text: #a8071a;
+  --color-overlay: #37373799;
+  --color-feature-photo-start: #667eea;
+  --color-feature-photo-end: #764ba2;
+  --font-page-title: "Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif";
+  --font-section-title: "Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif";
+  --font-body: "Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif";
+  --font-body-compact: "Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif";
+  --font-label: "Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif";
+  --font-table-header: "Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif";
+  --font-caption: "Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif";
+  --font-button: "Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif";
+  --font-mono: "SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace";
+  --text-page-title: 18px;
+  --text-section-title: 16px;
+  --text-body: 14px;
+  --text-body-compact: 14px;
+  --text-label: 14px;
+  --text-table-header: 14px;
+  --text-caption: 12px;
+  --text-button: 14px;
+  --text-mono: 12px;
+  --leading-page-title: 26px;
+  --leading-section-title: 24px;
+  --leading-body: 21px;
+  --leading-body-compact: 20px;
+  --leading-label: 21px;
+  --leading-table-header: 21px;
+  --leading-caption: 18px;
+  --leading-button: 20px;
+  --leading-mono: 18px;
+  --tracking-page-title: 0px;
+  --tracking-section-title: 0px;
+  --tracking-body: 0px;
+  --tracking-body-compact: 0px;
+  --tracking-label: 0px;
+  --tracking-table-header: 0px;
+  --tracking-caption: 0px;
+  --tracking-button: 0px;
+  --tracking-mono: 0px;
+  --font-weight-page-title: 500;
+  --font-weight-section-title: 500;
+  --font-weight-body: 400;
+  --font-weight-body-compact: 400;
+  --font-weight-label: 500;
+  --font-weight-table-header: 700;
+  --font-weight-caption: 400;
+  --font-weight-button: 500;
+  --font-weight-mono: 400;
+  --radius-none: 0px;
+  --radius-micro: 2px;
+  --radius-xs: 3px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-modal: 16px;
+  --radius-full: 9999px;
+  --spacing-micro: 2px;
+  --spacing-xs: 4px;
+  --spacing-compact: 6px;
+  --spacing-control-y: 7px;
+  --spacing-sm: 8px;
+  --spacing-control-x: 10px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-form-row: 18px;
+  --spacing-xl: 20px;
+  --spacing-xxl: 24px;
+  --spacing-section: 32px;
+}
+
+@theme {
+  --shadow-popover: 0 1px 6px rgb(0 0 0 / 20%);
+  --shadow-dialog: 0 4px 12px rgb(0 0 0 / 15%);
+  --shadow-modal: 0 0 12px rgb(0 0 0 / 16%);
+  --shadow-edge-left: -2px 0 6px -2px rgb(0 0 0 / 20%);
+  --shadow-edge-right: 2px 0 6px -2px rgb(0 0 0 / 20%);
+
+  --ease-standard: ease-in-out;
+  --ease-enter: cubic-bezier(0.4, 0, 0.2, 1);
+  --animate-load-loop: load-loop 1s linear infinite;
+  --animate-spin-bounce: spin-bounce 1s ease-in-out infinite;
+}
+
+@keyframes load-loop {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-bounce {
+  0%,
+  100% {
+    transform: scale(0.8);
+    opacity: 0.55;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
