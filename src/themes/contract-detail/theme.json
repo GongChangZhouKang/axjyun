@@ -15,9 +15,9 @@
   "identity": {
     "id": "contract-detail-v1",
     "slug": "contract-detail",
-    "brand": "Security Management Platform",
-    "titleZh": "安保管理平台主题",
-    "titleEn": "Security Management Platform",
+    "brand": "安保管理平台后台主题",
+    "titleZh": "安保管理平台后台主题",
+    "titleEn": "Security Management Platform Admin Theme",
     "descriptionZh": "从安保管理平台代表性页面提取的高密度政企后台主题：冷灰正文、浅色表面、两级蓝色交互与克制边界。",
     "descriptionEn": "A compact enterprise-admin theme extracted from representative Security Management Platform screens."
   },
@@ -95,7 +95,7 @@
       "#F4F5F7",
       "#F7F7F7",
       "#DCDEE2",
-      "#6CE21F",
+      "#19BE6B",
       "#1F2A10",
       "#F6FFED",
       "#237804",
@@ -103,10 +103,10 @@
       "#F8F8F9",
       "#F0FAFF",
       "#23D170",
-      "#F59A23",
+      "#FFAE00",
       "#FFF7E6",
       "#AD4E00",
-      "#ED4014",
+      "#F52C2C",
       "#FF0000",
       "#FFF1F0",
       "#A8071A",
@@ -132,7 +132,7 @@
       "surfaceDisabled": "#F7F7F7",
       "border": "#DCDEE2",
       "borderStrong": "#C5C8CE",
-      "successSource": "#6CE21F",
+      "successSource": "#19BE6B",
       "successInk": "#1F2A10",
       "successSurface": "#F6FFED",
       "successText": "#237804",
@@ -140,10 +140,10 @@
       "surfaceRowAlt": "#F8F8F9",
       "surfaceSelected": "#F0FAFF",
       "successTextSource": "#23D170",
-      "warningSource": "#F59A23",
+      "warningSource": "#FFAE00",
       "warningSurface": "#FFF7E6",
       "warningText": "#AD4E00",
-      "dangerSource": "#ED4014",
+      "dangerSource": "#F52C2C",
       "dangerStrong": "#FF0000",
       "dangerSurface": "#FFF1F0",
       "dangerText": "#A8071A",
@@ -285,8 +285,8 @@
     }
   ],
   "display": {
-    "brand": "安保管理平台主题",
-    "brandAlias": "安保管理平台主题",
+    "brand": "安保管理平台后台主题",
+    "brandAlias": "安保管理平台后台主题",
     "description": "从安保管理平台合同、员工、弹窗表单和装备出库等代表性页面提取的高密度政企后台主题。以 14px 中文排版、白色与浅冷灰表面、4px 小圆角和克制的蓝色交互为核心，同时保留 source-exact tokens 与 WCAG AA 生产语义 tokens。",
     "descriptionEn": "A compact enterprise-admin system with cool-gray typography, restrained surfaces and accessible blue interactions.",
     "variant": "dashboard",
@@ -354,19 +354,19 @@
         "textColor": "#096DD9"
       },
       {
-        "color": "#6CE21F",
+        "color": "#19BE6B",
         "labelZh": "执行中",
         "labelEn": "Running",
         "textColor": "#1F2A10"
       },
       {
-        "color": "#F59A23",
+        "color": "#FFAE00",
         "labelZh": "待处理",
         "labelEn": "Warning Source",
         "textColor": "#3D2400"
       },
       {
-        "color": "#ED4014",
+        "color": "#F52C2C",
         "labelZh": "危险操作",
         "labelEn": "Danger Source",
         "textColor": "#FFFFFF"

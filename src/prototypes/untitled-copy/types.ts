@@ -11,6 +11,7 @@ export type PageId =
     | 'purchase-plan-create'
     | 'purchase-plan-view'
     | 'purchase-order-generate'
+    | 'purchase-inbound-generate'
     | 'inbound'
     | 'transfer'
     | 'stocktake'
@@ -191,7 +192,7 @@ export interface OrderRow {
     createdAt?: string;
     orderNote?: string;
     sourceType?: string;
-    inboundCode?: string;
+    inboundCodes: string[];
     inboundStatus?: string;
     paymentRecords?: PaymentRecord[];
     invoiceRecords?: InvoiceRecord[];
@@ -220,6 +221,45 @@ export interface DraftPurchaseOrder {
     targetWarehouse: string;
     note: string;
     lines: DraftPurchaseOrderLine[];
+}
+
+export interface DraftInboundLine {
+    id: string;
+    name: string;
+    unit: string;
+    orderQty: number;
+    generatedQty: number;
+    remainingQty: number;
+    inboundQty: number;
+    unitPrice: number;
+}
+
+export interface DraftInboundOrder {
+    id: string;
+    inboundCode: string;
+    orderCode: string;
+    planCode: string;
+    warehouse: string;
+    handler: string;
+    note: string;
+    lines: DraftInboundLine[];
+}
+
+export interface OrderInboundLineSummary {
+    id: string;
+    name: string;
+    unit: string;
+    orderQty: number;
+    generatedQty: number;
+    remainingQty: number;
+    unitPrice: number;
+}
+
+export interface DraftInboundValidationResult {
+    emptyDrafts: DraftInboundOrder[];
+    invalidLines: DraftInboundLine[];
+    overLimitLines: DraftInboundLine[];
+    canSubmit: boolean;
 }
 
 export interface InventoryRow {

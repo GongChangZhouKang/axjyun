@@ -1,7 +1,7 @@
 ---
 version: alpha
-name: Security Management Platform
-description: "A compact Chinese enterprise administration theme extracted from representative Security Management Platform screens: cool gray typography, white and pale-gray surfaces, precise 3–4px radii, restrained borders, and a two-level blue interaction system with accessibility-safe production roles."
+name: 安保管理平台后台主题
+description: "A compact Chinese enterprise administration theme for Security Management Platform back-office screens: cool gray typography, white and pale-gray surfaces, precise 3–4px radii, restrained borders, and a two-level blue interaction system."
 colors:
   primary: "#096DD9"
   primary-hover: "#075EB8"
@@ -24,15 +24,15 @@ colors:
   surface-disabled: "#F7F7F7"
   border: "#DCDEE2"
   border-strong: "#C5C8CE"
-  success-source: "#6CE21F"
+  success-source: "#19BE6B"
   success-ink: "#1F2A10"
   success-surface: "#F6FFED"
   success-text: "#237804"
   success-text-source: "#23D170"
-  warning-source: "#F59A23"
+  warning-source: "#FFAE00"
   warning-surface: "#FFF7E6"
   warning-text: "#AD4E00"
-  danger-source: "#ED4014"
+  danger-source: "#F52C2C"
   danger-strong: "#FF0000"
   danger-surface: "#FFF1F0"
   danger-text: "#A8071A"
@@ -282,7 +282,7 @@ components:
     size: 6px
   danger-link:
     backgroundColor: "{colors.surface}"
-    textColor: "{colors.danger-text}"
+    textColor: "{colors.danger-source}"
     typography: "{typography.body}"
     rounded: "{rounded.none}"
   danger-source-mark:
@@ -325,7 +325,7 @@ components:
 
 ## Overview
 
-“安保管理平台主题”来自合同、员工、弹窗表单和装备出库等代表性页面截图，以及首轮页面的样式采集数据。它不是泛化的“蓝色 SaaS”，而是一套面向中文政企后台的高密度工作界面：默认正文是冷灰 `#515A6E`，大面积使用白色与极浅冷灰表面，交互以蓝色文字、描边、下划线和小面积按钮表达，圆角与阴影都很克制。
+“安保管理平台后台主题”来自合同、员工、弹窗表单和装备出库等代表性页面截图，以及首轮页面的样式采集数据。它不是泛化的“蓝色 SaaS”，而是一套面向中文政企后台的高密度工作界面：默认正文是冷灰 `#515A6E`，大面积使用白色与极浅冷灰表面，交互以蓝色文字、描边、下划线和小面积按钮表达，圆角与阴影都很克制。
 
 适用场景：合同、审批、项目、档案、安保、统计等桌面端管理后台；尤其适合多导航、多字段、表格和筛选器共存的任务型页面。
 
@@ -358,12 +358,12 @@ components:
 | `{colors.surface-selected}` | `#F0FAFF` | 左侧导航、组织树节点和轻量选中背景 |
 | `{colors.border}` | `#DCDEE2` | 输入、按钮、分页、分割线的标准 1px 边框 |
 | `{colors.border-strong}` | `#C5C8CE` | 强边界、选区、拖拽或更明显的结构分隔 |
-| `{colors.success-source}` | `#6CE21F` | 截图状态标签的 source-exact 亮绿；配深色字 |
+| `{colors.success-source}` | `#19BE6B` | 执行中状态色；用于短状态标签、进度和状态点 |
 | `{colors.success-surface}` / `{colors.success-text}` | `#F6FFED` / `#237804` | 可阅读的成功状态组合，5.44:1 |
 | `{colors.success-text-source}` | `#23D170` | “已入职”等 source-exact 纯文本成功状态；只用于短文本 |
-| `{colors.warning-source}` | `#F59A23` | “待签署”等 source-exact 待处理橙色；不承载长正文 |
+| `{colors.warning-source}` | `#FFAE00` | 待处理状态色；用于待签署、待复核等短状态标签 |
 | `{colors.warning-surface}` / `{colors.warning-text}` | `#FFF7E6` / `#AD4E00` | 生产级警告标签与提示组合 |
-| `{colors.danger-source}` | `#ED4014` | 离职、终止等 source-exact 危险操作 |
+| `{colors.danger-source}` | `#F52C2C` | 危险操作色；用于离职、终止、删除等操作与微型标记 |
 | `{colors.danger-strong}` | `#FF0000` | 必填星号、小旗等高强调微型标记，禁止大面积使用 |
 | `{colors.danger-surface}` / `{colors.danger-text}` | `#FFF1F0` / `#A8071A` | 生产级危险标签与错误提示组合 |
 | `{colors.overlay}` | `rgba(55,55,55,.60)` | 模态遮罩，禁止作为实体表面色 |
@@ -561,7 +561,7 @@ components:
 
 ### 推荐写法
 
-1. “使用安保管理平台主题生成中文政企后台，默认正文 14px/21px、`#515A6E`，控件高 34px、圆角 4px。”
+1. “使用安保管理平台后台主题生成中文政企后台，默认正文 14px/21px、`#515A6E`，控件高 34px、圆角 4px。”
 2. “以白色主表面和 `#F5F7FB` 工具条组织合同筛选器，主操作使用可访问蓝 `#096DD9`。”
 3. “摘要卡无阴影，用 `#F2F2F2` 填充、4px 圆角和 16px 内边距；选中页签使用蓝色文字与 4px 指示条。”
 4. “表格表头使用 `#F4F5F7`，正文白底，边框 `#DCDEE2`，保持高密度扫描体验。”
@@ -586,6 +586,7 @@ components:
 
 - **高置信**：颜色、字体栈、14px 主字号、3/4/16px 圆角、主要间距、边框、阴影与 200/400/1000ms 动效来自用户提供的样式采集数据。
 - **高置信**：页面密度、导航层级、摘要卡、筛选条、页签、组织树、批量工具栏、斑马纹表格、两列表单、大型模态与固定操作栏来自 6 张代表性业务截图。
-- **高置信**：`#23D170` 成功、`#F59A23` 警告、`#ED4014/#F52C2C` 危险、`rgba(55,55,55,.60)` 遮罩以及照片按钮 `#667EEA → #764BA2` 来自员工信息与合同列表截图/样式数据。
+- **用户确认**：执行中使用 `#19BE6B`、待处理使用 `#FFAE00`、危险操作使用 `#F52C2C`；这三项覆盖原截图中的对应状态色。
+- **高置信**：`#23D170` 成功、`rgba(55,55,55,.60)` 遮罩以及照片按钮 `#667EEA → #764BA2` 来自员工信息与合同列表截图/样式数据。
 - **派生并明确标注**：`#096DD9` 是为满足 WCAG AA 而增加的生产语义蓝；源截图的 `#129BFF` 和 `#2D8CF0` 仍作为 source-exact tokens 保留。
 - **尚未覆盖**：登录/认证、全局消息与通知、异常页、删除确认、暗色模式和原生移动布局没有直接视觉证据；需要这些场景时应补充对应截图后再扩展，不从现有页面臆测。

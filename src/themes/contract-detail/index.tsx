@@ -1,5 +1,5 @@
 /**
- * @name 安保管理平台主题 - Security Management Platform
+ * @name 安保管理平台后台主题 - Security Management Platform Admin Theme
  */
 
 import './style.css';
@@ -136,9 +136,9 @@ function ContractTokenDetails() {
       <div className="contract-token-demo__section">
         <h3>状态语义 · Semantic states</h3>
         <div className="contract-token-demo__semantic-grid">
-          <article className="is-success"><small>成功</small><strong>#23D170</strong><p>已入职、已完成</p></article>
-          <article className="is-warning"><small>待处理</small><strong>#F59A23</strong><p>待签署、待复核</p></article>
-          <article className="is-danger"><small>危险</small><strong>#ED4014</strong><p>离职、终止、错误</p></article>
+          <article className="is-running"><small>执行中</small><strong>#19BE6B</strong><p>流程执行、任务运行</p></article>
+          <article className="is-warning"><small>待处理</small><strong>#FFAE00</strong><p>待签署、待复核</p></article>
+          <article className="is-danger"><small>危险操作</small><strong>#F52C2C</strong><p>离职、终止、删除</p></article>
           <article className="is-feature"><small>功能专用</small><strong>#667EEA → #764BA2</strong><p>仅限照片录入</p></article>
         </div>
       </div>
@@ -269,7 +269,7 @@ function ContractComponentDemo() {
   };
 
   return (
-    <section className="contract-demo" aria-label="安保管理平台主题组件实景">
+    <section className="contract-demo" aria-label="安保管理平台后台主题组件实景">
       <header className="contract-demo__header">
         <div>
           <h2>合同客户维护</h2>

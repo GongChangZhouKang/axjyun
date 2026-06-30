@@ -9,7 +9,11 @@ import {
     PurchaseDemandLine,
     DraftPurchaseOrder,
     DraftPurchaseOrderLine,
+    DraftInboundOrder,
+    DraftInboundLine,
+    DraftInboundValidationResult,
     GenerateOrderMode,
+    OrderInboundLineSummary,
     OrderRow,
     InventoryRow,
     FlowRow,
@@ -231,6 +235,40 @@ export function demandItemInboundAllocations(demandCode: string, itemName: strin
     ));
 }
 
+export function inboundRowsForDemandItem(demandCode: string, itemName: string, rows: FlowRow[] = inboundRows) {
+    const codes = inboundTraces
+        .filter((trace) => trace.demandCodes.includes(demandCode))
+        .map((trace) => trace.inboundCode);
+
+    return rows.filter((row) => (
+        codes.includes(row.code)
+        && row.items.some((item) => item.name === itemName)
+    ));
+}
+
+export function demandItemGeneratedInboundSummary(demandCode: string, itemName: string, rows: FlowRow[] = inboundRows) {
+    const relatedRows = inboundRowsForDemandItem(demandCode, itemName, rows);
+    const generatedQty = relatedRows.reduce((sum, row) => (
+        sum + row.items
+            .filter((item) => item.name === itemName)
+            .reduce((itemSum, item) => itemSum + item.qty, 0)
+    ), 0);
+    const actualInboundQty = relatedRows
+        .filter((row) => row.status !== '待入库')
+        .reduce((sum, row) => (
+            sum + row.items
+                .filter((item) => item.name === itemName)
+                .reduce((itemSum, item) => itemSum + item.qty, 0)
+        ), 0);
+
+    return {
+        rows: relatedRows,
+        count: relatedRows.length,
+        generatedQty,
+        actualInboundQty,
+    };
+}
+
 export function orderAllocations(row: OrderRow) {
     return orderWarehouseAllocations.filter((allocation) => allocation.orderCode === row.jdOrder);
 }
@@ -250,6 +288,48 @@ export function relationStatus(row: TraceRelationRow) {
         return '待分配';
     }
     return row.inboundStatus || '待入库';
+}
+
+function traceForInboundCode(code: string) {
+    return inboundTraces.find((trace) => trace.inboundCode === code);
+}
+
+function orderCodeFromTraceContext(context: TraceContext) {
+    if (context.type === 'order') {
+        return context.orderCode || context.code;
+    }
+    if (context.type === 'inbound') {
+        return traceForInboundCode(context.inboundCode || context.code)?.orderCode;
+    }
+    return undefined;
+}
+
+function inboundRowsForTraceContext(context: TraceContext) {
+    const targetCode = context.inboundCode || context.code;
+    const orderCode = orderCodeFromTraceContext(context);
+    const matchedTraceCodes = inboundTraces
+        .filter((trace) => {
+            if (context.type === 'demand' || context.type === 'demand-line') {
+                return trace.demandCodes.includes(context.code);
+            }
+            if (context.type === 'plan' || context.type === 'plan-line') {
+                return trace.planCode === context.code;
+            }
+            if (context.type === 'order') {
+                return trace.orderCode === orderCode;
+            }
+            if (context.type === 'inbound') {
+                return trace.inboundCode === targetCode;
+            }
+            return false;
+        })
+        .map((trace) => trace.inboundCode);
+
+    return inboundRows.filter((inbound) => (
+        matchedTraceCodes.includes(inbound.code)
+        || (orderCode ? inbound.from === orderCode : false)
+        || (context.type === 'inbound' && inbound.code === targetCode)
+    ));
 }
 
 export function contextTitle(context: TraceContext) {
@@ -281,14 +361,19 @@ export function tracePlanAllocations(context: TraceContext) {
         ));
     }
 
+    const inboundTrace = context.type === 'inbound' ? traceForInboundCode(context.inboundCode || context.code) : undefined;
     const matchedOrderAllocations = orderWarehouseAllocations.filter((allocation) => {
         if (context.type === 'order') {
             return allocation.orderCode === (context.orderCode || context.code)
                 && (!context.itemName || allocation.itemName === context.itemName);
         }
         if (context.type === 'inbound') {
-            return allocation.inboundCode === (context.inboundCode || context.code)
-                && (!context.itemName || allocation.itemName === context.itemName);
+            return inboundTrace
+                ? allocation.orderCode === inboundTrace.orderCode
+                    && allocation.planCode === inboundTrace.planCode
+                    && inboundTrace.demandCodes.includes(allocation.demandCode)
+                    && (!context.itemName || allocation.itemName === context.itemName)
+                : false;
         }
         return false;
     });
@@ -317,8 +402,13 @@ export function traceOrderAllocations(context: TraceContext) {
                 && (!context.itemName || allocation.itemName === context.itemName);
         }
         if (context.type === 'inbound') {
-            return allocation.inboundCode === (context.inboundCode || context.code)
-                && (!context.itemName || allocation.itemName === context.itemName);
+            const inboundTrace = traceForInboundCode(context.inboundCode || context.code);
+            return inboundTrace
+                ? allocation.orderCode === inboundTrace.orderCode
+                    && allocation.planCode === inboundTrace.planCode
+                    && inboundTrace.demandCodes.includes(allocation.demandCode)
+                    && (!context.itemName || allocation.itemName === context.itemName)
+                : false;
         }
         return false;
     });
@@ -482,6 +572,44 @@ export function traceRelationRows(context: TraceContext): TraceRelationRow[] {
             });
     }
 
+    const rowKeys = new Set(rows.map((row) => (
+        `${row.orderCode}__${row.inboundCode}__${row.itemName}__${row.allocatedQty}`
+    )));
+    const inboundRowsForFill = inboundRowsForTraceContext(context);
+
+    inboundRowsForFill.forEach((inbound) => {
+        const trace = inboundTraceForRow(inbound);
+        const order = orders.find((item) => item.jdOrder === inbound.from);
+        inbound.items
+            .filter((item) => !context.itemName || item.name === context.itemName)
+            .forEach((item) => {
+                const key = `${inbound.from}__${inbound.code}__${item.name}__${item.qty}`;
+                if (rowKeys.has(key)) {
+                    return;
+                }
+                rowKeys.add(key);
+
+                rows.push({
+                    demandCode: trace?.demandCodes.join('、') || '--',
+                    branch: '--',
+                    warehouse: order?.targetWarehouse || inbound.to,
+                    itemName: item.name,
+                    demandQty: 0,
+                    unit: item.unit,
+                    includedQty: 0,
+                    planCode: trace?.planCode || order?.plan || '',
+                    planQty: 0,
+                    orderCode: inbound.from,
+                    batch: order?.batch || '--',
+                    orderQty: order?.items.find((orderItem) => orderItem.name === item.name)?.qty || item.qty,
+                    allocatedQty: item.qty,
+                    inboundCode: inbound.code,
+                    inboundWarehouse: inbound.to,
+                    inboundStatus: inbound.status,
+                });
+            });
+    });
+
     return rows;
 }
 
@@ -503,7 +631,7 @@ export function traceSummary(rows: TraceRelationRow[]) {
         includedQty: sumUnique(rows, (row) => `${row.demandCode}__${row.planCode}__${row.itemName}`, (row) => row.includedQty),
         planQty: sumUnique(rows, (row) => `${row.demandCode}__${row.planCode}__${row.itemName}`, (row) => row.planQty),
         orderQty: sumUnique(rows, (row) => `${row.orderCode}__${row.itemName}`, (row) => row.orderQty),
-        inboundQty: rows.reduce((sum, row) => sum + row.allocatedQty, 0),
+        inboundQty: sumUnique(rows.filter((row) => row.inboundCode), (row) => `${row.inboundCode}__${row.itemName}`, (row) => row.allocatedQty),
     };
 }
 
@@ -683,7 +811,7 @@ function itemSupplier(name: string) {
     return equipmentItems.find((item) => item.name === name)?.supplier || '京东慧采';
 }
 
-function warehouseManager(name: string) {
+export function warehouseManager(name: string) {
     return warehouses.find((warehouse) => warehouse.name === name)?.manager || '李岩';
 }
 
@@ -784,6 +912,8 @@ export function createDraftOrdersForPlan(row: PlanRow, mode: GenerateOrderMode):
 }
 
 export function draftOrderToOrderRow(row: DraftPurchaseOrder, withInbound: boolean): OrderRow {
+    const inboundCode = inboundCodeForOrder(row.orderCode);
+
     return {
         jdOrder: row.orderCode,
         plan: row.planCode,
@@ -795,12 +925,12 @@ export function draftOrderToOrderRow(row: DraftPurchaseOrder, withInbound: boole
         allocationMethod: row.mode === 'by-warehouse' ? '按采购需求批量生成' : '按采购计划明细生成',
         match: '无需匹配',
         allocationStatus: '已分配',
-        status: withInbound ? '待入库' : '未生成入库单',
+        status: withInbound ? '待入库' : '未生成',
         targetWarehouse: row.targetWarehouse,
         orderNote: row.note,
         sourceType: '采购计划生成',
-        inboundCode: withInbound ? inboundCodeForOrder(row.orderCode) : undefined,
-        inboundStatus: withInbound ? '待入库' : '未生成入库单',
+        inboundCodes: withInbound ? [inboundCode] : [],
+        inboundStatus: withInbound ? '待入库' : '未生成',
         paymentRecords: [],
         invoiceRecords: [],
         items: row.lines.map((line) => ({
@@ -821,9 +951,196 @@ export function inboundCodeForOrder(orderCode: string) {
     return `RK${suffix}`;
 }
 
-export function draftOrderToInboundRow(row: DraftPurchaseOrder): FlowRow {
+export function orderInboundCodes(row: OrderRow, rows: FlowRow[] = inboundRows) {
+    return uniqueValues([
+        ...row.inboundCodes,
+        ...rows.filter((item) => item.from === row.jdOrder).map((item) => item.code),
+        ...inboundTraces.filter((trace) => trace.orderCode === row.jdOrder).map((trace) => trace.inboundCode),
+    ]);
+}
+
+export function inboundRowsForOrder(row: OrderRow, rows: FlowRow[] = inboundRows) {
+    const codes = orderInboundCodes(row, rows);
+    return rows.filter((item) => codes.includes(item.code) || item.from === row.jdOrder);
+}
+
+export function orderInboundLineSummaries(row: OrderRow, rows: FlowRow[] = inboundRows): OrderInboundLineSummary[] {
+    const relatedRows = inboundRowsForOrder(row, rows);
+    return row.items.map((item, index) => {
+        const generatedQty = relatedRows.reduce((sum, inbound) => (
+            sum + inbound.items
+                .filter((inboundItem) => inboundItem.name === item.name)
+                .reduce((itemSum, inboundItem) => itemSum + inboundItem.qty, 0)
+        ), 0);
+        const cappedGeneratedQty = Math.min(item.qty, generatedQty);
+        return {
+            id: `${row.jdOrder}-line-${index}-${item.name}`,
+            name: item.name,
+            unit: item.unit,
+            orderQty: item.qty,
+            generatedQty: cappedGeneratedQty,
+            remainingQty: Math.max(item.qty - cappedGeneratedQty, 0),
+            unitPrice: item.qty ? item.amount / item.qty : 0,
+        };
+    });
+}
+
+export function orderLineGeneratedQty(row: OrderRow, itemName: string, rows: FlowRow[] = inboundRows) {
+    return orderInboundLineSummaries(row, rows)
+        .find((item) => item.name === itemName)?.generatedQty || 0;
+}
+
+export function orderInboundSummary(row: OrderRow, rows: FlowRow[] = inboundRows) {
+    const relatedRows = inboundRowsForOrder(row, rows);
+    const orderQty = lineQty(row.items);
+    const generatedQty = row.items.reduce((sum, item) => sum + Math.min(item.qty, orderLineGeneratedQty(row, item.name, rows)), 0);
+    const remainingQty = Math.max(orderQty - generatedQty, 0);
+    const statuses = relatedRows.map((item) => item.status);
+    const status = !relatedRows.length
+        ? '未生成'
+        : statuses.every((item) => item === '已入库')
+            ? '已入库'
+            : relatedRows.length > 1 && statuses.some((item) => item === '已入库')
+                ? '部分入库'
+                : '待入库';
+
     return {
-        code: inboundCodeForOrder(row.orderCode),
+        rows: relatedRows,
+        codes: orderInboundCodes(row, rows),
+        count: relatedRows.length,
+        orderQty,
+        generatedQty,
+        remainingQty,
+        status,
+    };
+}
+
+export function canDeleteOrder(row: OrderRow, rows: FlowRow[] = inboundRows) {
+    const finance = orderFinanceSummary(row);
+    const inboundSummary = orderInboundSummary(row, rows);
+
+    return inboundSummary.count === 0
+        && finance.paymentTotal <= 0
+        && finance.invoiceTotal <= 0;
+}
+
+export function nextInboundDocumentCode(existingCodes: string[], offset = 0, date = new Date()) {
+    const datePart = localDatePart(date);
+    const pattern = new RegExp(`^RK${datePart}(\\d{4})$`);
+    const currentMax = existingCodes.reduce((max, code) => {
+        const match = code.match(pattern);
+        return match ? Math.max(max, Number(match[1])) : max;
+    }, 0);
+
+    return `RK${datePart}${String(currentMax + offset + 1).padStart(4, '0')}`;
+}
+
+export function createDraftInboundLines(row: OrderRow, rows: FlowRow[] = inboundRows): DraftInboundLine[] {
+    return orderInboundLineSummaries(row, rows).map((line) => ({
+        ...line,
+        inboundQty: line.remainingQty,
+    }));
+}
+
+export function createDraftInboundsForOrder(
+    row: OrderRow,
+    rows: FlowRow[] = inboundRows,
+    existingCodes: string[] = inboundRows.map((item) => item.code),
+    date = new Date(),
+): DraftInboundOrder[] {
+    const warehouse = row.targetWarehouse || '集团总仓';
+
+    return [{
+        id: `${row.jdOrder}-inbound-1`,
+        inboundCode: nextInboundDocumentCode(existingCodes, 0, date),
+        orderCode: row.jdOrder,
+        planCode: row.plan,
+        warehouse,
+        handler: warehouseManager(warehouse),
+        note: '按当前剩余数量生成入库单。',
+        lines: createDraftInboundLines(row, rows),
+    }];
+}
+
+export function draftInboundQty(row: DraftInboundOrder) {
+    return row.lines.reduce((sum, line) => sum + line.inboundQty, 0);
+}
+
+export function draftInboundAmount(row: DraftInboundOrder) {
+    return row.lines.reduce((sum, line) => sum + line.inboundQty * line.unitPrice, 0);
+}
+
+export function validateDraftInbounds(drafts: DraftInboundOrder[]): DraftInboundValidationResult {
+    const emptyDrafts = drafts.filter((draft) => draftInboundQty(draft) <= 0);
+    const invalidLines = drafts.flatMap((draft) => (
+        draft.lines.filter((line) => line.inboundQty < 0 || !Number.isInteger(line.inboundQty))
+    ));
+    const overLimitLines = drafts.flatMap((draft) => (
+        draft.lines.filter((line) => {
+            const lineTotal = drafts.reduce((sum, item) => {
+                const match = item.lines.find((draftLine) => draftLine.name === line.name);
+                return sum + (match?.inboundQty || 0);
+            }, 0);
+
+            return lineTotal > line.remainingQty;
+        })
+    ));
+
+    return {
+        emptyDrafts,
+        invalidLines,
+        overLimitLines,
+        canSubmit: drafts.length > 0 && emptyDrafts.length === 0 && invalidLines.length === 0 && overLimitLines.length === 0,
+    };
+}
+
+export function draftInboundToFlowRow(row: DraftInboundOrder): FlowRow {
+    return {
+        code: row.inboundCode,
+        from: row.orderCode,
+        to: row.warehouse,
+        handler: row.handler,
+        status: '待入库',
+        items: row.lines
+            .filter((line) => line.inboundQty > 0)
+            .map((line) => ({
+                name: line.name,
+                qty: line.inboundQty,
+                unit: line.unit,
+                amount: Math.round(line.inboundQty * line.unitPrice * 100) / 100,
+            })),
+    };
+}
+
+export function draftInboundToTrace(row: DraftInboundOrder, sourceOrder: OrderRow): InboundTrace {
+    const demandCodes = uniqueValues(orderAllocations(sourceOrder)
+        .filter((allocation) => row.lines.some((line) => line.name === allocation.itemName && line.inboundQty > 0))
+        .map((allocation) => allocation.demandCode));
+
+    return {
+        inboundCode: row.inboundCode,
+        orderCode: row.orderCode,
+        planCode: row.planCode,
+        demandCodes: demandCodes.length ? demandCodes : ['--'],
+    };
+}
+
+export function updateOrderWithInboundSummary(row: OrderRow, generatedInbounds: FlowRow[], allInboundRows: FlowRow[] = inboundRows): OrderRow {
+    const inboundCodes = uniqueValues([...orderInboundCodes(row, allInboundRows), ...generatedInbounds.map((item) => item.code)]);
+    const summary = orderInboundSummary({ ...row, inboundCodes }, [...generatedInbounds, ...allInboundRows]);
+
+    return {
+        ...row,
+        status: summary.status,
+        allocationStatus: summary.count ? '已分配' : row.allocationStatus,
+        inboundCodes,
+        inboundStatus: summary.status,
+    };
+}
+
+export function draftOrderToInboundRow(row: DraftPurchaseOrder, existingCodes: string[] = inboundRows.map((item) => item.code), offset = 0): FlowRow {
+    return {
+        code: nextInboundDocumentCode(existingCodes, offset),
         from: row.orderCode,
         to: row.targetWarehouse,
         handler: warehouseManager(row.targetWarehouse),
@@ -850,7 +1167,7 @@ export function draftOrderToAllocations(row: DraftPurchaseOrder, inbound?: FlowR
         allocatedQty: inbound ? line.orderQty : 0,
         manualAdjustQty: 0,
         inboundCode: inbound?.code || '',
-        inboundStatus: inbound?.status || '未生成入库单',
+        inboundStatus: inbound?.status || '未生成',
     }));
 }
 
@@ -865,9 +1182,10 @@ export function draftOrderToInboundTrace(row: DraftPurchaseOrder, inbound: FlowR
 
 export function createInboundFromOrder(row: OrderRow): FlowRow {
     const warehouse = row.targetWarehouse || '集团总仓';
+    const nextCode = row.inboundCodes[0] || nextInboundDocumentCode(inboundRows.map((item) => item.code));
 
     return {
-        code: row.inboundCode || inboundCodeForOrder(row.jdOrder),
+        code: nextCode,
         from: row.jdOrder,
         to: warehouse,
         handler: warehouseManager(warehouse),
@@ -945,6 +1263,7 @@ export function upsertRuntimePurchaseData(
             && item.planCode === row.planCode
             && item.demandCode === row.demandCode
             && item.itemName === row.itemName
+            && item.inboundCode === row.inboundCode
         ));
         if (existing) {
             Object.assign(existing, row);
@@ -961,4 +1280,11 @@ export function upsertRuntimePurchaseData(
             inboundTraces.push(row);
         }
     });
+}
+
+export function removeRuntimePurchaseOrder(orderCode: string) {
+    const index = orders.findIndex((row) => row.jdOrder === orderCode);
+    if (index >= 0) {
+        orders.splice(index, 1);
+    }
 }

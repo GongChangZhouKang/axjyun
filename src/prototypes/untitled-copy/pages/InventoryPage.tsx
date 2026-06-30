@@ -70,19 +70,6 @@ export function InventoryPage({
                     >
                         生成低库存采购需求
                     </button>
-                    <button type="button" className="primary-btn" onClick={() => openWindow({
-                        title: '新增库存调整',
-                        subtitle: '用于库存盘点确认、历史修正或异常处理后的库存调整。',
-                        primary: '提交调整',
-                        body: (
-                            <div className="modal-form embedded-form">
-                                <SelectLike label="调整仓库" value="集团总仓" options={['集团总仓', '历下分公司仓', '高新区分公司仓', 'CBD园区项目点']} />
-                                <SelectLike label="调整类型" value="盘盈入库" options={['盘盈入库', '盘亏出库', '历史修正', '异常冻结']} />
-                                <Field label="装备明细" value="选择装备和调整数量" wide />
-                                <Field label="调整原因" value="请输入调整原因" wide />
-                            </div>
-                        ),
-                    })}>新增库存调整</button>
                     <button type="button" className="secondary-btn" onClick={() => openWindow({
                         title: '导出库存台账',
                         subtitle: '导出库存数量、预警库存、库存单价和库存金额。',

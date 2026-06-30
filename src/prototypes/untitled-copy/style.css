@@ -1003,6 +1003,120 @@ tbody tr.tree-row-root:nth-child(even) td {
   cursor: not-allowed;
 }
 
+.purchase-order-actions {
+  position: relative;
+}
+
+.row-actions-more-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.row-actions-more-trigger.is-open {
+  color: #0f73dc;
+}
+
+.row-actions-more-arrow {
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+}
+
+.row-actions-menu {
+  position: absolute;
+  right: -8px;
+  top: calc(100% + 8px);
+  z-index: 20;
+  width: 156px;
+  padding: 6px;
+  border: 1px solid rgba(212, 219, 230, 0.9);
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(31, 45, 68, 0.16), 0 2px 8px rgba(31, 45, 68, 0.08);
+  display: grid;
+  gap: 2px;
+}
+
+.row-actions-menu.is-floating {
+  position: fixed;
+  right: auto;
+  z-index: 1000;
+}
+
+.row-actions-menu-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  border: 0;
+  background: transparent;
+  cursor: default;
+}
+
+.row-actions-menu button {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  min-height: 36px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: #263650;
+  text-align: left;
+  white-space: nowrap;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 140ms ease, color 140ms ease;
+}
+
+.row-actions-menu button svg {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+  color: #7a8799;
+}
+
+.row-actions-menu button:hover:not(:disabled) {
+  background: #edf6ff;
+  color: #0f73dc;
+}
+
+.row-actions-menu button:hover:not(:disabled) svg {
+  color: currentColor;
+}
+
+.row-actions-menu button:focus-visible {
+  outline: 2px solid rgba(22, 135, 255, 0.32);
+  outline-offset: -2px;
+}
+
+.row-actions-menu button:disabled {
+  color: #a6b0bf;
+  cursor: not-allowed;
+}
+
+.row-actions-menu button:disabled svg {
+  color: #bac2ce;
+}
+
+.row-actions-menu button.danger-link {
+  margin-top: 4px;
+  border-top: 1px solid #edf0f4;
+  border-radius: 0 0 7px 7px;
+  color: #e0342f;
+}
+
+.row-actions-menu button.danger-link:not(:disabled):hover {
+  background: #fff1f0;
+  color: #cf2e29;
+}
+
 .tag {
   display: inline-flex;
   align-items: center;
@@ -1584,9 +1698,17 @@ tbody tr.tree-row-root:nth-child(even) td {
   width: min(1180px, calc(100vw - 80px));
 }
 
+.trace-relation-window {
+  width: min(1320px, calc(100vw - 64px));
+}
+
 .business-body {
   padding: 20px 24px;
   overflow-y: auto;
+}
+
+.trace-relation-window .business-body {
+  min-height: 460px;
 }
 
 .detail-stack {
@@ -2227,6 +2349,8 @@ tbody tr.tree-row-root:nth-child(even) td {
 
 .trace-relation-view {
   min-width: 1120px;
+  min-height: 420px;
+  align-content: start;
 }
 
 .trace-tabs {
@@ -2283,8 +2407,25 @@ tbody tr.tree-row-root:nth-child(even) td {
   font: inherit;
 }
 
+.qty-input.is-error {
+  border-color: #e05a4f;
+  background: #fff4f3;
+  color: #ba2d24;
+}
+
 .price-input {
   width: 96px;
+}
+
+.inbound-progress-cell {
+  display: inline-grid;
+  gap: 4px;
+  min-width: 116px;
+}
+
+.inbound-progress-cell > span:last-child {
+  color: #718096;
+  font-size: 12px;
 }
 
 .purchase-order-generate-page .detail-grid {
@@ -2328,6 +2469,11 @@ tbody tr.tree-row-root:nth-child(even) td {
 }
 
 .draft-order-list {
+  display: grid;
+  gap: 16px;
+}
+
+.draft-inbound-list {
   display: grid;
   gap: 16px;
 }
@@ -2386,6 +2532,31 @@ tbody tr.tree-row-root:nth-child(even) td {
   padding: 16px 18px;
 }
 
+.draft-inbound-card .create-detail-table {
+  min-width: 1060px;
+}
+
+.line-error {
+  color: #c5352a;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.draft-inbound-warning,
+.draft-inbound-hint {
+  margin: 12px 18px 0;
+  padding: 10px 12px;
+  border-radius: 4px;
+  color: #805900;
+  background: #fff8e6;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.draft-inbound-hint {
+  margin: 12px 0 0;
+}
+
 .draft-note-field textarea {
   min-height: 48px;
 }
@@ -2410,6 +2581,22 @@ tbody tr.tree-row-root:nth-child(even) td {
   align-items: center;
 }
 
+.inbound-generate-actions {
+  align-items: center;
+}
+
+.inbound-generate-summary {
+  display: grid;
+  gap: 3px;
+  margin-right: auto;
+  color: #263650;
+}
+
+.inbound-generate-summary span {
+  color: #718096;
+  font-size: 12px;
+}
+
 .create-page-actions {
   display: flex;
   justify-content: flex-end;
@@ -2421,7 +2608,44 @@ tbody tr.tree-row-root:nth-child(even) td {
 }
 
 .purchase-order-panel table {
-  min-width: 1740px;
+  min-width: 1420px;
+}
+
+.purchase-order-panel th,
+.purchase-order-panel td {
+  white-space: nowrap;
+}
+
+.purchase-order-panel th:nth-child(10),
+.purchase-order-panel td:nth-child(10),
+.purchase-order-panel th:nth-child(13),
+.purchase-order-panel td:nth-child(13) {
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.purchase-order-panel th:last-child,
+.purchase-order-panel td:last-child {
+  position: sticky;
+  right: 0;
+  z-index: 2;
+  min-width: 220px;
+  background: #ffffff;
+  box-shadow: -10px 0 14px rgba(248, 250, 252, 0.9);
+}
+
+.purchase-order-panel th:last-child {
+  z-index: 3;
+  background: #f2f4f8;
+}
+
+.purchase-order-panel tbody tr:nth-child(even) td:last-child {
+  background: #fbfcff;
+}
+
+.purchase-order-panel tbody tr:hover td:last-child {
+  background: #f8fbff;
 }
 
 .finance-registration-modal form {

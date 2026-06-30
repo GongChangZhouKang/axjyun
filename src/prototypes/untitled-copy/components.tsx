@@ -48,6 +48,7 @@ import {
     numberText,
     lineQty,
     lineAmount,
+    itemSummary,
     orderFinanceSummary,
     demandWarehouse,
     demandItemAllocationSummary,
@@ -58,8 +59,10 @@ import {
     relatedOrdersForPlan,
     orderAllocations,
     displayPlanOrderGenerationStatus,
-    demandItemInboundAllocations,
+    demandItemGeneratedInboundSummary,
     inboundTraceForRow,
+    inboundRowsForOrder,
+    orderInboundSummary,
     contextTitle,
     traceRelationRows,
     stockDiff,
@@ -578,7 +581,7 @@ export function TraceRelationView({ context, actions }: { context: TraceContext;
     const rows = traceRelationRows(context);
     const demandRows = uniqueTraceRows(rows.filter((row) => row.demandCode && row.demandCode !== '--'), (row) => `${row.demandCode}__${row.itemName}`);
     const planRows = uniqueTraceRows(rows.filter((row) => row.planCode), (row) => `${row.planCode}__${row.demandCode}__${row.itemName}`);
-    const orderRows = uniqueTraceRows(rows.filter((row) => row.orderCode), (row) => `${row.orderCode}__${row.planCode}__${row.itemName}`);
+    const orderRows = uniqueTraceRows(rows.filter((row) => row.orderCode), (row) => row.orderCode);
     const inboundRowsForTrace = uniqueTraceRows(rows.filter((row) => row.inboundCode), (row) => `${row.inboundCode}__${row.orderCode}__${row.itemName}`);
 
     function openDemand(row: DemandRow | undefined) {
@@ -706,46 +709,49 @@ export function TraceRelationView({ context, actions }: { context: TraceContext;
                     <table className="mini-table relation-table trace-tab-table">
                         <thead>
                             <tr>
-                                <th>订单号</th>
+                                <th>采购订单号</th>
                                 <th>关联计划</th>
-                                <th>需求单号</th>
-                                <th>需求仓库</th>
-                                <th>批次</th>
-                                <th>供应商</th>
-                                <th>装备</th>
-                                <th>订单数量</th>
+                                <th>目标仓库</th>
+                                <th>数量合计</th>
                                 <th>订单金额</th>
-                                <th>分配状态</th>
-                                <th>入库状态</th>
+                                <th>付款状态</th>
+                                <th>发票状态</th>
+                                <th>入库单状态</th>
+                                <th>入库数量</th>
+                                <th>供应商</th>
+                                <th>创建时间</th>
+                                <th>明细数</th>
+                                <th>装备摘要</th>
                                 <th>查看</th>
                             </tr>
                         </thead>
                         <tbody>
                             {orderRows.length ? orderRows.map((row) => {
                                 const order = orders.find((item) => item.jdOrder === row.orderCode);
-                                const orderItem = order?.items.find((item) => item.name === row.itemName);
-                                const demand = demandByCode(row.demandCode);
-                                const sourceWarehouse = demand ? demandWarehouse(demand) : row.warehouse || '--';
+                                const finance = order ? orderFinanceSummary(order) : undefined;
+                                const inboundSummary = order ? orderInboundSummary(order) : undefined;
 
                                 return (
-                                    <tr key={`order-${row.orderCode}-${row.planCode}-${row.demandCode}-${row.itemName}`}>
+                                    <tr key={`order-${row.orderCode}`}>
                                         <td className="link-cell"><button type="button" className="table-link" onClick={() => openOrder(order)}>{row.orderCode}</button></td>
                                         <td>{order?.plan || row.planCode}</td>
-                                        <td>{row.demandCode || '--'}</td>
-                                        <td>{sourceWarehouse}</td>
-                                        <td>{order?.batch || row.batch}</td>
+                                        <td>{order?.targetWarehouse || row.inboundWarehouse || row.warehouse || '--'}</td>
+                                        <td>{order ? numberText(lineQty(order.items)) : numberText(row.orderQty)}</td>
+                                        <td>{finance ? currency(finance.orderAmount) : '--'}</td>
+                                        <td>{finance ? <StatusTag value={finance.paymentStatus} /> : '--'}</td>
+                                        <td>{finance ? <StatusTag value={finance.invoiceStatus} /> : '--'}</td>
+                                        <td>{inboundSummary ? <StatusTag value={inboundSummary.status} /> : '--'}</td>
+                                        <td>{inboundSummary ? `${numberText(inboundSummary.generatedQty)} / ${numberText(inboundSummary.orderQty)}` : '--'}</td>
                                         <td>{order?.supplier || '--'}</td>
-                                        <td><button type="button" className="table-link" onClick={() => openOrder(order)}>{row.itemName}</button></td>
-                                        <td>{numberText(row.orderQty)} {row.unit}</td>
-                                        <td>{orderItem ? currency(orderItem.amount) : '--'}</td>
-                                        <td>{order ? <StatusTag value={order.allocationStatus} /> : '--'}</td>
-                                        <td>{order ? <StatusTag value={order.status} /> : '--'}</td>
+                                        <td>{order?.createdAt || order?.importedAt || '--'}</td>
+                                        <td>{order ? `${order.items.length} 行` : '1 行'}</td>
+                                        <td>{order ? itemSummary(order.items) : row.itemName}</td>
                                         <td><button type="button" className="table-link" onClick={() => openOrder(order)}>查看</button></td>
                                     </tr>
                                 );
                             }) : (
                                 <tr>
-                                    <td colSpan={12}>暂无关联采购订单</td>
+                                    <td colSpan={14}>暂无关联采购订单</td>
                                 </tr>
                             )}
                         </tbody>
@@ -799,6 +805,7 @@ export function traceRelationWindow(context: TraceContext, actions: TraceRelatio
     return {
         title: contextTitle(context),
         subtitle: '按明细数量串联采购需求、采购计划、采购订单和入库单，便于核对前后关系和状态。',
+        className: 'trace-relation-window',
         body: <TraceRelationView context={context} actions={actions} />,
     };
 }
@@ -834,36 +841,24 @@ export function DemandLineAllocationCell({
 }
 
 export function DemandLineInboundCell({ demandCode, itemName }: { demandCode: string; itemName: string }) {
-    const rows = demandItemInboundAllocations(demandCode, itemName);
-    const totalQty = rows.reduce((sum, row) => sum + row.allocatedQty, 0);
-    const inboundCount = new Set(rows.map((row) => row.inboundCode)).size;
+    const summary = demandItemGeneratedInboundSummary(demandCode, itemName);
 
-    if (!rows.length) {
+    if (!summary.count) {
         return <span className="muted-text">暂无</span>;
     }
 
     return (
-        <span>{numberText(totalQty)} / {inboundCount}单</span>
+        <span>{numberText(summary.generatedQty)} / {summary.count}单</span>
     );
 }
 
 function demandLineOrderQty(demandCode: string, itemName: string) {
-    return demandItemInboundAllocations(demandCode, itemName)
-        .reduce((sum, allocation) => sum + allocation.orderQty, 0);
+    return traceRelationRows({ type: 'demand-line', code: demandCode, itemName })
+        .reduce((sum, row) => sum + row.orderQty, 0);
 }
 
 function demandLineInboundQty(demandCode: string, itemName: string) {
-    const inboundCodes = new Set(demandItemInboundAllocations(demandCode, itemName).map((allocation) => allocation.inboundCode));
-
-    return inboundRows
-        .filter((row) => inboundCodes.has(row.code) && row.status !== '待入库')
-        .reduce((sum, row) => {
-            const itemQty = row.items
-                .filter((item) => item.name === itemName)
-                .reduce((itemSum, item) => itemSum + item.qty, 0);
-
-            return sum + itemQty;
-        }, 0);
+    return demandItemGeneratedInboundSummary(demandCode, itemName).actualInboundQty;
 }
 
 function orderDemandSourceText(row: OrderRow) {
@@ -900,26 +895,31 @@ export function PlanOrderRelationTable({
 
     return (
         <CreateDetailTable
-            columns={['采购订单号', '需求来源', '目标仓库', '供应商', '订单数量', '订单金额', '入库单状态', '操作']}
+            columns={['采购订单号', '需求来源', '目标仓库', '供应商', '订单数量', '订单金额', '入库单状态', '入库数量', '操作']}
             rows={rows}
             emptyText="暂无关联采购订单"
-            renderRow={(order: OrderRow) => (
-                <tr key={order.jdOrder}>
-                    <td className="link-cell">{order.jdOrder}</td>
-                    <td>{orderDemandSourceText(order)}</td>
-                    <td>{order.targetWarehouse || '--'}</td>
-                    <td>{order.supplier.replace('京东慧采-', '')}</td>
-                    <td>{numberText(lineQty(order.items))}</td>
-                    <td>{currency(lineAmount(order.items))}</td>
-                    <td><StatusTag value={order.inboundStatus || order.status} /></td>
-                    <td>
-                        <div className="inline-action-group">
-                            <button type="button" className="table-link" onClick={() => openOrderDetail?.(order)}>查看订单</button>
-                            <TraceRelationAction context={{ type: 'order', code: order.jdOrder, orderCode: order.jdOrder }} onOpenTrace={onOpenTrace} />
-                        </div>
-                    </td>
-                </tr>
-            )}
+            renderRow={(order: OrderRow) => {
+                const inboundSummary = orderInboundSummary(order);
+
+                return (
+                    <tr key={order.jdOrder}>
+                        <td className="link-cell">{order.jdOrder}</td>
+                        <td>{orderDemandSourceText(order)}</td>
+                        <td>{order.targetWarehouse || '--'}</td>
+                        <td>{order.supplier.replace('京东慧采-', '')}</td>
+                        <td>{numberText(lineQty(order.items))}</td>
+                        <td>{currency(lineAmount(order.items))}</td>
+                        <td><StatusTag value={inboundSummary.status} /></td>
+                        <td>{numberText(inboundSummary.generatedQty)} / {numberText(inboundSummary.orderQty)}</td>
+                        <td>
+                            <div className="inline-action-group">
+                                <button type="button" className="table-link" onClick={() => openOrderDetail?.(order)}>查看订单</button>
+                                <TraceRelationAction context={{ type: 'order', code: order.jdOrder, orderCode: order.jdOrder }} onOpenTrace={onOpenTrace} />
+                            </div>
+                        </td>
+                    </tr>
+                );
+            }}
         />
     );
 }
@@ -950,6 +950,21 @@ function OrderSourceRelationTable({
                     const warehouse = demand ? demandWarehouse(demand) : allocation.warehouse;
                     const orderItem = row.items.find((item) => item.name === allocation.itemName);
                     const unitPrice = orderItem && orderItem.qty ? orderItem.amount / orderItem.qty : 0;
+                    const relatedInbounds = inboundRowsForOrder(row)
+                        .filter((inbound) => inbound.items.some((item) => item.name === allocation.itemName));
+                    const itemInboundQty = relatedInbounds.reduce((sum, inbound) => (
+                        sum + inbound.items
+                            .filter((item) => item.name === allocation.itemName)
+                            .reduce((itemSum, item) => itemSum + item.qty, 0)
+                    ), 0);
+                    const relatedStatuses = relatedInbounds.map((inbound) => inbound.status);
+                    const itemInboundStatus = !relatedInbounds.length || itemInboundQty <= 0
+                        ? '未生成'
+                        : relatedStatuses.every((status) => status === '已入库')
+                            ? '已入库'
+                            : relatedInbounds.length > 1 && relatedStatuses.some((status) => status === '已入库')
+                                ? '部分入库'
+                                : '待入库';
                     const traceContext: TraceContext = allocation.demandCode && allocation.demandCode !== '--'
                         ? { type: 'demand-line', code: allocation.demandCode, itemName: allocation.itemName }
                         : { type: 'order', code: row.jdOrder, orderCode: row.jdOrder, itemName: allocation.itemName };
@@ -968,12 +983,51 @@ function OrderSourceRelationTable({
                             <td>{numberText(allocation.includedQty)}</td>
                             <td>{numberText(allocation.orderQty)}</td>
                             <td>{unitPrice ? currency(allocation.orderQty * unitPrice) : '--'}</td>
-                            <td>{allocation.inboundCode || row.inboundCode || '--'}</td>
-                            <td><StatusTag value={allocation.inboundStatus || row.inboundStatus || row.status} /></td>
+                            <td>{relatedInbounds.length ? `${relatedInbounds.length}单 / ${numberText(itemInboundQty)}` : '--'}</td>
+                            <td><StatusTag value={itemInboundStatus} /></td>
                             <td><TraceRelationAction context={traceContext} onOpenTrace={options?.openTraceRelation} /></td>
                         </tr>
                     );
                 }}
+            />
+        </CreateSection>
+    );
+}
+
+function OrderInboundRelationTable({
+    row,
+    options,
+}: {
+    row: OrderRow;
+    options?: OrderDetailActions;
+}) {
+    const rows = inboundRowsForOrder(row);
+
+    return (
+        <CreateSection title="关联入库单" subtitle="同一采购订单可按到货批次生成多张入库单，按单追踪入库数量、成本和状态">
+            <CreateDetailTable
+                columns={['入库单号', '入库仓库', '明细数', '装备摘要', '入库数量', '入库成本', '经办人', '状态', '操作']}
+                rows={rows}
+                emptyText="暂无关联入库单"
+                renderRow={(inbound: FlowRow) => (
+                    <tr key={inbound.code}>
+                        <td className="link-cell">{inbound.code}</td>
+                        <td>{inbound.to}</td>
+                        <td>{inbound.items.length} 项</td>
+                        <td>{itemSummary(inbound.items)}</td>
+                        <td>{numberText(lineQty(inbound.items))}</td>
+                        <td>{currency(lineAmount(inbound.items))}</td>
+                        <td>{inbound.handler}</td>
+                        <td><StatusTag value={inbound.status} /></td>
+                        <td>
+                            <div className="inline-action-group">
+                                <button type="button" className="table-link" onClick={() => options?.openTraceRelation?.({ type: 'inbound', code: inbound.code, inboundCode: inbound.code })}>
+                                    链路追踪
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                )}
             />
         </CreateSection>
     );
@@ -1070,7 +1124,7 @@ function OrderDetailContent({ row, options }: { row: OrderRow; options?: OrderDe
     const [financeTab, setFinanceTab] = useState<OrderFinanceTab>('payment');
     const plan = planByCode(row.plan);
     const finance = orderFinanceSummary(row);
-    const inboundStatus = row.inboundStatus || row.status;
+    const inboundSummary = orderInboundSummary(row);
 
     return (
         <div className="order-detail-content">
@@ -1093,8 +1147,8 @@ function OrderDetailContent({ row, options }: { row: OrderRow; options?: OrderDe
                 />
                 <OrderDetailMetric
                     label="入库状态"
-                    value={<StatusTag value={inboundStatus} />}
-                    helper={row.inboundCode || '暂未关联入库单'}
+                    value={<StatusTag value={inboundSummary.status} />}
+                    helper={inboundSummary.count ? `${inboundSummary.count} 单 · ${numberText(inboundSummary.generatedQty)}/${numberText(inboundSummary.orderQty)} 件` : '暂未关联入库单'}
                 />
             </div>
 
@@ -1134,7 +1188,7 @@ function OrderDetailContent({ row, options }: { row: OrderRow; options?: OrderDe
                     <div className="order-detail-tab-panel">
                         <div className="order-detail-secondary-info">
                             <div className="is-wide"><span>来源方式</span><strong>{[row.sourceType || '采购计划生成', row.purchaseMethod, row.allocationMethod].filter(Boolean).join(' / ')}</strong></div>
-                            <div><span>关联入库单</span><strong>{row.inboundCode || '--'}</strong></div>
+                            <div><span>关联入库单</span><strong>{inboundSummary.codes.length ? inboundSummary.codes.join('、') : '--'}</strong></div>
                             <div><span>关联计划</span><strong>{row.plan}</strong></div>
                             <div className="is-wide"><span>订单说明</span><strong>{row.orderNote || '--'}</strong></div>
                         </div>
@@ -1142,6 +1196,7 @@ function OrderDetailContent({ row, options }: { row: OrderRow; options?: OrderDe
                             <h3>装备明细</h3>
                             <OrderItemDetailTable items={row.items} />
                         </section>
+                        <OrderInboundRelationTable row={row} options={options} />
                     </div>
                 )}
 
@@ -1266,8 +1321,8 @@ export function inboundDetailWindow(
 }
 
 export const orderImportAllocationPreview = [
-    { warehouse: '章丘分公司仓', demandCode: 'XQ202606160006', itemName: '执勤帽', demandQty: 290, allocatedQty: 0, orderQty: 500, autoQty: 296, manualQty: 296, diff: 6, inboundCode: 'RK20260620001' },
-    { warehouse: '高新区分公司仓', demandCode: 'XQ202606160002', itemName: '执勤帽', demandQty: 200, allocatedQty: 0, orderQty: 500, autoQty: 204, manualQty: 204, diff: 4, inboundCode: 'RK20260620002' },
+    { warehouse: '章丘分公司仓', demandCode: 'XQ202606160006', itemName: '执勤帽', demandQty: 290, allocatedQty: 0, orderQty: 500, autoQty: 296, manualQty: 296, diff: 6, inboundCode: 'RK202606200001' },
+    { warehouse: '高新区分公司仓', demandCode: 'XQ202606160002', itemName: '执勤帽', demandQty: 200, allocatedQty: 0, orderQty: 500, autoQty: 204, manualQty: 204, diff: 4, inboundCode: 'RK202606200002' },
 ];
 
 export function OrderImportPreview() {

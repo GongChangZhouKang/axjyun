@@ -23,9 +23,17 @@ import {
     SelectLike,
     DataTable,
     SectionTitle,
+    DetailGrid,
+    OpenBusinessWindow,
 } from '../shared';
 
-export function Dashboard({ openPage }: { openPage: (page: PageId) => void }) {
+export function Dashboard({
+    openPage,
+    openWindow,
+}: {
+    openPage: (page: PageId) => void;
+    openWindow: OpenBusinessWindow;
+}) {
     const totalInventory = inventory.reduce((sum, row) => sum + row.amount, 0);
     const totalCost = costs.reduce((sum, row) => sum + row.monthCost, 0);
     const pendingPlan = plans.filter((row) => row.status !== '入库中').length;
@@ -66,6 +74,14 @@ export function Dashboard({ openPage }: { openPage: (page: PageId) => void }) {
             <div className="content-grid">
                 <section className="panel">
                     <SectionTitle title="待处理采购计划" subtitle="集团采购关注预算价格、订单价格和计划差异" />
+                    <div className="table-toolbar">
+                        <button type="button" className="secondary-btn" onClick={() => openWindow({
+                            title: '导出待处理采购计划',
+                            subtitle: '导出首页当前待处理采购计划及预算/订单差异。',
+                            primary: '确认导出',
+                            body: <DetailGrid rows={[['导出范围', '当前组织、仓库和月份筛选条件'], ['包含字段', '计划单号、采购模式、需求来源、明细数、装备摘要、预算金额、订单金额、差异、状态'], ['用途', '待办跟进、采购复核和管理汇报']]} />,
+                        })}>导出</button>
+                    </div>
                     <DataTable
                         columns={['计划单号', '模式', '来源', '明细数', '装备摘要', '预算金额', '订单金额', '差异', '状态']}
                         rows={plans}

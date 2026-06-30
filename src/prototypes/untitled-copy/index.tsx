@@ -9,6 +9,12 @@ import {
     ShieldCheck,
     X,
 } from 'lucide-react';
+import {
+    AnnotationViewer,
+    type AnnotationDirectoryRouteNode,
+    type AnnotationSourceDocument,
+    type AnnotationViewerOptions,
+} from '@axhub/annotation';
 import { useHashPage } from '../../common/useHashPage';
 import {
     PageId,
@@ -28,10 +34,8 @@ import {
     plans,
     orders as initialOrders,
     inboundRows as initialInboundRows,
-    createInboundFromOrder,
-    orderToInboundAllocations,
-    orderToInboundTrace,
     upsertRuntimePurchaseData,
+    removeRuntimePurchaseOrder,
     BusinessWindowState,
     BusinessWindow,
 } from './shared';
@@ -39,6 +43,10 @@ import { PageContent } from './pages/PageContent';
 import {
     GeneratedOrderPayload,
 } from './pages/purchase/PurchaseOrderGeneratePage';
+import {
+    GeneratedInboundPayload,
+} from './pages/purchase/PurchaseInboundGeneratePage';
+import annotationSourceDocument from './annotation-source.json';
 import './style.css';
 
 export default function EquipmentManagementPrototype() {
@@ -48,6 +56,7 @@ export default function EquipmentManagementPrototype() {
     const [purchaseTab, setPurchaseTab] = useState<PurchaseTab>('demand');
     const [selectedDemand, setSelectedDemand] = useState<DemandRow>(demands[0]);
     const [selectedPlan, setSelectedPlan] = useState<PlanRow>(plans[0]);
+    const [selectedOrder, setSelectedOrder] = useState<OrderRow>(initialOrders[0]);
     const [purchaseDemandDraft, setPurchaseDemandDraft] = useState<{ warehouse: string; lines: PurchaseDemandLine[] } | null>(null);
     const [orderRows, setOrderRows] = useState<OrderRow[]>(() => [...initialOrders]);
     const [inboundRows, setInboundRows] = useState<FlowRow[]>(() => [...initialInboundRows]);
@@ -56,6 +65,19 @@ export default function EquipmentManagementPrototype() {
     const current = pageMeta[page];
     const activeMenuPage = page.startsWith('purchase-') ? 'purchase' : page;
     const tabs = useMemo<{ id: PageId; label: string }[]>(() => visited.map((id: PageId) => ({ id, label: pageMeta[id].label })), [visited]);
+    const viewerOptions = useMemo<AnnotationViewerOptions>(() => ({
+        currentPageId: page,
+        toolbarEdge: 'right',
+        showToolbar: true,
+        showThemeToggle: true,
+        showColorFilter: true,
+        emptyWhenNoData: false,
+        onDirectoryRoute: (node: AnnotationDirectoryRouteNode) => {
+            if (typeof node.route === 'string' && pageMeta[node.route as PageId]) {
+                openPage(node.route as PageId);
+            }
+        },
+    }), [page]);
 
     useEffect(() => {
         setVisited((items: PageId[]) => (items.includes(page) ? items : [...items, page].slice(-7)));
@@ -111,6 +133,12 @@ export default function EquipmentManagementPrototype() {
         openPage('purchase-order-generate');
     }
 
+    function openGenerateInbound(row: OrderRow) {
+        setSelectedOrder(row);
+        setPurchaseTab('orders');
+        openPage('purchase-inbound-generate');
+    }
+
     function mergeOrders(current: OrderRow[], incoming: OrderRow[]) {
         const next = [...current];
         incoming.forEach((row) => {
@@ -145,21 +173,13 @@ export default function EquipmentManagementPrototype() {
         navigatePage('purchase');
     }
 
-    function generateInboundForOrder(row: OrderRow) {
-        const inbound = createInboundFromOrder(row);
-        const updatedOrder: OrderRow = {
-            ...row,
-            status: '待入库',
-            allocationStatus: '已分配',
-            inboundCode: inbound.code,
-            inboundStatus: '待入库',
-        };
-        const allocations = orderToInboundAllocations(updatedOrder, inbound);
-        const trace = orderToInboundTrace(updatedOrder, inbound);
-
-        upsertRuntimePurchaseData([updatedOrder], [inbound], allocations, [trace]);
-        setOrderRows((items: OrderRow[]) => mergeOrders(items, [updatedOrder]));
-        setInboundRows((items: FlowRow[]) => mergeInbounds(items, [inbound]));
+    function createGeneratedInbounds(payload: GeneratedInboundPayload) {
+        upsertRuntimePurchaseData([payload.order], payload.inbounds, [], payload.traces);
+        setOrderRows((items: OrderRow[]) => mergeOrders(items, [payload.order]));
+        setInboundRows((items: FlowRow[]) => mergeInbounds(items, payload.inbounds));
+        setSelectedOrder(payload.order);
+        setPurchaseTab('orders');
+        navigatePage('purchase');
     }
 
     function addPaymentRecord(orderCode: string, record: PaymentRecord) {
@@ -190,9 +210,14 @@ export default function EquipmentManagementPrototype() {
         }));
     }
 
+    function deleteOrder(row: OrderRow) {
+        setOrderRows((items: OrderRow[]) => items.filter((item) => item.jdOrder !== row.jdOrder));
+        removeRuntimePurchaseOrder(row.jdOrder);
+    }
+
     return (
         <div className="equipment-app">
-            <aside className="sidebar">
+            <aside className="sidebar" data-annotation-id="equipment-sidebar">
                 <div className="brand">
                     <div className="brand-mark"><ShieldCheck size={22} /></div>
                     <div>
@@ -235,7 +260,7 @@ export default function EquipmentManagementPrototype() {
             <div className="workspace">
                 <div className="workspace-head">
                     <header className="topbar">
-                        <div className="search-box">
+                        <div className="search-box" data-annotation-id="equipment-global-search">
                             <Search size={16} />
                             <span>搜索装备、采购计划、采购订单、盘点任务</span>
                         </div>
@@ -246,7 +271,7 @@ export default function EquipmentManagementPrototype() {
                         </div>
                     </header>
 
-                    <div className="tabbar">
+                    <div className="tabbar" data-annotation-id="equipment-visited-tabs">
                         {tabs.map((tab: { id: PageId; label: string }) => (
                             <div
                                 key={tab.id}
@@ -270,7 +295,10 @@ export default function EquipmentManagementPrototype() {
                     </div>
                 </div>
 
-                <main className={page === 'dashboard' ? 'main-content is-dashboard' : 'main-content is-work-page'}>
+                <main
+                    className={page === 'dashboard' ? 'main-content is-dashboard' : 'main-content is-work-page'}
+                    data-annotation-id="equipment-page-content"
+                >
                     {page === 'dashboard' && (
                         <div className="page-heading">
                             <div>
@@ -286,22 +314,29 @@ export default function EquipmentManagementPrototype() {
                         openDemandView={openDemandView}
                         openPlanView={openPlanView}
                         openGenerateOrder={openGenerateOrder}
+                        openGenerateInbound={openGenerateInbound}
                         openLowStockDemand={openLowStockDemand}
                         purchaseDemandDraft={purchaseDemandDraft}
                         selectedDemand={selectedDemand}
                         selectedPlan={selectedPlan}
+                        selectedOrder={selectedOrder}
                         orderRows={orderRows}
                         inboundRows={inboundRows}
                         onCreateGeneratedOrders={createGeneratedOrders}
-                        onGenerateInbound={generateInboundForOrder}
+                        onCreateGeneratedInbounds={createGeneratedInbounds}
                         onAddPayment={addPaymentRecord}
                         onAddInvoice={addInvoiceRecord}
+                        onDeleteOrder={deleteOrder}
                         purchaseTab={purchaseTab}
                         setPurchaseTab={setPurchaseTab}
                     />
                 </main>
             </div>
             {businessWindow && <BusinessWindow window={businessWindow} onClose={() => setBusinessWindow(null)} />}
+            <AnnotationViewer
+                source={annotationSourceDocument as unknown as AnnotationSourceDocument}
+                options={viewerOptions}
+            />
         </div>
     );
 }

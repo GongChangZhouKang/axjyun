@@ -1,18 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-28T17:13:15.989Z",
+  "updatedAt": "2026-06-30T02:02:54.296Z",
   "prototypes": [
     {
       "id": "item:prototypes:untitled-copy",
       "kind": "item",
       "title": "装备管理",
       "itemKey": "prototypes/untitled-copy"
-    },
-    {
-      "id": "item:prototypes:untitled",
-      "kind": "item",
-      "title": "装备管理-副本",
-      "itemKey": "prototypes/untitled"
     },
     {
       "id": "item:prototypes:untitled-3",
@@ -47,6 +41,12 @@
   ],
   "docs": [],
   "themesTree": [
+    {
+      "id": "item-themes-contract-detail",
+      "kind": "item",
+      "title": "contract detail",
+      "itemKey": "themes/contract-detail"
+    },
     {
       "id": "folder-themes-zhineng",
       "kind": "folder",

@@ -44,7 +44,7 @@ import process from 'node:process'
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { decodeOutput, getPreferredNpmCommand, getPreferredNpxCommand } from './utils/command-runtime.mjs'
+import { decodeOutput, getPreferredNpmCommand, getPreferredNpxCommand, getSpawnCommandSpec } from './utils/command-runtime.mjs'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -181,10 +181,13 @@ let errorCache = new Set() // 用于去重错误信息
 function startOrAttachVite() {
   logs.push('Checking Vite server...')
   const npmCommand = getPreferredNpmCommand()
-  const child = spawn(npmCommand, CONFIG.devCommand, {
+  const devSpawnSpec = getSpawnCommandSpec(npmCommand, CONFIG.devCommand)
+  const child = spawn(devSpawnSpec.command, devSpawnSpec.args, {
     stdio: ['ignore', 'pipe', 'pipe'],
     cwd: APP_ROOT,
     shell: false,
+    windowsHide: devSpawnSpec.windowsHide,
+    windowsVerbatimArguments: devSpawnSpec.windowsVerbatimArguments,
   })
 
   child.stdout.on('data', (data) => {
@@ -405,10 +408,13 @@ async function runCommandCheck({ label, command, args = [], env = {}, logTag }) 
         ? getPreferredNpxCommand()
         : command
 
-    const proc = spawn(resolvedCommand, args, {
+    const spawnSpec = getSpawnCommandSpec(resolvedCommand, args)
+    const proc = spawn(spawnSpec.command, spawnSpec.args, {
       cwd: APP_ROOT,
       env: { ...process.env, ...env },
-      stdio: ['ignore', 'pipe', 'pipe']
+      stdio: ['ignore', 'pipe', 'pipe'],
+      windowsHide: spawnSpec.windowsHide,
+      windowsVerbatimArguments: spawnSpec.windowsVerbatimArguments
     })
 
     const appendLog = (line, isError = false) => {
@@ -595,10 +601,14 @@ async function runBuildCheck(entryKey) {
     const npxCommand = getPreferredNpxCommand()
 
     // 使用 ENTRY_KEY 环境变量触发单独构建
-    const buildProcess = spawn(npxCommand, ['vite', 'build'], {
+    const buildArgs = ['vite', 'build']
+    const buildSpawnSpec = getSpawnCommandSpec(npxCommand, buildArgs)
+    const buildProcess = spawn(buildSpawnSpec.command, buildSpawnSpec.args, {
       cwd: APP_ROOT,
       env: { ...process.env, ENTRY_KEY: resolvedEntryKey },
-      stdio: ['ignore', 'pipe', 'pipe']
+      stdio: ['ignore', 'pipe', 'pipe'],
+      windowsHide: buildSpawnSpec.windowsHide,
+      windowsVerbatimArguments: buildSpawnSpec.windowsVerbatimArguments
     })
 
     buildProcess.stdout.on('data', (data) => {

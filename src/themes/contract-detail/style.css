@@ -27,6 +27,9 @@
   --dmb-font-display: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
   --dmb-font-body: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
   --dmb-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --security-running: #19be6b;
+  --security-pending: #ffae00;
+  --security-danger: #f52c2c;
 }
 
 .contract-theme .dmb-sheet {
@@ -233,6 +236,7 @@
 }
 
 .contract-token-demo__semantic-grid .is-success { color: #237804; background: #f6ffed; }
+.contract-token-demo__semantic-grid .is-running { color: #1f2a10; background: var(--security-running); }
 .contract-token-demo__semantic-grid .is-warning { color: #ad4e00; background: #fff7e6; }
 .contract-token-demo__semantic-grid .is-danger { color: #a8071a; background: #fff1f0; }
 .contract-token-demo__semantic-grid .is-feature { color: #ffffff; background: linear-gradient(135deg, #667eea, #764ba2); }
@@ -430,7 +434,7 @@
   min-width: 20px;
   padding: 1px 5px;
   color: #ffffff;
-  background: #ed4014;
+  background: var(--security-danger);
   border-radius: 9999px;
   text-align: center;
 }
@@ -470,11 +474,11 @@
 
 .security-semantic-strip .is-success,
 .security-system-table-wrap .is-success { color: #237804; background: #f6ffed; }
-.security-semantic-strip .is-running { color: #1f2a10; background: #6ce21f; }
+.security-semantic-strip .is-running { color: #1f2a10; background: var(--security-running); }
 .security-semantic-strip .is-warning,
-.security-system-table-wrap .is-warning { color: #ad4e00; background: #fff7e6; }
+.security-system-table-wrap .is-warning { color: #3d2400; background: var(--security-pending); }
 .security-semantic-strip .is-muted { color: #666666; background: #f7f7f7; }
-.security-semantic-strip .is-danger { color: #a8071a; background: #fff1f0; }
+.security-semantic-strip .is-danger { color: var(--security-danger); background: #fff1f0; }
 
 .security-system-table-wrap {
   overflow: auto;
@@ -512,7 +516,7 @@
 .security-system-table-wrap .is-danger-link {
   margin-left: 12px;
   padding: 0;
-  color: #a8071a;
+  color: var(--security-danger);
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -732,7 +736,7 @@
   flex: 0 0 auto;
   padding: 3px 8px;
   color: #1f2a10;
-  background: #6ce21f;
+  background: var(--security-running);
   border-radius: 3px;
   font-size: 12px;
   font-weight: 500;
@@ -969,9 +973,9 @@
 }
 
 .contract-demo__status--pending {
-  color: #515a6e;
-  background: #f7f7f7;
-  border-color: #dcdee2;
+  color: #3d2400;
+  background: var(--security-pending);
+  border-color: var(--security-pending);
 }
 
 .contract-demo__progress {

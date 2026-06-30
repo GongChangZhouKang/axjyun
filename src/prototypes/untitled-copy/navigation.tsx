@@ -31,6 +31,7 @@ export const pageMeta: Record<PageId, { label: string; icon: React.ElementType; 
     'purchase-plan-create': { label: '新增采购计划', icon: ClipboardList, group: '装备管理' },
     'purchase-plan-view': { label: '查看采购计划', icon: ClipboardList, group: '装备管理' },
     'purchase-order-generate': { label: '生成采购订单', icon: ClipboardList, group: '装备管理' },
+    'purchase-inbound-generate': { label: '生成入库单', icon: PackageCheck, group: '装备管理' },
     inbound: { label: '入库管理', icon: PackageCheck, group: '仓储运营' },
     transfer: { label: '调拨管理', icon: ArrowLeftRight, group: '仓储运营' },
     stocktake: { label: '库存盘点', icon: ClipboardCheck, group: '仓储运营' },
