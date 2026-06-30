@@ -24,26 +24,28 @@ export function PurchasePage({
     openDemandView,
     openPlanView,
     openGenerateOrder,
+    openGenerateInbound,
     tab,
     setTab,
     orderRows,
     inboundRows,
-    onGenerateInbound,
     onAddPayment,
     onAddInvoice,
+    onDeleteOrder,
 }: {
     openPage: (page: PageId) => void;
     openWindow: OpenBusinessWindow;
     openDemandView: (row: DemandRow) => void;
     openPlanView: (row: PlanRow) => void;
     openGenerateOrder: (row: PlanRow) => void;
+    openGenerateInbound: (row: OrderRow) => void;
     tab: PurchaseTab;
     setTab: (tab: PurchaseTab) => void;
     orderRows: OrderRow[];
     inboundRows: FlowRow[];
-    onGenerateInbound: (row: OrderRow) => void;
     onAddPayment: (orderCode: string, record: PaymentRecord) => void;
     onAddInvoice: (orderCode: string, record: InvoiceRecord) => void;
+    onDeleteOrder: (row: OrderRow) => void;
 }) {
     function openTraceRelation(context: TraceContext) {
         openWindow(traceRelationWindow(context, {
@@ -94,9 +96,10 @@ export function PurchasePage({
                     openPlanView={openPlanView}
                     openDemandView={openDemandView}
                     orderRows={orderRows}
-                    onGenerateInbound={onGenerateInbound}
+                    onGenerateInbound={openGenerateInbound}
                     onAddPayment={onAddPayment}
                     onAddInvoice={onAddInvoice}
+                    onDeleteOrder={onDeleteOrder}
                     onOpenTrace={openTraceRelation}
                 />
             )}
@@ -108,3 +111,4 @@ export { PurchaseDemandCreatePage } from './purchase/PurchaseDemandCreatePage';
 export { PurchasePlanCreatePage } from './purchase/PurchasePlanCreatePage';
 export { PurchasePlanViewPage } from './purchase/PurchasePlanViewPage';
 export { PurchaseOrderGeneratePage } from './purchase/PurchaseOrderGeneratePage';
+export { PurchaseInboundGeneratePage } from './purchase/PurchaseInboundGeneratePage';

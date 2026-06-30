@@ -10,5 +10,35 @@
   },
   "projectInfo": {
     "description": null
+  },
+  "cloudPublishing": {
+    "vercel": {
+      "token": "",
+      "projectName": "",
+      "teamId": ""
+    },
+    "cloudflarePages": {
+      "apiToken": "",
+      "accountId": "",
+      "projectName": "",
+      "productionBranch": "main"
+    },
+    "s3": {
+      "accessKeyId": "",
+      "secretAccessKey": "",
+      "region": "",
+      "bucket": "",
+      "prefix": "",
+      "baseUrl": "",
+      "endpoint": ""
+    },
+    "githubPages": {
+      "repository": "GongChangZhouKang/axjyun",
+      "branch": "gh-pages",
+      "sourceDirectory": "/"
+    },
+    "publishSettings": {
+      "includeSource": true
+    }
   }
 }

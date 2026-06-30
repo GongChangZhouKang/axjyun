@@ -1,0 +1,200 @@
+{
+  "format": "axhub-annotation-source",
+  "documentVersion": 2,
+  "data": [
+    {
+      "version": 2,
+      "prototypeName": "equipment-management",
+      "pageId": "dashboard",
+      "updatedAt": 1782662400000,
+      "nodes": [
+        {
+          "id": "equipment-sidebar",
+          "index": 1,
+          "title": "装备管理主导航",
+          "pageId": "dashboard",
+          "locator": {
+            "selectors": [
+              "[data-annotation-id=\"equipment-sidebar\"]"
+            ]
+          },
+          "aiPrompt": "说明左侧导航如何承载系统模块和装备管理二级菜单。",
+          "annotationText": "左侧导航保留平台级模块，同时展开装备管理菜单。采购相关子页面会归并高亮到“采购管理”，避免用户进入生成订单、生成入库单等流程页后失去当前位置。",
+          "hasMarkdown": false,
+          "color": "#2563EB",
+          "images": [],
+          "createdAt": 1782662400000,
+          "updatedAt": 1782662400000
+        },
+        {
+          "id": "equipment-global-search",
+          "index": 2,
+          "title": "全局业务搜索",
+          "pageId": "dashboard",
+          "locator": {
+            "selectors": [
+              "[data-annotation-id=\"equipment-global-search\"]"
+            ]
+          },
+          "aiPrompt": "说明顶部搜索框覆盖的业务对象。",
+          "annotationText": "搜索入口面向装备、采购计划、采购订单和盘点任务，适合跨页面快速定位业务对象。当前原型展示入口和范围，未接入真实搜索结果页。",
+          "hasMarkdown": false,
+          "color": "#059669",
+          "images": [],
+          "createdAt": 1782662400000,
+          "updatedAt": 1782662400000
+        },
+        {
+          "id": "equipment-visited-tabs",
+          "index": 3,
+          "title": "已访问页签",
+          "pageId": "dashboard",
+          "locator": {
+            "selectors": [
+              "[data-annotation-id=\"equipment-visited-tabs\"]"
+            ]
+          },
+          "aiPrompt": "说明页签如何帮助用户在装备管理流程中回退。",
+          "annotationText": "页签记录最近访问的业务页面，最多保留 7 个。它主要服务采购、入库、盘点等多步骤场景，让用户从详情页或生成页回到列表时不需要重新找入口。",
+          "hasMarkdown": false,
+          "color": "#D97706",
+          "images": [],
+          "createdAt": 1782662400000,
+          "updatedAt": 1782662400000
+        },
+        {
+          "id": "equipment-page-content",
+          "index": 4,
+          "title": "当前页面内容区",
+          "pageId": "dashboard",
+          "locator": {
+            "selectors": [
+              "[data-annotation-id=\"equipment-page-content\"]"
+            ]
+          },
+          "aiPrompt": "说明装备管理页面内容区的承载方式。",
+          "annotationText": "主内容区根据左侧菜单和业务流程切换页面。仪表盘偏总览；库存、入库、领用、调拨、盘点等页面偏台账操作；采购页面内部继续拆分需求、计划、订单和生成流程。",
+          "hasMarkdown": true,
+          "color": "#7C3AED",
+          "images": [],
+          "createdAt": 1782662400000,
+          "updatedAt": 1782662400000
+        }
+      ]
+    }
+  ],
+  "markdownMap": {
+    "equipment-page-content": "# 当前页面内容区\n\n装备管理原型采用“导航 + 最近页签 + 主内容区”的后台工作台结构。\n\n- 仪表盘：展示装备管理的总体状态和待处理事项。\n- 库存/入库/领用/调拨/盘点：覆盖常见装备流转动作。\n- 采购管理：覆盖采购需求、采购计划、采购订单、生成订单和生成入库单等链路。\n\n悬浮功能条用于在评审时快速打开标注、目录和页面说明，不改变原有业务操作。"
+  },
+  "assetMap": {},
+  "directory": {
+    "nodes": [
+      {
+        "type": "folder",
+        "id": "equipment-directory-pages",
+        "title": "装备管理页面",
+        "defaultExpanded": true,
+        "children": [
+          {
+            "type": "route",
+            "id": "route-dashboard",
+            "title": "工作台",
+            "route": "dashboard"
+          },
+          {
+            "type": "route",
+            "id": "route-archive",
+            "title": "装备档案",
+            "route": "archive"
+          },
+          {
+            "type": "route",
+            "id": "route-inventory",
+            "title": "库存管理",
+            "route": "inventory"
+          },
+          {
+            "type": "route",
+            "id": "route-inbound",
+            "title": "入库管理",
+            "route": "inbound"
+          },
+          {
+            "type": "route",
+            "id": "route-issue",
+            "title": "领用管理",
+            "route": "issue"
+          },
+          {
+            "type": "route",
+            "id": "route-transfer",
+            "title": "调拨管理",
+            "route": "transfer"
+          },
+          {
+            "type": "route",
+            "id": "route-stocktake",
+            "title": "盘点管理",
+            "route": "stocktake"
+          },
+          {
+            "type": "route",
+            "id": "route-purchase",
+            "title": "采购管理",
+            "route": "purchase"
+          },
+          {
+            "type": "route",
+            "id": "route-warehouse",
+            "title": "仓库设置",
+            "route": "warehouse"
+          },
+          {
+            "type": "route",
+            "id": "route-cost",
+            "title": "成本统计",
+            "route": "cost"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "id": "equipment-directory-purchase-flow",
+        "title": "采购流程页",
+        "defaultExpanded": true,
+        "children": [
+          {
+            "type": "route",
+            "id": "route-purchase-demand-create",
+            "title": "新建采购需求",
+            "route": "purchase-demand-create"
+          },
+          {
+            "type": "route",
+            "id": "route-purchase-plan-create",
+            "title": "新建采购计划",
+            "route": "purchase-plan-create"
+          },
+          {
+            "type": "route",
+            "id": "route-purchase-order-generate",
+            "title": "生成采购订单",
+            "route": "purchase-order-generate"
+          },
+          {
+            "type": "route",
+            "id": "route-purchase-inbound-generate",
+            "title": "生成采购入库单",
+            "route": "purchase-inbound-generate"
+          }
+        ]
+      },
+      {
+        "type": "markdown",
+        "id": "equipment-annotation-guide",
+        "title": "说明｜悬浮功能条",
+        "markdown": "# 悬浮功能条说明\n\n本原型已接入与“标注演示”一致的右侧悬浮功能条。\n\n- 打开标注：查看当前页面关键区域说明。\n- 打开目录：在装备管理页面和采购流程页之间快速切换。\n- 颜色筛选：按说明、业务范围、操作提示等类型聚焦阅读。\n\n后续如果需要更细的页面说明，可以继续为具体按钮、表格、弹窗或流程节点补充标注。"
+      }
+    ]
+  }
+}

@@ -407,7 +407,7 @@ export const orders: OrderRow[] = [
         targetWarehouse: '历下分公司仓',
         orderNote: '历下分公司集采装备先行创建采购订单，收货后按仓库入库。',
         sourceType: '采购计划生成',
-        inboundCode: 'RK20260616011',
+        inboundCodes: ['RK202606160011'],
         inboundStatus: '待入库',
         paymentRecords: [
             {
@@ -460,7 +460,7 @@ export const orders: OrderRow[] = [
         targetWarehouse: '高新区分公司仓',
         orderNote: '高新区分公司强光手电补货订单。',
         sourceType: '采购计划生成',
-        inboundCode: 'RK20260618002',
+        inboundCodes: ['RK202606180002'],
         inboundStatus: '待入库',
         paymentRecords: [
             {
@@ -492,7 +492,7 @@ export const orders: OrderRow[] = [
         targetWarehouse: '会展中心项目点',
         orderNote: '会展中心项目专属装备采购订单。',
         sourceType: '采购计划生成',
-        inboundCode: 'RK20260616001',
+        inboundCodes: ['RK202606160001'],
         inboundStatus: '待入库',
         paymentRecords: [],
         invoiceRecords: [
@@ -526,7 +526,7 @@ export const orders: OrderRow[] = [
         targetWarehouse: '历城分公司仓',
         orderNote: '紧急补货订单，部分装备已先行入库。',
         sourceType: '采购计划生成',
-        inboundCode: 'RK20260615003',
+        inboundCodes: ['RK202606150003'],
         inboundStatus: '部分入库',
         paymentRecords: [],
         invoiceRecords: [],
@@ -548,7 +548,7 @@ export const inventory: InventoryRow[] = [
 
 export const inboundRows: FlowRow[] = [
     {
-        code: 'RK20260618002',
+        code: 'RK202606180002',
         from: 'DD202606180001',
         to: '高新区分公司仓',
         handler: '孙鹏',
@@ -558,7 +558,7 @@ export const inboundRows: FlowRow[] = [
         ],
     },
     {
-        code: 'RK20260616011',
+        code: 'RK202606160011',
         from: 'DD202606160001',
         to: '历下分公司仓',
         handler: '赵静',
@@ -570,7 +570,7 @@ export const inboundRows: FlowRow[] = [
         ],
     },
     {
-        code: 'RK20260616001',
+        code: 'RK202606160001',
         from: 'DD202606160002',
         to: '会展中心项目点',
         handler: '李岩',
@@ -581,7 +581,7 @@ export const inboundRows: FlowRow[] = [
         ],
     },
     {
-        code: 'RK20260615003',
+        code: 'RK202606150003',
         from: 'DD202606150001',
         to: '历城分公司仓',
         handler: '孙鹏',
@@ -593,7 +593,7 @@ export const inboundRows: FlowRow[] = [
         ],
     },
     {
-        code: 'RK20260614009',
+        code: 'RK202606140009',
         from: 'DD202606140001',
         to: '集团总仓',
         handler: '李岩',
@@ -629,24 +629,24 @@ export const planOrderImports: PlanOrderImport[] = orders.map((order) => ({
 }));
 
 export const orderWarehouseAllocations: OrderWarehouseAllocation[] = [
-    { orderCode: 'DD202606160001', planCode: 'JH202606160001', demandCode: 'XQ202606160001', warehouse: '历下分公司仓', itemName: '夏季短袖执勤服', demandQty: 160, includedQty: 160, orderQty: 180, allocatedQty: 160, manualAdjustQty: 0, inboundCode: 'RK20260616011', inboundStatus: '待入库' },
-    { orderCode: 'DD202606160001', planCode: 'JH202606160001', demandCode: 'XQ202606160001', warehouse: '历下分公司仓', itemName: '反光背心', demandQty: 120, includedQty: 120, orderQty: 120, allocatedQty: 120, manualAdjustQty: 0, inboundCode: 'RK20260616011', inboundStatus: '待入库' },
-    { orderCode: 'DD202606160001', planCode: 'JH202606160001', demandCode: 'XQ202606160001', warehouse: '历下分公司仓', itemName: '强光手电', demandQty: 40, includedQty: 18, orderQty: 40, allocatedQty: 18, manualAdjustQty: 0, inboundCode: 'RK20260616011', inboundStatus: '待入库' },
-    { orderCode: 'DD202606160001', planCode: 'JH202606160001', demandCode: 'XQ202606160002', warehouse: '高新区分公司仓', itemName: '强光手电', demandQty: 80, includedQty: 22, orderQty: 40, allocatedQty: 22, manualAdjustQty: 0, inboundCode: 'RK20260618002', inboundStatus: '待入库' },
-    { orderCode: 'DD202606180001', planCode: 'JH202606160001', demandCode: 'XQ202606160002', warehouse: '高新区分公司仓', itemName: '强光手电', demandQty: 80, includedQty: 22, orderQty: 20, allocatedQty: 20, manualAdjustQty: 0, inboundCode: 'RK20260618002', inboundStatus: '待入库' },
-    { orderCode: 'DD202606160002', planCode: 'JH202606160002', demandCode: 'XQ202606160003', warehouse: '会展中心项目点', itemName: '手持金属探测器', demandQty: 6, includedQty: 6, orderQty: 6, allocatedQty: 6, manualAdjustQty: 0, inboundCode: 'RK20260616001', inboundStatus: '待入库' },
-    { orderCode: 'DD202606160002', planCode: 'JH202606160002', demandCode: 'XQ202606160003', warehouse: '会展中心项目点', itemName: '防爆毯', demandQty: 2, includedQty: 2, orderQty: 2, allocatedQty: 2, manualAdjustQty: 0, inboundCode: 'RK20260616001', inboundStatus: '待入库' },
-    { orderCode: 'DD202606150001', planCode: 'JH202606160003', demandCode: 'XQ202606160004', warehouse: '历城分公司仓', itemName: '应急救援服', demandQty: 24, includedQty: 24, orderQty: 24, allocatedQty: 18, manualAdjustQty: -6, inboundCode: 'RK20260615003', inboundStatus: '部分入库' },
-    { orderCode: 'DD202606150001', planCode: 'JH202606160003', demandCode: 'XQ202606160004', warehouse: '历城分公司仓', itemName: '防火面具', demandQty: 40, includedQty: 40, orderQty: 40, allocatedQty: 20, manualAdjustQty: -20, inboundCode: 'RK20260615003', inboundStatus: '部分入库' },
-    { orderCode: 'DD202606150001', planCode: 'JH202606160003', demandCode: 'XQ202606160004', warehouse: '历城分公司仓', itemName: '消防防火毯', demandQty: 30, includedQty: 30, orderQty: 30, allocatedQty: 20, manualAdjustQty: -10, inboundCode: 'RK20260615003', inboundStatus: '部分入库' },
+    { orderCode: 'DD202606160001', planCode: 'JH202606160001', demandCode: 'XQ202606160001', warehouse: '历下分公司仓', itemName: '夏季短袖执勤服', demandQty: 160, includedQty: 160, orderQty: 180, allocatedQty: 160, manualAdjustQty: 0, inboundCode: '', inboundStatus: '待入库' },
+    { orderCode: 'DD202606160001', planCode: 'JH202606160001', demandCode: 'XQ202606160001', warehouse: '历下分公司仓', itemName: '反光背心', demandQty: 120, includedQty: 120, orderQty: 120, allocatedQty: 120, manualAdjustQty: 0, inboundCode: '', inboundStatus: '待入库' },
+    { orderCode: 'DD202606160001', planCode: 'JH202606160001', demandCode: 'XQ202606160001', warehouse: '历下分公司仓', itemName: '强光手电', demandQty: 40, includedQty: 18, orderQty: 40, allocatedQty: 18, manualAdjustQty: 0, inboundCode: '', inboundStatus: '待入库' },
+    { orderCode: 'DD202606160001', planCode: 'JH202606160001', demandCode: 'XQ202606160002', warehouse: '高新区分公司仓', itemName: '强光手电', demandQty: 80, includedQty: 22, orderQty: 40, allocatedQty: 22, manualAdjustQty: 0, inboundCode: '', inboundStatus: '待入库' },
+    { orderCode: 'DD202606180001', planCode: 'JH202606160001', demandCode: 'XQ202606160002', warehouse: '高新区分公司仓', itemName: '强光手电', demandQty: 80, includedQty: 22, orderQty: 20, allocatedQty: 20, manualAdjustQty: 0, inboundCode: '', inboundStatus: '待入库' },
+    { orderCode: 'DD202606160002', planCode: 'JH202606160002', demandCode: 'XQ202606160003', warehouse: '会展中心项目点', itemName: '手持金属探测器', demandQty: 6, includedQty: 6, orderQty: 6, allocatedQty: 6, manualAdjustQty: 0, inboundCode: '', inboundStatus: '待入库' },
+    { orderCode: 'DD202606160002', planCode: 'JH202606160002', demandCode: 'XQ202606160003', warehouse: '会展中心项目点', itemName: '防爆毯', demandQty: 2, includedQty: 2, orderQty: 2, allocatedQty: 2, manualAdjustQty: 0, inboundCode: '', inboundStatus: '待入库' },
+    { orderCode: 'DD202606150001', planCode: 'JH202606160003', demandCode: 'XQ202606160004', warehouse: '历城分公司仓', itemName: '应急救援服', demandQty: 24, includedQty: 24, orderQty: 24, allocatedQty: 18, manualAdjustQty: -6, inboundCode: '', inboundStatus: '部分入库' },
+    { orderCode: 'DD202606150001', planCode: 'JH202606160003', demandCode: 'XQ202606160004', warehouse: '历城分公司仓', itemName: '防火面具', demandQty: 40, includedQty: 40, orderQty: 40, allocatedQty: 20, manualAdjustQty: -20, inboundCode: '', inboundStatus: '部分入库' },
+    { orderCode: 'DD202606150001', planCode: 'JH202606160003', demandCode: 'XQ202606160004', warehouse: '历城分公司仓', itemName: '消防防火毯', demandQty: 30, includedQty: 30, orderQty: 30, allocatedQty: 20, manualAdjustQty: -10, inboundCode: '', inboundStatus: '部分入库' },
 ];
 
 export const inboundTraces: InboundTrace[] = [
-    { inboundCode: 'RK20260618002', orderCode: 'DD202606180001', planCode: 'JH202606160001', demandCodes: ['XQ202606160002'] },
-    { inboundCode: 'RK20260616011', orderCode: 'DD202606160001', planCode: 'JH202606160001', demandCodes: ['XQ202606160001', 'XQ202606160002'] },
-    { inboundCode: 'RK20260616001', orderCode: 'DD202606160002', planCode: 'JH202606160002', demandCodes: ['XQ202606160003'] },
-    { inboundCode: 'RK20260615003', orderCode: 'DD202606150001', planCode: 'JH202606160003', demandCodes: ['XQ202606160004'] },
-    { inboundCode: 'RK20260614009', orderCode: 'DD202606140001', planCode: '历史补货计划', demandCodes: ['历史补货'] },
+    { inboundCode: 'RK202606180002', orderCode: 'DD202606180001', planCode: 'JH202606160001', demandCodes: ['XQ202606160002'] },
+    { inboundCode: 'RK202606160011', orderCode: 'DD202606160001', planCode: 'JH202606160001', demandCodes: ['XQ202606160001', 'XQ202606160002'] },
+    { inboundCode: 'RK202606160001', orderCode: 'DD202606160002', planCode: 'JH202606160002', demandCodes: ['XQ202606160003'] },
+    { inboundCode: 'RK202606150003', orderCode: 'DD202606150001', planCode: 'JH202606160003', demandCodes: ['XQ202606160004'] },
+    { inboundCode: 'RK202606140009', orderCode: 'DD202606140001', planCode: '历史补货计划', demandCodes: ['历史补货'] },
 ];
 
 export const transfers: FlowRow[] = [
@@ -770,7 +770,7 @@ export const costTraceRows: CostTraceRow[] = [
         trace: '按先进先出优先扣减 2026-05 入库批次，保留批次与采购订单来源',
         batches: [
             { batch: 'PC-FC-202605-01', inbound: 'RK20260528006', order: 'DD202605270001', inboundAt: '2026-05-28', batchQty: 20, issuedQty: 4, unitCost: 620, amount: 2480 },
-            { batch: 'PC-FC-202606-02', inbound: 'RK20260614009', order: 'DD202606140001', inboundAt: '2026-06-14', batchQty: 18, issuedQty: 2, unitCost: 680, amount: 1360 },
+            { batch: 'PC-FC-202606-02', inbound: 'RK202606140009', order: 'DD202606140001', inboundAt: '2026-06-14', batchQty: 18, issuedQty: 2, unitCost: 680, amount: 1360 },
         ],
     },
     {

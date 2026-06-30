@@ -102,8 +102,13 @@ export function PurchaseOrderGeneratePage({
 
     function submit(withInbound: boolean) {
         const ordersToCreate = activeOrders;
-        const inbounds = withInbound ? ordersToCreate.map((order: DraftPurchaseOrder) => draftOrderToInboundRow(order)) : [];
-        const orders = ordersToCreate.map((order: DraftPurchaseOrder) => draftOrderToOrderRow(order, withInbound));
+        const inbounds = withInbound
+            ? ordersToCreate.map((order: DraftPurchaseOrder, index: number) => draftOrderToInboundRow(order, undefined, index))
+            : [];
+        const orders = ordersToCreate.map((order: DraftPurchaseOrder, index: number) => ({
+            ...draftOrderToOrderRow(order, withInbound),
+            inboundCodes: withInbound ? [inbounds[index].code] : [],
+        }));
         const allocations = ordersToCreate.flatMap((order: DraftPurchaseOrder, index: number) => draftOrderToAllocations(order, inbounds[index]));
         const traces = withInbound
             ? ordersToCreate.map((order: DraftPurchaseOrder, index: number) => draftOrderToInboundTrace(order, inbounds[index]))

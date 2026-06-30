@@ -1,0 +1,517 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "sourceName": "User-provided Security Management Platform screenshots and computed style export",
+    "captureDate": "2026-06-29",
+    "evidence": [
+      "assets/source-preview.png",
+      "assets/security-contract-list.png",
+      "assets/security-employee-add-modal.png",
+      "assets/security-employee-list.png",
+      "assets/security-employee-onboarding.png",
+      "assets/security-equipment-outbound.png"
+    ]
+  },
+  "identity": {
+    "id": "contract-detail-v1",
+    "slug": "contract-detail",
+    "brand": "安保管理平台后台主题",
+    "titleZh": "安保管理平台后台主题",
+    "titleEn": "Security Management Platform Admin Theme",
+    "descriptionZh": "从安保管理平台代表性页面提取的高密度政企后台主题：冷灰正文、浅色表面、两级蓝色交互与克制边界。",
+    "descriptionEn": "A compact enterprise-admin theme extracted from representative Security Management Platform screens."
+  },
+  "tags": {
+    "sourceTags": [
+      "screenshot",
+      "computed-style-export"
+    ],
+    "generatedTags": [
+      "enterprise-admin",
+      "contract-management",
+      "security-platform"
+    ],
+    "designTags": [
+      "compact",
+      "cool-gray",
+      "blue-accent",
+      "data-dense",
+      "light",
+      "zebra-table",
+      "modal-form",
+      "organization-tree"
+    ],
+    "distributionTags": [
+      "政企后台",
+      "安保管理",
+      "合同管理",
+      "员工管理",
+      "装备管理",
+      "数据密集",
+      "表单弹窗",
+      "组织树",
+      "浅色界面",
+      "B2B 产品",
+      "专业工具"
+    ]
+  },
+  "assets": {
+    "designMd": {
+      "path": "DESIGN.md",
+      "sourcePath": "user-provided screenshot and style data"
+    },
+    "tailwind": {
+      "path": "tw.css",
+      "sourcePath": "generated with Google DESIGN.md 0.3.0 compatible tokens"
+    },
+    "tokens": {
+      "path": "assets/tokens.json",
+      "method": "derived_from_design_md_and_user_evidence"
+    },
+    "cover": null,
+    "previewHtml": {
+      "type": "local-preview",
+      "path": "assets/security-contract-list.png",
+      "publicPath": "assets/security-contract-list.png",
+      "importPath": "./assets/security-contract-list.png?url",
+      "sourcePath": "user attachment"
+    }
+  },
+  "tokens": {
+    "palette": [
+      "#096DD9",
+      "#075EB8",
+      "#129BFF",
+      "#2D8CF0",
+      "#515A6E",
+      "#666666",
+      "#808695",
+      "#999999",
+      "#C5C8CE",
+      "#F5F7F9",
+      "#FFFFFF",
+      "#F2F2F2",
+      "#F5F7FB",
+      "#F4F5F7",
+      "#F7F7F7",
+      "#DCDEE2",
+      "#19BE6B",
+      "#1F2A10",
+      "#F6FFED",
+      "#237804",
+      "#4B4949",
+      "#F8F8F9",
+      "#F0FAFF",
+      "#23D170",
+      "#FFAE00",
+      "#FFF7E6",
+      "#AD4E00",
+      "#F52C2C",
+      "#FF0000",
+      "#FFF1F0",
+      "#A8071A",
+      "#667EEA",
+      "#764BA2"
+    ],
+    "colors": {
+      "primary": "#096DD9",
+      "primaryHover": "#075EB8",
+      "onPrimary": "#FFFFFF",
+      "primarySource": "#129BFF",
+      "accent": "#2D8CF0",
+      "ink": "#515A6E",
+      "inkSecondary": "#666666",
+      "inkMuted": "#808695",
+      "inkSubtle": "#999999",
+      "inkDisabled": "#C5C8CE",
+      "canvas": "#F5F7F9",
+      "surface": "#FFFFFF",
+      "surfaceMuted": "#F2F2F2",
+      "surfaceSoft": "#F5F7FB",
+      "surfaceTable": "#F4F5F7",
+      "surfaceDisabled": "#F7F7F7",
+      "border": "#DCDEE2",
+      "borderStrong": "#C5C8CE",
+      "successSource": "#19BE6B",
+      "successInk": "#1F2A10",
+      "successSurface": "#F6FFED",
+      "successText": "#237804",
+      "inkStrong": "#4B4949",
+      "surfaceRowAlt": "#F8F8F9",
+      "surfaceSelected": "#F0FAFF",
+      "successTextSource": "#23D170",
+      "warningSource": "#FFAE00",
+      "warningSurface": "#FFF7E6",
+      "warningText": "#AD4E00",
+      "dangerSource": "#F52C2C",
+      "dangerStrong": "#FF0000",
+      "dangerSurface": "#FFF1F0",
+      "dangerText": "#A8071A",
+      "overlay": "rgba(55, 55, 55, 0.60)",
+      "featurePhotoStart": "#667EEA",
+      "featurePhotoEnd": "#764BA2"
+    },
+    "typography": {
+      "display": "Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif",
+      "body": "Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif",
+      "mono": "SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace",
+      "scale": {
+        "pageTitle": {
+          "fontSize": "18px",
+          "lineHeight": "26px",
+          "fontWeight": 500
+        },
+        "sectionTitle": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": 500
+        },
+        "body": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": 400
+        },
+        "bodyCompact": {
+          "fontSize": "14px",
+          "lineHeight": "20px",
+          "fontWeight": 400
+        },
+        "label": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": 500
+        },
+        "tableHeader": {
+          "fontSize": "14px",
+          "lineHeight": "21px",
+          "fontWeight": 700
+        },
+        "caption": {
+          "fontSize": "12px",
+          "lineHeight": "18px",
+          "fontWeight": 400
+        },
+        "button": {
+          "fontSize": "14px",
+          "lineHeight": "20px",
+          "fontWeight": 500
+        }
+      }
+    },
+    "radius": {
+      "none": "0px",
+      "xs": "3px",
+      "control": "4px",
+      "card": "4px",
+      "preview": "4px",
+      "modal": "16px",
+      "pill": "9999px",
+      "source": "design-md",
+      "micro": "2px",
+      "md": "6px"
+    },
+    "spacing": {
+      "micro": "2px",
+      "xs": "4px",
+      "compact": "6px",
+      "controlY": "7px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "20px",
+      "xxl": "24px",
+      "section": "32px",
+      "source": "design-md",
+      "controlX": "10px",
+      "formRow": "18px"
+    },
+    "borders": {
+      "default": "1px solid #DCDEE2",
+      "strong": "1px solid #C5C8CE",
+      "focus": "1px solid #2D8CF0",
+      "tabIndicator": "4px solid #129BFF"
+    },
+    "shadows": {
+      "popover": "0 1px 6px rgba(0, 0, 0, 0.20)",
+      "dialog": "0 4px 12px rgba(0, 0, 0, 0.15)",
+      "edgeLeft": "-2px 0 6px -2px rgba(0, 0, 0, 0.20)",
+      "edgeRight": "2px 0 6px -2px rgba(0, 0, 0, 0.20)",
+      "focusInset": "inset 0 0 0 1px #2D8CF0",
+      "modal": "0 0 12px rgba(0, 0, 0, 0.16)"
+    },
+    "motion": {
+      "durationFast": "120ms",
+      "durationBase": "200ms",
+      "durationEnter": "400ms",
+      "durationLoading": "1000ms",
+      "easeStandard": "ease-in-out",
+      "easeEnter": "cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    "components": {
+      "controlHeight": "34px",
+      "tableRowHeight": "48px",
+      "tabHeight": "44px",
+      "treePanelWidth": "300px",
+      "dialogWidth": "900px",
+      "dialogHeaderHeight": "52px",
+      "actionFooterHeight": "58px",
+      "sectionMarkerWidth": "5px"
+    }
+  },
+  "previewImages": [
+    {
+      "type": "合同列表",
+      "path": "assets/security-contract-list.png"
+    },
+    {
+      "type": "员工添加弹窗",
+      "path": "assets/security-employee-add-modal.png"
+    },
+    {
+      "type": "在职员工列表",
+      "path": "assets/security-employee-list.png"
+    },
+    {
+      "type": "员工入职列表",
+      "path": "assets/security-employee-onboarding.png"
+    },
+    {
+      "type": "装备出库表单",
+      "path": "assets/security-equipment-outbound.png"
+    },
+    {
+      "type": "合同详情",
+      "path": "assets/source-preview.png"
+    }
+  ],
+  "display": {
+    "brand": "安保管理平台后台主题",
+    "brandAlias": "安保管理平台后台主题",
+    "description": "从安保管理平台合同、员工、弹窗表单和装备出库等代表性页面提取的高密度政企后台主题。以 14px 中文排版、白色与浅冷灰表面、4px 小圆角和克制的蓝色交互为核心，同时保留 source-exact tokens 与 WCAG AA 生产语义 tokens。",
+    "descriptionEn": "A compact enterprise-admin system with cool-gray typography, restrained surfaces and accessible blue interactions.",
+    "variant": "dashboard",
+    "distributionTags": [
+      "政企后台",
+      "安保管理",
+      "合同管理",
+      "员工管理",
+      "装备管理",
+      "数据密集",
+      "表单弹窗",
+      "组织树",
+      "浅色界面",
+      "B2B 产品",
+      "专业工具"
+    ],
+    "fontStylesheets": [],
+    "palette": [
+      {
+        "color": "#096DD9",
+        "labelZh": "生产主色",
+        "labelEn": "Accessible Primary",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "color": "#129BFF",
+        "labelZh": "源按钮蓝",
+        "labelEn": "Source Button Blue",
+        "textColor": "#16324A"
+      },
+      {
+        "color": "#2D8CF0",
+        "labelZh": "源交互蓝",
+        "labelEn": "Source Accent Blue",
+        "textColor": "#10243A"
+      },
+      {
+        "color": "#515A6E",
+        "labelZh": "默认正文",
+        "labelEn": "Body Ink",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "color": "#FFFFFF",
+        "labelZh": "主表面",
+        "labelEn": "Surface",
+        "textColor": "#515A6E"
+      },
+      {
+        "color": "#F4F5F7",
+        "labelZh": "表头表面",
+        "labelEn": "Table Surface",
+        "textColor": "#515A6E"
+      },
+      {
+        "color": "#F8F8F9",
+        "labelZh": "斑马纹行",
+        "labelEn": "Alternate Row",
+        "textColor": "#515A6E"
+      },
+      {
+        "color": "#F0FAFF",
+        "labelZh": "选中表面",
+        "labelEn": "Selected Surface",
+        "textColor": "#096DD9"
+      },
+      {
+        "color": "#19BE6B",
+        "labelZh": "执行中",
+        "labelEn": "Running",
+        "textColor": "#1F2A10"
+      },
+      {
+        "color": "#FFAE00",
+        "labelZh": "待处理",
+        "labelEn": "Warning Source",
+        "textColor": "#3D2400"
+      },
+      {
+        "color": "#F52C2C",
+        "labelZh": "危险操作",
+        "labelEn": "Danger Source",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "color": "#667EEA",
+        "labelZh": "照片功能色",
+        "labelEn": "Photo Feature",
+        "textColor": "#FFFFFF"
+      }
+    ],
+    "shadows": [
+      {
+        "label": "轻浮层 - Popover",
+        "value": "0 1px 6px rgba(0,0,0,.20)",
+        "cssValue": "0 1px 6px rgba(0,0,0,.20)",
+        "description": "下拉、日期选择与轻浮层。"
+      },
+      {
+        "label": "对话框 - Dialog",
+        "value": "0 4px 12px rgba(0,0,0,.15)",
+        "cssValue": "0 4px 12px rgba(0,0,0,.15)",
+        "description": "抽屉与常规对话框。"
+      },
+      {
+        "label": "大型模态 - Modal",
+        "value": "0 0 12px rgba(0,0,0,.16)",
+        "cssValue": "0 0 12px rgba(0,0,0,.16)",
+        "description": "叠加在 60% 深灰遮罩上的大型表单模态。"
+      },
+      {
+        "label": "常规卡片 - Flat",
+        "value": "none",
+        "description": "摘要卡、筛选条和表格不使用阴影。"
+      }
+    ],
+    "borders": [
+      {
+        "label": "默认边框 - Default",
+        "value": "#DCDEE2",
+        "cssValue": "#DCDEE2",
+        "description": "按钮、输入、分页与分割线。"
+      },
+      {
+        "label": "强边框 - Strong",
+        "value": "#C5C8CE",
+        "cssValue": "#C5C8CE",
+        "description": "强结构分隔、拖拽或禁用边界。"
+      },
+      {
+        "label": "焦点边框 - Focus",
+        "value": "#2D8CF0",
+        "cssValue": "#2D8CF0",
+        "description": "焦点与选中态，不承担小号文字。"
+      }
+    ],
+    "typography": [
+      "Helvetica Neue / PingFang SC",
+      "Helvetica Neue / Microsoft YaHei",
+      "SFMono-Regular / Consolas"
+    ],
+    "previewImages": [
+      {
+        "type": "合同列表",
+        "path": "assets/security-contract-list.png"
+      },
+      {
+        "type": "员工添加弹窗",
+        "path": "assets/security-employee-add-modal.png"
+      },
+      {
+        "type": "在职员工列表",
+        "path": "assets/security-employee-list.png"
+      },
+      {
+        "type": "员工入职列表",
+        "path": "assets/security-employee-onboarding.png"
+      },
+      {
+        "type": "装备出库表单",
+        "path": "assets/security-equipment-outbound.png"
+      },
+      {
+        "type": "合同详情",
+        "path": "assets/source-preview.png"
+      }
+    ],
+    "panels": [
+      {
+        "eyebrow": "数据列表",
+        "title": "筛选、斑马纹与批量工具栏",
+        "body": "合同和员工列表采用 34px 控件、浅灰表头、48px 数据行，并支持组织树与批量任务簇。"
+      },
+      {
+        "eyebrow": "表单浮层",
+        "title": "大型模态与固定操作栏",
+        "body": "两列表单、16px 大型模态、滚动内容区和 58px 底部操作栏共享一套密度规则。"
+      },
+      {
+        "eyebrow": "语义状态",
+        "title": "Source-exact + WCAG 双轨语义",
+        "body": "保留执行中、待签署、离职等源色，同时为长文本与标签提供可访问生产组合。"
+      }
+    ],
+    "usageGuidance": {
+      "do": [
+        "推荐：以 #FFFFFF、#F5F7F9、#F4F5F7、#F8F8F9 和 #515A6E 构成页面主体。",
+        "推荐：按钮、输入、分页与树节点保持 34px 高、4px 圆角、14px 字号。",
+        "推荐：列表页用筛选条、批量工具栏、斑马纹表格和右下分页组织高密度任务。",
+        "推荐：大型表单模态使用 16px 圆角、60% 深灰遮罩、滚动正文和 58px 底栏。",
+        "推荐：小号文字和按钮使用可访问生产语义色，source-exact 色用于短标签和微型标记。"
+      ],
+      "dont": [
+        "禁止：把 source-exact 亮蓝、橙、绿或红直接用于长段小号文字。",
+        "禁止：将人脸照片上传的紫色渐变扩展为普通 CTA 或全局第二品牌色。",
+        "禁止：给普通卡片、筛选条和表格添加投影。",
+        "禁止：在非批量任务区堆叠多个同权重蓝色主按钮。",
+        "禁止：使用大圆角卡片、玻璃拟态、营销插画或大面积渐变。"
+      ]
+    },
+    "radius": {
+      "control": "4px",
+      "card": "4px",
+      "preview": "4px",
+      "pill": "9999px",
+      "source": "design-md"
+    },
+    "spacing": {
+      "micro": "2px",
+      "xs": "4px",
+      "compact": "6px",
+      "controlY": "7px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "20px",
+      "xxl": "24px",
+      "section": "32px",
+      "source": "design-md",
+      "controlX": "10px",
+      "formRow": "18px"
+    }
+  },
+  "status": {
+    "displayPage": "done",
+    "collectionErrors": []
+  }
+}

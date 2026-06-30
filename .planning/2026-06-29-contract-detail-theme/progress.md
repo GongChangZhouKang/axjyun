@@ -1,0 +1,31 @@
+# Progress
+
+## 2026-06-29
+- 已确认用户的截图、样式数据、交付范围与轻量交互要求，设计简报已锁定。
+- 已读取项目需求对齐、主题创建和原型验收规则。
+- 已读取 Product Design 上下文与沟通约束；无已保存的用户设计上下文，继续以本次输入为准。
+- 已发现仓库存在与本任务无关的 `src/prototypes/untitled/` 删除改动，后续不触碰该目录。
+- 已建立独立规划目录，避免覆盖项目根目录上一任务的规划文件。
+- 已以原始分辨率复核截图，并读取 `linear` 参考主题与通用展示组件接口。
+- 已核对 Google Labs 2026 年公开的 DESIGN.md alpha 规范、标准章节顺序、组件 token 与 Tailwind v4 导出方式。
+- 已完成截图像素统计和关键颜色对比度核对，决定同时保留 source-exact 蓝色与满足 WCAG AA 的生产语义蓝。
+- 已创建 Google DESIGN.md alpha 结构的主题事实源；首次调用官方 linter 时发现预期的 `npx.cmd` 路径不存在，正在切换到可用 runtime 入口。
+- 已通过 `pnpm dlx --package @google/design.md@0.3.0 designmd` 运行官方 linter：0 errors、0 warnings。
+- 已用官方 Tailwind v4 导出结果生成 `tw.css`，并补齐采集到的阴影、动效和 loading keyframes。
+- 已生成 `theme.json`、`assets/tokens.json`、`style.css`、`index.tsx` 与本地 source preview；组件实景支持页签切换、筛选、状态过滤和重置。
+- 静态校验通过：JSON 可解析、`theme.json.tokens` 与 `assets/tokens.json` 完全一致、`git diff --check` 通过。
+- 主题 ready 脚本命中项目在 Windows 上的已知 `spawn EINVAL`，已记录并切换为直接启动 Vite + 内置浏览器验收。
+- 浏览器桌面验收通过：主题概览、原始截图、本地资源、颜色、圆角、边框、阴影与使用建议均正常渲染。
+- 已隐藏通用展示组件中不适用于本主题的营销字号与间距样例，新增“Token 明细”页展示准确的 18/16/14/12px 排版、2–32px 间距和蓝色三级规则。
+- 组件实景交互验收通过：维护结果/计划切换、维护人查询、状态过滤、空状态、重置和状态计数均正确。
+- 移动端 390×844 验收通过：页面无横向溢出，摘要卡单列，筛选器纵向重排，表格在容器内受控横向滚动，页签无纵向滚动条。
+- 浏览器控制台 0 errors / 0 warnings；最终 DESIGN.md lint 为 0 errors / 0 warnings，JSON 同源校验与 `git diff --check` 均通过。
+- 用户明确说明新增 5 张截图用于系统级补充；已将任务从单页主题扩展为「安保管理平台主题」系统级升级，并追加阶段 6–9。
+- 已逐张复核合同列表、添加用户弹窗、在职员工、员工入职和装备出库截图，并解析员工信息样式导出；已完成系统级组件与状态缺口清单。
+- 已把新增证据合并进 DESIGN.md：36 个颜色、9 级排版、7 个圆角、12 个间距与 37 个组件 token；官方 linter 仍为 0 errors / 0 warnings。
+- 已同步升级 Tailwind CSS v4、`theme.json`、`assets/tokens.json`、元数据与演示页，新增 6 图参考界面库和组织树/批量工具栏/语义状态/斑马纹表格/员工弹窗系统组件演示。
+- 最终 Google DESIGN.md 校验通过：36 colors、9 typography scales、7 rounding levels、12 spacing tokens、37 components，0 errors / 0 warnings。
+- 最终 JSON 同源校验通过：`theme.json.tokens` 与 `assets/tokens.json` 完全一致；主题页面 HTTP 200，Vite 热编译正常。
+- 系统级浏览器验收通过：6 个参考界面卡片均生成且资源路径有效；系统组件页可切换；添加用户弹窗可打开/关闭，表单正文可滚动，角色选择完整。
+- 390×844 窄屏复核通过：页面无横向溢出，弹窗宽 374px、表单退化为单列、正文保持内部滚动；浏览器控制台 0 errors / 0 warnings。
+- 项目标准 typecheck 被现有依赖策略与缺失 `@types/react` 阻断，属于全仓基线问题；未改变依赖策略，也未触碰无关原型改动。

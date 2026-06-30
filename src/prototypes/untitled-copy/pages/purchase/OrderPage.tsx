@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { CreditCard, FileText, Trash2 } from 'lucide-react';
 import {
     AttachmentMeta,
     DemandRow,
@@ -12,19 +13,18 @@ import {
     currency,
     numberText,
     lineQty,
-    lineAmount,
     itemSummary,
     orderFinanceSummary,
+    orderInboundSummary,
+    canDeleteOrder,
     StatusTag,
     FilterBar,
     Field,
     SelectLike,
     DataTable,
     OpenBusinessWindow,
-    RowActions,
     SectionTitle,
     DetailGrid,
-    MiniLineTable,
     PaymentHistoryTable,
     InvoiceHistoryTable,
     orderDetailWindow,
@@ -237,6 +237,7 @@ export function OrderPage({
     onGenerateInbound,
     onAddPayment,
     onAddInvoice,
+    onDeleteOrder,
     onOpenTrace,
 }: {
     openWindow: OpenBusinessWindow;
@@ -246,30 +247,34 @@ export function OrderPage({
     onGenerateInbound: (row: OrderRow) => void;
     onAddPayment: (orderCode: string, record: PaymentRecord) => void;
     onAddInvoice: (orderCode: string, record: InvoiceRecord) => void;
+    onDeleteOrder: (row: OrderRow) => void;
     onOpenTrace: (context: TraceContext) => void;
 }) {
     const [registration, setRegistration] = useState<{ mode: RegistrationMode; row: OrderRow } | null>(null);
+    const [moreMenu, setMoreMenu] = useState<{ row: OrderRow; top: number; left: number } | null>(null);
 
-    function openGenerateInboundConfirm(row: OrderRow) {
-        openWindow({
-            title: '生成入库单',
-            subtitle: `${row.jdOrder} 将按目标仓库生成待入库单。`,
-            primary: '确认生成入库单',
-            primaryAction: () => onGenerateInbound(row),
-            body: (
-                <div className="detail-stack">
-                    <DetailGrid rows={[
-                        ['采购订单号', row.jdOrder],
-                        ['关联计划', row.plan],
-                        ['目标仓库', row.targetWarehouse || '--'],
-                        ['明细数量', `${numberText(lineQty(row.items))} 件`],
-                        ['订单金额', currency(lineAmount(row.items))],
-                        ['生成结果', '生成后订单将关联待入库单，可在入库管理继续确认入库。'],
-                    ]} />
-                    <MiniLineTable items={row.items} amountLabel="订单金额" />
-                </div>
-            ),
-        });
+    function toggleMoreMenu(event: React.MouseEvent<HTMLButtonElement>, row: OrderRow) {
+        const rect = event.currentTarget.getBoundingClientRect();
+        const menuWidth = 156;
+        const menuHeight = 142;
+        const viewportGap = 12;
+        const top = rect.bottom + 8 + menuHeight > window.innerHeight
+            ? Math.max(viewportGap, rect.top - menuHeight - 8)
+            : rect.bottom + 8;
+        const left = Math.max(
+            viewportGap,
+            Math.min(rect.right - menuWidth, window.innerWidth - menuWidth - viewportGap),
+        );
+
+        setMoreMenu((current) => (
+            current?.row.jdOrder === row.jdOrder
+                ? null
+                : {
+                    row,
+                    top,
+                    left,
+                }
+        ));
     }
 
     return (
@@ -282,64 +287,121 @@ export function OrderPage({
             </FilterBar>
             <section className="panel purchase-order-panel">
                 <SectionTitle title="采购订单" subtitle="采购订单基于采购计划生成，订单价格作为采购成本，后续入库形成库存成本" />
+                <div className="table-toolbar">
+                    <button type="button" className="secondary-btn" onClick={() => openWindow({
+                        title: '导出采购订单',
+                        subtitle: '导出当前采购订单、付款发票状态和入库进度。',
+                        primary: '确认导出',
+                        body: <DetailGrid rows={[
+                            ['导出范围', '当前筛选条件'],
+                            ['包含字段', '采购订单号、关联计划、目标仓库、数量合计、订单金额、付款状态、发票状态、入库单状态、入库数量、供应商、创建时间、装备摘要'],
+                            ['用途', '采购对账、付款开票跟踪和入库进度复核'],
+                        ]} />,
+                    })}>导出</button>
+                </div>
                 <DataTable
-                    columns={['采购订单号', '关联计划', '目标仓库', '供应商', '创建时间', '明细数', '装备摘要', '数量合计', '订单金额', '付款状态', '发票状态', '入库单状态', '操作']}
+                    columns={['采购订单号', '关联计划', '目标仓库', '数量合计', '订单金额', '付款状态', '发票状态', '入库单状态', '入库数量', '供应商', '创建时间', '明细数', '装备摘要', '操作']}
                     rows={orderRows}
                     renderRow={(row: OrderRow) => {
-                        const inboundStatus = row.inboundStatus || row.status;
-                        const hasInbound = Boolean(row.inboundCode) && inboundStatus !== '未生成入库单';
+                        const inboundSummary = orderInboundSummary(row);
                         const finance = orderFinanceSummary(row);
+                        const deletable = canDeleteOrder(row);
 
                         return (
-                            <tr key={row.jdOrder}>
-                                <td className="link-cell">{row.jdOrder}</td>
-                                <td>{row.plan}</td>
-                                <td>{row.targetWarehouse || '--'}</td>
-                                <td>{row.supplier}</td>
-                                <td>{row.createdAt || row.importedAt}</td>
-                                <td>{row.items.length} 行</td>
-                                <td>{itemSummary(row.items)}</td>
-                                <td>{numberText(lineQty(row.items))}</td>
-                                <td>{currency(finance.orderAmount)}</td>
-                                <td><StatusTag value={finance.paymentStatus} /></td>
-                                <td><StatusTag value={finance.invoiceStatus} /></td>
-                                <td><StatusTag value={inboundStatus} /></td>
-                                <td>
-                                    <RowActions
-                                        allowDelete={false}
-                                        actions={[
-                                            {
-                                                label: '查看订单',
-                                                onClick: () => openWindow(orderDetailWindow(row, { openPlanView, openDemandView, openTraceRelation: onOpenTrace })),
-                                            },
-                                            {
-                                                label: '登记付款',
-                                                disabled: finance.paymentComplete,
-                                                title: finance.paymentComplete ? '订单已全额付款' : undefined,
-                                                onClick: () => setRegistration({ mode: 'payment', row }),
-                                            },
-                                            {
-                                                label: '登记发票',
-                                                disabled: finance.invoiceComplete,
-                                                title: finance.invoiceComplete ? '订单已全额开票' : undefined,
-                                                onClick: () => setRegistration({ mode: 'invoice', row }),
-                                            },
-                                            ...(!hasInbound ? [{
-                                                label: '生成入库单',
-                                                onClick: () => openGenerateInboundConfirm(row),
-                                            }] : []),
-                                            {
-                                                label: '链路追踪',
-                                                onClick: () => onOpenTrace({ type: 'order', code: row.jdOrder, orderCode: row.jdOrder }),
-                                            },
-                                        ]}
-                                    />
+                                <tr key={row.jdOrder}>
+                                    <td className="link-cell">{row.jdOrder}</td>
+                                    <td>{row.plan}</td>
+                                    <td>{row.targetWarehouse || '--'}</td>
+                                    <td>{numberText(lineQty(row.items))}</td>
+                                    <td>{currency(finance.orderAmount)}</td>
+                                    <td><StatusTag value={finance.paymentStatus} /></td>
+                                    <td><StatusTag value={finance.invoiceStatus} /></td>
+                                    <td><StatusTag value={inboundSummary.status} /></td>
+                                    <td>{numberText(inboundSummary.generatedQty)} / {numberText(inboundSummary.orderQty)}</td>
+                                    <td>{row.supplier}</td>
+                                    <td>{row.createdAt || row.importedAt}</td>
+                                    <td>{row.items.length} 行</td>
+                                    <td>{itemSummary(row.items)}</td>
+                                    <td>
+                                    <div className="row-actions purchase-order-actions">
+                                        <button type="button" onClick={() => openWindow(orderDetailWindow(row, { openPlanView, openDemandView, openTraceRelation: onOpenTrace }))}>查看订单</button>
+                                        <button
+                                            type="button"
+                                            disabled={inboundSummary.remainingQty <= 0}
+                                            title={inboundSummary.remainingQty <= 0 ? '该订单已无剩余可生成数量' : undefined}
+                                            onClick={() => onGenerateInbound(row)}
+                                        >
+                                            生成入库单
+                                        </button>
+                                        <button type="button" onClick={() => onOpenTrace({ type: 'order', code: row.jdOrder, orderCode: row.jdOrder })}>链路追踪</button>
+                                        <button
+                                            type="button"
+                                            className={moreMenu?.row.jdOrder === row.jdOrder ? 'row-actions-more-trigger is-open' : 'row-actions-more-trigger'}
+                                            aria-haspopup="menu"
+                                            aria-expanded={moreMenu?.row.jdOrder === row.jdOrder}
+                                            onClick={(event) => toggleMoreMenu(event, row)}
+                                        >
+                                            更多<span aria-hidden="true" className="row-actions-more-arrow" />
+                                        </button>
+                                    </div>
                                 </td>
                             </tr>
                         );
                     }}
                 />
             </section>
+            {moreMenu && (() => {
+                const finance = orderFinanceSummary(moreMenu.row);
+                const deletable = canDeleteOrder(moreMenu.row);
+
+                return (
+                    <>
+                        <button type="button" className="row-actions-menu-mask" aria-label="关闭更多菜单" onClick={() => setMoreMenu(null)} />
+                        <div className="row-actions-menu is-floating" role="menu" aria-label={`${moreMenu.row.jdOrder} 更多操作`} style={{ top: moreMenu.top, left: moreMenu.left }}>
+                            <button
+                                type="button"
+                                role="menuitem"
+                                disabled={finance.paymentComplete}
+                                title={finance.paymentComplete ? '订单已全额付款' : undefined}
+                                onClick={() => {
+                                    setMoreMenu(null);
+                                    setRegistration({ mode: 'payment', row: moreMenu.row });
+                                }}
+                            >
+                                <CreditCard aria-hidden="true" />
+                                <span>登记付款</span>
+                            </button>
+                            <button
+                                type="button"
+                                role="menuitem"
+                                disabled={finance.invoiceComplete}
+                                title={finance.invoiceComplete ? '订单已全额开票' : undefined}
+                                onClick={() => {
+                                    setMoreMenu(null);
+                                    setRegistration({ mode: 'invoice', row: moreMenu.row });
+                                }}
+                            >
+                                <FileText aria-hidden="true" />
+                                <span>登记发票</span>
+                            </button>
+                            <button
+                                type="button"
+                                role="menuitem"
+                                className="danger-link"
+                                disabled={!deletable}
+                                title={deletable ? '删除订单' : '已有入库单、付款或发票记录，无法删除'}
+                                onClick={() => {
+                                    setMoreMenu(null);
+                                    onDeleteOrder(moreMenu.row);
+                                }}
+                            >
+                                <Trash2 aria-hidden="true" />
+                                <span>删除</span>
+                            </button>
+                        </div>
+                    </>
+                );
+            })()}
             {registration && (
                 <FinanceRegistrationModal
                     mode={registration.mode}

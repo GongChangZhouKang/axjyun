@@ -20,10 +20,13 @@ import { Dashboard } from './Dashboard';
 import { ArchivePage } from './ArchivePage';
 import { WarehousePage } from './WarehousePage';
 import { InventoryPage } from './InventoryPage';
-import { PurchaseDemandCreatePage, PurchasePage, PurchasePlanCreatePage, PurchasePlanViewPage, PurchaseOrderGeneratePage } from './PurchasePage';
+import { PurchaseDemandCreatePage, PurchasePage, PurchasePlanCreatePage, PurchasePlanViewPage, PurchaseOrderGeneratePage, PurchaseInboundGeneratePage } from './PurchasePage';
 import {
     GeneratedOrderPayload,
 } from './purchase/PurchaseOrderGeneratePage';
+import {
+    GeneratedInboundPayload,
+} from './purchase/PurchaseInboundGeneratePage';
 import { InboundPage } from './InboundPage';
 import { TransferPage } from './TransferPage';
 import { StocktakePage } from './StocktakePage';
@@ -37,16 +40,19 @@ export function PageContent({
     openDemandView,
     openPlanView,
     openGenerateOrder,
+    openGenerateInbound,
     openLowStockDemand,
     purchaseDemandDraft,
     selectedDemand,
     selectedPlan,
+    selectedOrder,
     orderRows,
     inboundRows,
     onCreateGeneratedOrders,
-    onGenerateInbound,
+    onCreateGeneratedInbounds,
     onAddPayment,
     onAddInvoice,
+    onDeleteOrder,
     purchaseTab,
     setPurchaseTab,
 }: {
@@ -56,16 +62,19 @@ export function PageContent({
     openDemandView: (row: DemandRow) => void;
     openPlanView: (row: PlanRow) => void;
     openGenerateOrder: (row: PlanRow) => void;
+    openGenerateInbound: (row: OrderRow) => void;
     openLowStockDemand: (warehouse: string, lines: PurchaseDemandLine[]) => void;
     purchaseDemandDraft: { warehouse: string; lines: PurchaseDemandLine[] } | null;
     selectedDemand: DemandRow;
     selectedPlan: PlanRow;
+    selectedOrder: OrderRow;
     orderRows: OrderRow[];
     inboundRows: FlowRow[];
     onCreateGeneratedOrders: (payload: GeneratedOrderPayload) => void;
-    onGenerateInbound: (row: OrderRow) => void;
+    onCreateGeneratedInbounds: (payload: GeneratedInboundPayload) => void;
     onAddPayment: (orderCode: string, record: PaymentRecord) => void;
     onAddInvoice: (orderCode: string, record: InvoiceRecord) => void;
+    onDeleteOrder: (row: OrderRow) => void;
     purchaseTab: PurchaseTab;
     setPurchaseTab: (tab: PurchaseTab) => void;
 }) {
@@ -86,7 +95,7 @@ export function PageContent({
 
     switch (page) {
         case 'dashboard':
-            return <Dashboard openPage={openPage} />;
+            return <Dashboard openPage={openPage} openWindow={openWindow} />;
         case 'archive':
             return <ArchivePage openWindow={openWindow} />;
         case 'warehouses':
@@ -101,11 +110,12 @@ export function PageContent({
                     openDemandView={openDemandView}
                     openPlanView={openPlanView}
                     openGenerateOrder={openGenerateOrder}
+                    openGenerateInbound={openGenerateInbound}
                     orderRows={orderRows}
                     inboundRows={inboundRows}
-                    onGenerateInbound={onGenerateInbound}
                     onAddPayment={onAddPayment}
                     onAddInvoice={onAddInvoice}
+                    onDeleteOrder={onDeleteOrder}
                     tab={purchaseTab}
                     setTab={setPurchaseTab}
                 />
@@ -143,6 +153,15 @@ export function PageContent({
                     onOpenTrace={openTraceRelation}
                 />
             );
+        case 'purchase-inbound-generate':
+            return (
+                <PurchaseInboundGeneratePage
+                    row={selectedOrder}
+                    inboundRows={inboundRows}
+                    onCancel={() => returnToPurchase('orders')}
+                    onCreate={onCreateGeneratedInbounds}
+                />
+            );
         case 'inbound':
             return (
                 <InboundPage
@@ -163,6 +182,6 @@ export function PageContent({
         case 'costs':
             return <CostPage openWindow={openWindow} />;
         default:
-            return <Dashboard openPage={openPage} />;
+            return <Dashboard openPage={openPage} openWindow={openWindow} />;
     }
 }
