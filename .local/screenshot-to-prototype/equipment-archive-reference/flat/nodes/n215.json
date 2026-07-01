@@ -1,0 +1,13 @@
+{
+  "bbox": {
+    "height": 16,
+    "left": 293,
+    "top": 215,
+    "width": 16
+  },
+  "nodeId": "n215",
+  "selector": "div.check-box-block.ivu-radio-group > label.ivu-radio-wrapper.ivu-radio-group-item:nth-of-type(1) > span.ivu-radio.ivu-radio-checked:nth-of-type(1) > span.ivu-radio-inner",
+  "styleId": "style_79",
+  "tag": "span",
+  "text": "修改人"
+}

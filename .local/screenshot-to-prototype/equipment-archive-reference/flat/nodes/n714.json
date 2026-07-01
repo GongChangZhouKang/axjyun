@@ -1,0 +1,15 @@
+{
+  "bbox": {
+    "height": 22,
+    "left": 1341,
+    "top": 648,
+    "width": 23
+  },
+  "height": "21px",
+  "nodeId": "n714",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(7) > td.ivu-table-column-kOeYLG.ivu-table-column-right:nth-of-type(6) > div.ivu-table-cell > div > div.ivu-tooltip",
+  "styleId": "style_99",
+  "tag": "div",
+  "text": "作训服",
+  "width": "42px"
+}

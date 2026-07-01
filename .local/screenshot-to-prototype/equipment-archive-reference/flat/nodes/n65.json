@@ -1,0 +1,21 @@
+{
+  "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-md-people\" style=\"font-size: 17px;\"></i> 客户管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+  "bbox": {
+    "height": 49,
+    "left": 0,
+    "top": 358,
+    "width": 199
+  },
+  "children": [
+    "n63",
+    "n64"
+  ],
+  "height": "49px",
+  "nodeId": "n65",
+  "originalClass": "ivu-menu-submenu-title",
+  "selector": "li.ivu-menu-submenu.ivu-menu-item-active > div.ivu-menu-submenu-title",
+  "styleId": "style_16",
+  "tag": "div",
+  "text": "客户管理",
+  "width": "199px"
+}

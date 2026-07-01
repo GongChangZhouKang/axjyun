@@ -154,7 +154,7 @@ export function ArchivePage({ openWindow }: { openWindow: OpenBusinessWindow }) 
         <>
             <div className="sub-tabs">
                 <button type="button" className={tab === 'items' ? 'active' : ''} onClick={() => setTab('items')}>
-                    装备品类档案
+                    装备档案
                 </button>
                 <button type="button" className={tab === 'categories' ? 'active' : ''} onClick={() => setTab('categories')}>
                     分类管理

@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 1029,
+    "left": 0,
+    "top": 64,
+    "width": 199
+  },
+  "children": [
+    "n23"
+  ],
+  "height": "49px",
+  "nodeId": "n24",
+  "originalClass": "ivu-menu-submenu",
+  "selector": "ul.ivu-menu.ivu-menu-light",
+  "styleId": "style_20",
+  "tag": "li",
+  "width": "199px"
+}

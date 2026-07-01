@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 32,
+    "left": 220,
+    "top": 265,
+    "width": 114
+  },
+  "children": [
+    "n247"
+  ],
+  "height": "21.875px",
+  "nodeId": "n248",
+  "originalClass": "ivu-tooltip",
+  "selector": "div.content-box.ivu-layout-content > div.new-big-box > div:nth-of-type(1) > div.new-table-box:nth-of-type(2) > div.sms-btn-box > div.sms-btn-blue:nth-of-type(1) > button.ivu-btn.ivu-btn-primary",
+  "styleId": "style_94",
+  "tag": "div",
+  "width": "70px"
+}

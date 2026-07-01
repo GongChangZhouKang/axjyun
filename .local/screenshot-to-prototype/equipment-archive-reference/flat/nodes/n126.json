@@ -1,0 +1,15 @@
+{
+  "bbox": {
+    "height": 17,
+    "left": 24,
+    "top": 1010,
+    "width": 17
+  },
+  "height": "14px",
+  "nodeId": "n126",
+  "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow",
+  "selector": "i.ivu-icon.ivu-icon-md-clipboard",
+  "styleId": "style_52",
+  "tag": "i",
+  "width": "14px"
+}

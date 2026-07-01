@@ -1,0 +1,15 @@
+{
+  "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-ios-settings\" style=\"font-size: 17px;\"></i> 系统管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+  "children": [
+    "n88",
+    "n89"
+  ],
+  "height": "49px",
+  "nodeId": "n90",
+  "originalClass": "ivu-menu-submenu-title",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(9) > li.ivu-menu-submenu > ul.ivu-menu",
+  "styleId": "style_16",
+  "tag": "div",
+  "text": "系统管理",
+  "width": "199px"
+}

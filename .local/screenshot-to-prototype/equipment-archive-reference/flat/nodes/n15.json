@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 64,
+    "left": 0,
+    "top": 0,
+    "width": 1912
+  },
+  "children": [
+    "n14"
+  ],
+  "height": "64px",
+  "nodeId": "n15",
+  "originalClass": "ivu-layout",
+  "selector": "div.ivu-layout-header",
+  "styleId": "style_14",
+  "tag": "div",
+  "width": "1912px"
+}

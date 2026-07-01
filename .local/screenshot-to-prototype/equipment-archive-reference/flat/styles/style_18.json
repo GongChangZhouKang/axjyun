@@ -1,0 +1,16 @@
+{
+  "custom": {
+    "border": "0px none rgb(81, 90, 110)",
+    "borderColor": "rgb(81, 90, 110)",
+    "color": "rgb(81, 90, 110)",
+    "fontFamily": "Ionicons",
+    "fontSize": "17px",
+    "margin": "0px 8px 0px 0px",
+    "marginInlineEnd": "8px",
+    "minHeight": "0px",
+    "minWidth": "0px",
+    "textOverflow": "clip"
+  },
+  "styleId": "style_18",
+  "tw": "inline-block static font-normal leading-none text-center border-0 visible cursor-pointer mt-0 mr-2 mb-0 ml-0 p-0 overflow-visible"
+}

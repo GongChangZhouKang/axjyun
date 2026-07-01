@@ -79,10 +79,10 @@
   },
   "tokens": {
     "palette": [
-      "#096DD9",
-      "#075EB8",
       "#129BFF",
       "#2D8CF0",
+      "#096DD9",
+      "#075EB8",
       "#515A6E",
       "#666666",
       "#808695",
@@ -100,7 +100,7 @@
       "#F6FFED",
       "#237804",
       "#4B4949",
-      "#F8F8F9",
+      "#F4F5F7",
       "#F0FAFF",
       "#23D170",
       "#FFAE00",
@@ -114,10 +114,11 @@
       "#764BA2"
     ],
     "colors": {
-      "primary": "#096DD9",
-      "primaryHover": "#075EB8",
+      "primary": "#129BFF",
+      "primaryHover": "#2D8CF0",
       "onPrimary": "#FFFFFF",
       "primarySource": "#129BFF",
+      "primaryAccessible": "#096DD9",
       "accent": "#2D8CF0",
       "ink": "#515A6E",
       "inkSecondary": "#666666",
@@ -137,7 +138,7 @@
       "successSurface": "#F6FFED",
       "successText": "#237804",
       "inkStrong": "#4B4949",
-      "surfaceRowAlt": "#F8F8F9",
+      "surfaceRowAlt": "#F4F5F7",
       "surfaceSelected": "#F0FAFF",
       "successTextSource": "#23D170",
       "warningSource": "#FFAE00",
@@ -247,8 +248,9 @@
       "easeStandard": "ease-in-out",
       "easeEnter": "cubic-bezier(0.4, 0, 0.2, 1)"
     },
-    "components": {
+      "components": {
       "controlHeight": "34px",
+      "tableHeaderHeight": "38px",
       "tableRowHeight": "48px",
       "tabHeight": "44px",
       "treePanelWidth": "300px",
@@ -287,7 +289,7 @@
   "display": {
     "brand": "安保管理平台后台主题",
     "brandAlias": "安保管理平台后台主题",
-    "description": "从安保管理平台合同、员工、弹窗表单和装备出库等代表性页面提取的高密度政企后台主题。以 14px 中文排版、白色与浅冷灰表面、4px 小圆角和克制的蓝色交互为核心，同时保留 source-exact tokens 与 WCAG AA 生产语义 tokens。",
+    "description": "从安保管理平台合同、员工、弹窗表单和装备出库等代表性页面提取的高密度政企后台主题。以 14px 中文排版、白色与浅冷灰表面、4px 小圆角、#129BFF 主按钮和 48px 数据行为核心。",
     "descriptionEn": "A compact enterprise-admin system with cool-gray typography, restrained surfaces and accessible blue interactions.",
     "variant": "dashboard",
     "distributionTags": [
@@ -306,22 +308,22 @@
     "fontStylesheets": [],
     "palette": [
       {
-        "color": "#096DD9",
-        "labelZh": "生产主色",
-        "labelEn": "Accessible Primary",
+        "color": "#129BFF",
+        "labelZh": "系统主色",
+        "labelEn": "System Primary",
         "textColor": "#FFFFFF"
       },
       {
-        "color": "#129BFF",
-        "labelZh": "源按钮蓝",
-        "labelEn": "Source Button Blue",
-        "textColor": "#16324A"
+        "color": "#2D8CF0",
+        "labelZh": "交互蓝",
+        "labelEn": "Interactive Blue",
+        "textColor": "#FFFFFF"
       },
       {
-        "color": "#2D8CF0",
-        "labelZh": "源交互蓝",
-        "labelEn": "Source Accent Blue",
-        "textColor": "#10243A"
+        "color": "#096DD9",
+        "labelZh": "高对比备用蓝",
+        "labelEn": "Accessible Fallback",
+        "textColor": "#FFFFFF"
       },
       {
         "color": "#515A6E",
@@ -342,7 +344,7 @@
         "textColor": "#515A6E"
       },
       {
-        "color": "#F8F8F9",
+        "color": "#F4F5F7",
         "labelZh": "斑马纹行",
         "labelEn": "Alternate Row",
         "textColor": "#515A6E"
@@ -351,7 +353,7 @@
         "color": "#F0FAFF",
         "labelZh": "选中表面",
         "labelEn": "Selected Surface",
-        "textColor": "#096DD9"
+        "textColor": "#2D8CF0"
       },
       {
         "color": "#19BE6B",
@@ -467,20 +469,20 @@
       },
       {
         "eyebrow": "语义状态",
-        "title": "Source-exact + WCAG 双轨语义",
-        "body": "保留执行中、待签署、离职等源色，同时为长文本与标签提供可访问生产组合。"
+        "title": "原系统主色 + 高对比备用",
+        "body": "主按钮保持 #129BFF 原系统视觉；高对比备用色仅在明确验收要求下局部使用。"
       }
     ],
     "usageGuidance": {
       "do": [
-        "推荐：以 #FFFFFF、#F5F7F9、#F4F5F7、#F8F8F9 和 #515A6E 构成页面主体。",
+        "推荐：以 #FFFFFF、#F5F7F9、#F4F5F7 和 #515A6E 构成页面主体。",
         "推荐：按钮、输入、分页与树节点保持 34px 高、4px 圆角、14px 字号。",
         "推荐：列表页用筛选条、批量工具栏、斑马纹表格和右下分页组织高密度任务。",
         "推荐：大型表单模态使用 16px 圆角、60% 深灰遮罩、滚动正文和 58px 底栏。",
-        "推荐：小号文字和按钮使用可访问生产语义色，source-exact 色用于短标签和微型标记。"
+        "推荐：主按钮使用 #129BFF，文字链接、hover 与 focus 使用 #2D8CF0；表头约 38px，数据行固定 48px。"
       ],
       "dont": [
-        "禁止：把 source-exact 亮蓝、橙、绿或红直接用于长段小号文字。",
+        "禁止：用高对比备用蓝替换默认主按钮色，或让表格操作换行撑高数据行。",
         "禁止：将人脸照片上传的紫色渐变扩展为普通 CTA 或全局第二品牌色。",
         "禁止：给普通卡片、筛选条和表格添加投影。",
         "禁止：在非批量任务区堆叠多个同权重蓝色主按钮。",

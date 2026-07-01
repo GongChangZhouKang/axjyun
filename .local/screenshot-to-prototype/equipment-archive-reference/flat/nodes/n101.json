@@ -1,0 +1,20 @@
+{
+  "_innerHTML": "<!----> 采购管理 <i class=\"ivu-icon ivu-icon-ios-close ivu-tabs-close\"></i>",
+  "bbox": {
+    "height": 49,
+    "left": 0,
+    "top": 848,
+    "width": 199
+  },
+  "children": [
+    "n100"
+  ],
+  "height": "31px",
+  "nodeId": "n101",
+  "originalClass": "ivu-tabs-tab",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(11) > li.ivu-menu-submenu",
+  "styleId": "style_29",
+  "tag": "div",
+  "text": "采购管理",
+  "width": "93.8906px"
+}

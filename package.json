@@ -43,6 +43,10 @@
   },
   "dependencies": {
     "@axhub/annotation": "^1.0.6",
-    "lucide-react": "^0.562.0"
+    "@element-plus/icons-vue": "^2.3.2",
+    "@vue/compiler-dom": "^3.5.39",
+    "element-plus": "^2.14.2",
+    "lucide-react": "^0.562.0",
+    "vue": "^3.5.39"
   }
 }

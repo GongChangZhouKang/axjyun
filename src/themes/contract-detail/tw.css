@@ -5,10 +5,11 @@
  * Tailwind v4 namespace model, then extended with captured shadow/motion tokens.
  */
 @theme {
-  --color-primary: #096dd9;
-  --color-primary-hover: #075eb8;
+  --color-primary: #129bff;
+  --color-primary-hover: #2d8cf0;
   --color-on-primary: #ffffff;
   --color-primary-source: #129bff;
+  --color-primary-accessible: #096dd9;
   --color-accent: #2d8cf0;
   --color-ink: #515a6e;
   --color-ink-strong: #4b4949;
@@ -21,7 +22,7 @@
   --color-surface-muted: #f2f2f2;
   --color-surface-soft: #f5f7fb;
   --color-surface-table: #f4f5f7;
-  --color-surface-row-alt: #f8f8f9;
+  --color-surface-row-alt: #f4f5f7;
   --color-surface-selected: #f0faff;
   --color-surface-disabled: #f7f7f7;
   --color-border: #dcdee2;

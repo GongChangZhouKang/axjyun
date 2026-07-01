@@ -1,0 +1,12 @@
+{
+  "children": [
+    "n85"
+  ],
+  "height": "49px",
+  "nodeId": "n86",
+  "originalClass": "ivu-menu-submenu",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(8) > li.ivu-menu-submenu > ul.ivu-menu > li.ivu-menu-item",
+  "styleId": "style_20",
+  "tag": "li",
+  "width": "199px"
+}

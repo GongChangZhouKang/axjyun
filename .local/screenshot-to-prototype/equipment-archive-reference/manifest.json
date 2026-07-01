@@ -1,0 +1,87 @@
+{
+  "version": "3.0",
+  "generator": "axhub-ai-extension",
+  "exportTime": "2026-06-30T17:26:56.902Z",
+  "sourceUrl": "https://sms.axjyun.com/equip/record",
+  "viewport": {
+    "height": 901,
+    "width": 1912
+  },
+  "mode": "full",
+  "files": {
+    "domlist": "structure/doms.json",
+    "stylePool": "structure/styles.json",
+    "theme": "theme.json",
+    "screenshot": "screenshot.png",
+    "content": "content.md",
+    "pageMap": "page-map.json",
+    "topology": "topology/topology.json",
+    "selectorMap": "topology/selector-map.json",
+    "contentBlocks": "topology/content-blocks.json",
+    "behaviors": null,
+    "responsive": null,
+    "networkSummary": null,
+    "html": "index.html",
+    "css": "style.css"
+  },
+  "flatStructure": {
+    "skeleton": "flat/skeleton.json",
+    "nodesDir": "flat/nodes/",
+    "stylesDir": "flat/styles/",
+    "index": "flat/index.json"
+  },
+  "livePageAccess": {
+    "sourceUrl": "https://sms.axjyun.com/equip/record",
+    "selectorAvailable": true,
+    "note": "每个节点文件包含 selector 字段，可用 Playwright 访问 sourceUrl 进行补充采集"
+  },
+  "screenshots": {
+    "current": "screenshot.png",
+    "responsive": [
+      "screenshots/desktop-1440.png",
+      "screenshots/tablet-768.png",
+      "screenshots/mobile-390.png"
+    ]
+  },
+  "assets": {
+    "imageCount": 0,
+    "fontCount": 8,
+    "imageFiles": [],
+    "fontFiles": [
+      "assets/fonts/Ionicons-1.woff2",
+      "assets/fonts/Ionicons-2.woff",
+      "assets/fonts/Ionicons-3.ttf",
+      "assets/fonts/element-icons-4.woff",
+      "assets/fonts/element-icons-5.ttf",
+      "assets/fonts/font-6.woff2",
+      "assets/fonts/iconfont.03f87500.woff",
+      "assets/fonts/iconfont.22f506b8.ttf"
+    ],
+    "viewportScreenshotCount": 0
+  },
+  "stats": {
+    "nodeCount": 946,
+    "styleCount": 144,
+    "markdownLength": 11564,
+    "sectionCount": 1
+  },
+  "capabilities": {
+    "hasFonts": true,
+    "hasScreenshot": true,
+    "hasResponsiveScreenshots": true,
+    "hasTheme": true,
+    "hasMarkdown": true,
+    "hasPreviewHTML": true,
+    "hasSections": true,
+    "hasTopology": true,
+    "hasSelectorMap": true,
+    "hasBehaviors": false,
+    "hasResponsive": false,
+    "hasNetworkSummary": false,
+    "hasContentBlocks": true,
+    "hasRebuildPrompts": true,
+    "hasFlatStructure": true,
+    "jsonFormat": true,
+    "tailwindClasses": true
+  }
+}

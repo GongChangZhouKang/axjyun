@@ -1,0 +1,26 @@
+{
+  "bbox": {
+    "height": 18,
+    "left": 353,
+    "top": 215,
+    "width": 16
+  },
+  "children": [
+    "n225",
+    "n226",
+    "n227",
+    "n228",
+    "n229",
+    "n230",
+    "n231",
+    "n232",
+    "n233",
+    "n234"
+  ],
+  "height": "480px",
+  "nodeId": "n235",
+  "selector": "div.check-box-block.ivu-radio-group > label.ivu-radio-wrapper.ivu-radio-group-item:nth-of-type(2) > span.ivu-radio:nth-of-type(1) > input.ivu-radio-input",
+  "styleId": "style_78",
+  "tag": "colgroup",
+  "width": "1755px"
+}

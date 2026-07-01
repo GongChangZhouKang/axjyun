@@ -1,0 +1,21 @@
+{
+  "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-md-stats\" style=\"font-size: 17px;\"></i> 安保数据  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+  "bbox": {
+    "height": 49,
+    "left": 0,
+    "top": 162,
+    "width": 199
+  },
+  "children": [
+    "n21",
+    "n22"
+  ],
+  "height": "49px",
+  "nodeId": "n23",
+  "originalClass": "ivu-menu-submenu-title",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(3)",
+  "styleId": "style_16",
+  "tag": "div",
+  "text": "安保数据",
+  "width": "199px"
+}

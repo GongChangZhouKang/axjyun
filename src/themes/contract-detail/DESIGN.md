@@ -3,10 +3,11 @@ version: alpha
 name: 安保管理平台后台主题
 description: "A compact Chinese enterprise administration theme for Security Management Platform back-office screens: cool gray typography, white and pale-gray surfaces, precise 3–4px radii, restrained borders, and a two-level blue interaction system."
 colors:
-  primary: "#096DD9"
-  primary-hover: "#075EB8"
+  primary: "#129BFF"
+  primary-hover: "#2D8CF0"
   on-primary: "#FFFFFF"
   primary-source: "#129BFF"
+  primary-accessible: "#096DD9"
   accent: "#2D8CF0"
   ink: "#515A6E"
   ink-strong: "#4B4949"
@@ -19,7 +20,7 @@ colors:
   surface-muted: "#F2F2F2"
   surface-soft: "#F5F7FB"
   surface-table: "#F4F5F7"
-  surface-row-alt: "#F8F8F9"
+  surface-row-alt: "#F4F5F7"
   surface-selected: "#F0FAFF"
   surface-disabled: "#F7F7F7"
   border: "#DCDEE2"
@@ -339,9 +340,10 @@ components:
 
 | Token | 值 | 语义与来源 |
 |---|---:|---|
-| `{colors.primary}` | `#096DD9` | 生产级主操作与关键文字链接；由源蓝校准为白字 5.00:1 的 WCAG AA 版本 |
-| `{colors.primary-hover}` | `#075EB8` | 主按钮悬停/按下的可访问深蓝，保持白字对比度 |
-| `{colors.primary-source}` | `#129BFF` | 截图主按钮的 source-exact 蓝；用于非文本强调、选中条、图标底或大字号，不直接承载小号白字 |
+| `{colors.primary}` | `#129BFF` | 原系统主按钮的 source-exact 蓝；默认 CTA、批量工具栏按钮与主选中条必须使用此色 |
+| `{colors.primary-hover}` | `#2D8CF0` | 原系统交互蓝；用于主按钮 hover/active、文字链接与焦点强调 |
+| `{colors.primary-source}` | `#129BFF` | 与 `primary` 同源的兼容别名，供旧组件和选中条继续使用 |
+| `{colors.primary-accessible}` | `#096DD9` | 高对比备用蓝；仅在明确要求 WCAG AA 的小号白字场景使用，不得替换默认视觉主色 |
 | `{colors.accent}` | `#2D8CF0` | 截图中选中导航、链接与焦点强调的原始蓝；适合线、图标和边框 |
 | `{colors.ink}` | `#515A6E` | 默认正文、标题、表格内容；白底对比度 6.91:1 |
 | `{colors.ink-strong}` | `#4B4949` | 模态标题、重要分区标题；来自员工样式数据中的深色文本 |
@@ -354,7 +356,7 @@ components:
 | `{colors.surface-muted}` | `#F2F2F2` | 摘要卡、统计卡、只读信息块 |
 | `{colors.surface-soft}` | `#F5F7FB` | 筛选条、轻量工具栏、分组容器 |
 | `{colors.surface-table}` | `#F4F5F7` | 表头、列标题、密集数据的结构层 |
-| `{colors.surface-row-alt}` | `#F8F8F9` | 表格斑马纹偶数行，不能用于表头 |
+| `{colors.surface-row-alt}` | `#F4F5F7` | 原系统表格斑马纹偶数行；与表头共用底色，但通过字重与结构位置区分语义 |
 | `{colors.surface-selected}` | `#F0FAFF` | 左侧导航、组织树节点和轻量选中背景 |
 | `{colors.border}` | `#DCDEE2` | 输入、按钮、分页、分割线的标准 1px 边框 |
 | `{colors.border-strong}` | `#C5C8CE` | 强边界、选区、拖拽或更明显的结构分隔 |
@@ -373,9 +375,9 @@ components:
 
 | 等级 | 规则 |
 |---|---|
-| 推荐 | 以 `surface + ink + border` 构成 80% 以上界面；关键文字和主按钮使用 `primary`；`primary-source`、`accent` 用于选中条、图标、边框和短促强调。 |
+| 推荐 | 以 `surface + ink + border` 构成 80% 以上界面；主按钮使用 `primary`；文字链接、焦点与 hover 使用 `accent`。 |
 | 允许 | `surface-muted`、`surface-soft`、`surface-table`、`surface-row-alt` 可在同屏并存，但必须各自承担“摘要 / 工具 / 表头 / 斑马纹”语义；source-exact 状态色可用于短标签、微型标记或纯文本状态。 |
-| 禁止 | 禁止用 `#129BFF` 或 `#2D8CF0` 承载 14px 白字正文；禁止用 `ink-muted/subtle/disabled` 表达关键数据；禁止把蓝色或功能紫色铺成大面积背景、渐变或装饰光晕。 |
+| 禁止 | 禁止把 `primary-accessible` 擅自提升为默认主色；禁止用亮蓝承载长段白字正文；禁止用 `ink-muted/subtle/disabled` 表达关键数据；禁止把蓝色或功能紫色铺成大面积背景、渐变或装饰光晕。 |
 
 ## Typography
 
@@ -409,7 +411,7 @@ components:
 
 - 桌面框架参考：顶部栏 64px、侧栏 200px、标签导航 32px；内容区按可用宽度伸展。
 - 主内容水平内边距推荐 12–16px；摘要卡之间使用 6–8px；区块之间使用 16–24px。
-- 控件标准高度 34px；紧凑表格行高 40–44px；页签点击区高度 40px 左右。
+- 控件标准高度 34px；表头高度约 38px；数据行固定 48px；操作链接必须单行排列，不能通过换行撑高数据行；页签点击区高度 40px 左右。
 - 页面不设营销式居中最大宽度；业务内容应填满可用工作区，同时保持 12–16px 安全边距。
 - 树 + 列表布局：左侧树面板约 300px，右侧列表使用剩余宽度；两者之间保留 12px 间距。
 - 两列表单：标签列 120–140px，控件列自适应；行间距 18px；大型模态内容左右内边距约 26px。
@@ -476,13 +478,13 @@ components:
 
 ### 核心组件
 
-- **主按钮**：34px 高，4px 圆角，7px 16px padding；生产背景用 `primary #096DD9`，白字。
+- **主按钮**：34px 高，4px 圆角，7px 16px padding；背景使用原系统主色 `primary #129BFF`，hover/active 使用 `primary-hover #2D8CF0`，白字。
 - **次按钮**：白底、`border #DCDEE2`、`ink #515A6E`；悬停时边框与文字变为 `accent`。
 - **输入框 / Select**：34px 高，4px 圆角，1px 边框；focus 使用 `accent` 边框和轻 ring，不改高度。
 - **页签**：默认 `ink`，选中使用 `primary` 文字；底部保留 4px `primary-source` 指示条。
 - **摘要卡**：`surface-muted` 背景、4px 圆角、无阴影；图标只用线性蓝色图标。
 - **筛选条**：`surface-soft` 背景，控件横向排列，主操作靠右；小屏可换行。
-- **表格**：表头 `surface-table`、正文白底、水平 1px 分割线；空状态居中但不占用夸张高度。
+- **表格**：表头 `surface-table`、约 38px 高；数据行固定 48px，正文白底、水平 1px 分割线；操作列禁止换行；空状态居中但不占用夸张高度。
 - **表格斑马纹**：数据密集页可交替使用 `surface + surface-row-alt`；hover 使用更轻的蓝灰，不改变文字颜色。
 - **组织树**：约 300px 固定宽度，节点高 34px；选中使用 `surface-selected + primary`，机构图标保持 16–20px。
 - **批量工具栏**：允许同一任务簇出现多个蓝色按钮和分裂下拉按钮；必须与筛选器、表格保持 8–12px 间距，不能散落到普通内容区。
@@ -508,7 +510,7 @@ components:
 - 让白色与浅冷灰承担主要层级，蓝色只标记“可操作、已选择、需关注”。
 - 保持 14px 中文正文和 34px 控件的紧凑节奏。
 - 先保证表格、筛选、标签导航的扫描效率，再考虑装饰。
-- 使用 source-exact token 复现视觉证据，同时用生产语义 token 修正小字号对比度。
+- 默认使用 source-exact token 复现原系统；只有验收明确要求更高对比度时，才局部使用 `primary-accessible`。
 
 ### 允许
 
@@ -519,7 +521,7 @@ components:
 ### 禁止
 
 - 不添加玻璃拟态、渐变背景、彩色大阴影、3D 插图或大圆角卡片。
-- 不把弱灰文字当作主要正文，也不把低对比源蓝直接用于小号白字按钮。
+- 不把弱灰文字当作主要正文；不要用高对比备用蓝覆盖截图中明确存在的主按钮色。
 - 不把截图里的偶发值当全局规则；16px 圆角和 400ms 入场动效都属于特殊场景。
 
 ## Motion
@@ -562,11 +564,11 @@ components:
 ### 推荐写法
 
 1. “使用安保管理平台后台主题生成中文政企后台，默认正文 14px/21px、`#515A6E`，控件高 34px、圆角 4px。”
-2. “以白色主表面和 `#F5F7FB` 工具条组织合同筛选器，主操作使用可访问蓝 `#096DD9`。”
+2. “以白色主表面和 `#F5F7FB` 工具条组织合同筛选器，主操作使用原系统蓝 `#129BFF`，hover 使用 `#2D8CF0`。”
 3. “摘要卡无阴影，用 `#F2F2F2` 填充、4px 圆角和 16px 内边距；选中页签使用蓝色文字与 4px 指示条。”
 4. “表格表头使用 `#F4F5F7`，正文白底，边框 `#DCDEE2`，保持高密度扫描体验。”
-5. “保留 source-exact 蓝用于图标、线和选中条，小号文字和按钮改用 WCAG AA 的 `#096DD9`。”
-6. “员工信息页采用左侧组织树、右侧筛选与批量工具栏；数据表可使用 `#F8F8F9` 斑马纹，选中节点使用 `#F0FAFF`。”
+5. “按钮和选中条使用 `#129BFF`，文字链接、focus 与 hover 使用 `#2D8CF0`；`#096DD9` 仅作为高对比备用色。”
+6. “员工信息页采用左侧组织树、右侧筛选与批量工具栏；数据表使用 `#F4F5F7` 斑马纹，表头约 38px、数据行 48px，选中节点使用 `#F0FAFF`。”
 7. “新增/编辑员工使用 900px 大型模态、两列表单、可滚动正文和固定底部操作栏；成功、警告、危险状态使用已定义语义色。”
 
 ### 禁止写法
@@ -580,7 +582,7 @@ components:
 
 ### 可直接复用的生成提示
 
-> 为安保管理平台生成一个生产级中文后台页面。严格使用 Security Management Platform DESIGN.md：白色主内容区、`#F5F7F9` 应用画布、`#515A6E` 默认正文、14px/21px 基准排版、34px 控件、4px 圆角、1px `#DCDEE2` 边框。主操作和小号链接使用可访问蓝 `#096DD9`；`#129BFF` 与 `#2D8CF0` 只用于非文本强调、图标、边框与选中条。筛选条使用 `#F5F7FB`，表头使用 `#F4F5F7`，数据密集表格允许 `#F8F8F9` 斑马纹。员工管理采用组织树 + 批量工具栏 + 表格；新增/编辑采用两列表单的大型模态和固定操作栏。成功、警告、危险状态使用语义 token。保持高信息密度、明确层级和克制动效；除照片采集专用按钮外，不使用渐变、大圆角、玻璃拟态或装饰性阴影。
+> 为安保管理平台生成一个生产级中文后台页面。严格使用 Security Management Platform DESIGN.md：白色主内容区、`#F5F7F9` 应用画布、`#515A6E` 默认正文、14px/21px 基准排版、34px 控件、4px 圆角、1px `#DCDEE2` 边框。主按钮使用原系统蓝 `#129BFF`，hover、文字链接与焦点使用 `#2D8CF0`；`#096DD9` 只作为明确要求高对比度时的备用色。筛选条使用 `#F5F7FB`，表头和斑马纹使用 `#F4F5F7`，表头约 38px、数据行固定 48px，操作列不换行。员工管理采用组织树 + 批量工具栏 + 表格；新增/编辑采用两列表单的大型模态和固定操作栏。成功、警告、危险状态使用语义 token。保持高信息密度、明确层级和克制动效；除照片采集专用按钮外，不使用渐变、大圆角、玻璃拟态或装饰性阴影。
 
 ## Evidence and Confidence
 
@@ -588,5 +590,5 @@ components:
 - **高置信**：页面密度、导航层级、摘要卡、筛选条、页签、组织树、批量工具栏、斑马纹表格、两列表单、大型模态与固定操作栏来自 6 张代表性业务截图。
 - **用户确认**：执行中使用 `#19BE6B`、待处理使用 `#FFAE00`、危险操作使用 `#F52C2C`；这三项覆盖原截图中的对应状态色。
 - **高置信**：`#23D170` 成功、`rgba(55,55,55,.60)` 遮罩以及照片按钮 `#667EEA → #764BA2` 来自员工信息与合同列表截图/样式数据。
-- **派生并明确标注**：`#096DD9` 是为满足 WCAG AA 而增加的生产语义蓝；源截图的 `#129BFF` 和 `#2D8CF0` 仍作为 source-exact tokens 保留。
+- **用户反馈校准**：源截图的 `#129BFF` 恢复为默认主按钮色，`#2D8CF0` 用于交互态；`#096DD9` 保留为可选高对比备用色，不再改变默认视觉。
 - **尚未覆盖**：登录/认证、全局消息与通知、异常页、删除确认、暗色模式和原生移动布局没有直接视觉证据；需要这些场景时应补充对应截图后再扩展，不从现有页面臆测。

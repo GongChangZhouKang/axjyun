@@ -1,0 +1,20 @@
+{
+  "bbox": {
+    "height": 17,
+    "left": 24,
+    "top": 912,
+    "width": 17
+  },
+  "children": [
+    "n902",
+    "n903",
+    "n905"
+  ],
+  "height": "798.25px",
+  "nodeId": "n906",
+  "originalClass": "new-big-box",
+  "selector": "i.ivu-icon.ivu-icon-md-person",
+  "styleId": "style_138",
+  "tag": "div",
+  "width": "1712px"
+}

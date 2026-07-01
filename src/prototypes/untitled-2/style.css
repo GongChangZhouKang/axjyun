@@ -951,6 +951,105 @@ input {
   gap: 6px;
 }
 
+.stock-one-code-card {
+  border-color: #cfe0ff;
+}
+
+.stock-scan-check {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.stock-scan-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.stock-scan-summary div {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  padding: 10px 4px;
+  border-right: 1px solid #eef2f7;
+}
+
+.stock-scan-summary div:last-child {
+  border-right: 0;
+}
+
+.stock-scan-summary span {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.stock-scan-summary strong {
+  color: #111827;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.stock-scan-summary .plus strong,
+.stock-scan-summary .minus strong {
+  color: #dc2626;
+}
+
+.stock-scan-summary .neutral strong {
+  color: #16a34a;
+}
+
+.stock-scan-actions {
+  display: grid;
+  grid-template-columns: 1fr 72px;
+  gap: 8px;
+}
+
+.stock-scan-actions .scan-asset-btn,
+.stock-scan-actions .undo-scan-btn {
+  height: 46px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.stock-recent-codes {
+  display: grid;
+  gap: 6px;
+  padding: 9px 10px;
+  border-radius: 9px;
+  background: #f8fafc;
+}
+
+.stock-recent-codes > span {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.stock-recent-codes > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.stock-recent-codes code {
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: #fff;
+  color: #334155;
+  font-size: 10px;
+  box-shadow: inset 0 0 0 1px #e2e8f0;
+}
+
+.stock-recent-codes em {
+  color: #94a3b8;
+  font-size: 11px;
+  font-style: normal;
+}
+
 .stepper {
   display: inline-grid;
   grid-template-columns: 30px 46px 30px;

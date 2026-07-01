@@ -1,0 +1,17 @@
+{
+  "bbox": {
+    "height": 38,
+    "left": 1381,
+    "top": 309,
+    "width": 170
+  },
+  "children": [
+    "n294"
+  ],
+  "height": "22.375px",
+  "nodeId": "n295",
+  "selector": "div.content-box.ivu-layout-content > div.new-big-box > div:nth-of-type(1) > div.demo-spin-article:nth-of-type(3) > div.scope-box > div.ivu-table-wrapper:nth-of-type(2) > div.ivu-table.ivu-table-default:nth-of-type(1) > div.ivu-table-header:nth-of-type(1) > table > thead > tr > th.ivu-table-column-CN9xqC.ivu-table-column-center:nth-of-type(7)",
+  "styleId": "style_95",
+  "tag": "div",
+  "width": "88.0625px"
+}

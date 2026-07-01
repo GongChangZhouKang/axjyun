@@ -1,0 +1,14 @@
+{
+  "bbox": {
+    "height": 20,
+    "left": 266,
+    "top": 26,
+    "width": 49
+  },
+  "nodeId": "n2",
+  "originalClass": "version",
+  "selector": "span.version",
+  "styleId": "style_2",
+  "tag": "span",
+  "text": "v 1.8.96"
+}

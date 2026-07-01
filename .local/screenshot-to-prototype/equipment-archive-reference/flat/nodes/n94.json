@@ -1,0 +1,12 @@
+{
+  "children": [
+    "n93"
+  ],
+  "height": "879.906px",
+  "nodeId": "n94",
+  "originalClass": "menu-box",
+  "selector": "div.top-side > div.btn:nth-of-type(3) > div.ivu-dropdown > div.ivu-select-dropdown:nth-of-type(2) > ul.ivu-dropdown-menu > li.ivu-dropdown-item:nth-of-type(2)",
+  "styleId": "style_26",
+  "tag": "div",
+  "width": "200px"
+}

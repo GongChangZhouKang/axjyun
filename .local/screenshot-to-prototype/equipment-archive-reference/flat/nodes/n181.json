@@ -1,0 +1,17 @@
+{
+  "bbox": {
+    "height": 31,
+    "left": 506,
+    "top": 64,
+    "width": 108
+  },
+  "children": [
+    "n180"
+  ],
+  "nodeId": "n181",
+  "originalClass": "new-table-box",
+  "selector": "div.ivu-tabs.ivu-tabs-card > div.ivu-tabs-bar:nth-of-type(1) > div.ivu-tabs-nav-container > div.ivu-tabs-nav-wrap > div.ivu-tabs-nav-scroll > div.ivu-tabs-nav > div.ivu-tabs-tab:nth-of-type(5)",
+  "styleId": "style_76",
+  "tag": "div",
+  "width": "1672px"
+}

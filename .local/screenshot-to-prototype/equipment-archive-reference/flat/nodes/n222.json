@@ -1,0 +1,17 @@
+{
+  "bbox": {
+    "height": 32,
+    "left": 728,
+    "top": 151,
+    "width": 480
+  },
+  "children": [
+    "n221"
+  ],
+  "height": "37.875px",
+  "nodeId": "n222",
+  "selector": "div.content-box.ivu-layout-content > div.new-big-box > div:nth-of-type(1) > div.new-search-box:nth-of-type(1) > div.inp-show-2:nth-of-type(2) > div.inp > div.select-box.multiple",
+  "styleId": "style_89",
+  "tag": "thead",
+  "width": "1755px"
+}

@@ -1,0 +1,15 @@
+{
+  "bbox": {
+    "height": 25,
+    "left": 24,
+    "top": 20,
+    "width": 32
+  },
+  "height": "25px",
+  "nodeId": "n1",
+  "selector": "div.top-side > img",
+  "src": "assets/images/OfprOEvQAAAABJRU5ErkJggg.png",
+  "styleId": "style_1",
+  "tag": "img",
+  "width": "32px"
+}

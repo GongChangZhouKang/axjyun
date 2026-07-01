@@ -1,0 +1,90 @@
+{
+  "format": "axhub-annotation-source",
+  "documentVersion": 1,
+  "data": {
+    "version": 2,
+    "prototypeName": "equipment-archive-july",
+    "pageId": "archive",
+    "updatedAt": 1782811800000,
+    "nodes": [
+      {
+        "id": "archive-tabs",
+        "index": 1,
+        "title": "装备档案与分类管理标签",
+        "pageId": ["archive", "categories"],
+        "locator": { "selectors": ["[data-annotation-id=\"archive-tabs\"]"], "fingerprint": "div|data-annotation-id=archive-tabs", "path": [] },
+        "aiPrompt": "说明装备档案页面为什么拆分为两个标签。",
+        "annotationText": "原装备档案页面保留为默认标签，新增分类管理标签，管理员可以在同一页面完成档案与分类维护。",
+        "hasMarkdown": false,
+        "color": "#2563EB",
+        "images": [],
+        "createdAt": 1782811800000,
+        "updatedAt": 1782811800000
+      },
+      {
+        "id": "archive-filter",
+        "index": 2,
+        "title": "装备档案筛选",
+        "pageId": "archive",
+        "locator": { "selectors": ["[data-annotation-id=\"archive-filter\"]"], "fingerprint": "section|data-annotation-id=archive-filter", "path": [] },
+        "aiPrompt": "说明装备档案筛选条件。",
+        "annotationText": "支持按装备名称或编码、多级分类、供应商和启用状态组合查询；供应商输入支持联想。",
+        "hasMarkdown": false,
+        "color": "#059669",
+        "images": [],
+        "createdAt": 1782811800000,
+        "updatedAt": 1782811800000
+      },
+      {
+        "id": "archive-table",
+        "index": 3,
+        "title": "装备编码与档案列表",
+        "pageId": "archive",
+        "locator": { "selectors": ["[data-annotation-id=\"archive-table\"]"], "fingerprint": "section|data-annotation-id=archive-table", "path": [] },
+        "aiPrompt": "说明装备编码规则和列表操作。",
+        "annotationText": "列表新增装备编码列。编码按末级分类编码追加三位流水号自动生成，例如腰带分类 FZ-YD 对应装备编码 FZ-YD-001。",
+        "hasMarkdown": false,
+        "color": "#D97706",
+        "images": [],
+        "createdAt": 1782811800000,
+        "updatedAt": 1782811800000
+      },
+      {
+        "id": "category-tree-table",
+        "index": 4,
+        "title": "多级分类树形表格",
+        "pageId": "categories",
+        "locator": { "selectors": ["[data-annotation-id=\"category-tree-table\"]"], "fingerprint": "section|data-annotation-id=category-tree-table", "path": [] },
+        "aiPrompt": "说明多级分类的维护规则。",
+        "annotationText": "分类表格支持展开多级结构、唯一分类编码、新增下级、编辑和受限删除；存在子分类或关联装备时不可删除。",
+        "hasMarkdown": false,
+        "color": "#7C3AED",
+        "images": [],
+        "createdAt": 1782811800000,
+        "updatedAt": 1782811800000
+      }
+    ]
+  },
+  "markdownMap": {},
+  "assetMap": {},
+  "directory": {
+    "nodes": [
+      {
+        "type": "folder",
+        "id": "equipment-archive-directory",
+        "title": "装备管理7月迭代",
+        "defaultExpanded": true,
+        "children": [
+          { "type": "route", "id": "route-archive", "title": "装备档案", "route": "archive" },
+          { "type": "route", "id": "route-categories", "title": "分类管理", "route": "categories" },
+          {
+            "type": "markdown",
+            "id": "equipment-code-rule",
+            "title": "说明｜装备编码规则",
+            "markdown": "# 装备编码规则\n\n装备编码由末级分类编码与三位流水号组成。\n\n- 示例分类：腰带 `FZ-YD`\n- 首件装备：`FZ-YD-001`\n- 后续装备依次递增，编码由系统生成且不可手工修改。"
+          }
+        ]
+      }
+    ]
+  }
+}

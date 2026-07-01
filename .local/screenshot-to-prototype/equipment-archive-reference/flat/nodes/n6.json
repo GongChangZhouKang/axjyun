@@ -1,0 +1,15 @@
+{
+  "bbox": {
+    "height": 30,
+    "left": 1647,
+    "top": 17,
+    "width": 30
+  },
+  "height": "30px",
+  "nodeId": "n6",
+  "selector": "div.top-side > div.btn:nth-of-type(3) > div.ivu-dropdown > div.ivu-dropdown-rel:nth-of-type(1) > div.btn > img",
+  "src": "assets/images/T8Vi6YcpJ4I9QAAAABJRU5ErkJggg.png",
+  "styleId": "style_6",
+  "tag": "img",
+  "width": "30px"
+}

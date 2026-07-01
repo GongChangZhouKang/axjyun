@@ -1,0 +1,13 @@
+{
+  "children": [
+    "n145",
+    "n146"
+  ],
+  "height": "21px",
+  "nodeId": "n147",
+  "originalClass": "ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked ivu-radio-default",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(15) > li.ivu-menu-submenu > ul.ivu-menu > li.ivu-menu-item:nth-of-type(4)",
+  "styleId": "style_62",
+  "tag": "label",
+  "width": "52px"
+}

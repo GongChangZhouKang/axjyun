@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 .dmb-page.contract-theme {
-  --dmb-accent: #096dd9;
+  --dmb-accent: #129bff;
   --dmb-accent-contrast: #ffffff;
-  --dmb-link: #096dd9;
+  --dmb-link: #2d8cf0;
   --dmb-muted: #f5f7f9;
   --dmb-bg: #f5f7f9;
   --dmb-ink: #515a6e;
@@ -68,7 +68,7 @@
 }
 
 .contract-token-demo > header p {
-  color: #096dd9;
+  color: #2d8cf0;
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
@@ -199,17 +199,17 @@
 
 .contract-token-demo__blue-grid .is-production {
   color: #ffffff;
-  background: #096dd9;
-}
-
-.contract-token-demo__blue-grid .is-source-button {
-  color: #16324a;
   background: #129bff;
 }
 
-.contract-token-demo__blue-grid .is-source-accent {
-  color: #10243a;
+.contract-token-demo__blue-grid .is-source-button {
+  color: #ffffff;
   background: #2d8cf0;
+}
+
+.contract-token-demo__blue-grid .is-source-accent {
+  color: #ffffff;
+  background: #096dd9;
 }
 
 .contract-token-demo__semantic-grid {
@@ -263,7 +263,7 @@
 }
 
 .security-reference-gallery > header p {
-  color: #096dd9;
+  color: #2d8cf0;
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
@@ -345,8 +345,8 @@
   gap: 6px;
   padding: 7px 16px;
   color: #ffffff;
-  background: #096dd9;
-  border: 1px solid #096dd9;
+  background: #129bff;
+  border: 1px solid #129bff;
   border-radius: 4px;
   cursor: pointer;
   font: 500 14px/20px var(--dmb-font-body);
@@ -357,8 +357,8 @@
 .security-primary-button:focus-visible,
 .security-batch-toolbar button:hover,
 .security-batch-toolbar button:focus-visible {
-  background: #075eb8;
-  border-color: #075eb8;
+  background: #2d8cf0;
+  border-color: #2d8cf0;
   outline: 0;
 }
 
@@ -425,7 +425,7 @@
 }
 
 .security-org-tree > button.is-selected {
-  color: #096dd9;
+  color: #2d8cf0;
   background: #f0faff;
   font-weight: 500;
 }
@@ -493,23 +493,28 @@
 
 .security-system-table-wrap th,
 .security-system-table-wrap td {
-  height: 48px;
   padding: 10px 16px;
   text-align: left;
   border-bottom: 1px solid #eef0f2;
 }
 
 .security-system-table-wrap th {
+  height: 38px;
+  padding-block: 8px;
   background: #f4f5f7;
   font-weight: 700;
 }
 
+.security-system-table-wrap td {
+  height: 48px;
+}
+
 .security-system-table-wrap tbody tr:nth-child(even) {
-  background: #f8f8f9;
+  background: #f4f5f7;
 }
 
 .security-system-table-wrap a {
-  color: #096dd9;
+  color: #2d8cf0;
   text-decoration: none;
 }
 
@@ -598,7 +603,7 @@
   font: 500 14px/21px var(--dmb-font-body);
 }
 
-.security-modal > nav button.is-active { color: #096dd9; }
+.security-modal > nav button.is-active { color: #2d8cf0; }
 .security-modal > nav button.is-active::after { position: absolute; right: 8px; bottom: -1px; left: 8px; height: 3px; background: #129bff; content: ""; }
 
 .security-modal__body {
@@ -818,7 +823,7 @@
 .contract-demo__tab:hover,
 .contract-demo__tab:focus-visible,
 .contract-demo__tab.is-active {
-  color: #096dd9;
+  color: #2d8cf0;
 }
 
 .contract-demo__tab:focus-visible {
@@ -910,22 +915,22 @@
 
 .contract-demo__button:hover,
 .contract-demo__button:focus-visible {
-  color: #096dd9;
+  color: #2d8cf0;
   border-color: #2d8cf0;
   outline: 0;
 }
 
 .contract-demo__button--primary {
   color: #ffffff;
-  background: #096dd9;
-  border-color: #096dd9;
+  background: #129bff;
+  border-color: #129bff;
 }
 
 .contract-demo__button--primary:hover,
 .contract-demo__button--primary:focus-visible {
   color: #ffffff;
-  background: #075eb8;
-  border-color: #075eb8;
+  background: #2d8cf0;
+  border-color: #2d8cf0;
 }
 
 .contract-demo__table-wrap {
@@ -950,9 +955,19 @@
 }
 
 .contract-demo__table th {
+  height: 38px;
+  padding-block: 8px;
   color: #515a6e;
   background: #f4f5f7;
   font-weight: 700;
+}
+
+.contract-demo__table td {
+  height: 48px;
+}
+
+.contract-demo__table tbody tr:nth-child(even) {
+  background: #f4f5f7;
 }
 
 .contract-demo__table tr:last-child td {

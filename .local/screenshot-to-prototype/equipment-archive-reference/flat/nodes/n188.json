@@ -1,0 +1,14 @@
+{
+  "bbox": {
+    "height": 32,
+    "left": 314,
+    "top": 152,
+    "width": 394
+  },
+  "height": "37.875px",
+  "nodeId": "n188",
+  "selector": "div.input-header.ivu-input-wrapper > input.ivu-input.ivu-input-default",
+  "styleId": "style_77",
+  "tag": "col",
+  "width": "112.062px"
+}

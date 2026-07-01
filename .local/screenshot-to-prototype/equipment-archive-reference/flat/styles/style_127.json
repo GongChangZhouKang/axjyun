@@ -1,0 +1,21 @@
+{
+  "custom": {
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "border": "1px solid rgb(220, 222, 226)",
+    "borderColor": "rgb(220, 222, 226)",
+    "borderRadius": "4px",
+    "borderStyle": "solid",
+    "color": "rgb(102, 102, 102)",
+    "fontFamily": "Arial",
+    "fontSize": "14px",
+    "margin": "0px 4px 0px 0px",
+    "marginInlineEnd": "4px",
+    "minHeight": "0px",
+    "minWidth": "32px",
+    "textOverflow": "clip",
+    "transition": "0.2s ease-in-out"
+  },
+  "styleId": "style_127",
+  "tw": "inline-block static font-normal leading-7 text-center border visible cursor-pointer mt-0 mr-1 mb-0 ml-0 p-0 overflow-visible"
+}

@@ -1,0 +1,16 @@
+{
+  "bbox": {
+    "height": 64,
+    "left": 1680,
+    "top": 0,
+    "width": 196
+  },
+  "height": "64px",
+  "nodeId": "n7",
+  "originalClass": "name",
+  "selector": "div.top-side > div.btn:nth-of-type(3) > div.ivu-dropdown > div.ivu-dropdown-rel:nth-of-type(1) > div.btn > span.name",
+  "styleId": "style_7",
+  "tag": "span",
+  "text": "山东振邦保安服务有限责任公司",
+  "width": "196px"
+}

@@ -1,0 +1,20 @@
+{
+  "_innerHTML": "<!----> 装备档案管理 <i class=\"ivu-icon ivu-icon-ios-close ivu-tabs-close\"></i>",
+  "bbox": {
+    "height": 49,
+    "left": 0,
+    "top": 848,
+    "width": 199
+  },
+  "children": [
+    "n98"
+  ],
+  "height": "32px",
+  "nodeId": "n99",
+  "originalClass": "ivu-tabs-tab ivu-tabs-tab-active ivu-tabs-tab-focused",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(11) > li.ivu-menu-submenu > div.ivu-menu-submenu-title",
+  "styleId": "style_31",
+  "tag": "div",
+  "text": "装备档案管理",
+  "width": "137.891px"
+}

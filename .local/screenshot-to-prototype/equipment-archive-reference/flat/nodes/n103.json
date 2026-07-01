@@ -1,0 +1,20 @@
+{
+  "_innerHTML": "<!----> 可视化调度 <i class=\"ivu-icon ivu-icon-ios-close ivu-tabs-close\"></i>",
+  "bbox": {
+    "height": 49,
+    "left": 0,
+    "top": 897,
+    "width": 199
+  },
+  "children": [
+    "n102"
+  ],
+  "height": "31px",
+  "nodeId": "n103",
+  "originalClass": "ivu-tabs-tab",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(12)",
+  "styleId": "style_29",
+  "tag": "div",
+  "text": "可视化调度",
+  "width": "107.891px"
+}

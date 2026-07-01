@@ -1,0 +1,14 @@
+{
+  "children": [
+    "n111",
+    "n113",
+    "n114"
+  ],
+  "height": "48px",
+  "nodeId": "n115",
+  "originalClass": "ivu-tabs ivu-tabs-card",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(9) > li.ivu-menu-submenu > ul.ivu-menu > li.ivu-menu-item:nth-of-type(5)",
+  "styleId": "style_42",
+  "tag": "div",
+  "width": "1712px"
+}

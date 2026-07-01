@@ -1,0 +1,19 @@
+{
+  "custom": {
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "border": "1px 0px 1px 1px solid none solid solid rgb(220, 222, 226) rgb(81, 90, 110) rgb(220, 222, 226) rgb(220, 222, 226)",
+    "borderBottomLeftRadius": "4px",
+    "borderRadius": "4px 0px 0px 4px",
+    "borderTopLeftRadius": "4px",
+    "color": "rgb(81, 90, 110)",
+    "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+    "fontSize": "14px",
+    "padding": "0px 0px 0px 8px",
+    "paddingInlineStart": "8px",
+    "textAlign": "start",
+    "textOverflow": "clip"
+  },
+  "styleId": "style_50",
+  "tw": "flex static items-center shrink-0 font-normal leading-tight visible m-0 pt-0 pr-0 pb-0 pl-2 overflow-visible"
+}

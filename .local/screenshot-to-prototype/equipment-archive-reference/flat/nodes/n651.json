@@ -1,0 +1,26 @@
+{
+  "bbox": {
+    "height": 21,
+    "left": 1349,
+    "top": 553,
+    "width": 16
+  },
+  "children": [
+    "n605",
+    "n609",
+    "n615",
+    "n621",
+    "n627",
+    "n633",
+    "n638",
+    "n644",
+    "n650"
+  ],
+  "height": "48px",
+  "nodeId": "n651",
+  "originalClass": "ivu-table-row",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(5) > td.ivu-table-column-kOeYLG.ivu-table-column-right:nth-of-type(6) > div.ivu-table-cell > div > div.ivu-tooltip > div.ivu-tooltip-rel > div",
+  "styleId": "style_88",
+  "tag": "tr",
+  "width": "1755px"
+}

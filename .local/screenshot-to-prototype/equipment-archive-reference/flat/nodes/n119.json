@@ -1,0 +1,12 @@
+{
+  "children": [
+    "n118"
+  ],
+  "height": "32px",
+  "nodeId": "n119",
+  "originalClass": "input-header ivu-input-wrapper ivu-input-wrapper-default ivu-input-type-text",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(12) > li.ivu-menu-submenu > ul.ivu-menu > li.ivu-menu-item:nth-of-type(4)",
+  "styleId": "style_46",
+  "tag": "div",
+  "width": "394px"
+}

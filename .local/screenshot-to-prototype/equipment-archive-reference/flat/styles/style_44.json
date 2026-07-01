@@ -1,0 +1,13 @@
+{
+  "custom": {
+    "border": "0px none rgb(81, 90, 110)",
+    "borderColor": "rgb(81, 90, 110)",
+    "color": "rgb(81, 90, 110)",
+    "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+    "fontSize": "14px",
+    "lineHeight": "32px",
+    "textOverflow": "clip"
+  },
+  "styleId": "style_44",
+  "tw": "block static shrink-0 font-normal text-right border-0 visible m-0 p-0 overflow-visible"
+}

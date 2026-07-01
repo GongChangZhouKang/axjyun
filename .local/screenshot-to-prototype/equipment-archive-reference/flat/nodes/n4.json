@@ -1,0 +1,16 @@
+{
+  "bbox": {
+    "height": 64,
+    "left": 1445,
+    "top": 0,
+    "width": 132
+  },
+  "height": "64px",
+  "nodeId": "n4",
+  "originalClass": "name",
+  "selector": "div.top-side > div.btn:nth-of-type(3) > span.name",
+  "styleId": "style_4",
+  "tag": "span",
+  "text": "2026-07-01 01:26:44",
+  "width": "131.547px"
+}

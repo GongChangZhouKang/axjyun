@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 21,
+    "left": 1289,
+    "top": 318,
+    "width": 92
+  },
+  "children": [
+    "n289"
+  ],
+  "height": "21px",
+  "nodeId": "n290",
+  "originalClass": "ivu-tooltip",
+  "selector": "div.content-box.ivu-layout-content > div.new-big-box > div:nth-of-type(1) > div.demo-spin-article:nth-of-type(3) > div.scope-box > div.ivu-table-wrapper:nth-of-type(2) > div.ivu-table.ivu-table-default:nth-of-type(1) > div.ivu-table-header:nth-of-type(1) > table > thead > tr > th.ivu-table-column-kOeYLG.ivu-table-column-right:nth-of-type(6) > div.ivu-table-cell",
+  "styleId": "style_94",
+  "tag": "div",
+  "width": "102.672px"
+}

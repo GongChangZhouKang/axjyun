@@ -1,0 +1,19 @@
+{
+  "bbox": {
+    "height": 17,
+    "left": 24,
+    "top": 814,
+    "width": 17
+  },
+  "children": [
+    "n107",
+    "n108"
+  ],
+  "height": "32px",
+  "nodeId": "n109",
+  "originalClass": "ivu-tabs-nav-wrap",
+  "selector": "i.ivu-icon.ivu-icon-md-people",
+  "styleId": "style_36",
+  "tag": "div",
+  "width": "1712px"
+}

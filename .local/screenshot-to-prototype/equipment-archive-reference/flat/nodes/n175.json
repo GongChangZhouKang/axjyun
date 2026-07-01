@@ -1,0 +1,16 @@
+{
+  "bbox": {
+    "height": 21,
+    "left": 200,
+    "top": 64,
+    "width": 0
+  },
+  "height": "16px",
+  "nodeId": "n175",
+  "originalClass": "add-btn-img",
+  "selector": "div.ivu-tabs.ivu-tabs-card > div.ivu-tabs-context-menu:nth-of-type(3)",
+  "src": "assets/images/UQAAAAASUVORK5CYII-1.png",
+  "styleId": "style_72",
+  "tag": "img",
+  "width": "16px"
+}

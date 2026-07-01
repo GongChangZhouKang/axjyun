@@ -1,0 +1,26 @@
+{
+  "children": [
+    "n18",
+    "n20",
+    "n25",
+    "n30",
+    "n35",
+    "n40",
+    "n52",
+    "n57",
+    "n62",
+    "n67",
+    "n72",
+    "n77",
+    "n82",
+    "n87",
+    "n92"
+  ],
+  "height": "1029px",
+  "nodeId": "n93",
+  "originalClass": "ivu-menu ivu-menu-light ivu-menu-vertical",
+  "selector": "div.top-side > div.btn:nth-of-type(3) > div.ivu-dropdown > div.ivu-select-dropdown:nth-of-type(2) > ul.ivu-dropdown-menu",
+  "styleId": "style_25",
+  "tag": "ul",
+  "width": "199px"
+}

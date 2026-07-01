@@ -1,0 +1,15 @@
+{
+  "bbox": {
+    "height": 21,
+    "left": 1855,
+    "top": 408,
+    "width": 120
+  },
+  "height": "21px",
+  "nodeId": "n431",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(2) > td.ivu-table-column-Q9sPgE.ivu-table-column-center:nth-of-type(10) > div.ivu-table-cell.ivu-table-hidden",
+  "styleId": "style_99",
+  "tag": "div",
+  "text": "刘珍珍",
+  "width": "42px"
+}

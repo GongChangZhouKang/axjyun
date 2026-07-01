@@ -1,0 +1,21 @@
+{
+  "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-logo-usd\" style=\"font-size: 17px;\"></i> 薪酬  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+  "bbox": {
+    "height": 294,
+    "left": 0,
+    "top": 407,
+    "width": 199
+  },
+  "children": [
+    "n68",
+    "n69"
+  ],
+  "height": "49px",
+  "nodeId": "n70",
+  "originalClass": "ivu-menu-submenu-title",
+  "selector": "li.ivu-menu-submenu.ivu-menu-item-active > ul.ivu-menu",
+  "styleId": "style_16",
+  "tag": "div",
+  "text": "薪酬",
+  "width": "199px"
+}

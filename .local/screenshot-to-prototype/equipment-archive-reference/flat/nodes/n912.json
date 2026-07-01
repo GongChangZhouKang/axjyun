@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 897,
+    "left": 0,
+    "top": 0,
+    "width": 1912
+  },
+  "children": [
+    "n911"
+  ],
+  "height": "944px",
+  "id": "app",
+  "nodeId": "n912",
+  "selector": "body > div:nth-of-type(1) > div.main",
+  "styleId": "style_17",
+  "tag": "div",
+  "width": "1912px"
+}

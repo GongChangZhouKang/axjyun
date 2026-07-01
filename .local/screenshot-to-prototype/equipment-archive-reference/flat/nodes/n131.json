@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 17,
+    "left": 24,
+    "top": 961,
+    "width": 17
+  },
+  "children": [
+    "n130"
+  ],
+  "height": "32px",
+  "nodeId": "n131",
+  "originalClass": "inp",
+  "selector": "i.ivu-icon.ivu-icon-ios-construct",
+  "styleId": "style_49",
+  "tag": "div",
+  "width": "480px"
+}

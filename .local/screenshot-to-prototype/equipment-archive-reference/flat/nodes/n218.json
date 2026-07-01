@@ -1,0 +1,13 @@
+{
+  "bbox": {
+    "height": 18,
+    "left": 353,
+    "top": 215,
+    "width": 16
+  },
+  "nodeId": "n218",
+  "selector": "div.check-box-block.ivu-radio-group > label.ivu-radio-wrapper.ivu-radio-group-item:nth-of-type(2) > span.ivu-radio:nth-of-type(1)",
+  "styleId": "style_79",
+  "tag": "span",
+  "text": "修改时间"
+}

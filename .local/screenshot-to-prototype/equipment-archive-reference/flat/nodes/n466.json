@@ -1,0 +1,15 @@
+{
+  "bbox": {
+    "height": 21,
+    "left": 1092,
+    "top": 457,
+    "width": 28
+  },
+  "height": "21px",
+  "nodeId": "n466",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(3) > td.ivu-table-column-acKNjt:nth-of-type(5) > div.ivu-table-cell > div > div.ivu-tooltip > div.ivu-tooltip-rel > div",
+  "styleId": "style_99",
+  "tag": "div",
+  "text": "三棵树",
+  "width": "42px"
+}

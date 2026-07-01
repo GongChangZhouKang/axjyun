@@ -1,0 +1,14 @@
+{
+  "bbox": {
+    "height": 21,
+    "left": 413,
+    "top": 213,
+    "width": 66
+  },
+  "height": "480px",
+  "nodeId": "n226",
+  "selector": "div.check-box-block.ivu-radio-group > label.ivu-radio-wrapper.ivu-radio-group-item:nth-of-type(3)",
+  "styleId": "style_77",
+  "tag": "col",
+  "width": "120.062px"
+}

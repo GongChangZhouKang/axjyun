@@ -1,0 +1,2514 @@
+{
+  "styles": {
+    "style_1": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "64px",
+        "margin": "0px 10px 0px 0px",
+        "marginInlineEnd": "10px",
+        "overflow": "clip",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal border-0 visible mt-0 mr-2.5 mb-0 ml-0 p-0"
+    },
+    "style_10": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "lineHeight": "64px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block relative font-normal border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_100": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "flow-root",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "ellipsis"
+      },
+      "tw": "static font-normal leading-tight text-right break-all border-0 visible cursor-pointer m-0 p-0 overflow-hidden"
+    },
+    "style_101": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "inline-block relative font-normal leading-tight text-right break-all border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_102": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline-block static font-normal leading-tight text-right break-all border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_103": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight text-right break-all border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_104": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "0px 16px",
+        "paddingInlineEnd": "16px",
+        "paddingInlineStart": "16px",
+        "textOverflow": "ellipsis"
+      },
+      "tw": "block static font-normal leading-tight text-right break-all border-0 visible m-0 pt-0 pr-4 pb-0 pl-4 overflow-hidden"
+    },
+    "style_105": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "table-cell",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "ellipsis",
+        "transition": "background-color 0.2s ease-in-out"
+      },
+      "tw": "static font-normal leading-tight text-right border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_106": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight text-center break-all border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_107": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "0px 16px",
+        "paddingInlineEnd": "16px",
+        "paddingInlineStart": "16px",
+        "textOverflow": "ellipsis"
+      },
+      "tw": "block static font-normal leading-tight text-center break-all border-0 visible m-0 pt-0 pr-4 pb-0 pl-4 overflow-hidden"
+    },
+    "style_108": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "table-cell",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "ellipsis",
+        "transition": "background-color 0.2s ease-in-out"
+      },
+      "tw": "static font-normal leading-tight text-center border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_109": {
+      "custom": {
+        "background": "rgb(244, 245, 247) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(244, 245, 247)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderBottomLeftRadius": "6px",
+        "borderColor": "rgb(81, 90, 110)",
+        "borderRadius": "6px 0px 0px 6px",
+        "borderTopLeftRadius": "6px",
+        "color": "rgb(81, 90, 110)",
+        "display": "table-cell",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "ellipsis",
+        "transition": "background-color 0.2s ease-in-out"
+      },
+      "tw": "static font-normal leading-tight text-left border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_11": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "64px",
+        "margin": "0px 20px 0px 0px",
+        "marginInlineEnd": "20px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal border-0 visible mt-0 mr-5 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_110": {
+      "custom": {
+        "background": "rgb(244, 245, 247) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(244, 245, 247)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "table-cell",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "ellipsis",
+        "transition": "background-color 0.2s ease-in-out"
+      },
+      "tw": "static font-normal leading-tight text-left border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_111": {
+      "custom": {
+        "background": "rgb(244, 245, 247) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(244, 245, 247)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "table-cell",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "ellipsis",
+        "transition": "background-color 0.2s ease-in-out"
+      },
+      "tw": "static font-normal leading-tight text-right border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_112": {
+      "custom": {
+        "background": "rgb(244, 245, 247) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(244, 245, 247)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "table-cell",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "ellipsis",
+        "transition": "background-color 0.2s ease-in-out"
+      },
+      "tw": "static font-normal leading-tight text-center border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_113": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "table-row-group",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_114": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "overflow": "scroll auto",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight border-0 visible m-0 p-0 overflow-x-scroll"
+    },
+    "style_115": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "table",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_116": {
+      "custom": {
+        "border": "0px none rgb(18, 155, 255)",
+        "borderColor": "rgb(18, 155, 255)",
+        "color": "rgb(18, 155, 255)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "margin": "0px 10px 0px 0px",
+        "marginInlineEnd": "10px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline static font-normal leading-tight text-center break-all border-0 visible cursor-pointer mt-0 mr-2.5 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_117": {
+      "custom": {
+        "border": "0px none rgb(245, 44, 44)",
+        "borderColor": "rgb(245, 44, 44)",
+        "color": "rgb(245, 44, 44)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "margin": "0px 10px 0px 0px",
+        "marginInlineEnd": "10px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline static font-normal leading-tight text-center break-all border-0 visible cursor-pointer mt-0 mr-2.5 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_118": {
+      "custom": {
+        "background": "rgb(248, 248, 249) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(248, 248, 249)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderBottomLeftRadius": "6px",
+        "borderColor": "rgb(81, 90, 110)",
+        "borderRadius": "6px 0px 0px 6px",
+        "borderTopLeftRadius": "6px",
+        "color": "rgb(81, 90, 110)",
+        "display": "table-cell",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "ellipsis",
+        "transition": "background-color 0.2s ease-in-out"
+      },
+      "tw": "static font-normal leading-tight text-center border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_119": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block relative z-0 font-normal leading-tight border-0 visible m-0 p-0 overflow-hidden"
+    },
+    "style_12": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "64px",
+        "margin": "0px 0px 0px 1130.36px",
+        "marginInlineStart": "1130.36px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static items-center font-normal border-0 visible mt-0 mr-0 mb-0 ml-96 p-0 overflow-visible"
+    },
+    "style_120": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "boxShadow": "rgba(0, 0, 0, 0.2) -2px 0px 6px -2px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "insetInlineStart": "1552px",
+        "left": "1552px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block absolute z-0 font-normal leading-tight border-0 visible m-0 p-0 overflow-hidden"
+    },
+    "style_121": {
+      "custom": {
+        "background": "rgb(248, 248, 249) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(248, 248, 249)",
+        "border": "1px 0px solid none rgb(220, 222, 226) rgb(81, 90, 110) rgb(232, 234, 236)",
+        "bottom": "489.875px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "insetBlockEnd": "489.875px",
+        "insetBlockStart": "-1px",
+        "insetInlineStart": "1672px",
+        "left": "1672px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "-1px"
+      },
+      "tw": "block absolute font-normal leading-tight visible m-0 p-0 overflow-visible"
+    },
+    "style_122": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static max-w-full font-normal leading-tight border-0 visible m-0 p-0 overflow-hidden"
+    },
+    "style_123": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "overflow": "clip",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block absolute -z-0 font-normal leading-tight border-0 opacity-0 visible m-0 p-0"
+    },
+    "style_124": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "32px",
+        "margin": "0px 10px 0px 0px",
+        "marginInlineEnd": "10px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline-block static font-normal text-right border-0 visible mt-0 mr-2.5 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_125": {
+      "custom": {
+        "border": "0px none rgb(102, 102, 102)",
+        "borderColor": "rgb(102, 102, 102)",
+        "color": "rgb(102, 102, 102)",
+        "fontFamily": "Ionicons",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline-block static font-normal leading-none text-center border-0 visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_126": {
+      "custom": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box",
+        "backgroundPosition": "0px 0px",
+        "border": "0px none rgb(102, 102, 102)",
+        "borderColor": "rgb(102, 102, 102)",
+        "color": "rgb(102, 102, 102)",
+        "fontFamily": "Arial",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip",
+        "transition": "color 0.2s"
+      },
+      "tw": "inline static font-normal leading-7 text-center border-0 visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_127": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(220, 222, 226)",
+        "borderColor": "rgb(220, 222, 226)",
+        "borderRadius": "4px",
+        "borderStyle": "solid",
+        "color": "rgb(102, 102, 102)",
+        "fontFamily": "Arial",
+        "fontSize": "14px",
+        "margin": "0px 4px 0px 0px",
+        "marginInlineEnd": "4px",
+        "minHeight": "0px",
+        "minWidth": "32px",
+        "textOverflow": "clip",
+        "transition": "0.2s ease-in-out"
+      },
+      "tw": "inline-block static font-normal leading-7 text-center border visible cursor-pointer mt-0 mr-1 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_128": {
+      "custom": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box",
+        "backgroundPosition": "0px 0px",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Arial",
+        "fontSize": "14px",
+        "margin": "0px 6px",
+        "marginInlineEnd": "6px",
+        "marginInlineStart": "6px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip",
+        "transition": "color 0.2s"
+      },
+      "tw": "inline static font-medium leading-7 text-center border-0 visible cursor-pointer mt-0 mr-1.5 mb-0 ml-1.5 p-0 overflow-visible"
+    },
+    "style_129": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(220, 222, 226)",
+        "borderColor": "rgb(220, 222, 226)",
+        "borderRadius": "4px",
+        "borderStyle": "solid",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Arial",
+        "fontSize": "14px",
+        "margin": "0px 4px 0px 0px",
+        "marginInlineEnd": "4px",
+        "minHeight": "0px",
+        "minWidth": "32px",
+        "textOverflow": "clip",
+        "transition": "border 0.2s ease-in-out, color 0.2s ease-in-out"
+      },
+      "tw": "inline-block static font-medium leading-7 text-center border visible cursor-pointer mt-0 mr-1 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_13": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "boxShadow": "rgb(230, 230, 230) 0px 0px 7px 0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "64px",
+        "padding": "0px 0px 0px 24px",
+        "paddingInlineStart": "24px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static shrink-0 z-50 font-normal border-0 visible m-0 pt-0 pr-0 pb-0 pl-6 overflow-visible"
+    },
+    "style_130": {
+      "custom": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box",
+        "backgroundPosition": "0px 0px",
+        "border": "0px none rgb(45, 140, 240)",
+        "borderColor": "rgb(45, 140, 240)",
+        "color": "rgb(45, 140, 240)",
+        "fontFamily": "Arial",
+        "fontSize": "14px",
+        "margin": "0px 6px",
+        "marginInlineEnd": "6px",
+        "marginInlineStart": "6px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip",
+        "transition": "color 0.2s"
+      },
+      "tw": "inline static font-medium leading-7 text-center border-0 visible cursor-pointer mt-0 mr-1.5 mb-0 ml-1.5 p-0 overflow-visible"
+    },
+    "style_131": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(45, 140, 240)",
+        "borderColor": "rgb(45, 140, 240)",
+        "borderRadius": "4px",
+        "borderStyle": "solid",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Arial",
+        "fontSize": "14px",
+        "margin": "0px 4px 0px 0px",
+        "marginInlineEnd": "4px",
+        "minHeight": "0px",
+        "minWidth": "32px",
+        "textOverflow": "clip",
+        "transition": "border 0.2s ease-in-out, color 0.2s ease-in-out"
+      },
+      "tw": "inline-block static font-medium leading-7 text-center border visible cursor-pointer mt-0 mr-1 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_132": {
+      "custom": {
+        "border": "0px none rgb(204, 204, 204)",
+        "borderColor": "rgb(204, 204, 204)",
+        "color": "rgb(204, 204, 204)",
+        "fontFamily": "Ionicons",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline-block static font-normal leading-none text-center border-0 visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_133": {
+      "custom": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box",
+        "backgroundPosition": "0px 0px",
+        "border": "0px none rgb(45, 140, 240)",
+        "borderColor": "rgb(45, 140, 240)",
+        "color": "rgb(45, 140, 240)",
+        "fontFamily": "Arial",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip",
+        "transition": "color 0.2s"
+      },
+      "tw": "inline static font-normal leading-7 text-center border-0 visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_134": {
+      "custom": {
+        "border": "1px solid rgba(0, 0, 0, 0)",
+        "borderColor": "rgba(0, 0, 0, 0)",
+        "borderRadius": "4px",
+        "borderStyle": "solid",
+        "color": "rgb(102, 102, 102)",
+        "fontFamily": "Arial",
+        "fontSize": "14px",
+        "margin": "0px 4px 0px 0px",
+        "marginInlineEnd": "4px",
+        "minHeight": "0px",
+        "minWidth": "32px",
+        "textOverflow": "clip",
+        "transition": "0.2s ease-in-out"
+      },
+      "tw": "inline-block static font-normal leading-7 text-center border visible cursor-pointer mt-0 mr-1 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_135": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(220, 222, 226)",
+        "borderColor": "rgb(220, 222, 226)",
+        "borderRadius": "4px",
+        "borderStyle": "solid",
+        "color": "rgb(102, 102, 102)",
+        "fontFamily": "Arial",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "32px",
+        "textOverflow": "clip",
+        "transition": "0.2s ease-in-out"
+      },
+      "tw": "inline-block static font-normal leading-7 text-center border visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_136": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight text-right border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_137": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "margin": "20px 0px 0px",
+        "marginBlockStart": "20px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight text-right border-0 visible mt-5 mr-0 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_138": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "23px 20px 20px",
+        "paddingBlockEnd": "20px",
+        "paddingBlockStart": "23px",
+        "paddingInlineEnd": "20px",
+        "paddingInlineStart": "20px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight border-0 visible m-0 pt-6 pr-5 pb-5 pl-5 overflow-visible"
+    },
+    "style_139": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static grow font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_14": {
+      "custom": {
+        "background": "rgb(245, 247, 249) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(245, 247, 249)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static flex-col grow font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_140": {
+      "custom": {
+        "background": "rgb(245, 247, 249) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(245, 247, 249)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "overflow": "hidden auto",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static flex-col grow font-normal leading-tight border-0 visible m-0 p-0 overflow-x-hidden"
+    },
+    "style_141": {
+      "custom": {
+        "background": "rgb(245, 247, 249) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(245, 247, 249)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static grow font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_142": {
+      "custom": {
+        "background": "rgb(204, 204, 204) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(204, 204, 204)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "borderRadius": "4px",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block relative font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_143": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\"",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_144": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\"",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_15": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Ionicons",
+        "fontSize": "17px",
+        "margin": "0px 6px 0px 0px",
+        "marginInlineEnd": "6px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline-block static font-normal leading-none text-center border-0 visible cursor-pointer mt-0 mr-1.5 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_16": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "14px 24px",
+        "paddingBlockEnd": "14px",
+        "paddingBlockStart": "14px",
+        "paddingInlineEnd": "24px",
+        "paddingInlineStart": "24px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px",
+        "transition": "0.2s ease-in-out"
+      },
+      "tw": "block relative z-0 font-normal leading-tight border-0 visible cursor-pointer m-0 pt-3.5 pr-6 pb-3.5 pl-6 overflow-visible"
+    },
+    "style_17": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_18": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Ionicons",
+        "fontSize": "17px",
+        "margin": "0px 8px 0px 0px",
+        "marginInlineEnd": "8px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline-block static font-normal leading-none text-center border-0 visible cursor-pointer mt-0 mr-2 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_19": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "10.5px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Ionicons",
+        "fontSize": "14px",
+        "insetBlockEnd": "10.5px",
+        "insetBlockStart": "24.5px",
+        "insetInlineEnd": "24px",
+        "insetInlineStart": "153px",
+        "left": "153px",
+        "margin": "0px 8px 0px 0px",
+        "marginInlineEnd": "8px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "24px",
+        "textOverflow": "clip",
+        "top": "24.5px",
+        "transform": "matrix(1, 0, 0, 1, 0, -7)",
+        "transition": "transform 0.2s ease-in-out"
+      },
+      "tw": "block absolute font-normal leading-none text-center border-0 visible cursor-pointer mt-0 mr-2 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_2": {
+      "custom": {
+        "background": "rgb(245, 247, 249) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(245, 247, 249)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "borderRadius": "5px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "12px",
+        "lineHeight": "64px",
+        "margin": "0px 0px 0px 10px",
+        "marginInlineStart": "10px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "paddingBlockEnd": "3px",
+        "paddingBlockStart": "3px",
+        "paddingInlineEnd": "3px",
+        "paddingInlineStart": "3px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "inline static font-normal border-0 visible mt-0 mr-0 mb-0 ml-2.5 p-0.5 overflow-visible"
+    },
+    "style_20": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "list-item",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_21": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "10.5px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Ionicons",
+        "fontSize": "14px",
+        "insetBlockEnd": "10.5px",
+        "insetBlockStart": "24.5px",
+        "insetInlineEnd": "24px",
+        "insetInlineStart": "153px",
+        "left": "153px",
+        "margin": "0px 8px 0px 0px",
+        "marginInlineEnd": "8px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "24px",
+        "textOverflow": "clip",
+        "top": "24.5px",
+        "transform": "matrix(-1, 0, 0, -1, 0, -7)",
+        "transition": "transform 0.2s ease-in-out"
+      },
+      "tw": "block absolute font-normal leading-none text-center border-0 visible cursor-pointer mt-0 mr-2 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_22": {
+      "custom": {
+        "background": "rgb(240, 250, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(240, 250, 255)",
+        "border": "0px none rgb(45, 140, 240)",
+        "borderColor": "rgb(45, 140, 240)",
+        "bottom": "0px",
+        "color": "rgb(45, 140, 240)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "14px 24px 14px 53px",
+        "paddingBlockEnd": "14px",
+        "paddingBlockStart": "14px",
+        "paddingInlineEnd": "24px",
+        "paddingInlineStart": "53px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px",
+        "transition": "0.2s ease-in-out"
+      },
+      "tw": "block relative z-0 font-normal leading-tight border-0 visible cursor-pointer m-0 pt-3.5 pr-6 pb-3.5 pl-14 overflow-visible"
+    },
+    "style_23": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "14px 24px 14px 53px",
+        "paddingBlockEnd": "14px",
+        "paddingBlockStart": "14px",
+        "paddingInlineEnd": "24px",
+        "paddingInlineStart": "53px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px",
+        "transition": "0.2s ease-in-out"
+      },
+      "tw": "block relative z-0 font-normal leading-tight border-0 visible cursor-pointer m-0 pt-3.5 pr-6 pb-3.5 pl-14 overflow-visible"
+    },
+    "style_24": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block relative z-50 font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_25": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block relative z-50 font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_26": {
+      "custom": {
+        "border": "0px 1px 0px 0px none solid none none rgb(81, 90, 110) rgb(220, 222, 226) rgb(81, 90, 110) rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight visible m-0 p-0"
+    },
+    "style_27": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "margin": "-0.1px 0px 0px",
+        "marginBlockStart": "-0.1px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "0.1px 0px 0px",
+        "paddingBlockStart": "0.1px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight border-0 visible -mt-0 mr-0 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_28": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minWidth": "200px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px",
+        "transition": "0.2s ease-in-out"
+      },
+      "tw": "block relative shrink-0 basis-48 max-w-xs font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_29": {
+      "custom": {
+        "background": "rgb(248, 248, 249) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(248, 248, 249)",
+        "border": "1px 1px 0px solid solid none rgb(220, 222, 226) rgb(220, 222, 226) rgb(81, 90, 110)",
+        "borderRadius": "4px 4px 0px 0px",
+        "borderTopLeftRadius": "4px",
+        "borderTopRightRadius": "4px",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "margin": "0px 4px 0px 0px",
+        "marginInlineEnd": "4px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "5px 16px 4px",
+        "paddingBlockEnd": "4px",
+        "paddingBlockStart": "5px",
+        "paddingInlineEnd": "16px",
+        "paddingInlineStart": "16px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px",
+        "transition": "0.3s ease-in-out"
+      },
+      "tw": "inline-block relative font-normal leading-tight whitespace-nowrap visible cursor-pointer mt-0 mr-1 mb-0 ml-0 pt-1 pr-4 pb-1 pl-4 overflow-visible"
+    },
+    "style_3": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "23px",
+        "lineHeight": "64px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-bold border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_30": {
+      "custom": {
+        "border": "0px none rgb(153, 153, 153)",
+        "borderColor": "rgb(153, 153, 153)",
+        "bottom": "1px",
+        "color": "rgb(153, 153, 153)",
+        "fontFamily": "Ionicons",
+        "fontSize": "22px",
+        "insetBlockEnd": "1px",
+        "insetBlockStart": "-1px",
+        "left": "0px",
+        "margin": "0px -6px 0px 0px",
+        "marginInlineEnd": "-6px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textOverflow": "clip",
+        "top": "-1px",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "transition": "0.3s ease-in-out"
+      },
+      "tw": "inline-block relative font-normal leading-snug text-right whitespace-nowrap border-0 visible cursor-pointer mt-0 -mr-1.5 mb-0 ml-0 p-0 overflow-hidden"
+    },
+    "style_31": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px 1px 0px solid solid none rgb(220, 222, 226)",
+        "borderRadius": "4px 4px 0px 0px",
+        "borderTopLeftRadius": "4px",
+        "borderTopRightRadius": "4px",
+        "bottom": "0px",
+        "color": "rgb(45, 140, 240)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "margin": "0px 4px 0px 0px",
+        "marginInlineEnd": "4px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "5px 16px",
+        "paddingBlockEnd": "5px",
+        "paddingBlockStart": "5px",
+        "paddingInlineEnd": "16px",
+        "paddingInlineStart": "16px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "transition": "0.3s ease-in-out"
+      },
+      "tw": "inline-block relative font-normal leading-tight whitespace-nowrap visible cursor-pointer mt-0 mr-1 mb-0 ml-0 pt-1 pr-4 pb-1 pl-4 overflow-visible"
+    },
+    "style_32": {
+      "custom": {
+        "border": "0px none rgb(153, 153, 153)",
+        "borderColor": "rgb(153, 153, 153)",
+        "bottom": "1px",
+        "color": "rgb(153, 153, 153)",
+        "fontFamily": "Ionicons",
+        "fontSize": "22px",
+        "insetBlockEnd": "1px",
+        "insetBlockStart": "-1px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textOverflow": "clip",
+        "top": "-1px",
+        "transition": "0.3s ease-in-out"
+      },
+      "tw": "inline-block relative font-normal leading-snug text-right whitespace-nowrap border-0 visible cursor-pointer m-0 p-0 overflow-hidden"
+    },
+    "style_33": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "float": "left",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px",
+        "transition": "transform 0.5s ease-in-out"
+      },
+      "tw": "block relative font-normal leading-tight whitespace-nowrap border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_34": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight whitespace-nowrap border-0 visible m-0 p-0 overflow-hidden"
+    },
+    "style_35": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "overflow": "clip",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block absolute -z-0 font-normal leading-tight whitespace-nowrap border-0 opacity-0 visible m-0 p-0"
+    },
+    "style_36": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block relative font-normal leading-tight whitespace-nowrap border-0 visible m-0 p-0 overflow-hidden"
+    },
+    "style_37": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "margin": "0px 0px -1px",
+        "marginBlockEnd": "-1px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block relative font-normal leading-tight whitespace-nowrap border-0 visible mt-0 mr-0 -mb-0 ml-0 p-0 overflow-hidden"
+    },
+    "style_38": {
+      "custom": {
+        "border": "0px 0px 1px none none solid rgb(81, 90, 110) rgb(81, 90, 110) rgb(220, 222, 226)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "margin": "0px 0px 16px",
+        "marginBlockEnd": "16px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight visible mt-0 mr-0 mb-4 ml-0 p-0 overflow-visible"
+    },
+    "style_39": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "transition": "opacity 0.3s"
+      },
+      "tw": "block static shrink-0 font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_4": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "64px",
+        "margin": "0px 20px 0px 0px",
+        "marginInlineEnd": "20px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-bold border-0 visible mt-0 mr-5 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_40": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "transform": "matrix(1, 0, 0, 1, -1712, 0)",
+        "transition": "transform 0.3s ease-in-out"
+      },
+      "tw": "flex static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_41": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "27px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "insetBlockEnd": "27px",
+        "insetInlineEnd": "1712px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "1712px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block absolute font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_42": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block relative font-normal leading-tight border-0 visible m-0 p-0 overflow-hidden"
+    },
+    "style_43": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_44": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "32px",
+        "textOverflow": "clip"
+      },
+      "tw": "block static shrink-0 font-normal text-right border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_45": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "borderRadius": "4px",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "overflow": "clip",
+        "padding": "4px 7px",
+        "paddingBlockEnd": "4px",
+        "paddingBlockStart": "4px",
+        "paddingInlineEnd": "7px",
+        "paddingInlineStart": "7px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px",
+        "transition": "border 0.2s ease-in-out, background 0.2s ease-in-out, box-shadow 0.2s ease-in-out"
+      },
+      "tw": "inline-block relative font-normal leading-tight border-0 visible cursor-text m-0 pt-1 pr-1.5 pb-1 pl-1.5"
+    },
+    "style_46": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block relative font-normal border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_47": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(220, 222, 226)",
+        "borderColor": "rgb(220, 222, 226)",
+        "borderRadius": "4px",
+        "borderStyle": "solid",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "0px 7px",
+        "paddingInlineEnd": "7px",
+        "paddingInlineStart": "7px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static font-normal leading-tight border visible m-0 pt-0 pr-1.5 pb-0 pl-1.5 overflow-visible"
+    },
+    "style_48": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block relative font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_49": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "margin": "0px 10px 10px 0px",
+        "marginBlockEnd": "10px",
+        "marginInlineEnd": "10px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static justify-end items-center font-normal leading-tight border-0 visible mt-0 mr-2.5 mb-2.5 ml-0 p-0 overflow-visible"
+    },
+    "style_5": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "64px",
+        "margin": "0px 20px 0px 0px",
+        "marginInlineEnd": "20px",
+        "overflow": "clip",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal border-0 visible mt-0 mr-5 mb-0 ml-0 p-0"
+    },
+    "style_50": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px 0px 1px 1px solid none solid solid rgb(220, 222, 226) rgb(81, 90, 110) rgb(220, 222, 226) rgb(220, 222, 226)",
+        "borderBottomLeftRadius": "4px",
+        "borderRadius": "4px 0px 0px 4px",
+        "borderTopLeftRadius": "4px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "padding": "0px 0px 0px 8px",
+        "paddingInlineStart": "8px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static items-center shrink-0 font-normal leading-tight visible m-0 pt-0 pr-0 pb-0 pl-2 overflow-visible"
+    },
+    "style_51": {
+      "custom": {
+        "border": "0px none rgb(197, 200, 206)",
+        "borderColor": "rgb(197, 200, 206)",
+        "color": "rgb(197, 200, 206)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "padding": "0px 22px 0px 4px",
+        "paddingInlineEnd": "22px",
+        "paddingInlineStart": "4px",
+        "textAlign": "start",
+        "textOverflow": "ellipsis"
+      },
+      "tw": "block static font-normal leading-7 whitespace-nowrap border-0 visible cursor-pointer m-0 pt-0 pr-5 pb-0 pl-1 overflow-hidden"
+    },
+    "style_52": {
+      "custom": {
+        "border": "0px none rgb(128, 134, 149)",
+        "borderColor": "rgb(128, 134, 149)",
+        "bottom": "1px",
+        "color": "rgb(128, 134, 149)",
+        "fontFamily": "Ionicons",
+        "fontSize": "14px",
+        "insetBlockEnd": "1px",
+        "insetBlockStart": "15px",
+        "insetInlineEnd": "8px",
+        "insetInlineStart": "377px",
+        "left": "377px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "8px",
+        "textOverflow": "clip",
+        "top": "15px",
+        "transform": "matrix(1, 0, 0, 1, 0, -7)",
+        "transition": "0.2s ease-in-out"
+      },
+      "tw": "block absolute font-normal leading-none text-center border-0 visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_53": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static flex-wrap font-normal border-0 visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_54": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(220, 222, 226)",
+        "borderBottomRightRadius": "4px",
+        "borderColor": "rgb(220, 222, 226)",
+        "borderRadius": "0px 4px 4px 0px",
+        "borderStyle": "solid",
+        "borderTopRightRadius": "4px",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "32px",
+        "minWidth": "0px",
+        "padding": "0px 24px 0px 4px",
+        "paddingInlineEnd": "24px",
+        "paddingInlineStart": "4px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px",
+        "transition": "0.2s ease-in-out"
+      },
+      "tw": "block relative font-normal border visible cursor-pointer m-0 pt-0 pr-6 pb-0 pl-1 overflow-visible"
+    },
+    "style_55": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block relative grow basis-1/12 font-normal border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_56": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static items-start font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_57": {
+      "custom": {
+        "border": "0px none rgb(128, 134, 149)",
+        "borderColor": "rgb(128, 134, 149)",
+        "bottom": "1px",
+        "color": "rgb(128, 134, 149)",
+        "fontFamily": "Ionicons",
+        "fontSize": "14px",
+        "insetBlockEnd": "1px",
+        "insetBlockStart": "15px",
+        "insetInlineEnd": "8px",
+        "insetInlineStart": "391px",
+        "left": "391px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "8px",
+        "textOverflow": "clip",
+        "top": "15px",
+        "transform": "matrix(1, 0, 0, 1, 0, -7)",
+        "transition": "0.2s ease-in-out"
+      },
+      "tw": "block absolute font-normal leading-none text-center border-0 visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_58": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(45, 140, 240)",
+        "borderColor": "rgb(45, 140, 240)",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px",
+        "transition": "0.2s ease-in-out"
+      },
+      "tw": "inline-block relative font-normal leading-none whitespace-nowrap border visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_59": {
+      "custom": {
+        "border": "0px none rgb(0, 0, 0)",
+        "borderColor": "rgb(0, 0, 0)",
+        "bottom": "0px",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block absolute z-0 font-normal leading-none whitespace-nowrap border-0 opacity-0 visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_6": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "64px",
+        "margin": "0px 3px 0px 0px",
+        "marginInlineEnd": "3px",
+        "overflow": "clip",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal border-0 visible mt-0 mr-0.5 mb-0 ml-0 p-0"
+    },
+    "style_60": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "margin": "0px 4px 0px 0px",
+        "marginInlineEnd": "4px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "inline-block relative font-normal leading-none whitespace-nowrap border-0 visible cursor-pointer mt-0 mr-1 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_61": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "margin": "0px 2px",
+        "marginInlineEnd": "2px",
+        "marginInlineStart": "2px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "inline static font-normal leading-tight whitespace-nowrap border-0 visible cursor-pointer mt-0 mr-0.5 mb-0 ml-0.5 p-0 overflow-visible"
+    },
+    "style_62": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "margin": "0px 8px 0px 0px",
+        "marginInlineEnd": "8px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "block relative font-normal leading-tight whitespace-nowrap border-0 visible cursor-pointer mt-0 mr-2 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_63": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(220, 222, 226)",
+        "borderColor": "rgb(220, 222, 226)",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip",
+        "top": "0px",
+        "transition": "0.2s ease-in-out"
+      },
+      "tw": "inline-block relative font-normal leading-none whitespace-nowrap border visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_64": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(220, 222, 226)",
+        "borderBottomRightRadius": "4px",
+        "borderColor": "rgb(220, 222, 226)",
+        "borderRadius": "0px 4px 4px 0px",
+        "borderStyle": "solid",
+        "borderTopRightRadius": "4px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "paddingBlockEnd": "4.5px",
+        "paddingBlockStart": "4.5px",
+        "paddingInlineEnd": "4.5px",
+        "paddingInlineStart": "4.5px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static flex-wrap font-normal leading-tight border visible m-0 p-1 overflow-visible"
+    },
+    "style_65": {
+      "custom": {
+        "border": "0px none rgb(255, 255, 255)",
+        "borderColor": "rgb(255, 255, 255)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline-block static font-normal leading-normal text-center whitespace-nowrap border-0 visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_66": {
+      "custom": {
+        "background": "rgb(18, 155, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(18, 155, 255)",
+        "border": "0px none rgb(18, 155, 255)",
+        "borderColor": "rgb(18, 155, 255)",
+        "borderRadius": "4px",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "0px 15px",
+        "paddingInlineEnd": "15px",
+        "paddingInlineStart": "15px",
+        "textOverflow": "clip",
+        "transition": "color 0.2s linear, background-color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear"
+      },
+      "tw": "inline-block static font-normal leading-normal text-center whitespace-nowrap border-0 visible cursor-pointer m-0 pt-0 pr-3.5 pb-0 pl-3.5 overflow-visible"
+    },
+    "style_67": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "margin": "0px 16px 0px 0px",
+        "marginInlineEnd": "16px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight border-0 visible mt-0 mr-4 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_68": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline-block static font-normal leading-normal text-center whitespace-nowrap border-0 visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_69": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "1px solid rgb(220, 222, 226)",
+        "borderColor": "rgb(220, 222, 226)",
+        "borderRadius": "4px",
+        "borderStyle": "solid",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "0px 15px",
+        "paddingInlineEnd": "15px",
+        "paddingInlineStart": "15px",
+        "textOverflow": "clip",
+        "transition": "color 0.2s linear, background-color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear"
+      },
+      "tw": "inline-block static font-normal leading-normal text-center whitespace-nowrap border visible cursor-pointer m-0 pt-0 pr-3.5 pb-0 pl-3.5 overflow-visible"
+    },
+    "style_7": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "64px",
+        "margin": "0px 2px 0px 0px",
+        "marginInlineEnd": "2px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-bold border-0 visible mt-0 mr-0.5 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_70": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "margin": "0px 0px 10px 1006px",
+        "marginBlockEnd": "10px",
+        "marginInlineStart": "1006px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static font-normal leading-tight border-0 visible mt-0 mr-0 mb-2.5 ml-96 p-0 overflow-visible"
+    },
+    "style_71": {
+      "custom": {
+        "background": "rgb(245, 247, 251) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(245, 247, 251)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "borderRadius": "6px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "margin": "0px 0px 12px",
+        "marginBlockEnd": "12px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "16px 16px 4px",
+        "paddingBlockEnd": "4px",
+        "paddingBlockStart": "16px",
+        "paddingInlineEnd": "16px",
+        "paddingInlineStart": "16px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static flex-wrap gap-3 gap-y-3 gap-x-3 font-normal leading-tight border-0 visible mt-0 mr-0 mb-3 ml-0 pt-4 pr-4 pb-1 pl-4 overflow-visible"
+    },
+    "style_72": {
+      "custom": {
+        "border": "0px none rgb(255, 255, 255)",
+        "borderColor": "rgb(255, 255, 255)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "margin": "0px 4px 0px 0px",
+        "marginInlineEnd": "4px",
+        "overflow": "clip",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-none text-center whitespace-nowrap border-0 visible cursor-pointer mt-0 mr-1 mb-0 ml-0 p-0"
+    },
+    "style_73": {
+      "custom": {
+        "border": "0px none rgb(255, 255, 255)",
+        "borderColor": "rgb(255, 255, 255)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "margin": "7px 0px 0px",
+        "marginBlockStart": "7px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static items-center font-normal leading-none text-center whitespace-nowrap border-0 visible cursor-pointer mt-1.5 mr-0 mb-0 ml-0 p-0 overflow-visible"
+    },
+    "style_74": {
+      "custom": {
+        "background": "rgb(18, 155, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(18, 155, 255)",
+        "border": "0px none rgb(18, 155, 255)",
+        "borderColor": "rgb(18, 155, 255)",
+        "borderRadius": "4px",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "margin": "0px 10px 0px 0px",
+        "marginInlineEnd": "10px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "0px 15px",
+        "paddingInlineEnd": "15px",
+        "paddingInlineStart": "15px",
+        "textOverflow": "clip",
+        "transition": "color 0.2s linear, background-color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear"
+      },
+      "tw": "inline-block static font-normal leading-normal text-center whitespace-nowrap border-0 visible cursor-pointer mt-0 mr-2.5 mb-0 ml-0 pt-0 pr-3.5 pb-0 pl-3.5 overflow-visible"
+    },
+    "style_75": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "margin": "0px 0px 12px",
+        "marginBlockEnd": "12px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static items-center font-normal leading-tight border-0 visible mt-0 mr-0 mb-3 ml-0 p-0 overflow-visible"
+    },
+    "style_76": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_77": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "table-column",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_78": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "table-column-group",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_79": {
+      "custom": {
+        "border": "0px none rgb(102, 102, 102)",
+        "borderColor": "rgb(102, 102, 102)",
+        "color": "rgb(102, 102, 102)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline static font-bold leading-tight text-left break-all border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_8": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Ionicons",
+        "fontSize": "14px",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-none text-center border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_80": {
+      "custom": {
+        "border": "0px none rgb(102, 102, 102)",
+        "borderColor": "rgb(102, 102, 102)",
+        "color": "rgb(102, 102, 102)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "0px 18px",
+        "paddingInlineEnd": "18px",
+        "paddingInlineStart": "18px",
+        "textOverflow": "ellipsis"
+      },
+      "tw": "inline-block static font-bold leading-tight text-left break-all border-0 visible m-0 pt-0 pr-4 pb-0 pl-4 overflow-hidden"
+    },
+    "style_81": {
+      "custom": {
+        "background": "rgb(244, 245, 247) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(244, 245, 247)",
+        "border": "0px none rgb(102, 102, 102)",
+        "borderColor": "rgb(102, 102, 102)",
+        "bottom": "0px",
+        "color": "rgb(102, 102, 102)",
+        "display": "table-cell",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "8px 0px",
+        "paddingBlockEnd": "8px",
+        "paddingBlockStart": "8px",
+        "right": "0px",
+        "textOverflow": "ellipsis",
+        "top": "0px"
+      },
+      "tw": "relative font-bold leading-tight text-left whitespace-nowrap border-0 visible m-0 pt-2 pr-0 pb-2 pl-0 overflow-hidden"
+    },
+    "style_82": {
+      "custom": {
+        "border": "0px none rgb(102, 102, 102)",
+        "borderColor": "rgb(102, 102, 102)",
+        "color": "rgb(102, 102, 102)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline static font-bold leading-tight text-right break-all border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_83": {
+      "custom": {
+        "border": "0px none rgb(102, 102, 102)",
+        "borderColor": "rgb(102, 102, 102)",
+        "color": "rgb(102, 102, 102)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "0px 18px",
+        "paddingInlineEnd": "18px",
+        "paddingInlineStart": "18px",
+        "textOverflow": "ellipsis"
+      },
+      "tw": "inline-block static font-bold leading-tight text-right break-all border-0 visible m-0 pt-0 pr-4 pb-0 pl-4 overflow-hidden"
+    },
+    "style_84": {
+      "custom": {
+        "background": "rgb(244, 245, 247) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(244, 245, 247)",
+        "border": "0px none rgb(102, 102, 102)",
+        "borderColor": "rgb(102, 102, 102)",
+        "bottom": "0px",
+        "color": "rgb(102, 102, 102)",
+        "display": "table-cell",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "8px 0px",
+        "paddingBlockEnd": "8px",
+        "paddingBlockStart": "8px",
+        "right": "0px",
+        "textOverflow": "ellipsis",
+        "top": "0px"
+      },
+      "tw": "relative font-bold leading-tight text-right whitespace-nowrap border-0 visible m-0 pt-2 pr-0 pb-2 pl-0 overflow-hidden"
+    },
+    "style_85": {
+      "custom": {
+        "border": "0px none rgb(102, 102, 102)",
+        "borderColor": "rgb(102, 102, 102)",
+        "color": "rgb(102, 102, 102)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline static font-bold leading-tight text-center break-all border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_86": {
+      "custom": {
+        "border": "0px none rgb(102, 102, 102)",
+        "borderColor": "rgb(102, 102, 102)",
+        "color": "rgb(102, 102, 102)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "0px 18px",
+        "paddingInlineEnd": "18px",
+        "paddingInlineStart": "18px",
+        "textOverflow": "ellipsis"
+      },
+      "tw": "inline-block static font-bold leading-tight text-center break-all border-0 visible m-0 pt-0 pr-4 pb-0 pl-4 overflow-hidden"
+    },
+    "style_87": {
+      "custom": {
+        "background": "rgb(244, 245, 247) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(244, 245, 247)",
+        "border": "0px none rgb(102, 102, 102)",
+        "borderColor": "rgb(102, 102, 102)",
+        "bottom": "0px",
+        "color": "rgb(102, 102, 102)",
+        "display": "table-cell",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "8px 0px",
+        "paddingBlockEnd": "8px",
+        "paddingBlockStart": "8px",
+        "right": "0px",
+        "textOverflow": "ellipsis",
+        "top": "0px"
+      },
+      "tw": "relative font-bold leading-tight text-center whitespace-nowrap border-0 visible m-0 pt-2 pr-0 pb-2 pl-0 overflow-hidden"
+    },
+    "style_88": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "table-row",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_89": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "table-header-group",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_9": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "64px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "flex static items-center font-normal border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_90": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "table",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "static font-normal leading-tight border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_91": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "borderRadius": "6px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textAlign": "start",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight border-0 visible m-0 p-0 overflow-hidden"
+    },
+    "style_92": {
+      "custom": {
+        "border": "0px none rgb(18, 155, 255)",
+        "borderColor": "rgb(18, 155, 255)",
+        "color": "rgb(18, 155, 255)",
+        "display": "flow-root",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "ellipsis"
+      },
+      "tw": "static font-normal leading-none text-left break-all border-0 visible cursor-pointer m-0 p-0 overflow-hidden"
+    },
+    "style_93": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textOverflow": "clip",
+        "top": "0px"
+      },
+      "tw": "inline-block relative font-normal leading-tight text-left break-all border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_94": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "inline-block static font-normal leading-tight text-left break-all border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_95": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "clip"
+      },
+      "tw": "block static font-normal leading-tight text-left break-all border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_96": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "padding": "0px 16px",
+        "paddingInlineEnd": "16px",
+        "paddingInlineStart": "16px",
+        "textOverflow": "ellipsis"
+      },
+      "tw": "block static font-normal leading-tight text-left break-all border-0 visible m-0 pt-0 pr-4 pb-0 pl-4 overflow-hidden"
+    },
+    "style_97": {
+      "custom": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "table-cell",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "ellipsis",
+        "transition": "background-color 0.2s ease-in-out"
+      },
+      "tw": "static font-normal leading-tight text-left border-0 visible m-0 p-0 overflow-visible"
+    },
+    "style_98": {
+      "custom": {
+        "background": "rgb(45, 140, 240) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(45, 140, 240)",
+        "border": "1px solid rgb(45, 140, 240)",
+        "borderColor": "rgb(45, 140, 240)",
+        "borderRadius": "22px",
+        "borderStyle": "solid",
+        "bottom": "0px",
+        "color": "rgb(81, 90, 110)",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "left": "0px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "right": "0px",
+        "textOverflow": "clip",
+        "top": "0px",
+        "transition": "0.2s ease-in-out"
+      },
+      "tw": "inline-block relative font-normal leading-tight text-left break-all border visible cursor-pointer m-0 p-0 overflow-visible"
+    },
+    "style_99": {
+      "custom": {
+        "border": "0px none rgb(81, 90, 110)",
+        "borderColor": "rgb(81, 90, 110)",
+        "color": "rgb(81, 90, 110)",
+        "display": "flow-root",
+        "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "minHeight": "0px",
+        "minWidth": "0px",
+        "textOverflow": "ellipsis"
+      },
+      "tw": "static font-normal leading-tight text-left break-all border-0 visible cursor-pointer m-0 p-0 overflow-hidden"
+    }
+  }
+}

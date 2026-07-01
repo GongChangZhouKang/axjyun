@@ -1,0 +1,17 @@
+{
+  "custom": {
+    "border": "0px none rgb(81, 90, 110)",
+    "borderColor": "rgb(81, 90, 110)",
+    "color": "rgb(81, 90, 110)",
+    "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+    "fontSize": "14px",
+    "minHeight": "0px",
+    "minWidth": "0px",
+    "padding": "0px 16px",
+    "paddingInlineEnd": "16px",
+    "paddingInlineStart": "16px",
+    "textOverflow": "ellipsis"
+  },
+  "styleId": "style_107",
+  "tw": "block static font-normal leading-tight text-center break-all border-0 visible m-0 pt-0 pr-4 pb-0 pl-4 overflow-hidden"
+}

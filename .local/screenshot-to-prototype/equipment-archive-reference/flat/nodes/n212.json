@@ -1,0 +1,13 @@
+{
+  "bbox": {
+    "height": 32,
+    "left": 236,
+    "top": 207,
+    "width": 51
+  },
+  "nodeId": "n212",
+  "selector": "div.content-box.ivu-layout-content > div.new-big-box > div:nth-of-type(1) > div.new-search-box:nth-of-type(1) > div.inp-show-2:nth-of-type(4) > div.inp > div.select-box > div.input-label:nth-of-type(1)",
+  "styleId": "style_85",
+  "tag": "span",
+  "text": "图片"
+}

@@ -1,0 +1,16 @@
+{
+  "bbox": {
+    "height": 17,
+    "left": 24,
+    "top": 1059,
+    "width": 17
+  },
+  "height": "26px",
+  "nodeId": "n134",
+  "originalClass": "ivu-select-placeholder",
+  "selector": "i.ivu-icon.ivu-icon-ios-settings",
+  "styleId": "style_51",
+  "tag": "span",
+  "text": "供货商",
+  "width": "68px"
+}

@@ -1,0 +1,12 @@
+{
+  "children": [
+    "n900"
+  ],
+  "height": "581.25px",
+  "nodeId": "n901",
+  "originalClass": "demo-spin-article",
+  "selector": "div.ivu-tabs.ivu-tabs-card > div.ivu-tabs-context-menu:nth-of-type(3) > div.ivu-dropdown",
+  "styleId": "style_17",
+  "tag": "div",
+  "width": "1672px"
+}

@@ -1,0 +1,24 @@
+{
+  "custom": {
+    "border": "0px none rgb(153, 153, 153)",
+    "borderColor": "rgb(153, 153, 153)",
+    "bottom": "1px",
+    "color": "rgb(153, 153, 153)",
+    "fontFamily": "Ionicons",
+    "fontSize": "22px",
+    "insetBlockEnd": "1px",
+    "insetBlockStart": "-1px",
+    "left": "0px",
+    "margin": "0px -6px 0px 0px",
+    "marginInlineEnd": "-6px",
+    "minHeight": "0px",
+    "minWidth": "0px",
+    "right": "0px",
+    "textOverflow": "clip",
+    "top": "-1px",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "transition": "0.3s ease-in-out"
+  },
+  "styleId": "style_30",
+  "tw": "inline-block relative font-normal leading-snug text-right whitespace-nowrap border-0 visible cursor-pointer mt-0 -mr-1.5 mb-0 ml-0 p-0 overflow-hidden"
+}

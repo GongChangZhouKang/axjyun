@@ -113,22 +113,22 @@ function ContractTokenDetails() {
       </div>
 
       <div className="contract-token-demo__section">
-        <h3>蓝色双轨 · Interaction blues</h3>
+        <h3>系统蓝 · Interaction blues</h3>
         <div className="contract-token-demo__blue-grid">
           <article className="is-production">
-            <small>推荐 · Production</small>
-            <strong>#096DD9</strong>
-            <p>小号文字、主按钮；白字 5.00:1。</p>
+            <small>默认 · System primary</small>
+            <strong>#129BFF</strong>
+            <p>原系统主按钮、批量工具栏与选中条。</p>
           </article>
           <article className="is-source-button">
-            <small>允许 · Source exact</small>
-            <strong>#129BFF</strong>
-            <p>选中条、图标、非文本强调。</p>
+            <small>交互 · Hover / Link</small>
+            <strong>#2D8CF0</strong>
+            <p>文字链接、hover、focus 与交互强调。</p>
           </article>
           <article className="is-source-accent">
-            <small>禁止 · Small white text</small>
-            <strong>#2D8CF0</strong>
-            <p>不可直接承载 14px 白字正文。</p>
+            <small>备用 · Accessible fallback</small>
+            <strong>#096DD9</strong>
+            <p>仅在明确要求高对比度时局部使用。</p>
           </article>
         </div>
       </div>
@@ -275,7 +275,7 @@ function ContractComponentDemo() {
           <h2>合同客户维护</h2>
           <p>真实密度下的页签、筛选、按钮、表格和状态组件</p>
         </div>
-        <span className="contract-demo__source-chip">执行中 · Source exact</span>
+        <span className="contract-demo__source-chip">执行中 · System exact</span>
       </header>
 
       <div className="contract-demo__summary">
@@ -395,7 +395,7 @@ function ContractComponentDemo() {
       </div>
 
       <p className="contract-demo__footnote" aria-live="polite">
-        当前显示 {rows.length} 条 · 生产主按钮使用 #096DD9；截图原始 #129BFF 保留给选中条与非文本强调。
+        当前显示 {rows.length} 条 · 主按钮使用原系统 #129BFF，文字链接与 hover 使用 #2D8CF0，数据行固定 48px。
       </p>
     </section>
   );
