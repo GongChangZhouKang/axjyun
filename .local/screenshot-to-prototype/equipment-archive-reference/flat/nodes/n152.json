@@ -1,0 +1,19 @@
+{
+  "bbox": {
+    "height": 833,
+    "left": 200,
+    "top": 64,
+    "width": 1712
+  },
+  "children": [
+    "n150",
+    "n151"
+  ],
+  "height": "21px",
+  "nodeId": "n152",
+  "originalClass": "ivu-radio-wrapper ivu-radio-group-item ivu-radio-default",
+  "selector": "#myScroll",
+  "styleId": "style_62",
+  "tag": "label",
+  "width": "52px"
+}

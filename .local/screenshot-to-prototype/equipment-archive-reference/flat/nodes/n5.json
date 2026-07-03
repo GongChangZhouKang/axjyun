@@ -1,0 +1,15 @@
+{
+  "bbox": {
+    "height": 30,
+    "left": 1597,
+    "top": 17,
+    "width": 30
+  },
+  "height": "30px",
+  "nodeId": "n5",
+  "selector": "div.top-side > div.btn:nth-of-type(3) > img",
+  "src": "assets/images/WHsF8L6mqE3gF4IETVDhGYeGHoAAPNCI0MSSXhIADhE4qAH7gdtH8GPAGs34EOa7QXRSuMHgR9-YNF-u5sfWqBTpERERERERERERERERERERERERERER.png",
+  "styleId": "style_5",
+  "tag": "img",
+  "width": "30px"
+}

@@ -1,0 +1,14 @@
+{
+  "bbox": {
+    "height": 22,
+    "left": 708,
+    "top": 696,
+    "width": 160
+  },
+  "height": "37.875px",
+  "nodeId": "n761",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(8) > td.ivu-table-column-yGVbdx:nth-of-type(3) > div.ivu-table-cell > div",
+  "styleId": "style_77",
+  "tag": "col",
+  "width": "120px"
+}

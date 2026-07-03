@@ -1,0 +1,15 @@
+{
+  "bbox": {
+    "height": 480,
+    "left": 1269,
+    "top": 347,
+    "width": 112
+  },
+  "height": "21px",
+  "nodeId": "n310",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > colgroup > col:nth-of-type(6)",
+  "styleId": "style_99",
+  "tag": "div",
+  "text": "安豹",
+  "width": "28px"
+}

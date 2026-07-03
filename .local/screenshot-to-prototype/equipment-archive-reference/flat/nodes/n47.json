@@ -1,0 +1,16 @@
+{
+  "bbox": {
+    "height": 14,
+    "left": 153,
+    "top": 278,
+    "width": 14
+  },
+  "height": "49px",
+  "nodeId": "n47",
+  "originalClass": "ivu-menu-item",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(5) > li.ivu-menu-submenu > div.ivu-menu-submenu-title > i.ivu-icon.ivu-icon-ios-arrow-down:nth-of-type(2)",
+  "styleId": "style_23",
+  "tag": "li",
+  "text": "库存管理",
+  "width": "199px"
+}

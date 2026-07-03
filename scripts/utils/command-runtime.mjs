@@ -13,7 +13,9 @@ function getPlatform(overridePlatform) {
 function quoteForCmdExec(value) {
   if (!value) return '""';
   if (!/[\s"&^|<>]/.test(value)) return value;
-  const escaped = String(value).replace(/"/g, '""');
+  const escaped = String(value)
+    .replace(/(\\*)"/g, '$1$1\\"')
+    .replace(/(\\+)$/g, '$1$1');
   return `"${escaped}"`;
 }
 
@@ -93,12 +95,11 @@ function getSpawnSpec(command, args, platform = process.platform, env = process.
     };
   }
 
-  const commandLine = 'call ' + buildWindowsCommandLine(resolvedCommand, args);
+  const commandLine = buildWindowsCommandLine(resolvedCommand, args);
   return {
     command: 'cmd.exe',
     args: ['/d', '/s', '/c', commandLine],
     windowsHide: true,
-    windowsVerbatimArguments: true,
   };
 }
 
@@ -204,7 +205,6 @@ export function runCommandSync(options) {
     timeout: timeoutMs,
     maxBuffer,
     windowsHide: spawnSpec.windowsHide,
-    windowsVerbatimArguments: spawnSpec.windowsVerbatimArguments,
     encoding: null,
   });
 
@@ -249,7 +249,6 @@ export function runCommand(options) {
       detached,
       stdio: stdio || (capture ? ['ignore', 'pipe', 'pipe'] : 'inherit'),
       windowsHide: spawnSpec.windowsHide,
-      windowsVerbatimArguments: spawnSpec.windowsVerbatimArguments,
     });
 
     const stdoutChunks = [];

@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 22,
+    "left": 900,
+    "top": 552,
+    "width": 160
+  },
+  "children": [
+    "n583"
+  ],
+  "height": "21px",
+  "nodeId": "n584",
+  "originalClass": "ivu-table-cell-slot",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(5) > td.ivu-table-column-0A27gQ:nth-of-type(4) > div.ivu-table-cell > div",
+  "styleId": "style_106",
+  "tag": "div",
+  "width": "138.094px"
+}

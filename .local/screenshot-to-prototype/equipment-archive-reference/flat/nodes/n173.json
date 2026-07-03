@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 22,
+    "left": 695,
+    "top": 69,
+    "width": 0
+  },
+  "children": [
+    "n172"
+  ],
+  "height": "32px",
+  "nodeId": "n173",
+  "originalClass": "ivu-btn ivu-btn-primary",
+  "selector": "div.ivu-tabs.ivu-tabs-card > div.ivu-tabs-bar:nth-of-type(1) > div.ivu-tabs-nav-container > div.ivu-tabs-nav-wrap > div.ivu-tabs-nav-scroll > div.ivu-tabs-nav > div.ivu-tabs-tab:nth-of-type(6) > i.ivu-icon.ivu-icon-ios-close",
+  "styleId": "style_74",
+  "tag": "button",
+  "width": "114px"
+}

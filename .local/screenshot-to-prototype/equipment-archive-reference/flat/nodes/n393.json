@@ -1,0 +1,12 @@
+{
+  "children": [
+    "n392"
+  ],
+  "height": "16px",
+  "nodeId": "n393",
+  "originalClass": "ivu-tooltip-rel",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(2) > td.ivu-table-column-1tO9Tp:nth-of-type(2) > div.ivu-table-cell > div > span.ivu-switch.ivu-switch-checked > span.ivu-switch-inner",
+  "styleId": "style_93",
+  "tag": "div",
+  "width": "88.6719px"
+}

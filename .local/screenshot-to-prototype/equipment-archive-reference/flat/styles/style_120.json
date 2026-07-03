@@ -1,0 +1,21 @@
+{
+  "custom": {
+    "border": "0px none rgb(81, 90, 110)",
+    "borderColor": "rgb(81, 90, 110)",
+    "bottom": "0px",
+    "boxShadow": "rgba(0, 0, 0, 0.2) -2px 0px 6px -2px",
+    "color": "rgb(81, 90, 110)",
+    "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+    "fontSize": "14px",
+    "insetInlineStart": "1552px",
+    "left": "1552px",
+    "minHeight": "0px",
+    "minWidth": "0px",
+    "right": "0px",
+    "textAlign": "start",
+    "textOverflow": "clip",
+    "top": "0px"
+  },
+  "styleId": "style_120",
+  "tw": "block absolute z-0 font-normal leading-tight border-0 visible m-0 p-0 overflow-hidden"
+}

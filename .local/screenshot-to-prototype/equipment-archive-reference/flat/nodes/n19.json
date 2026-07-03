@@ -1,0 +1,17 @@
+{
+  "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon\" style=\"font-size: 17px;\"></i> 智慧安检数据大屏 ",
+  "bbox": {
+    "height": 49,
+    "left": 0,
+    "top": 113,
+    "width": 199
+  },
+  "height": "49px",
+  "nodeId": "n19",
+  "originalClass": "ivu-menu-item",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(2) > li.ivu-menu-item",
+  "styleId": "style_16",
+  "tag": "li",
+  "text": "智慧安检数据大屏",
+  "width": "199px"
+}

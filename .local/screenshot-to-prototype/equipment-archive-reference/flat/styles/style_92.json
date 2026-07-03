@@ -1,0 +1,15 @@
+{
+  "custom": {
+    "border": "0px none rgb(18, 155, 255)",
+    "borderColor": "rgb(18, 155, 255)",
+    "color": "rgb(18, 155, 255)",
+    "display": "flow-root",
+    "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+    "fontSize": "14px",
+    "minHeight": "0px",
+    "minWidth": "0px",
+    "textOverflow": "ellipsis"
+  },
+  "styleId": "style_92",
+  "tw": "static font-normal leading-none text-left break-all border-0 visible cursor-pointer m-0 p-0 overflow-hidden"
+}

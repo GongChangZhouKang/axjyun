@@ -1,0 +1,15 @@
+{
+  "bbox": {
+    "height": 22,
+    "left": 485,
+    "top": 69,
+    "width": 0
+  },
+  "height": "24px",
+  "nodeId": "n165",
+  "selector": "div.ivu-tabs.ivu-tabs-card > div.ivu-tabs-bar:nth-of-type(1) > div.ivu-tabs-nav-container > div.ivu-tabs-nav-wrap > div.ivu-tabs-nav-scroll > div.ivu-tabs-nav > div.ivu-tabs-tab:nth-of-type(4) > i.ivu-icon.ivu-icon-ios-close",
+  "styleId": "style_68",
+  "tag": "span",
+  "text": "重置",
+  "width": "32px"
+}

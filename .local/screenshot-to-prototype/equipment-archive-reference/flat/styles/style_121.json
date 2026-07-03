@@ -1,0 +1,23 @@
+{
+  "custom": {
+    "background": "rgb(248, 248, 249) none repeat scroll 0% 0% / auto padding-box border-box",
+    "backgroundColor": "rgb(248, 248, 249)",
+    "border": "1px 0px solid none rgb(220, 222, 226) rgb(81, 90, 110) rgb(232, 234, 236)",
+    "bottom": "489.875px",
+    "color": "rgb(81, 90, 110)",
+    "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+    "fontSize": "14px",
+    "insetBlockEnd": "489.875px",
+    "insetBlockStart": "-1px",
+    "insetInlineStart": "1672px",
+    "left": "1672px",
+    "minHeight": "0px",
+    "minWidth": "0px",
+    "right": "0px",
+    "textAlign": "start",
+    "textOverflow": "clip",
+    "top": "-1px"
+  },
+  "styleId": "style_121",
+  "tw": "block absolute font-normal leading-tight visible m-0 p-0 overflow-visible"
+}

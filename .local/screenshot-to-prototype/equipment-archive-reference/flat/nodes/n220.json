@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 18,
+    "left": 293,
+    "top": 215,
+    "width": 16
+  },
+  "children": [
+    "n219"
+  ],
+  "height": "37.875px",
+  "nodeId": "n220",
+  "originalClass": "ivu-table-column-T20R0S",
+  "selector": "div.check-box-block.ivu-radio-group > label.ivu-radio-wrapper.ivu-radio-group-item:nth-of-type(1) > span.ivu-radio.ivu-radio-checked:nth-of-type(1) > input.ivu-radio-input",
+  "styleId": "style_81",
+  "tag": "th",
+  "width": "192.109px"
+}

@@ -1,0 +1,11 @@
+{
+  "children": [
+    "n394"
+  ],
+  "height": "21px",
+  "nodeId": "n395",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(2) > td.ivu-table-column-1tO9Tp:nth-of-type(2) > div.ivu-table-cell > div > span.ivu-switch.ivu-switch-checked > input",
+  "styleId": "style_95",
+  "tag": "div",
+  "width": "320.188px"
+}

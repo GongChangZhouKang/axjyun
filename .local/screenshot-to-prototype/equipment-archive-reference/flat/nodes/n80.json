@@ -1,0 +1,21 @@
+{
+  "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-ios-construct\" style=\"font-size: 17px;\"></i> 组织架构管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+  "bbox": {
+    "height": 49,
+    "left": 0,
+    "top": 750,
+    "width": 199
+  },
+  "children": [
+    "n78",
+    "n79"
+  ],
+  "height": "49px",
+  "nodeId": "n80",
+  "originalClass": "ivu-menu-submenu-title",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(9)",
+  "styleId": "style_16",
+  "tag": "div",
+  "text": "组织架构管理",
+  "width": "199px"
+}

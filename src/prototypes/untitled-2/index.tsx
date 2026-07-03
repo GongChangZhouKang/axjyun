@@ -25,9 +25,11 @@ import {
     UserRound,
     Warehouse,
 } from 'lucide-react';
+import { useHashPage } from '../../common/useHashPage';
+import { equipmentPageRoute, isEquipmentPage, type EquipmentPage } from './pages';
 import './style.css';
 
-type Page = 'home' | 'flow' | 'transfer' | 'stocktake' | 'project-check';
+type Page = EquipmentPage;
 type Role = 'keeper' | 'leader';
 type FlowMode = 'inbound' | 'outbound';
 type CheckScope = 'project' | 'client';
@@ -78,7 +80,7 @@ const clientLines: Line[] = [
 ];
 
 const stockTasks: Task[] = [
-    { id: 'PD202605220001', title: '2026年5月仓库盘点', subtitle: '历下仓库1 · 全盘', status: '进行中', tone: 'green', date: '2026-05-22', handler: '张三', lines: inventoryLines },
+    { id: 'PD202605220001', title: '2026年5月仓库盘点', subtitle: '历下仓库1 · 全盘', status: '进行中', tone: 'green', date: '2026-05-22', handler: '张三', lines: inventoryLines.map((item) => item.code === 'FZ0002' ? { ...item, oneCode: true, assetCodes: ['FZ0002-0103', 'FZ0002-0104', 'FZ0002-0105'] } : item) },
     { id: 'PD202605220002', title: '2026年5月仓库盘点', subtitle: '历下仓库1 · 全盘', status: '待开始', tone: 'orange', date: '2026-05-22', handler: '张三', lines: inventoryLines.map((item) => ({ ...item, actual: item.book })) },
     { id: 'PD202605180012', title: '重点装备抽盘', subtitle: '集团总仓 · 一物一码', status: '已完成', tone: 'gray', date: '2026-05-18', handler: '李岩', lines: inventoryLines.slice(0, 2) },
 ];
@@ -306,6 +308,16 @@ function LineCard({ line, onUpdate, mode = 'flow', flowKind = 'inbound' }: { lin
         onUpdate({ ...line, assetCodes: nextCodes, actual: nextCodes.length });
     }
 
+    function scanStockAsset() {
+        const nextCode = `${line.code}-${String(line.actual + 1).padStart(4, '0')}`;
+        onUpdate({ ...line, assetCodes: [...scannedCodes.slice(-2), nextCode], actual: line.actual + 1 });
+    }
+
+    function undoStockAsset() {
+        if (scannedCodes.length === 0 || line.actual === 0) return;
+        onUpdate({ ...line, assetCodes: scannedCodes.slice(0, -1), actual: line.actual - 1 });
+    }
+
     if (mode === 'flow') {
         return (
             <article className={line.oneCode ? 'line-card flow-card one-code-card' : 'line-card flow-card'}>
@@ -352,26 +364,44 @@ function LineCard({ line, onUpdate, mode = 'flow', flowKind = 'inbound' }: { lin
     }
 
     return (
-        <article className="line-card">
+        <article className={line.oneCode ? 'line-card stock-one-code-card' : 'line-card'}>
             <div className="line-title">
                 <div>
                     <strong>{line.code} {line.name}</strong>
                     <span>分类：{line.category}</span>
                 </div>
-                {isCheckMode ? <DifferenceBadge diff={diff} /> : <span className="diff-badge neutral">数量：{line.actual}</span>}
+                {line.oneCode ? <span className="one-code-mark">一物一码</span> : isCheckMode ? <DifferenceBadge diff={diff} /> : <span className="diff-badge neutral">数量：{line.actual}</span>}
             </div>
             <div className="line-meta">
                 <span>供应商：{line.supplier}</span>
                 <span>单位：{line.unit}</span>
                 <span>备注：{line.note}</span>
             </div>
-            <div className="line-counts">
-                <span>{mode === 'project' ? '项目领用' : mode === 'client' ? '登记数量' : mode === 'stock' ? '系统库存' : '单据数量'}：{line.book}</span>
-                <label>
-                    {mode === 'client' ? '盘点数量' : '实际库存'}：
-                    <QuantityStepper value={line.actual} onChange={(value) => onUpdate({ ...line, actual: value })} compact />
-                </label>
-            </div>
+            {line.oneCode ? (
+                <div className="stock-scan-check">
+                    <div className="stock-scan-summary">
+                        <div><span>系统库存</span><strong>{line.book}</strong></div>
+                        <div><span>已扫码</span><strong>{line.actual}</strong></div>
+                        <div className={diff === 0 ? 'neutral' : diff > 0 ? 'plus' : 'minus'}><span>差异</span><strong>{diff > 0 ? '+' : ''}{diff}</strong></div>
+                    </div>
+                    <div className="stock-scan-actions">
+                        <button type="button" className="scan-asset-btn" onClick={scanStockAsset}><ScanLine size={18} />扫码确认一台</button>
+                        <button type="button" className="undo-scan-btn" onClick={undoStockAsset} disabled={scannedCodes.length === 0}>撤销</button>
+                    </div>
+                    <div className="stock-recent-codes">
+                        <span>最近扫码</span>
+                        <div>{scannedCodes.length > 0 ? scannedCodes.map((code) => <code key={code}>{code}</code>) : <em>暂无扫码记录</em>}</div>
+                    </div>
+                </div>
+            ) : (
+                <div className="line-counts">
+                    <span>{mode === 'project' ? '项目领用' : mode === 'client' ? '登记数量' : mode === 'stock' ? '系统库存' : '单据数量'}：{line.book}</span>
+                    <label>
+                        {mode === 'client' ? '盘点数量' : '实际库存'}：
+                        <QuantityStepper value={line.actual} onChange={(value) => onUpdate({ ...line, actual: value })} compact />
+                    </label>
+                </div>
+            )}
         </article>
     );
 }
@@ -726,7 +756,8 @@ function Toast({ text }: { text: string }) {
 }
 
 export default function MobileEquipmentManagement() {
-    const [page, setPage] = useState<Page>('home');
+    const { page: routePage, setPage } = useHashPage(equipmentPageRoute);
+    const page: Page = isEquipmentPage(routePage) ? routePage : 'home';
     const [role, setRole] = useState<Role>('keeper');
     const [toast, setToast] = useState('');
 

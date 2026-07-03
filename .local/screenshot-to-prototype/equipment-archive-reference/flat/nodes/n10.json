@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 64,
+    "left": 1647,
+    "top": 0,
+    "width": 245
+  },
+  "children": [
+    "n9"
+  ],
+  "height": "64px",
+  "nodeId": "n10",
+  "originalClass": "ivu-dropdown-rel",
+  "selector": "div.top-side > div.btn:nth-of-type(3) > div.ivu-dropdown > div.ivu-dropdown-rel:nth-of-type(1)",
+  "styleId": "style_10",
+  "tag": "div",
+  "width": "245px"
+}

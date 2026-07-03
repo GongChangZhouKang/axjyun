@@ -1,0 +1,1069 @@
+{
+  "documentVersion": 1,
+  "format": "axhub-annotation-source",
+  "data": {
+    "version": 2,
+    "prototypeName": "equipment-archive-exact",
+    "pageId": "archive",
+    "nodes": [
+      {
+        "id": "archive-tabs",
+        "index": 1,
+        "title": "装备档案与分类管理标签",
+        "pageId": [
+          "archive",
+          "categories"
+        ],
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"archive-tabs\"]"
+          ],
+          "fingerprint": "div|data-annotation-id=archive-tabs",
+          "path": []
+        },
+        "aiPrompt": "说明装备档案页面为什么拆分为两个标签。",
+        "annotationText": "原装备档案页面保留为默认标签，新增分类管理标签，管理员可以在同一页面完成档案与分类维护。",
+        "hasMarkdown": false,
+        "color": "#2563EB",
+        "images": [],
+        "createdAt": 1782811800000,
+        "updatedAt": 1782811800000
+      },
+      {
+        "id": "archive-filter",
+        "index": 2,
+        "title": "装备档案筛选",
+        "pageId": "archive",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"archive-filter\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=archive-filter",
+          "path": []
+        },
+        "aiPrompt": "说明装备档案筛选条件。",
+        "annotationText": "支持按装备名称或编码、多级分类、供应商和启用状态组合查询；供应商输入支持联想。",
+        "hasMarkdown": false,
+        "color": "#059669",
+        "images": [],
+        "createdAt": 1782811800000,
+        "updatedAt": 1782811800000
+      },
+      {
+        "id": "archive-table",
+        "index": 3,
+        "title": "装备编码与档案列表",
+        "pageId": "archive",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"archive-table\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=archive-table",
+          "path": []
+        },
+        "aiPrompt": "说明装备编码规则和列表操作。",
+        "annotationText": "列表新增装备编码列。编码按末级分类编码追加三位流水号自动生成，例如腰带分类 FZ-YD 对应装备编码 FZ-YD-001。",
+        "hasMarkdown": false,
+        "color": "#D97706",
+        "images": [],
+        "createdAt": 1782811800000,
+        "updatedAt": 1782811800000
+      },
+      {
+        "id": "category-tree-table",
+        "index": 4,
+        "title": "多级分类树形表格",
+        "pageId": "categories",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"category-tree-table\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=category-tree-table",
+          "path": []
+        },
+        "aiPrompt": "说明多级分类的维护规则。",
+        "annotationText": "分类表格支持展开多级结构、唯一分类编码、新增下级、编辑和受限删除；存在子分类或关联装备时不可删除。",
+        "hasMarkdown": false,
+        "color": "#7C3AED",
+        "images": [],
+        "createdAt": 1782811800000,
+        "updatedAt": 1782811800000
+      },
+      {
+        "id": "annotation-5",
+        "index": 5,
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"supplier-dynamic-input\"]",
+            ".el-input__wrapper",
+            "div:nth-of-type(1) > main > div > div > div:nth-of-type(1) > div > div:nth-of-type(1) > div > form > div:nth-of-type(5) > div > div > div > div"
+          ],
+          "fingerprint": "div",
+          "path": [
+            {
+              "tag": "div",
+              "index": 0
+            },
+            {
+              "tag": "main",
+              "index": 0
+            },
+            {
+              "tag": "div",
+              "index": 0
+            },
+            {
+              "tag": "div",
+              "index": 0
+            },
+            {
+              "tag": "div",
+              "index": 0
+            },
+            {
+              "tag": "div",
+              "index": 0
+            },
+            {
+              "tag": "div",
+              "index": 0
+            },
+            {
+              "tag": "div",
+              "index": 0
+            },
+            {
+              "tag": "form",
+              "index": 0
+            },
+            {
+              "tag": "div",
+              "index": 4
+            },
+            {
+              "tag": "div",
+              "index": 0
+            },
+            {
+              "tag": "div",
+              "index": 0
+            },
+            {
+              "tag": "div",
+              "index": 0
+            },
+            {
+              "tag": "div",
+              "index": 0
+            }
+          ]
+        },
+        "aiPrompt": "",
+        "annotationText": "",
+        "hasMarkdown": true,
+        "color": "#1677FF",
+        "images": [],
+        "pageId": "archive",
+        "createdAt": 1782898819616,
+        "updatedAt": 1782963952654
+      },
+      {
+        "id": "inventory-filter",
+        "index": 6,
+        "title": "库存查询条件",
+        "pageId": "inventory",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"inventory-filter\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=inventory-filter",
+          "path": []
+        },
+        "aiPrompt": "说明库存管理的查询范围。",
+        "annotationText": "先选择所属仓库，再按装备名称、分类、启用状态和供应商组合查询库存记录。",
+        "hasMarkdown": false,
+        "color": "#059669",
+        "images": [],
+        "createdAt": 1782967200000,
+        "updatedAt": 1782967200000
+      },
+      {
+        "id": "inventory-warning-actions",
+        "index": 7,
+        "title": "库存预警批量设置",
+        "pageId": "inventory",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"inventory-warning-actions\"]"
+          ],
+          "fingerprint": "div|data-annotation-id=inventory-warning-actions",
+          "path": []
+        },
+        "aiPrompt": "说明库存预警的批量设置规则。",
+        "annotationText": "勾选多件装备后可统一设置预警数量，新数值会覆盖所选装备原有设置；填写 0 表示不启用库存预警。",
+        "hasMarkdown": false,
+        "color": "#D97706",
+        "images": [],
+        "createdAt": 1782967200000,
+        "updatedAt": 1782967200000
+      },
+      {
+        "id": "inventory-table",
+        "index": 8,
+        "title": "库存与预警状态",
+        "pageId": "inventory",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"inventory-table\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=inventory-table",
+          "path": []
+        },
+        "aiPrompt": "说明库存不足的判断和单件设置入口。",
+        "annotationText": "预警数量大于 0 时，0＜库存数量≤预警数量显示库存不足；库存为 0 显示无货；预警数量为 0 时不启用预警。每行通过“设置预警”单独维护预警数量。",
+        "hasMarkdown": false,
+        "color": "#DC2626",
+        "images": [],
+        "createdAt": 1782967200000,
+        "updatedAt": 1782967200000
+      },
+      {
+        "id": "check-list",
+        "index": 9,
+        "title": "库存盘点任务列表",
+        "pageId": "inventory-check",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"check-list\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=check-list",
+          "path": []
+        },
+        "aiPrompt": "说明库存盘点任务的状态和可执行操作。",
+        "annotationText": "盘点任务分为待开始、进行中、已完成。待开始可编辑、开始盘点和删除；进行中进入录入盘点；已完成查看详情。盘点单号按 PD+日期+4位流水生成。",
+        "hasMarkdown": false,
+        "color": "#2563EB",
+        "images": [],
+        "createdAt": 1782968400000,
+        "updatedAt": 1782968400000
+      },
+      {
+        "id": "check-status-actions",
+        "index": 10,
+        "title": "盘点状态与锁库规则",
+        "pageId": "inventory-check",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"check-status-actions\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=check-status-actions",
+          "path": []
+        },
+        "aiPrompt": "说明开始盘点后的仓库锁定行为。",
+        "annotationText": "开始盘点需二次确认，确认后锁定所选仓库并进入进行中。锁库不阻断进入新增页和填写数据；调拨单在新增页点击确认且调出或调入仓库被锁定时阻断，出库单在列表点击出库或新增页点击确认时阻断，入库单在列表点击入库或新增页点击确认时阻断。阻断弹窗严格复用装备档案管理的 source-dialog 样式，提示“该仓库正在盘点，暂不能进行库存操作”，并展示盘点单号、盘点名称、盘点人、盘点仓库、盘点日期和盘点状态。停用仓库不可申请和创建新单，但历史单据仍可执行出入库；停用状态不在本页实现。",
+        "hasMarkdown": false,
+        "color": "#D97706",
+        "images": [],
+        "createdAt": 1782968400000,
+        "updatedAt": 1782968400000
+      },
+      {
+        "id": "check-form",
+        "index": 11,
+        "title": "新增与编辑盘点单",
+        "pageId": "inventory-check-form",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"check-form\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=check-form",
+          "path": []
+        },
+        "aiPrompt": "说明盘点单基本信息和明细来源。",
+        "annotationText": "新增与编辑使用独立页面。进入新增页时，盘点名称按“年月+仓库名称+盘点+流水”自动填写一次，例如“2026年5月历下仓库盘点1”；自动填写后用户可以修改，后续调整仓库或日期不会覆盖名称。选择仓库与盘点类型后加载系统库存；全盘默认包含全部装备，抽盘允许选择部分装备。保存后状态为待开始。",
+        "hasMarkdown": false,
+        "color": "#059669",
+        "images": [],
+        "createdAt": 1782968400000,
+        "updatedAt": 1782968400000
+      },
+      {
+        "id": "check-entry",
+        "index": 12,
+        "title": "盘点录入与提交",
+        "pageId": "inventory-check-entry",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"check-entry\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=check-entry",
+          "path": []
+        },
+        "aiPrompt": "说明盘点录入和提交后的业务结果。",
+        "annotationText": "仓库锁定后录入实际库存，系统实时计算差异。提交需二次确认；完成后按正负差异生成盘点入库单或盘点出库单，并解除仓库锁定。",
+        "hasMarkdown": false,
+        "color": "#7C3AED",
+        "images": [],
+        "createdAt": 1782968400000,
+        "updatedAt": 1782968400000
+      },
+      {
+        "id": "check-difference-table",
+        "index": 13,
+        "title": "实际库存与差异",
+        "pageId": "inventory-check-entry",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"check-difference-table\"]"
+          ],
+          "fingerprint": "div|data-annotation-id=check-difference-table",
+          "path": []
+        },
+        "aiPrompt": "说明盘点差异计算与筛选。",
+        "annotationText": "差异=实际库存-系统库存。支持一物一码录入、备注以及过滤无库存或无差异装备；差异项会用于生成盘点出入库单。",
+        "hasMarkdown": false,
+        "color": "#DC2626",
+        "images": [],
+        "createdAt": 1782968400000,
+        "updatedAt": 1782968400000
+      },
+      {
+        "id": "statistics-tabs",
+        "index": 14,
+        "title": "库存统计报表切换",
+        "pageId": "inventory-statistics",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"statistics-tabs\"]"
+          ],
+          "fingerprint": "div|data-annotation-id=statistics-tabs",
+          "path": []
+        },
+        "aiPrompt": "说明三类库存统计报表的用途。",
+        "annotationText": "月库存统计用于核对期初、出入库与期末库存；装备领用汇总按部门聚合各装备领用数量；装备领用明细逐笔展示出库记录。",
+        "hasMarkdown": false,
+        "color": "#2563EB",
+        "images": [],
+        "createdAt": 1782972000000,
+        "updatedAt": 1782972000000
+      },
+      {
+        "id": "statistics-filter",
+        "index": 15,
+        "title": "库存统计查询条件",
+        "pageId": "inventory-statistics",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"statistics-filter\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=statistics-filter",
+          "path": []
+        },
+        "aiPrompt": "说明库存统计查询范围。",
+        "annotationText": "仓库为全局统计口径，可按月份、装备名称、分类和供应商组合查询；领用汇总与领用明细额外支持按申请部门筛选。重置保留当前仓库并恢复默认月份。",
+        "hasMarkdown": false,
+        "color": "#059669",
+        "images": [],
+        "createdAt": 1782972000000,
+        "updatedAt": 1782972000000
+      },
+      {
+        "id": "statistics-report-table",
+        "index": 16,
+        "title": "统计结果与导出口径",
+        "pageId": "inventory-statistics",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"statistics-report-table\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=statistics-report-table",
+          "path": []
+        },
+        "aiPrompt": "说明库存统计数据口径和导出行为。",
+        "annotationText": "表格数据随当前报表和查询条件变化。月库存采用分组表头展示入库、出库构成；领用汇总按部门聚合；领用明细中的出库单号可查看记录。原型中的导出按钮仅反馈已生成导出任务，不产生真实文件。",
+        "hasMarkdown": false,
+        "color": "#D97706",
+        "images": [],
+        "createdAt": 1782972000000,
+        "updatedAt": 1782972000000
+      },
+      {
+        "id": "statistics-department-filter",
+        "index": 17,
+        "title": "下一级部门统计口径",
+        "pageId": "inventory-statistics",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"statistics-department-filter\"]"
+          ],
+          "fingerprint": "label|data-annotation-id=statistics-department-filter",
+          "path": []
+        },
+        "aiPrompt": "说明部门筛选与当前仓库的组织层级关系。",
+        "annotationText": "部门选项跟随当前所属仓库变化。选择历城分公司等分公司仓库时，装备领用汇总默认分别展示该分公司下一级大队的领用情况，也可筛选单个下一级部门；选择公司总仓时，则按直属分公司、历城分公司等下一级分公司汇总。",
+        "hasMarkdown": false,
+        "color": "#7C3AED",
+        "images": [],
+        "createdAt": 1782979200000,
+        "updatedAt": 1782979200000
+      },
+      {
+        "id": "outbound-create-page",
+        "index": 18,
+        "title": "新增出库单",
+        "pageId": "outbound-create",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"outbound-create-page\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=outbound-create-page",
+          "path": []
+        },
+        "aiPrompt": "说明新增出库单的页面结构与业务范围。",
+        "annotationText": "仓库管理员填写出库类型、经办人、日期和说明，并维护装备明细。页面延续原系统新增出库结构；本原型不接真实后台提交接口。",
+        "hasMarkdown": false,
+        "color": "#2D8CF0",
+        "images": [],
+        "createdAt": 1782974400000,
+        "updatedAt": 1782974400000
+      },
+      {
+        "id": "outbound-qr-action",
+        "index": 18,
+        "title": "下载清单二维码",
+        "pageId": "outbound-create",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"outbound-qr-action\"]"
+          ],
+          "fingerprint": "div|data-annotation-id=outbound-qr-action",
+          "path": []
+        },
+        "aiPrompt": "说明二维码下载按钮的启用条件、数据和使用路径。",
+        "annotationText": "按钮位于“添加装备”右侧。清单为空时禁用；下载图片包含可识别二维码、装备明细和打印提示。二维码记录当前装备编号、名称、数量和单位，APP 在“审批—装备领用—选择装备”中扫码批量添加。",
+        "hasMarkdown": false,
+        "color": "#1677FF",
+        "images": [],
+        "createdAt": 1782974400000,
+        "updatedAt": 1782974400000
+      },
+      {
+        "id": "outbound-equipment-list",
+        "index": 19,
+        "title": "二维码清单数据",
+        "pageId": "outbound-create",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"outbound-equipment-list\"]"
+          ],
+          "fingerprint": "div|data-annotation-id=outbound-equipment-list",
+          "path": []
+        },
+        "aiPrompt": "说明装备清单字段与数量规则。",
+        "annotationText": "二维码始终取当前表格数据。每行包含装备编号、名称、数量、单位；出库数量最小为 1、最大不超过现库存，修改或删除后再次下载会生成最新清单。",
+        "hasMarkdown": false,
+        "color": "#059669",
+        "images": [],
+        "createdAt": 1782974400000,
+        "updatedAt": 1782974400000
+      },
+      {
+        "id": "mobile-equipment-claim",
+        "index": 20,
+        "title": "APP 装备领用申请",
+        "pageId": "mobile-equipment-claim",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"mobile-equipment-claim\"]"
+          ],
+          "fingerprint": "article|data-annotation-id=mobile-equipment-claim",
+          "path": []
+        },
+        "aiPrompt": "说明保安员通过 APP 申领装备的页面结构和范围。",
+        "annotationText": "页面面向领用装备的保安员，沿用原 APP 的领用审批结构。原型演示申请仓库、使用用途、装备清单、备注、附件、审批流程和提交反馈，不接真实审批后台。",
+        "hasMarkdown": false,
+        "color": "#2D8CF0",
+        "images": [],
+        "createdAt": 1782979200000,
+        "updatedAt": 1782979200000
+      },
+      {
+        "id": "claim-equipment-list",
+        "index": 21,
+        "title": "扫码批量添加装备",
+        "pageId": "mobile-equipment-claim",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"claim-equipment-list\"]"
+          ],
+          "fingerprint": "div|data-annotation-id=claim-equipment-list",
+          "path": []
+        },
+        "aiPrompt": "说明装备添加路径、合并规则和数量边界。",
+        "annotationText": "点击装备区域可选择扫码或手工添加，两种方式都保留当前申请表单。扫码按装备标识和数量合并到清单，重复扫码自动累加；手工选择页会回显当前清单并自动勾选已选装备。数量最小为 1，最大不超过库存，支持删除和继续添加。",
+        "hasMarkdown": false,
+        "color": "#059669",
+        "images": [],
+        "createdAt": 1782979200000,
+        "updatedAt": 1782979200000
+      },
+      {
+        "id": "claim-add-sheet",
+        "index": 22,
+        "title": "添加方式选择",
+        "pageId": "mobile-equipment-claim",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"claim-add-sheet\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=claim-add-sheet",
+          "path": []
+        },
+        "aiPrompt": "说明扫码添加与手工添加的取舍。",
+        "annotationText": "扫码添加是保安员的主路径，原型进入居中的全屏扫码模拟页并提供模拟成功按钮；手工添加跳转原装备选择方式，已通过扫码加入的装备保持勾选，返回申请页时不清空其他表单内容。",
+        "hasMarkdown": false,
+        "color": "#D97706",
+        "images": [],
+        "createdAt": 1782979200000,
+        "updatedAt": 1782979200000
+      },
+      {
+        "id": "claim-qr-actions",
+        "index": 23,
+        "title": "保存当前清单二维码",
+        "pageId": "mobile-equipment-claim",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"claim-qr-actions\"]"
+          ],
+          "fingerprint": "div|data-annotation-id=claim-qr-actions",
+          "path": []
+        },
+        "aiPrompt": "说明 APP 保存清单二维码的数据范围与用途。",
+        "annotationText": "保存按钮读取当前装备编号、名称、数量和单位，生成真实可识别的 PNG 二维码。二维码只用于再次带出装备清单，不代表申请已提交。",
+        "hasMarkdown": false,
+        "color": "#1677FF",
+        "images": [],
+        "createdAt": 1782979200000,
+        "updatedAt": 1782979200000
+      },
+      {
+        "id": "claim-manual-picker",
+        "index": 24,
+        "title": "手工选择装备",
+        "pageId": "mobile-equipment-claim",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"claim-manual-picker\"]"
+          ],
+          "fingerprint": "article|data-annotation-id=claim-manual-picker",
+          "path": []
+        },
+        "aiPrompt": "说明扫码与手工选择切换时如何保留装备和表单状态。",
+        "annotationText": "进入手工选择页时，以当前清单初始化勾选状态。扫码加入的装备会自动勾选；即使已选装备后续库存为 0，再次进入仍保留显示和勾选。确认选择只更新装备清单，不清空申请仓库、用途、备注和附件。",
+        "hasMarkdown": false,
+        "color": "#7C3AED",
+        "images": [],
+        "createdAt": 1782982800000,
+        "updatedAt": 1782982800000
+      },
+      {
+        "id": "mobile-check-home",
+        "index": 25,
+        "title": "APP 库存盘点入口",
+        "pageId": "mobile-inventory-home",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"mobile-check-home\"]"
+          ],
+          "fingerprint": "div|data-annotation-id=mobile-check-home",
+          "path": []
+        },
+        "aiPrompt": "说明移动端库存盘点入口和视觉继承关系。",
+        "annotationText": "在现有 APP 功能中心的装备管理分组中增加库存盘点入口，图标、分组、底部导航和主色保持原 APP 风格。",
+        "hasMarkdown": false,
+        "color": "#1677FF",
+        "images": [],
+        "createdAt": 1782986400000,
+        "updatedAt": 1782986400000
+      },
+      {
+        "id": "mobile-check-list",
+        "index": 26,
+        "title": "移动端盘点任务列表",
+        "pageId": "mobile-inventory-check",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"mobile-check-list\"]"
+          ],
+          "fingerprint": "main|data-annotation-id=mobile-check-list",
+          "path": []
+        },
+        "aiPrompt": "说明移动端盘点任务筛选与进入规则。",
+        "annotationText": "按仓库和全部、待开始、进行中、已完成四种状态查看任务。待开始任务点击后确认开始并锁库，进行中任务进入盘点录入，已完成任务只读。",
+        "hasMarkdown": false,
+        "color": "#059669",
+        "images": [],
+        "createdAt": 1782986400000,
+        "updatedAt": 1782986400000
+      },
+      {
+        "id": "mobile-check-form",
+        "index": 27,
+        "title": "移动端新增盘点",
+        "pageId": "mobile-inventory-check-form",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"mobile-check-form\"]"
+          ],
+          "fingerprint": "main|data-annotation-id=mobile-check-form",
+          "path": []
+        },
+        "aiPrompt": "说明移动端新增盘点的信息和操作。",
+        "annotationText": "填写盘点名称、仓库、类型、经办人、时间和说明；装备卡片从库存记录加载。保存生成待开始任务，开始盘点需二次确认。",
+        "hasMarkdown": false,
+        "color": "#D97706",
+        "images": [],
+        "createdAt": 1782986400000,
+        "updatedAt": 1782986400000
+      },
+      {
+        "id": "mobile-check-entry",
+        "index": 28,
+        "title": "移动端盘点录入",
+        "pageId": "mobile-inventory-check-entry",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"mobile-check-entry\"]"
+          ],
+          "fingerprint": "main|data-annotation-id=mobile-check-entry",
+          "path": []
+        },
+        "aiPrompt": "说明实际数量、扫码和差异的交互。",
+        "annotationText": "普通装备使用步进器录入实际数量，一物一码装备通过扫码核对；差异等于实际数量减系统库存，并以灰、红、绿区分零、负、正差异。",
+        "hasMarkdown": false,
+        "color": "#7C3AED",
+        "images": [],
+        "createdAt": 1782986400000,
+        "updatedAt": 1782986400000
+      },
+      {
+        "id": "mobile-check-confirm-dialog",
+        "index": 29,
+        "title": "开始与提交确认弹窗",
+        "pageId": [
+          "mobile-inventory-check-form",
+          "mobile-inventory-check-entry",
+          "mobile-inventory-check"
+        ],
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"mobile-check-confirm-dialog\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=mobile-check-confirm-dialog",
+          "path": []
+        },
+        "aiPrompt": "说明移动端盘点确认弹窗的视觉规范。",
+        "annotationText": "开始和提交均二次确认。弹窗严格继承装备档案管理 source-dialog：52px 浅灰标题栏、12px 圆角、正文间距、底部分隔线以及右对齐的取消和蓝色确认按钮，只缩减为手机可用宽度。",
+        "hasMarkdown": false,
+        "color": "#DC2626",
+        "images": [],
+        "createdAt": 1782986400000,
+        "updatedAt": 1782986400000
+      },
+      {
+        "id": "check-auto-name",
+        "index": 30,
+        "title": "盘点名称自动生成",
+        "pageId": "inventory-check-form",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"check-auto-name\"]"
+          ],
+          "fingerprint": "div|data-annotation-id=check-auto-name",
+          "path": []
+        },
+        "aiPrompt": "说明盘点名称自动生成规则。",
+        "annotationText": "进入新增页时自动填写盘点名称，用户可继续修改。默认名称按“年份+年+月份+月+仓库名称+盘点+流水”生成；流水从 1 开始，并在同年月、同仓库范围内递增。例如：2026年5月历下仓库盘点1。自动填写只执行一次，后续修改仓库或日期不覆盖用户填写的名称。",
+        "hasMarkdown": false,
+        "color": "#2563EB",
+        "images": [],
+        "createdAt": 1782987000000,
+        "updatedAt": 1782987000000
+      },
+      {
+        "id": "project-check-list",
+        "index": 31,
+        "title": "项目与甲方装备盘点任务",
+        "pageId": "project-check-list",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"project-check-list\"]"
+          ],
+          "fingerprint": "main|data-annotation-id=project-check-list",
+          "path": []
+        },
+        "aiPrompt": "说明项目装备盘点的任务入口和简化流程。",
+        "annotationText": "页面面向项目负责人和班长，通过项目装备、甲方装备双页签管理盘点任务。统一流程为新增盘点、录入、提交、查看结果，不设置开始盘点，不锁定仓库或项目业务。",
+        "hasMarkdown": false,
+        "color": "#2563EB",
+        "images": [],
+        "createdAt": 1782990000000,
+        "updatedAt": 1782990000000
+      },
+      {
+        "id": "project-check-tabs",
+        "index": 32,
+        "title": "两类装备盘点切换",
+        "pageId": "project-check-list",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"project-check-tabs\"]"
+          ],
+          "fingerprint": "div|data-annotation-id=project-check-tabs",
+          "path": []
+        },
+        "aiPrompt": "说明项目装备与甲方装备的数据来源。",
+        "annotationText": "项目装备自动带出当前项目已领用装备，基准字段为领用数量；甲方装备带出当前项目已登记装备，基准字段为登记数量，并允许在录入时补充登记。",
+        "hasMarkdown": false,
+        "color": "#059669",
+        "images": [],
+        "createdAt": 1782990000000,
+        "updatedAt": 1782990000000
+      },
+      {
+        "id": "project-check-create",
+        "index": 33,
+        "title": "新增盘点",
+        "pageId": "project-check-create",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"project-check-create\"]"
+          ],
+          "fingerprint": "main|data-annotation-id=project-check-create",
+          "path": []
+        },
+        "aiPrompt": "说明新增盘点所需信息。",
+        "annotationText": "新增页按现有 APP 截图将基本信息与装备数量录入合并展示，底部支持保存进行中草稿或直接提交，不产生待开始状态。",
+        "hasMarkdown": false,
+        "color": "#D97706",
+        "images": [],
+        "createdAt": 1782990000000,
+        "updatedAt": 1782990000000
+      },
+      {
+        "id": "project-check-count-cards",
+        "index": 34,
+        "title": "盘点数量与差异",
+        "pageId": "project-check-create",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"project-check-count-cards\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=project-check-count-cards",
+          "path": []
+        },
+        "aiPrompt": "说明盘点卡片字段与差异规则。",
+        "annotationText": "项目装备卡片展示装备属性、领用数量、实际数量和自动差异；甲方装备展示位置、登记数量、实际数量和差异。差异=实际数量-基准数量；0 为正常，正数为盘盈，负数为盘亏。",
+        "hasMarkdown": false,
+        "color": "#7C3AED",
+        "images": [],
+        "createdAt": 1782990000000,
+        "updatedAt": 1782990000000
+      },
+      {
+        "id": "project-check-result-summary",
+        "index": 35,
+        "title": "盘点结果",
+        "pageId": "project-check-result",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"project-check-result-summary\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=project-check-result-summary",
+          "path": []
+        },
+        "aiPrompt": "说明提交后的盘点结果。",
+        "annotationText": "提交后展示装备项数以及正常、盘盈、盘亏汇总，并逐项展示基准数量、盘点数量和差异。本轮不建立异常处理、复核、审批或库存出入库流程。",
+        "hasMarkdown": false,
+        "color": "#DC2626",
+        "images": [],
+        "createdAt": 1782990000000,
+        "updatedAt": 1782990000000
+      },
+      {
+        "id": "project-check-home",
+        "index": 36,
+        "title": "APP 功能中心装备盘点入口",
+        "pageId": "project-check-home",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"project-check-home\"]"
+          ],
+          "fingerprint": "main|data-annotation-id=project-check-home",
+          "path": []
+        },
+        "aiPrompt": "说明装备盘点入口所在分组。",
+        "annotationText": "装备盘点入口位于功能中心的业务管理分组，沿用现有 APP 的四色圆形图标宫格、用户区和底部导航样式。",
+        "hasMarkdown": false,
+        "color": "#2563EB",
+        "images": [],
+        "createdAt": 1782993600000,
+        "updatedAt": 1782993600000
+      },
+      {
+        "id": "project-check-picker",
+        "index": 37,
+        "title": "选择项目装备",
+        "pageId": "project-check-picker",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"project-check-picker\"]"
+          ],
+          "fingerprint": "main|data-annotation-id=project-check-picker",
+          "path": []
+        },
+        "aiPrompt": "说明项目装备选择范围。",
+        "annotationText": "从当前项目可盘点的已领用装备中勾选，支持按名称搜索和显示无库存装备；确认后回到盘点录入页。",
+        "hasMarkdown": false,
+        "color": "#059669",
+        "images": [],
+        "createdAt": 1782993600000,
+        "updatedAt": 1782993600000
+      },
+      {
+        "id": "project-check-client-add",
+        "index": 38,
+        "title": "添加甲方装备",
+        "pageId": "project-check-client-add",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"project-check-client-add\"]"
+          ],
+          "fingerprint": "main|data-annotation-id=project-check-client-add",
+          "path": []
+        },
+        "aiPrompt": "说明甲方装备登记字段。",
+        "annotationText": "甲方装备为弱管理登记，记录装备名称、所在岗点、数量、单位、图片和备注；确认后加入本次盘点清单。",
+        "hasMarkdown": false,
+        "color": "#D97706",
+        "images": [],
+        "createdAt": 1782993600000,
+        "updatedAt": 1782993600000
+      },
+      {
+        "id": "project-check-location",
+        "index": 39,
+        "title": "选择甲方装备岗点",
+        "pageId": "project-check-location",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"project-check-location\"]"
+          ],
+          "fingerprint": "main|data-annotation-id=project-check-location",
+          "path": []
+        },
+        "aiPrompt": "说明甲方装备位置选择。",
+        "annotationText": "从当前项目岗点中单选甲方装备所在位置，支持按岗点名称搜索。",
+        "hasMarkdown": false,
+        "color": "#7C3AED",
+        "images": [],
+        "createdAt": 1782993600000,
+        "updatedAt": 1782993600000
+      },
+      {
+        "id": "project-check-submit-dialog",
+        "index": 40,
+        "title": "提交盘点确认",
+        "pageId": "project-check-create",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"project-check-submit-dialog\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=project-check-submit-dialog",
+          "path": []
+        },
+        "aiPrompt": "说明提交确认规则。",
+        "annotationText": "提交前二次提醒“提交后将无法修改”，确认后生成只读盘点结果；取消则留在当前录入页。",
+        "hasMarkdown": false,
+        "color": "#DC2626",
+        "images": [],
+        "createdAt": 1782993600000,
+        "updatedAt": 1782993600000
+      }
+    ],
+    "updatedAt": 1782963952654
+  },
+  "markdownMap": {
+    "annotation-5": "供应商不再固定，支持动态维护，应对后续装备品类范围扩增；"
+  },
+  "assetMap": {},
+  "directory": {
+    "nodes": [
+      {
+        "type": "folder",
+        "id": "equipment-archive-directory",
+        "title": "装备管理7月迭代",
+        "defaultExpanded": true,
+        "children": [
+          {
+            "type": "route",
+            "id": "route-archive",
+            "title": "装备档案",
+            "route": "archive"
+          },
+          {
+            "type": "route",
+            "id": "route-categories",
+            "title": "分类管理",
+            "route": "categories"
+          },
+          {
+            "type": "route",
+            "id": "route-inventory",
+            "title": "库存管理",
+            "route": "inventory"
+          },
+          {
+            "type": "route",
+            "id": "route-inventory-statistics",
+            "title": "库存统计",
+            "route": "inventory-statistics"
+          },
+          {
+            "type": "folder",
+            "id": "inventory-check-directory",
+            "title": "库存盘点",
+            "defaultExpanded": true,
+            "children": [
+              {
+                "type": "route",
+                "id": "route-inventory-check",
+                "title": "盘点列表",
+                "route": "inventory-check"
+              },
+              {
+                "type": "route",
+                "id": "route-inventory-check-form",
+                "title": "新增盘点",
+                "route": "inventory-check-form"
+              },
+              {
+                "type": "route",
+                "id": "route-inventory-check-entry",
+                "title": "盘点录入",
+                "route": "inventory-check-entry"
+              },
+              {
+                "type": "markdown",
+                "id": "warehouse-state-rule",
+                "title": "说明｜仓库状态与业务阻断",
+                "markdown": "# 仓库状态与业务阻断\n\n## 锁定\n盘点开始并确认锁库后，仓库进入锁定状态。锁库期间允许进入新增页、填写数据和发起申请，但在会导致库存流转的关键动作上阻断。\n\n| 业务 | 阻断时机 | 判断条件 |\n| --- | --- | --- |\n| 调拨管理 | 新增调拨页点击“确认” | 调出仓库或调入仓库任一处于锁定状态 |\n| 出库管理 | 列表点击“出库” | 单据所属仓库处于锁定状态 |\n| 出库管理 | 新增出库页点击“确认” | 选择的出库仓库处于锁定状态 |\n| 入库管理 | 列表点击“入库” | 单据所属仓库处于锁定状态 |\n| 入库管理 | 新增入库页点击“确认” | 选择的入库仓库处于锁定状态 |\n\n## 阻断弹窗\n\n**标题：** 仓库正在盘点\n\n**提示：** 该仓库正在盘点，暂不能进行库存操作。请在盘点完成后重试。\n\n弹窗展示当前进行中的盘点信息：\n\n- 盘点单号\n- 盘点名称\n- 盘点人\n- 盘点仓库\n- 盘点日期\n- 盘点状态（进行中）\n\n示例：\n\n> 盘点单号：PD202607020001  \n> 盘点名称：2026年7月历下仓库月度盘点  \n> 盘点人：张三  \n> 盘点仓库：历下仓库1  \n> 盘点日期：2026-07-02  \n> 盘点状态：进行中\n\n弹窗仅提供“我知道了”按钮，不继续执行当前业务动作。调拨的调出、调入仓库均锁定时，按仓库分别展示对应的进行中盘点信息。\n\n### 弹窗样式\n\n严格复用装备档案管理现有 `source-dialog` / `warning-dialog`，不新增另一套警告弹窗视觉：\n\n- Element Plus 居中模态弹窗，宽度 500px，圆角 12px。\n- 标题栏高度 52px，背景 `#F8F8F9`，左右内边距 28px；标题 16px、常规字重、颜色 `#17233D`。\n- 右上角沿用 52×52px 关闭按钮。\n- 内容区内边距 22px 34px 12px。提示文案使用正文色，不使用大图标、插画或整块红色警告背景。\n- 盘点信息使用装备档案库存预警弹窗的双列信息块：标签 90px、内容自适应，间距 12px，内边距 14px 16px，圆角 4px，背景使用 `--source-filter`。\n- 底部操作栏高度 56px，顶部 1px 分隔线，按钮右对齐；“我知道了”使用主按钮，最小宽度 60px、高度 32px、圆角 4px。\n- 遮罩、出现/关闭动效、字体和颜色全部继承装备档案管理现有 Element Plus 配置。\n\n## 停用\n不可申请和创建新的出入库单；停用前已生成的单据仍可执行出入库。本状态仅作业务说明，本页面不实现。"
+              }
+            ]
+          },
+          {
+            "type": "route",
+            "id": "route-outbound-create",
+            "title": "新增出库｜清单二维码",
+            "route": "outbound-create"
+          },
+          {
+            "type": "route",
+            "id": "route-mobile-equipment-claim",
+            "title": "APP 装备领用｜扫码添加",
+            "route": "mobile-equipment-claim"
+          },
+          {
+            "type": "folder",
+            "id": "mobile-inventory-check-directory",
+            "title": "APP 库存盘点",
+            "defaultExpanded": true,
+            "children": [
+              {
+                "type": "route",
+                "id": "route-mobile-inventory-home",
+                "title": "功能中心入口",
+                "route": "mobile-inventory-home"
+              },
+              {
+                "type": "route",
+                "id": "route-mobile-inventory-check",
+                "title": "盘点任务列表",
+                "route": "mobile-inventory-check"
+              },
+              {
+                "type": "route",
+                "id": "route-mobile-inventory-check-form",
+                "title": "新增盘点",
+                "route": "mobile-inventory-check-form"
+              },
+              {
+                "type": "route",
+                "id": "route-mobile-inventory-check-entry",
+                "title": "盘点录入",
+                "route": "mobile-inventory-check-entry"
+              }
+            ]
+          },
+          {
+            "type": "folder",
+            "id": "mobile-project-check-directory",
+            "title": "APP 项目装备盘点",
+            "defaultExpanded": true,
+            "children": [
+              {
+                "type": "route",
+                "id": "route-project-check-home",
+                "title": "功能中心入口",
+                "route": "project-check-home"
+              },
+              {
+                "type": "route",
+                "id": "route-project-check-list",
+                "title": "盘点任务",
+                "route": "project-check-list"
+              },
+              {
+                "type": "route",
+                "id": "route-project-check-create",
+                "title": "新增与录入盘点",
+                "route": "project-check-create"
+              },
+              {
+                "type": "route",
+                "id": "route-project-check-picker",
+                "title": "选择项目装备",
+                "route": "project-check-picker"
+              },
+              {
+                "type": "route",
+                "id": "route-project-check-client-add",
+                "title": "添加甲方装备",
+                "route": "project-check-client-add"
+              },
+              {
+                "type": "route",
+                "id": "route-project-check-location",
+                "title": "选择岗点",
+                "route": "project-check-location"
+              },
+              {
+                "type": "route",
+                "id": "route-project-check-result",
+                "title": "盘点结果",
+                "route": "project-check-result"
+              }
+            ]
+          },
+          {
+            "type": "markdown",
+            "id": "equipment-code-rule",
+            "title": "说明｜装备编码规则",
+            "markdown": "# 装备编码规则\n\n装备编码由末级分类编码与三位流水号组成。\n\n- 示例分类：腰带 `FZ-YD`\n- 首件装备：`FZ-YD-001`\n- 后续装备依次递增，编码由系统生成且不可手工修改。"
+          }
+        ]
+      }
+    ]
+  }
+}

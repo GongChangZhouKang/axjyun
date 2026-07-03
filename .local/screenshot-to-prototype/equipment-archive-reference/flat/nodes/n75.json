@@ -1,0 +1,21 @@
+{
+  "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-md-person\" style=\"font-size: 17px;\"></i> 人事管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+  "bbox": {
+    "height": 49,
+    "left": 0,
+    "top": 603,
+    "width": 199
+  },
+  "children": [
+    "n73",
+    "n74"
+  ],
+  "height": "49px",
+  "nodeId": "n75",
+  "originalClass": "ivu-menu-submenu-title",
+  "selector": "li.ivu-menu-submenu.ivu-menu-item-active > ul.ivu-menu > li.ivu-menu-item:nth-of-type(5)",
+  "styleId": "style_16",
+  "tag": "div",
+  "text": "人事管理",
+  "width": "199px"
+}

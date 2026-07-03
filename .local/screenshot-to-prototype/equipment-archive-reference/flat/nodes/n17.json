@@ -1,0 +1,20 @@
+{
+  "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-ios-stats\" style=\"font-size: 17px;\"></i> 可视化调度 ",
+  "bbox": {
+    "height": 49,
+    "left": 0,
+    "top": 64,
+    "width": 199
+  },
+  "children": [
+    "n16"
+  ],
+  "height": "49px",
+  "nodeId": "n17",
+  "originalClass": "ivu-menu-item",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(1) > li.ivu-menu-item",
+  "styleId": "style_16",
+  "tag": "li",
+  "text": "可视化调度",
+  "width": "199px"
+}

@@ -1,0 +1,20 @@
+{
+  "children": [
+    "n759",
+    "n760",
+    "n761",
+    "n762",
+    "n763",
+    "n764",
+    "n765",
+    "n766",
+    "n767",
+    "n768"
+  ],
+  "height": "37.875px",
+  "nodeId": "n769",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(8) > td.ivu-table-column-1tO9Tp:nth-of-type(2) > div.ivu-table-cell > div > span.ivu-switch.ivu-switch-checked > input",
+  "styleId": "style_78",
+  "tag": "colgroup",
+  "width": "1754px"
+}

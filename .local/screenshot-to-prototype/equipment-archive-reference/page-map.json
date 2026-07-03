@@ -1,0 +1,361 @@
+{
+  "links": [
+    {
+      "selector": "div.content-box.ivu-layout-content > div.new-big-box > div:nth-of-type(1) > div.new-search-box:nth-of-type(1) > div.right-btn:nth-of-type(5) > div.sms-btn-blue:nth-of-type(1) > button.ivu-btn.ivu-btn-primary",
+      "text": "查询",
+      "type": "button",
+      "visible": true
+    },
+    {
+      "selector": "div.content-box.ivu-layout-content > div.new-big-box > div:nth-of-type(1) > div.new-search-box:nth-of-type(1) > div.right-btn:nth-of-type(5) > div.sms-btn:nth-of-type(2) > button.ivu-btn.ivu-btn-default",
+      "text": "重置",
+      "type": "button",
+      "visible": true
+    },
+    {
+      "selector": "div.content-box.ivu-layout-content > div.new-big-box > div:nth-of-type(1) > div.new-search-box:nth-of-type(1) > div.right-btn:nth-of-type(5) > div.sms-btn:nth-of-type(3) > button.ivu-btn.ivu-btn-default",
+      "text": "更多",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "div.content-box.ivu-layout-content > div.new-big-box > div:nth-of-type(1) > div.new-search-box:nth-of-type(1) > div.right-btn:nth-of-type(5) > div.sms-btn:nth-of-type(4) > button.ivu-btn.ivu-btn-default",
+      "text": "收起",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "div.content-box.ivu-layout-content > div.new-big-box > div:nth-of-type(1) > div.new-table-box:nth-of-type(2) > div.sms-btn-box > div.sms-btn-blue:nth-of-type(1) > button.ivu-btn.ivu-btn-primary",
+      "text": "新增装备",
+      "type": "button",
+      "visible": true
+    },
+    {
+      "selector": "div.content-box.ivu-layout-content > div.new-big-box > div:nth-of-type(1) > div.new-table-box:nth-of-type(2) > div.sms-btn-box > div.sms-btn-blue:nth-of-type(2) > button.ivu-btn.ivu-btn-primary",
+      "text": "分类管理",
+      "type": "button",
+      "visible": true
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(3) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.btn-box > button.ivu-btn.ivu-btn-primary:nth-of-type(1)",
+      "text": "保存",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(3) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.btn-box > button.ivu-btn.ivu-btn-default:nth-of-type(2)",
+      "text": "不保存",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(3) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.btn-box > button.ivu-btn.ivu-btn-default:nth-of-type(3)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "div.new-modal-btn > button.ivu-btn.ivu-btn-default:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "div.new-modal-btn > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(8) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.popup-content.new-modal-box > div > div.tab-box:nth-of-type(1) > div.new-table-box:nth-of-type(1) > div.sms-btn-box > div.sms-btn-blue > button.ivu-btn.ivu-btn-primary",
+      "text": "新增",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(12) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.popup-content.new-modal-box > form.ivu-form.ivu-form-label-right > div.btn:nth-of-type(11) > button.ivu-btn.ivu-btn-default:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(12) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.popup-content.new-modal-box > form.ivu-form.ivu-form-label-right > div.btn:nth-of-type(11) > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确定",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(163) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.popup-content.new-modal-box > div > div.new-search-box:nth-of-type(1) > div.right-btn:nth-of-type(2) > div.sms-btn-blue:nth-of-type(1) > button.ivu-btn.ivu-btn-primary",
+      "text": "查询",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(163) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.popup-content.new-modal-box > div > div.new-search-box:nth-of-type(1) > div.right-btn:nth-of-type(2) > div.sms-btn:nth-of-type(2) > button.ivu-btn.ivu-btn-default",
+      "text": "重置",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(165) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.popup-content.new-modal-box > form.ivu-form.ivu-form-label-right > div.sms-btn-box:nth-of-type(7) > div.sms-btn-blue > button.ivu-btn.ivu-btn-primary",
+      "text": "添加装备",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "div.modal-btn > button.ivu-btn.ivu-btn-default:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "div.modal-btn > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(166) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.select-modal-box > div.customer-flex-box > div.flex-left-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.ivu-btn.ivu-btn-default:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(166) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.select-modal-box > div.customer-flex-box > div.flex-left-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "button.axj-btn-blue.btn-margin",
+      "text": "视频（APP）",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(172) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body > div.map-box1 > div:nth-of-type(2) > div.el-dialog__wrapper:nth-of-type(2) > div.el-dialog.el-dialog--center > div.el-dialog__footer:nth-of-type(2) > div.dialog-footer > button.ivu-btn.ivu-btn-primary:nth-of-type(1)",
+      "text": "重新检测",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(172) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body > div.map-box1 > div:nth-of-type(2) > div.el-dialog__wrapper:nth-of-type(2) > div.el-dialog.el-dialog--center > div.el-dialog__footer:nth-of-type(2) > div.dialog-footer > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "下载插件",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(172) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body > div.map-box1 > div:nth-of-type(2) > div.el-dialog__wrapper:nth-of-type(3) > div.el-dialog.el-dialog--center > div.el-dialog__footer:nth-of-type(2) > div.dialog-footer > button.ivu-btn.ivu-btn-primary",
+      "text": "确 定",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(172) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body > div.map-box1 > div:nth-of-type(2) > div.el-dialog__wrapper:nth-of-type(4) > div.el-dialog.el-dialog--center > div.el-dialog__footer:nth-of-type(2) > div.dialog-footer > button.ivu-btn.ivu-btn-primary:nth-of-type(1)",
+      "text": "重新检测",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(172) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body > div.map-box1 > div:nth-of-type(2) > div.el-dialog__wrapper:nth-of-type(4) > div.el-dialog.el-dialog--center > div.el-dialog__footer:nth-of-type(2) > div.dialog-footer > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "下载插件",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(180) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box > button.cancelBtn.ivu-btn:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(180) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(181) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.cancelBtn.ivu-btn:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(181) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(183) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.map-box1 > div.new-big-box > div.tab-box:nth-of-type(2) > div.new-search-box:nth-of-type(1) > div.right-btn:nth-of-type(6) > div.sms-btn-blue:nth-of-type(1) > button.ivu-btn.ivu-btn-primary",
+      "text": "查询",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(183) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.map-box1 > div.new-big-box > div.tab-box:nth-of-type(2) > div.new-search-box:nth-of-type(1) > div.right-btn:nth-of-type(6) > div.sms-btn:nth-of-type(2) > button.ivu-btn.ivu-btn-default",
+      "text": "重置",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(183) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.map-box1 > div.new-big-box > div.tab-box:nth-of-type(2) > div.sms-btn-box:nth-of-type(2) > div.sms-btn:nth-of-type(1) > button.ivu-btn.ivu-btn-default",
+      "text": "导出",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(189) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box > button.cancelBtn.ivu-btn:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(189) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(190) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.cancelBtn.ivu-btn:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(190) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(191) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.cancelBtn.ivu-btn:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(191) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "button.ivu-btn.ivu-btn-text",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "div.mod-sty > form.ivu-form.ivu-form-label-right > div.btn:nth-of-type(2) > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确定",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(197) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.cancelBtn.ivu-btn:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(197) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "div.ivu-col.ivu-col-span-24 > div.ivu-card.ivu-card-bordered > div.ivu-card-body > div.ivu-tabs:nth-of-type(1) > div.ivu-tabs-content.ivu-tabs-content-animated:nth-of-type(2) > div.ivu-tabs-tabpane:nth-of-type(1) > div.ivu-row > div.ivu-col.ivu-col-span-4:nth-of-type(2) > button.ivu-btn.ivu-btn-primary",
+      "text": "搜索",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "div.ivu-col.ivu-col-span-24 > div.ivu-card.ivu-card-bordered > div.ivu-card-body > div.ivu-tabs:nth-of-type(1) > div.ivu-tabs-content.ivu-tabs-content-animated:nth-of-type(2) > div.ivu-tabs-tabpane:nth-of-type(2) > div.ivu-row:nth-of-type(2) > div.ivu-col.ivu-col-span-4:nth-of-type(3) > button.ivu-btn.ivu-btn-primary",
+      "text": "搜索",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "div.ivu-modal-footer > button.ivu-btn.ivu-btn-default:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "div.ivu-modal-footer > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(200) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.cancelBtn.ivu-btn:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(200) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(202) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box > button.cancelBtn.ivu-btn:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(202) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.botttom-box:nth-of-type(2) > div.btn-box > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(203) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.select-modal-box > div.customer-flex-box > div.flex-left-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.ivu-btn.ivu-btn-default:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(203) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.select-modal-box > div.customer-flex-box > div.flex-left-box:nth-of-type(2) > div.btn-box:nth-of-type(2) > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(204) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.popup-content.new-modal-box > div > button.ivu-btn.ivu-btn-default:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(204) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.popup-content.new-modal-box > div > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "确认",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "div.ivu-col.ivu-col-span-14 > div.ivu-card.ivu-card-bordered > div.ivu-card-body > div:nth-of-type(2) > div > button.ivu-btn.ivu-btn-default:nth-of-type(1)",
+      "text": "取消",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "div.ivu-col.ivu-col-span-14 > div.ivu-card.ivu-card-bordered > div.ivu-card-body > div:nth-of-type(2) > div > button.ivu-btn.ivu-btn-primary:nth-of-type(2)",
+      "text": "保存",
+      "type": "button",
+      "visible": false
+    },
+    {
+      "selector": "body > div.v-transfer-dom:nth-of-type(205) > div.ivu-modal-wrap.ivu-modal-hidden:nth-of-type(2) > div.ivu-modal > div.ivu-modal-content > div.ivu-modal-body:nth-of-type(2) > div.popup-content.new-modal-box > div > form.ivu-form.ivu-form-label-right > div.ivu-row > div.ivu-col.ivu-col-span-10:nth-of-type(2) > div.ivu-card.ivu-card-bordered > div.ivu-card-body > div:nth-of-type(3) > div.ivu-form-item.ivu-form-item-required > div.ivu-form-item-content > button.ivu-btn.ivu-btn-primary",
+      "text": "新增服务地点",
+      "type": "button",
+      "visible": false
+    }
+  ],
+  "pageTitle": "装备档案管理",
+  "pageUrl": "https://sms.axjyun.com/equip/record",
+  "totalLinks": 59
+}

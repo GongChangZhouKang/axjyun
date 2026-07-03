@@ -1,0 +1,15 @@
+{
+  "bbox": {
+    "height": 48,
+    "left": 1269,
+    "top": 779,
+    "width": 112
+  },
+  "height": "0px",
+  "nodeId": "n918",
+  "originalClass": "v-transfer-dom",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(10) > td.ivu-table-column-kOeYLG.ivu-table-column-right:nth-of-type(6)",
+  "styleId": "style_143",
+  "tag": "div",
+  "width": "1912px"
+}

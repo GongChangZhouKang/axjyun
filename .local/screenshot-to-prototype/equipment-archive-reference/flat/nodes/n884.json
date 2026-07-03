@@ -1,0 +1,13 @@
+{
+  "bbox": {
+    "height": 48,
+    "left": 692,
+    "top": 779,
+    "width": 192
+  },
+  "nodeId": "n884",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(10) > td.ivu-table-column-yGVbdx:nth-of-type(3)",
+  "styleId": "style_130",
+  "tag": "a",
+  "text": "3"
+}

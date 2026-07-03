@@ -1,0 +1,86 @@
+- generic [ref=e1]:
+  - main [ref=e3]:
+    - main [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - heading "基本信息" [level=2] [ref=e9]
+          - generic [ref=e10]:
+            - generic [ref=e11]:
+              - generic [ref=e12]: 出库类型：
+              - radiogroup "radio-group" [ref=e13]:
+                - generic [ref=e14] [cursor=pointer]:
+                  - radio "出库类型： radio-group 报损" [checked] [ref=e16]
+                  - generic [ref=e18]: 报损
+                - generic [ref=e19] [cursor=pointer]:
+                  - radio "其他" [ref=e21]
+                  - generic [ref=e23]: 其他
+            - generic [ref=e24]:
+              - generic [ref=e25]: 经办人：
+              - generic [ref=e27]:
+                - textbox "经办人：" [ref=e28]: 董涛
+                - img [ref=e31]
+            - generic [ref=e33]:
+              - generic [ref=e34]: 经办日期：
+              - generic [ref=e36]:
+                - img [ref=e39]
+                - combobox "经办日期：" [ref=e41]: 2026-07-02
+            - generic [ref=e42]:
+              - generic [ref=e43]: 出库说明：
+              - textbox "出库说明：" [ref=e45]:
+                - /placeholder: 请输入出库说明
+          - heading "明细" [level=2] [ref=e46]
+          - generic [ref=e47]:
+            - button "添加装备" [active] [ref=e48] [cursor=pointer]:
+              - generic [ref=e49]:
+                - img [ref=e51]
+                - text: 添加装备
+            - button "下载清单二维码" [ref=e53] [cursor=pointer]:
+              - generic [ref=e54]:
+                - img [ref=e56]
+                - text: 下载清单二维码
+          - generic [ref=e59]:
+            - table [ref=e61]:
+              - rowgroup [ref=e70]:
+                - row "装备名称 装备分类 单位 供应商 现库存 出库数量 操作" [ref=e71]:
+                  - columnheader "装备名称" [ref=e72]:
+                    - generic [ref=e73]: 装备名称
+                  - columnheader "装备分类" [ref=e74]:
+                    - generic [ref=e75]: 装备分类
+                  - columnheader "单位" [ref=e76]:
+                    - generic [ref=e77]: 单位
+                  - columnheader "供应商" [ref=e78]:
+                    - generic [ref=e79]: 供应商
+                  - columnheader "现库存" [ref=e80]:
+                    - generic [ref=e81]: 现库存
+                  - columnheader "出库数量" [ref=e82]:
+                    - generic [ref=e83]: 出库数量
+                  - columnheader "操作" [ref=e84]:
+                    - generic [ref=e85]: 操作
+            - table [ref=e235]:
+              - rowgroup [ref=e244]:
+                - row "应急救援夏服-三棵树 保安员服装 / 外衣裤 套 三棵树 315 1 删除" [ref=e245]:
+                  - cell "应急救援夏服-三棵树" [ref=e246]:
+                    - generic [ref=e247]: 应急救援夏服-三棵树
+                  - cell "保安员服装 / 外衣裤" [ref=e248]:
+                    - generic [ref=e249]: 保安员服装 / 外衣裤
+                  - cell "套" [ref=e250]:
+                    - generic [ref=e251]: 套
+                  - cell "三棵树" [ref=e252]:
+                    - generic [ref=e253]: 三棵树
+                  - cell "315" [ref=e254]:
+                    - generic [ref=e255]: "315"
+                  - cell "1" [ref=e256]:
+                    - spinbutton [ref=e261]: "1"
+                  - cell "删除" [ref=e262]:
+                    - button "删除" [ref=e264] [cursor=pointer]:
+                      - generic [ref=e265]: 删除
+        - generic [ref=e92]:
+          - button "取消" [ref=e93] [cursor=pointer]:
+            - generic [ref=e94]: 取消
+          - button "暂存" [ref=e95] [cursor=pointer]:
+            - generic [ref=e96]: 暂存
+          - button "确认" [ref=e97] [cursor=pointer]:
+            - generic [ref=e98]: 确认
+  - alert [ref=e266]:
+    - img [ref=e268]
+    - paragraph [ref=e270]: 已添加 1 件装备

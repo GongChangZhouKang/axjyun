@@ -1,0 +1,13 @@
+{
+  "bbox": {
+    "height": 16,
+    "left": 1875,
+    "top": 698,
+    "width": 32
+  },
+  "nodeId": "n796",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(8) > td.ivu-table-column-Q9sPgE.ivu-table-column-center:nth-of-type(10) > div.ivu-table-cell.ivu-table-hidden > div.ivu-table-cell-slot > div > div > span:nth-of-type(1)",
+  "styleId": "style_116",
+  "tag": "span",
+  "text": "编辑"
+}

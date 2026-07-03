@@ -1,0 +1,21 @@
+{
+  "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-ios-flag\" style=\"font-size: 17px;\"></i> 督导管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+  "bbox": {
+    "height": 343,
+    "left": 0,
+    "top": 358,
+    "width": 199
+  },
+  "children": [
+    "n58",
+    "n59"
+  ],
+  "height": "49px",
+  "nodeId": "n60",
+  "originalClass": "ivu-menu-submenu-title",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(7)",
+  "styleId": "style_16",
+  "tag": "div",
+  "text": "督导管理",
+  "width": "199px"
+}

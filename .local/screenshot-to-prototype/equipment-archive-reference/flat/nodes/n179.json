@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 0,
+    "left": 200,
+    "top": 112,
+    "width": 1712
+  },
+  "children": [
+    "n178"
+  ],
+  "height": "32px",
+  "nodeId": "n179",
+  "originalClass": "sms-btn-blue",
+  "selector": "div.ivu-tabs.ivu-tabs-card > div.ivu-tabs-content.ivu-tabs-content-animated:nth-of-type(2) > div.ivu-tabs-tabpane:nth-of-type(2)",
+  "styleId": "style_67",
+  "tag": "div",
+  "width": "124px"
+}

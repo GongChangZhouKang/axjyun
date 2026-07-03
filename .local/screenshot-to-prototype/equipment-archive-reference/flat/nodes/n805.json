@@ -1,0 +1,13 @@
+{
+  "bbox": {
+    "height": 21,
+    "left": 236,
+    "top": 744,
+    "width": 89
+  },
+  "nodeId": "n805",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(9) > td.ivu-table-column-eqcNjU:nth-of-type(1) > div.ivu-table-cell > div > div.ivu-tooltip",
+  "styleId": "style_117",
+  "tag": "span",
+  "text": "删除"
+}

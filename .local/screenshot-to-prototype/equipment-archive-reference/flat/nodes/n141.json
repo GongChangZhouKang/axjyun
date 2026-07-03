@@ -1,0 +1,17 @@
+{
+  "bbox": {
+    "height": 49,
+    "left": 0,
+    "top": 995,
+    "width": 199
+  },
+  "children": [
+    "n140"
+  ],
+  "nodeId": "n141",
+  "originalClass": "inp-show-2",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(14) > li.ivu-menu-submenu",
+  "styleId": "style_43",
+  "tag": "div",
+  "width": "480px"
+}

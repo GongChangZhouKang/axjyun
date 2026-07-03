@@ -1,0 +1,13 @@
+{
+  "bbox": {
+    "height": 32,
+    "left": 200,
+    "top": 64,
+    "width": 1712
+  },
+  "nodeId": "n156",
+  "selector": "div.ivu-tabs.ivu-tabs-card > div.ivu-tabs-bar:nth-of-type(1) > div.ivu-tabs-nav-container > div.ivu-tabs-nav-wrap > div.ivu-tabs-nav-scroll",
+  "styleId": "style_61",
+  "tag": "span",
+  "text": "未启用"
+}

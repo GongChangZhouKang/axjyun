@@ -1,0 +1,26 @@
+{
+  "bbox": {
+    "height": 34,
+    "left": 236,
+    "top": 151,
+    "width": 480
+  },
+  "children": [
+    "n183",
+    "n184",
+    "n185",
+    "n186",
+    "n187",
+    "n188",
+    "n189",
+    "n190",
+    "n191",
+    "n192"
+  ],
+  "height": "37.875px",
+  "nodeId": "n193",
+  "selector": "div.content-box.ivu-layout-content > div.new-big-box > div:nth-of-type(1) > div.new-search-box:nth-of-type(1) > div.inp-show-2:nth-of-type(1) > div.inp",
+  "styleId": "style_78",
+  "tag": "colgroup",
+  "width": "1755px"
+}

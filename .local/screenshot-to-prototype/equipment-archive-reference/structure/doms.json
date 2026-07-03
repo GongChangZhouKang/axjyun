@@ -1,0 +1,8686 @@
+{
+  "nodes": {
+    "n1": {
+      "height": "25px",
+      "src": "assets/images/OfprOEvQAAAABJRU5ErkJggg.png",
+      "styleId": "style_1",
+      "tag": "img",
+      "width": "32px"
+    },
+    "n10": {
+      "children": [
+        "n9"
+      ],
+      "height": "64px",
+      "originalClass": "ivu-dropdown-rel",
+      "styleId": "style_10",
+      "tag": "div",
+      "width": "245px"
+    },
+    "n100": {
+      "height": "22px",
+      "originalClass": "ivu-icon ivu-icon-ios-close ivu-tabs-close",
+      "styleId": "style_32",
+      "tag": "i",
+      "width": "0px"
+    },
+    "n101": {
+      "_innerHTML": "<!----> 采购管理 <i class=\"ivu-icon ivu-icon-ios-close ivu-tabs-close\"></i>",
+      "children": [
+        "n100"
+      ],
+      "height": "31px",
+      "originalClass": "ivu-tabs-tab",
+      "styleId": "style_29",
+      "tag": "div",
+      "text": "采购管理",
+      "width": "93.8906px"
+    },
+    "n102": {
+      "height": "22px",
+      "originalClass": "ivu-icon ivu-icon-ios-close ivu-tabs-close",
+      "styleId": "style_32",
+      "tag": "i",
+      "width": "0px"
+    },
+    "n103": {
+      "_innerHTML": "<!----> 可视化调度 <i class=\"ivu-icon ivu-icon-ios-close ivu-tabs-close\"></i>",
+      "children": [
+        "n102"
+      ],
+      "height": "31px",
+      "originalClass": "ivu-tabs-tab",
+      "styleId": "style_29",
+      "tag": "div",
+      "text": "可视化调度",
+      "width": "107.891px"
+    },
+    "n104": {
+      "height": "22px",
+      "originalClass": "ivu-icon ivu-icon-ios-close ivu-tabs-close",
+      "styleId": "style_32",
+      "tag": "i",
+      "width": "0px"
+    },
+    "n105": {
+      "_innerHTML": "<!----> 人防项目 <i class=\"ivu-icon ivu-icon-ios-close ivu-tabs-close\"></i>",
+      "children": [
+        "n104"
+      ],
+      "height": "31px",
+      "originalClass": "ivu-tabs-tab",
+      "styleId": "style_29",
+      "tag": "div",
+      "text": "人防项目",
+      "width": "93.8906px"
+    },
+    "n106": {
+      "children": [
+        "n97",
+        "n99",
+        "n101",
+        "n103",
+        "n105"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-tabs-nav",
+      "styleId": "style_33",
+      "tag": "div",
+      "width": "515.562px"
+    },
+    "n107": {
+      "children": [
+        "n106"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-tabs-nav-scroll",
+      "styleId": "style_34",
+      "tag": "div",
+      "width": "1712px"
+    },
+    "n108": {
+      "height": "32px",
+      "styleId": "style_35",
+      "tag": "object",
+      "width": "1712px"
+    },
+    "n109": {
+      "children": [
+        "n107",
+        "n108"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-tabs-nav-wrap",
+      "styleId": "style_36",
+      "tag": "div",
+      "width": "1712px"
+    },
+    "n11": {
+      "children": [
+        "n10"
+      ],
+      "height": "64px",
+      "originalClass": "ivu-dropdown",
+      "styleId": "style_11",
+      "tag": "div",
+      "width": "245px"
+    },
+    "n110": {
+      "children": [
+        "n109"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-tabs-nav-container",
+      "styleId": "style_37",
+      "tag": "div",
+      "width": "1712px"
+    },
+    "n111": {
+      "children": [
+        "n110"
+      ],
+      "originalClass": "ivu-tabs-bar",
+      "styleId": "style_38",
+      "tag": "div",
+      "width": "1712px"
+    },
+    "n112": {
+      "height": "0px",
+      "originalClass": "ivu-tabs-tabpane",
+      "styleId": "style_39",
+      "tag": "div",
+      "width": "1712px"
+    },
+    "n113": {
+      "children": [
+        "n112"
+      ],
+      "height": "0px",
+      "originalClass": "ivu-tabs-content ivu-tabs-content-animated",
+      "styleId": "style_40",
+      "tag": "div",
+      "width": "1712px"
+    },
+    "n114": {
+      "height": "21px",
+      "originalClass": "ivu-tabs-context-menu",
+      "styleId": "style_41",
+      "tag": "div",
+      "width": "0px"
+    },
+    "n115": {
+      "children": [
+        "n111",
+        "n113",
+        "n114"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-tabs ivu-tabs-card",
+      "styleId": "style_42",
+      "tag": "div",
+      "width": "1712px"
+    },
+    "n116": {
+      "children": [
+        "n115"
+      ],
+      "height": "48px",
+      "originalClass": "all-tabs-box",
+      "styleId": "style_43",
+      "tag": "div",
+      "width": "1712px"
+    },
+    "n117": {
+      "height": "32px",
+      "originalClass": "title",
+      "styleId": "style_44",
+      "tag": "div",
+      "text": "装备名称：",
+      "width": "70px"
+    },
+    "n118": {
+      "height": "32px",
+      "originalClass": "ivu-input ivu-input-default",
+      "styleId": "style_45",
+      "tag": "input",
+      "width": "394px"
+    },
+    "n119": {
+      "children": [
+        "n118"
+      ],
+      "height": "32px",
+      "originalClass": "input-header ivu-input-wrapper ivu-input-wrapper-default ivu-input-type-text",
+      "styleId": "style_46",
+      "tag": "div",
+      "width": "394px"
+    },
+    "n12": {
+      "children": [
+        "n4",
+        "n5",
+        "n11"
+      ],
+      "height": "64px",
+      "originalClass": "btn",
+      "styleId": "style_12",
+      "tag": "div",
+      "width": "466.547px"
+    },
+    "n120": {
+      "children": [
+        "n117",
+        "n119"
+      ],
+      "height": "34px",
+      "originalClass": "new-input",
+      "styleId": "style_47",
+      "tag": "div",
+      "width": "480px"
+    },
+    "n121": {
+      "children": [
+        "n120"
+      ],
+      "height": "34px",
+      "originalClass": "axj-input-search",
+      "styleId": "style_48",
+      "tag": "div",
+      "width": "480px"
+    },
+    "n122": {
+      "children": [
+        "n121"
+      ],
+      "height": "34px",
+      "originalClass": "inp",
+      "styleId": "style_49",
+      "tag": "div",
+      "width": "480px"
+    },
+    "n123": {
+      "children": [
+        "n122"
+      ],
+      "originalClass": "inp-show-2",
+      "styleId": "style_43",
+      "tag": "div",
+      "width": "480px"
+    },
+    "n124": {
+      "height": "32px",
+      "originalClass": "input-label",
+      "styleId": "style_50",
+      "tag": "div",
+      "text": "装备分类：",
+      "width": "79px"
+    },
+    "n125": {
+      "height": "26px",
+      "originalClass": "ivu-select-placeholder",
+      "styleId": "style_51",
+      "tag": "span",
+      "text": "装备分类",
+      "width": "82px"
+    },
+    "n126": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow",
+      "styleId": "style_52",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n127": {
+      "children": [
+        "n125",
+        "n126"
+      ],
+      "height": "26px",
+      "styleId": "style_53",
+      "tag": "div",
+      "width": "371px"
+    },
+    "n128": {
+      "children": [
+        "n127"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-select-selection",
+      "styleId": "style_54",
+      "tag": "div",
+      "width": "401px"
+    },
+    "n129": {
+      "children": [
+        "n128"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-select ivu-select-multiple ivu-select-default",
+      "styleId": "style_55",
+      "tag": "div",
+      "width": "401px"
+    },
+    "n13": {
+      "children": [
+        "n1",
+        "n3",
+        "n12"
+      ],
+      "height": "64px",
+      "originalClass": "top-side",
+      "styleId": "style_9",
+      "tag": "div",
+      "width": "1888px"
+    },
+    "n130": {
+      "children": [
+        "n124",
+        "n129"
+      ],
+      "height": "32px",
+      "originalClass": "select-box multiple",
+      "styleId": "style_56",
+      "tag": "div",
+      "width": "480px"
+    },
+    "n131": {
+      "children": [
+        "n130"
+      ],
+      "height": "32px",
+      "originalClass": "inp",
+      "styleId": "style_49",
+      "tag": "div",
+      "width": "480px"
+    },
+    "n132": {
+      "children": [
+        "n131"
+      ],
+      "originalClass": "inp-show-2",
+      "styleId": "style_43",
+      "tag": "div",
+      "width": "480px"
+    },
+    "n133": {
+      "height": "32px",
+      "originalClass": "input-label",
+      "styleId": "style_50",
+      "tag": "div",
+      "text": "供货商：",
+      "width": "65px"
+    },
+    "n134": {
+      "height": "26px",
+      "originalClass": "ivu-select-placeholder",
+      "styleId": "style_51",
+      "tag": "span",
+      "text": "供货商",
+      "width": "68px"
+    },
+    "n135": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow",
+      "styleId": "style_57",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n136": {
+      "children": [
+        "n134",
+        "n135"
+      ],
+      "height": "26px",
+      "styleId": "style_53",
+      "tag": "div",
+      "width": "385px"
+    },
+    "n137": {
+      "children": [
+        "n136"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-select-selection",
+      "styleId": "style_54",
+      "tag": "div",
+      "width": "415px"
+    },
+    "n138": {
+      "children": [
+        "n137"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-select ivu-select-multiple ivu-select-default",
+      "styleId": "style_55",
+      "tag": "div",
+      "width": "415px"
+    },
+    "n139": {
+      "children": [
+        "n133",
+        "n138"
+      ],
+      "height": "32px",
+      "originalClass": "select-box multiple",
+      "styleId": "style_56",
+      "tag": "div",
+      "width": "480px"
+    },
+    "n14": {
+      "children": [
+        "n13"
+      ],
+      "height": "64px",
+      "originalClass": "ivu-layout-header",
+      "styleId": "style_13",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n140": {
+      "children": [
+        "n139"
+      ],
+      "height": "32px",
+      "originalClass": "inp",
+      "styleId": "style_49",
+      "tag": "div",
+      "width": "480px"
+    },
+    "n141": {
+      "children": [
+        "n140"
+      ],
+      "originalClass": "inp-show-2",
+      "styleId": "style_43",
+      "tag": "div",
+      "width": "480px"
+    },
+    "n142": {
+      "height": "32px",
+      "originalClass": "input-label",
+      "styleId": "style_50",
+      "tag": "div",
+      "text": "状态：",
+      "width": "51px"
+    },
+    "n143": {
+      "height": "16px",
+      "originalClass": "ivu-radio-inner",
+      "styleId": "style_58",
+      "tag": "span",
+      "width": "16px"
+    },
+    "n144": {
+      "height": "18px",
+      "originalClass": "ivu-radio-input",
+      "styleId": "style_59",
+      "tag": "input",
+      "width": "16px"
+    },
+    "n145": {
+      "children": [
+        "n143",
+        "n144"
+      ],
+      "height": "18px",
+      "originalClass": "ivu-radio ivu-radio-checked",
+      "styleId": "style_60",
+      "tag": "span",
+      "width": "16px"
+    },
+    "n146": {
+      "styleId": "style_61",
+      "tag": "span",
+      "text": "全部"
+    },
+    "n147": {
+      "children": [
+        "n145",
+        "n146"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked ivu-radio-default",
+      "styleId": "style_62",
+      "tag": "label",
+      "width": "52px"
+    },
+    "n148": {
+      "height": "16px",
+      "originalClass": "ivu-radio-inner",
+      "styleId": "style_63",
+      "tag": "span",
+      "width": "16px"
+    },
+    "n149": {
+      "height": "18px",
+      "originalClass": "ivu-radio-input",
+      "styleId": "style_59",
+      "tag": "input",
+      "width": "16px"
+    },
+    "n15": {
+      "children": [
+        "n14"
+      ],
+      "height": "64px",
+      "originalClass": "ivu-layout",
+      "styleId": "style_14",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n150": {
+      "children": [
+        "n148",
+        "n149"
+      ],
+      "height": "18px",
+      "originalClass": "ivu-radio",
+      "styleId": "style_60",
+      "tag": "span",
+      "width": "16px"
+    },
+    "n151": {
+      "styleId": "style_61",
+      "tag": "span",
+      "text": "启用"
+    },
+    "n152": {
+      "children": [
+        "n150",
+        "n151"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-radio-wrapper ivu-radio-group-item ivu-radio-default",
+      "styleId": "style_62",
+      "tag": "label",
+      "width": "52px"
+    },
+    "n153": {
+      "height": "16px",
+      "originalClass": "ivu-radio-inner",
+      "styleId": "style_63",
+      "tag": "span",
+      "width": "16px"
+    },
+    "n154": {
+      "height": "18px",
+      "originalClass": "ivu-radio-input",
+      "styleId": "style_59",
+      "tag": "input",
+      "width": "16px"
+    },
+    "n155": {
+      "children": [
+        "n153",
+        "n154"
+      ],
+      "height": "18px",
+      "originalClass": "ivu-radio",
+      "styleId": "style_60",
+      "tag": "span",
+      "width": "16px"
+    },
+    "n156": {
+      "styleId": "style_61",
+      "tag": "span",
+      "text": "未启用"
+    },
+    "n157": {
+      "children": [
+        "n155",
+        "n156"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-radio-wrapper ivu-radio-group-item ivu-radio-default",
+      "styleId": "style_62",
+      "tag": "label",
+      "width": "66px"
+    },
+    "n158": {
+      "children": [
+        "n147",
+        "n152",
+        "n157"
+      ],
+      "height": "32px",
+      "originalClass": "check-box-block ivu-radio-group ivu-radio-group-default ivu-radio-default",
+      "styleId": "style_64",
+      "tag": "div",
+      "width": "429px"
+    },
+    "n159": {
+      "children": [
+        "n142",
+        "n158"
+      ],
+      "height": "32px",
+      "originalClass": "select-box",
+      "styleId": "style_56",
+      "tag": "div",
+      "width": "480px"
+    },
+    "n16": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-ios-stats",
+      "styleId": "style_15",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n160": {
+      "children": [
+        "n159"
+      ],
+      "height": "32px",
+      "originalClass": "inp",
+      "styleId": "style_49",
+      "tag": "div",
+      "width": "480px"
+    },
+    "n161": {
+      "children": [
+        "n160"
+      ],
+      "originalClass": "inp-show-2",
+      "styleId": "style_43",
+      "tag": "div",
+      "width": "480px"
+    },
+    "n162": {
+      "height": "24px",
+      "styleId": "style_65",
+      "tag": "span",
+      "text": "查询",
+      "width": "32px"
+    },
+    "n163": {
+      "children": [
+        "n162"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-btn ivu-btn-primary",
+      "styleId": "style_66",
+      "tag": "button",
+      "width": "62px"
+    },
+    "n164": {
+      "children": [
+        "n163"
+      ],
+      "height": "32px",
+      "originalClass": "sms-btn-blue",
+      "styleId": "style_67",
+      "tag": "div",
+      "width": "62px"
+    },
+    "n165": {
+      "height": "24px",
+      "styleId": "style_68",
+      "tag": "span",
+      "text": "重置",
+      "width": "32px"
+    },
+    "n166": {
+      "children": [
+        "n165"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-btn ivu-btn-default",
+      "styleId": "style_69",
+      "tag": "button",
+      "width": "64px"
+    },
+    "n167": {
+      "children": [
+        "n166"
+      ],
+      "height": "32px",
+      "originalClass": "sms-btn",
+      "styleId": "style_43",
+      "tag": "div",
+      "width": "64px"
+    },
+    "n168": {
+      "children": [
+        "n164",
+        "n167"
+      ],
+      "height": "32px",
+      "originalClass": "right-btn",
+      "styleId": "style_70",
+      "tag": "div",
+      "width": "142px"
+    },
+    "n169": {
+      "children": [
+        "n123",
+        "n132",
+        "n141",
+        "n161",
+        "n168"
+      ],
+      "originalClass": "new-search-box",
+      "styleId": "style_71",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n17": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-ios-stats\" style=\"font-size: 17px;\"></i> 可视化调度 ",
+      "children": [
+        "n16"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-item",
+      "styleId": "style_16",
+      "tag": "li",
+      "text": "可视化调度",
+      "width": "199px"
+    },
+    "n170": {
+      "height": "16px",
+      "originalClass": "add-btn-img",
+      "src": "assets/images/UQAAAAASUVORK5CYII.png",
+      "styleId": "style_72",
+      "tag": "img",
+      "width": "16px"
+    },
+    "n171": {
+      "_innerHTML": "<img data-v-399c9855=\"\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAASFJREFUWEftl/0NgkAMxd/bQEdwEnUDR9AJ1AnUDXQC3UBG0E3cQDeo1AC5EC7hjgoS6Z8E2t+9Hv0gOjZ2HB8FgIisU5g9gJEx1ITkw+fTBRDjwLm7YIALgLshTELyFaLAiqRCtGJVKegPgIjsALxInmLlilZARBYArlngOclbDEQTgCWAcxY0Om3/BSAihWokP4dvVYH+AYiI9gW97VU2BaCSqvmqp/6iSf5xsAIpwBGANqkmtiWpfhADoN1Ri00TK37RYICMeuaJrs9zOF8KHm6BigLwHd11BqBWIRoABgWsFQhux6YATmFB3RHOHCC0OvUGwHosd4UqGljVPPD8wlbky5J2yXF5INlktd16NStD6JJyyDvk7yynoTfa6v03NOEtMAZ0/UQAAAAASUVORK5CYII=\" alt=\"\" class=\"add-btn-img\"> 新增装备 ",
+      "children": [
+        "n170"
+      ],
+      "height": "16px",
+      "originalClass": "btn-middle",
+      "styleId": "style_73",
+      "tag": "div",
+      "text": "新增装备",
+      "width": "84px"
+    },
+    "n172": {
+      "children": [
+        "n171"
+      ],
+      "height": "23px",
+      "styleId": "style_65",
+      "tag": "span",
+      "width": "84px"
+    },
+    "n173": {
+      "children": [
+        "n172"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-btn ivu-btn-primary",
+      "styleId": "style_74",
+      "tag": "button",
+      "width": "114px"
+    },
+    "n174": {
+      "children": [
+        "n173"
+      ],
+      "height": "32px",
+      "originalClass": "sms-btn-blue",
+      "styleId": "style_67",
+      "tag": "div",
+      "width": "124px"
+    },
+    "n175": {
+      "height": "16px",
+      "originalClass": "add-btn-img",
+      "src": "assets/images/UQAAAAASUVORK5CYII-1.png",
+      "styleId": "style_72",
+      "tag": "img",
+      "width": "16px"
+    },
+    "n176": {
+      "_innerHTML": "<img data-v-399c9855=\"\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAASFJREFUWEftl/0NgkAMxd/bQEdwEnUDR9AJ1AnUDXQC3UBG0E3cQDeo1AC5EC7hjgoS6Z8E2t+9Hv0gOjZ2HB8FgIisU5g9gJEx1ITkw+fTBRDjwLm7YIALgLshTELyFaLAiqRCtGJVKegPgIjsALxInmLlilZARBYArlngOclbDEQTgCWAcxY0Om3/BSAihWokP4dvVYH+AYiI9gW97VU2BaCSqvmqp/6iSf5xsAIpwBGANqkmtiWpfhADoN1Ri00TK37RYICMeuaJrs9zOF8KHm6BigLwHd11BqBWIRoABgWsFQhux6YATmFB3RHOHCC0OvUGwHosd4UqGljVPPD8wlbky5J2yXF5INlktd16NStD6JJyyDvk7yynoTfa6v03NOEtMAZ0/UQAAAAASUVORK5CYII=\" alt=\"\" class=\"add-btn-img\"> 分类管理 ",
+      "children": [
+        "n175"
+      ],
+      "height": "16px",
+      "originalClass": "btn-middle",
+      "styleId": "style_73",
+      "tag": "div",
+      "text": "分类管理",
+      "width": "84px"
+    },
+    "n177": {
+      "children": [
+        "n176"
+      ],
+      "height": "23px",
+      "styleId": "style_65",
+      "tag": "span",
+      "width": "84px"
+    },
+    "n178": {
+      "children": [
+        "n177"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-btn ivu-btn-primary",
+      "styleId": "style_74",
+      "tag": "button",
+      "width": "114px"
+    },
+    "n179": {
+      "children": [
+        "n178"
+      ],
+      "height": "32px",
+      "originalClass": "sms-btn-blue",
+      "styleId": "style_67",
+      "tag": "div",
+      "width": "124px"
+    },
+    "n18": {
+      "children": [
+        "n17"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n180": {
+      "children": [
+        "n174",
+        "n179"
+      ],
+      "height": "32px",
+      "originalClass": "sms-btn-box",
+      "styleId": "style_75",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n181": {
+      "children": [
+        "n180"
+      ],
+      "originalClass": "new-table-box",
+      "styleId": "style_76",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n182": {
+      "height": "0px",
+      "originalClass": "statistical-total",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n183": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "352.188px"
+    },
+    "n184": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "120.062px"
+    },
+    "n185": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192.109px"
+    },
+    "n186": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192.109px"
+    },
+    "n187": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192.109px"
+    },
+    "n188": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "112.062px"
+    },
+    "n189": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "170.094px"
+    },
+    "n19": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon\" style=\"font-size: 17px;\"></i> 智慧安检数据大屏 ",
+      "height": "49px",
+      "originalClass": "ivu-menu-item",
+      "styleId": "style_16",
+      "tag": "li",
+      "text": "智慧安检数据大屏",
+      "width": "199px"
+    },
+    "n190": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "112.062px"
+    },
+    "n191": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192.109px"
+    },
+    "n192": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "120.094px"
+    },
+    "n193": {
+      "children": [
+        "n183",
+        "n184",
+        "n185",
+        "n186",
+        "n187",
+        "n188",
+        "n189",
+        "n190",
+        "n191",
+        "n192"
+      ],
+      "height": "37.875px",
+      "styleId": "style_78",
+      "tag": "colgroup",
+      "width": "1755px"
+    },
+    "n194": {
+      "styleId": "style_79",
+      "tag": "span",
+      "text": "装备名称"
+    },
+    "n195": {
+      "children": [
+        "n194"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_80",
+      "tag": "div",
+      "width": "92px"
+    },
+    "n196": {
+      "children": [
+        "n195"
+      ],
+      "height": "37.875px",
+      "originalClass": "ivu-table-column-eqcNjU",
+      "styleId": "style_81",
+      "tag": "th",
+      "width": "352.188px"
+    },
+    "n197": {
+      "styleId": "style_79",
+      "tag": "span",
+      "text": "状态"
+    },
+    "n198": {
+      "children": [
+        "n197"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_80",
+      "tag": "div",
+      "width": "64px"
+    },
+    "n199": {
+      "children": [
+        "n198"
+      ],
+      "height": "37.875px",
+      "originalClass": "ivu-table-column-1tO9Tp",
+      "styleId": "style_81",
+      "tag": "th",
+      "width": "120.062px"
+    },
+    "n2": {
+      "originalClass": "version",
+      "styleId": "style_2",
+      "tag": "span",
+      "text": "v 1.8.96"
+    },
+    "n20": {
+      "children": [
+        "n19"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n200": {
+      "styleId": "style_79",
+      "tag": "span",
+      "text": "分类"
+    },
+    "n201": {
+      "children": [
+        "n200"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_80",
+      "tag": "div",
+      "width": "64px"
+    },
+    "n202": {
+      "children": [
+        "n201"
+      ],
+      "height": "37.875px",
+      "originalClass": "ivu-table-column-yGVbdx",
+      "styleId": "style_81",
+      "tag": "th",
+      "width": "192.109px"
+    },
+    "n203": {
+      "styleId": "style_79",
+      "tag": "span",
+      "text": "单位"
+    },
+    "n204": {
+      "children": [
+        "n203"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_80",
+      "tag": "div",
+      "width": "64px"
+    },
+    "n205": {
+      "children": [
+        "n204"
+      ],
+      "height": "37.875px",
+      "originalClass": "ivu-table-column-0A27gQ",
+      "styleId": "style_81",
+      "tag": "th",
+      "width": "192.109px"
+    },
+    "n206": {
+      "styleId": "style_79",
+      "tag": "span",
+      "text": "供货商"
+    },
+    "n207": {
+      "children": [
+        "n206"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_80",
+      "tag": "div",
+      "width": "78px"
+    },
+    "n208": {
+      "children": [
+        "n207"
+      ],
+      "height": "37.875px",
+      "originalClass": "ivu-table-column-acKNjt",
+      "styleId": "style_81",
+      "tag": "th",
+      "width": "192.109px"
+    },
+    "n209": {
+      "styleId": "style_82",
+      "tag": "span",
+      "text": "参考价格"
+    },
+    "n21": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-md-stats",
+      "styleId": "style_18",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n210": {
+      "children": [
+        "n209"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_83",
+      "tag": "div",
+      "width": "92px"
+    },
+    "n211": {
+      "children": [
+        "n210"
+      ],
+      "height": "37.875px",
+      "originalClass": "ivu-table-column-kOeYLG ivu-table-column-right",
+      "styleId": "style_84",
+      "tag": "th",
+      "width": "112.062px"
+    },
+    "n212": {
+      "styleId": "style_85",
+      "tag": "span",
+      "text": "图片"
+    },
+    "n213": {
+      "children": [
+        "n212"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_86",
+      "tag": "div",
+      "width": "64px"
+    },
+    "n214": {
+      "children": [
+        "n213"
+      ],
+      "height": "37.875px",
+      "originalClass": "ivu-table-column-CN9xqC ivu-table-column-center",
+      "styleId": "style_87",
+      "tag": "th",
+      "width": "170.094px"
+    },
+    "n215": {
+      "styleId": "style_79",
+      "tag": "span",
+      "text": "修改人"
+    },
+    "n216": {
+      "children": [
+        "n215"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_80",
+      "tag": "div",
+      "width": "78px"
+    },
+    "n217": {
+      "children": [
+        "n216"
+      ],
+      "height": "37.875px",
+      "originalClass": "ivu-table-column-UggSSd",
+      "styleId": "style_81",
+      "tag": "th",
+      "width": "112.062px"
+    },
+    "n218": {
+      "styleId": "style_79",
+      "tag": "span",
+      "text": "修改时间"
+    },
+    "n219": {
+      "children": [
+        "n218"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_80",
+      "tag": "div",
+      "width": "92px"
+    },
+    "n22": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon",
+      "styleId": "style_19",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n220": {
+      "children": [
+        "n219"
+      ],
+      "height": "37.875px",
+      "originalClass": "ivu-table-column-T20R0S",
+      "styleId": "style_81",
+      "tag": "th",
+      "width": "192.109px"
+    },
+    "n221": {
+      "children": [
+        "n196",
+        "n199",
+        "n202",
+        "n205",
+        "n208",
+        "n211",
+        "n214",
+        "n217",
+        "n220"
+      ],
+      "height": "37.875px",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1755px"
+    },
+    "n222": {
+      "children": [
+        "n221"
+      ],
+      "height": "37.875px",
+      "styleId": "style_89",
+      "tag": "thead",
+      "width": "1755px"
+    },
+    "n223": {
+      "children": [
+        "n193",
+        "n222"
+      ],
+      "height": "37.875px",
+      "styleId": "style_90",
+      "tag": "table",
+      "width": "1755px"
+    },
+    "n224": {
+      "children": [
+        "n223"
+      ],
+      "height": "37.875px",
+      "originalClass": "ivu-table-header",
+      "styleId": "style_91",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n225": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "352.188px"
+    },
+    "n226": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "120.062px"
+    },
+    "n227": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192.109px"
+    },
+    "n228": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192.109px"
+    },
+    "n229": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192.109px"
+    },
+    "n23": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-md-stats\" style=\"font-size: 17px;\"></i> 安保数据  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+      "children": [
+        "n21",
+        "n22"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu-title",
+      "styleId": "style_16",
+      "tag": "div",
+      "text": "安保数据",
+      "width": "199px"
+    },
+    "n230": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "112.062px"
+    },
+    "n231": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "170.094px"
+    },
+    "n232": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "112.062px"
+    },
+    "n233": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192.109px"
+    },
+    "n234": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "120.094px"
+    },
+    "n235": {
+      "children": [
+        "n225",
+        "n226",
+        "n227",
+        "n228",
+        "n229",
+        "n230",
+        "n231",
+        "n232",
+        "n233",
+        "n234"
+      ],
+      "height": "480px",
+      "styleId": "style_78",
+      "tag": "colgroup",
+      "width": "1755px"
+    },
+    "n236": {
+      "height": "16px",
+      "styleId": "style_92",
+      "tag": "div",
+      "text": "应急救援夏服-三棵树",
+      "width": "130.672px"
+    },
+    "n237": {
+      "children": [
+        "n236"
+      ],
+      "height": "16px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "130.672px"
+    },
+    "n238": {
+      "children": [
+        "n237"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "130.672px"
+    },
+    "n239": {
+      "children": [
+        "n238"
+      ],
+      "height": "21px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "320.188px"
+    },
+    "n24": {
+      "children": [
+        "n23"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu",
+      "styleId": "style_20",
+      "tag": "li",
+      "width": "199px"
+    },
+    "n240": {
+      "children": [
+        "n239"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "352.188px"
+    },
+    "n241": {
+      "children": [
+        "n240"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-eqcNjU",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "352.188px"
+    },
+    "n242": {
+      "height": "22px",
+      "originalClass": "ivu-switch ivu-switch-checked ivu-switch-default",
+      "styleId": "style_98",
+      "tag": "span",
+      "width": "44px"
+    },
+    "n243": {
+      "children": [
+        "n242"
+      ],
+      "height": "22.375px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "88.0625px"
+    },
+    "n244": {
+      "children": [
+        "n243"
+      ],
+      "height": "22.375px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "120.062px"
+    },
+    "n245": {
+      "children": [
+        "n244"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-1tO9Tp",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "120.062px"
+    },
+    "n246": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "应急救援服",
+      "width": "70px"
+    },
+    "n247": {
+      "children": [
+        "n246"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n248": {
+      "children": [
+        "n247"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n249": {
+      "children": [
+        "n248"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n25": {
+      "children": [
+        "n24"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n250": {
+      "children": [
+        "n249"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n251": {
+      "children": [
+        "n250"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-yGVbdx",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n252": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "套",
+      "width": "14px"
+    },
+    "n253": {
+      "children": [
+        "n252"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n254": {
+      "children": [
+        "n253"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n255": {
+      "children": [
+        "n254"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n256": {
+      "children": [
+        "n255"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n257": {
+      "children": [
+        "n256"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-0A27gQ",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n258": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "三棵树",
+      "width": "42px"
+    },
+    "n259": {
+      "children": [
+        "n258"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n26": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-ios-alert",
+      "styleId": "style_18",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n260": {
+      "children": [
+        "n259"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n261": {
+      "children": [
+        "n260"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n262": {
+      "children": [
+        "n261"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n263": {
+      "children": [
+        "n262"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-acKNjt",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n264": {
+      "height": "21px",
+      "styleId": "style_100",
+      "tag": "div",
+      "text": "195",
+      "width": "23.3594px"
+    },
+    "n265": {
+      "children": [
+        "n264"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_101",
+      "tag": "div",
+      "width": "23.3594px"
+    },
+    "n266": {
+      "children": [
+        "n265"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_102",
+      "tag": "div",
+      "width": "23.3594px"
+    },
+    "n267": {
+      "children": [
+        "n266"
+      ],
+      "height": "21.875px",
+      "styleId": "style_103",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n268": {
+      "children": [
+        "n267"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_104",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n269": {
+      "children": [
+        "n268"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-kOeYLG ivu-table-column-right",
+      "styleId": "style_105",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n27": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon",
+      "styleId": "style_19",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n270": {
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "text": "-",
+      "width": "138.094px"
+    },
+    "n271": {
+      "children": [
+        "n270"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n272": {
+      "children": [
+        "n271"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n273": {
+      "children": [
+        "n272"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "170.094px"
+    },
+    "n274": {
+      "children": [
+        "n273"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-CN9xqC ivu-table-column-center",
+      "styleId": "style_108",
+      "tag": "td",
+      "width": "170.094px"
+    },
+    "n275": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "山东振邦保安服务有限责任公司",
+      "width": "80.0625px"
+    },
+    "n276": {
+      "children": [
+        "n275"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n277": {
+      "children": [
+        "n276"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n278": {
+      "children": [
+        "n277"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n279": {
+      "children": [
+        "n278"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n28": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-ios-alert\" style=\"font-size: 17px;\"></i> 审批管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+      "children": [
+        "n26",
+        "n27"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu-title",
+      "styleId": "style_16",
+      "tag": "div",
+      "text": "审批管理",
+      "width": "199px"
+    },
+    "n280": {
+      "children": [
+        "n279"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-UggSSd",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n281": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "2026-01-26 11:38:18",
+      "width": "128.969px"
+    },
+    "n282": {
+      "children": [
+        "n281"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n283": {
+      "children": [
+        "n282"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n284": {
+      "children": [
+        "n283"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n285": {
+      "children": [
+        "n284"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n286": {
+      "children": [
+        "n285"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-T20R0S",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n287": {
+      "children": [
+        "n241",
+        "n245",
+        "n251",
+        "n257",
+        "n263",
+        "n269",
+        "n274",
+        "n280",
+        "n286"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1755px"
+    },
+    "n288": {
+      "height": "16px",
+      "styleId": "style_92",
+      "tag": "div",
+      "text": "应急救援服-安豹",
+      "width": "102.672px"
+    },
+    "n289": {
+      "children": [
+        "n288"
+      ],
+      "height": "16px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "102.672px"
+    },
+    "n29": {
+      "children": [
+        "n28"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu",
+      "styleId": "style_20",
+      "tag": "li",
+      "width": "199px"
+    },
+    "n290": {
+      "children": [
+        "n289"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "102.672px"
+    },
+    "n291": {
+      "children": [
+        "n290"
+      ],
+      "height": "21px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "320.188px"
+    },
+    "n292": {
+      "children": [
+        "n291"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "352.188px"
+    },
+    "n293": {
+      "children": [
+        "n292"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-eqcNjU",
+      "styleId": "style_109",
+      "tag": "td",
+      "width": "352.188px"
+    },
+    "n294": {
+      "height": "22px",
+      "originalClass": "ivu-switch ivu-switch-checked ivu-switch-default",
+      "styleId": "style_98",
+      "tag": "span",
+      "width": "44px"
+    },
+    "n295": {
+      "children": [
+        "n294"
+      ],
+      "height": "22.375px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "88.0625px"
+    },
+    "n296": {
+      "children": [
+        "n295"
+      ],
+      "height": "22.375px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "120.062px"
+    },
+    "n297": {
+      "children": [
+        "n296"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-1tO9Tp",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "120.062px"
+    },
+    "n298": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "应急救援服",
+      "width": "70px"
+    },
+    "n299": {
+      "children": [
+        "n298"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n3": {
+      "_innerHTML": " 智慧安保管理平台 <span data-v-11b607ff=\"\" class=\"version\">v 1.8.96</span>",
+      "children": [
+        "n2"
+      ],
+      "height": "64px",
+      "originalClass": "top-title",
+      "styleId": "style_3",
+      "tag": "div",
+      "text": "智慧安保管理平台",
+      "width": "249.094px"
+    },
+    "n30": {
+      "children": [
+        "n29"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n300": {
+      "children": [
+        "n299"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n301": {
+      "children": [
+        "n300"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n302": {
+      "children": [
+        "n301"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n303": {
+      "children": [
+        "n302"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-yGVbdx",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n304": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "套",
+      "width": "14px"
+    },
+    "n305": {
+      "children": [
+        "n304"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n306": {
+      "children": [
+        "n305"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n307": {
+      "children": [
+        "n306"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n308": {
+      "children": [
+        "n307"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n309": {
+      "children": [
+        "n308"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-0A27gQ",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n31": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-ios-copy",
+      "styleId": "style_18",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n310": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "安豹",
+      "width": "28px"
+    },
+    "n311": {
+      "children": [
+        "n310"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "28px"
+    },
+    "n312": {
+      "children": [
+        "n311"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "28px"
+    },
+    "n313": {
+      "children": [
+        "n312"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n314": {
+      "children": [
+        "n313"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n315": {
+      "children": [
+        "n314"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-acKNjt",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n316": {
+      "height": "21px",
+      "styleId": "style_100",
+      "tag": "div",
+      "text": "480",
+      "width": "23.3594px"
+    },
+    "n317": {
+      "children": [
+        "n316"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_101",
+      "tag": "div",
+      "width": "23.3594px"
+    },
+    "n318": {
+      "children": [
+        "n317"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_102",
+      "tag": "div",
+      "width": "23.3594px"
+    },
+    "n319": {
+      "children": [
+        "n318"
+      ],
+      "height": "21.875px",
+      "styleId": "style_103",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n32": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon",
+      "styleId": "style_19",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n320": {
+      "children": [
+        "n319"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_104",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n321": {
+      "children": [
+        "n320"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-kOeYLG ivu-table-column-right",
+      "styleId": "style_111",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n322": {
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "text": "-",
+      "width": "138.094px"
+    },
+    "n323": {
+      "children": [
+        "n322"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n324": {
+      "children": [
+        "n323"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n325": {
+      "children": [
+        "n324"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "170.094px"
+    },
+    "n326": {
+      "children": [
+        "n325"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-CN9xqC ivu-table-column-center",
+      "styleId": "style_112",
+      "tag": "td",
+      "width": "170.094px"
+    },
+    "n327": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "山东振邦保安服务有限责任公司",
+      "width": "80.0625px"
+    },
+    "n328": {
+      "children": [
+        "n327"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n329": {
+      "children": [
+        "n328"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n33": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-ios-copy\" style=\"font-size: 17px;\"></i> 合同管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+      "children": [
+        "n31",
+        "n32"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu-title",
+      "styleId": "style_16",
+      "tag": "div",
+      "text": "合同管理",
+      "width": "199px"
+    },
+    "n330": {
+      "children": [
+        "n329"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n331": {
+      "children": [
+        "n330"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n332": {
+      "children": [
+        "n331"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-UggSSd",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n333": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "2026-01-26 11:38:37",
+      "width": "128.969px"
+    },
+    "n334": {
+      "children": [
+        "n333"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n335": {
+      "children": [
+        "n334"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n336": {
+      "children": [
+        "n335"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n337": {
+      "children": [
+        "n336"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n338": {
+      "children": [
+        "n337"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-T20R0S",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n339": {
+      "children": [
+        "n293",
+        "n297",
+        "n303",
+        "n309",
+        "n315",
+        "n321",
+        "n326",
+        "n332",
+        "n338"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1755px"
+    },
+    "n34": {
+      "children": [
+        "n33"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu",
+      "styleId": "style_20",
+      "tag": "li",
+      "width": "199px"
+    },
+    "n340": {
+      "height": "16px",
+      "styleId": "style_92",
+      "tag": "div",
+      "text": "速干短衣-安豹",
+      "width": "88.6719px"
+    },
+    "n341": {
+      "children": [
+        "n340"
+      ],
+      "height": "16px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "88.6719px"
+    },
+    "n342": {
+      "children": [
+        "n341"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "88.6719px"
+    },
+    "n343": {
+      "children": [
+        "n342"
+      ],
+      "height": "21px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "320.188px"
+    },
+    "n344": {
+      "children": [
+        "n343"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "352.188px"
+    },
+    "n345": {
+      "children": [
+        "n344"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-eqcNjU",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "352.188px"
+    },
+    "n346": {
+      "height": "22px",
+      "originalClass": "ivu-switch ivu-switch-checked ivu-switch-default",
+      "styleId": "style_98",
+      "tag": "span",
+      "width": "44px"
+    },
+    "n347": {
+      "children": [
+        "n346"
+      ],
+      "height": "22.375px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "88.0625px"
+    },
+    "n348": {
+      "children": [
+        "n347"
+      ],
+      "height": "22.375px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "120.062px"
+    },
+    "n349": {
+      "children": [
+        "n348"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-1tO9Tp",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "120.062px"
+    },
+    "n35": {
+      "children": [
+        "n34"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n350": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "速干执勤服",
+      "width": "70px"
+    },
+    "n351": {
+      "children": [
+        "n350"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n352": {
+      "children": [
+        "n351"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n353": {
+      "children": [
+        "n352"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n354": {
+      "children": [
+        "n353"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n355": {
+      "children": [
+        "n354"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-yGVbdx",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n356": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "套",
+      "width": "14px"
+    },
+    "n357": {
+      "children": [
+        "n356"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n358": {
+      "children": [
+        "n357"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n359": {
+      "children": [
+        "n358"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n36": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-md-list-box",
+      "styleId": "style_18",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n360": {
+      "children": [
+        "n359"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n361": {
+      "children": [
+        "n360"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-0A27gQ",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n362": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "安豹",
+      "width": "28px"
+    },
+    "n363": {
+      "children": [
+        "n362"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "28px"
+    },
+    "n364": {
+      "children": [
+        "n363"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "28px"
+    },
+    "n365": {
+      "children": [
+        "n364"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n366": {
+      "children": [
+        "n365"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n367": {
+      "children": [
+        "n366"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-acKNjt",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n368": {
+      "height": "21px",
+      "styleId": "style_100",
+      "tag": "div",
+      "text": "0",
+      "width": "7.79688px"
+    },
+    "n369": {
+      "children": [
+        "n368"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_101",
+      "tag": "div",
+      "width": "7.79688px"
+    },
+    "n37": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon",
+      "styleId": "style_19",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n370": {
+      "children": [
+        "n369"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_102",
+      "tag": "div",
+      "width": "7.79688px"
+    },
+    "n371": {
+      "children": [
+        "n370"
+      ],
+      "height": "21.875px",
+      "styleId": "style_103",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n372": {
+      "children": [
+        "n371"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_104",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n373": {
+      "children": [
+        "n372"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-kOeYLG ivu-table-column-right",
+      "styleId": "style_105",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n374": {
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "text": "-",
+      "width": "138.094px"
+    },
+    "n375": {
+      "children": [
+        "n374"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n376": {
+      "children": [
+        "n375"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n377": {
+      "children": [
+        "n376"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "170.094px"
+    },
+    "n378": {
+      "children": [
+        "n377"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-CN9xqC ivu-table-column-center",
+      "styleId": "style_108",
+      "tag": "td",
+      "width": "170.094px"
+    },
+    "n379": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "刘珍珍",
+      "width": "42px"
+    },
+    "n38": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-md-list-box\" style=\"font-size: 17px;\"></i> 项目管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+      "children": [
+        "n36",
+        "n37"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu-title",
+      "styleId": "style_16",
+      "tag": "div",
+      "text": "项目管理",
+      "width": "199px"
+    },
+    "n380": {
+      "children": [
+        "n379"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n381": {
+      "children": [
+        "n380"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n382": {
+      "children": [
+        "n381"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n383": {
+      "children": [
+        "n382"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n384": {
+      "children": [
+        "n383"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-UggSSd",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n385": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "2026-03-03 09:13:53",
+      "width": "130px"
+    },
+    "n386": {
+      "children": [
+        "n385"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "130px"
+    },
+    "n387": {
+      "children": [
+        "n386"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "130px"
+    },
+    "n388": {
+      "children": [
+        "n387"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n389": {
+      "children": [
+        "n388"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n39": {
+      "children": [
+        "n38"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu",
+      "styleId": "style_20",
+      "tag": "li",
+      "width": "199px"
+    },
+    "n390": {
+      "children": [
+        "n389"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-T20R0S",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n391": {
+      "children": [
+        "n345",
+        "n349",
+        "n355",
+        "n361",
+        "n367",
+        "n373",
+        "n378",
+        "n384",
+        "n390"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1755px"
+    },
+    "n392": {
+      "height": "16px",
+      "styleId": "style_92",
+      "tag": "div",
+      "text": "速干长衣-安豹",
+      "width": "88.6719px"
+    },
+    "n393": {
+      "children": [
+        "n392"
+      ],
+      "height": "16px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "88.6719px"
+    },
+    "n394": {
+      "children": [
+        "n393"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "88.6719px"
+    },
+    "n395": {
+      "children": [
+        "n394"
+      ],
+      "height": "21px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "320.188px"
+    },
+    "n396": {
+      "children": [
+        "n395"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "352.188px"
+    },
+    "n397": {
+      "children": [
+        "n396"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-eqcNjU",
+      "styleId": "style_109",
+      "tag": "td",
+      "width": "352.188px"
+    },
+    "n398": {
+      "height": "22px",
+      "originalClass": "ivu-switch ivu-switch-checked ivu-switch-default",
+      "styleId": "style_98",
+      "tag": "span",
+      "width": "44px"
+    },
+    "n399": {
+      "children": [
+        "n398"
+      ],
+      "height": "22.375px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "88.0625px"
+    },
+    "n4": {
+      "height": "64px",
+      "originalClass": "name",
+      "styleId": "style_4",
+      "tag": "span",
+      "text": "2026-07-01 01:26:44",
+      "width": "131.547px"
+    },
+    "n40": {
+      "children": [
+        "n39"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n400": {
+      "children": [
+        "n399"
+      ],
+      "height": "22.375px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "120.062px"
+    },
+    "n401": {
+      "children": [
+        "n400"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-1tO9Tp",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "120.062px"
+    },
+    "n402": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "速干执勤服",
+      "width": "70px"
+    },
+    "n403": {
+      "children": [
+        "n402"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n404": {
+      "children": [
+        "n403"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n405": {
+      "children": [
+        "n404"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n406": {
+      "children": [
+        "n405"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n407": {
+      "children": [
+        "n406"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-yGVbdx",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n408": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "套",
+      "width": "14px"
+    },
+    "n409": {
+      "children": [
+        "n408"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n41": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-ios-filing",
+      "styleId": "style_18",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n410": {
+      "children": [
+        "n409"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n411": {
+      "children": [
+        "n410"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n412": {
+      "children": [
+        "n411"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n413": {
+      "children": [
+        "n412"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-0A27gQ",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n414": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "安豹",
+      "width": "28px"
+    },
+    "n415": {
+      "children": [
+        "n414"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "28px"
+    },
+    "n416": {
+      "children": [
+        "n415"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "28px"
+    },
+    "n417": {
+      "children": [
+        "n416"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n418": {
+      "children": [
+        "n417"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n419": {
+      "children": [
+        "n418"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-acKNjt",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n42": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon",
+      "styleId": "style_21",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n420": {
+      "height": "21px",
+      "styleId": "style_100",
+      "tag": "div",
+      "text": "0",
+      "width": "7.79688px"
+    },
+    "n421": {
+      "children": [
+        "n420"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_101",
+      "tag": "div",
+      "width": "7.79688px"
+    },
+    "n422": {
+      "children": [
+        "n421"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_102",
+      "tag": "div",
+      "width": "7.79688px"
+    },
+    "n423": {
+      "children": [
+        "n422"
+      ],
+      "height": "21.875px",
+      "styleId": "style_103",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n424": {
+      "children": [
+        "n423"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_104",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n425": {
+      "children": [
+        "n424"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-kOeYLG ivu-table-column-right",
+      "styleId": "style_111",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n426": {
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "text": "-",
+      "width": "138.094px"
+    },
+    "n427": {
+      "children": [
+        "n426"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n428": {
+      "children": [
+        "n427"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n429": {
+      "children": [
+        "n428"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "170.094px"
+    },
+    "n43": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-ios-filing\" style=\"font-size: 17px;\"></i> 装备管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+      "children": [
+        "n41",
+        "n42"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu-title",
+      "styleId": "style_16",
+      "tag": "div",
+      "text": "装备管理",
+      "width": "199px"
+    },
+    "n430": {
+      "children": [
+        "n429"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-CN9xqC ivu-table-column-center",
+      "styleId": "style_112",
+      "tag": "td",
+      "width": "170.094px"
+    },
+    "n431": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "刘珍珍",
+      "width": "42px"
+    },
+    "n432": {
+      "children": [
+        "n431"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n433": {
+      "children": [
+        "n432"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n434": {
+      "children": [
+        "n433"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n435": {
+      "children": [
+        "n434"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n436": {
+      "children": [
+        "n435"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-UggSSd",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n437": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "2026-03-03 09:10:52",
+      "width": "130px"
+    },
+    "n438": {
+      "children": [
+        "n437"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "130px"
+    },
+    "n439": {
+      "children": [
+        "n438"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "130px"
+    },
+    "n44": {
+      "height": "49px",
+      "originalClass": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+      "styleId": "style_22",
+      "tag": "li",
+      "text": "装备档案管理",
+      "width": "199px"
+    },
+    "n440": {
+      "children": [
+        "n439"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n441": {
+      "children": [
+        "n440"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n442": {
+      "children": [
+        "n441"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-T20R0S",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n443": {
+      "children": [
+        "n397",
+        "n401",
+        "n407",
+        "n413",
+        "n419",
+        "n425",
+        "n430",
+        "n436",
+        "n442"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1755px"
+    },
+    "n444": {
+      "height": "16px",
+      "styleId": "style_92",
+      "tag": "div",
+      "text": "速干执勤帽子-三棵树",
+      "width": "130.672px"
+    },
+    "n445": {
+      "children": [
+        "n444"
+      ],
+      "height": "16px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "130.672px"
+    },
+    "n446": {
+      "children": [
+        "n445"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "130.672px"
+    },
+    "n447": {
+      "children": [
+        "n446"
+      ],
+      "height": "21px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "320.188px"
+    },
+    "n448": {
+      "children": [
+        "n447"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "352.188px"
+    },
+    "n449": {
+      "children": [
+        "n448"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-eqcNjU",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "352.188px"
+    },
+    "n45": {
+      "height": "49px",
+      "originalClass": "ivu-menu-item",
+      "styleId": "style_23",
+      "tag": "li",
+      "text": "采购管理",
+      "width": "199px"
+    },
+    "n450": {
+      "height": "22px",
+      "originalClass": "ivu-switch ivu-switch-checked ivu-switch-default",
+      "styleId": "style_98",
+      "tag": "span",
+      "width": "44px"
+    },
+    "n451": {
+      "children": [
+        "n450"
+      ],
+      "height": "22.375px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "88.0625px"
+    },
+    "n452": {
+      "children": [
+        "n451"
+      ],
+      "height": "22.375px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "120.062px"
+    },
+    "n453": {
+      "children": [
+        "n452"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-1tO9Tp",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "120.062px"
+    },
+    "n454": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "速干执勤服",
+      "width": "70px"
+    },
+    "n455": {
+      "children": [
+        "n454"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n456": {
+      "children": [
+        "n455"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n457": {
+      "children": [
+        "n456"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n458": {
+      "children": [
+        "n457"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n459": {
+      "children": [
+        "n458"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-yGVbdx",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n46": {
+      "height": "49px",
+      "originalClass": "ivu-menu-item",
+      "styleId": "style_23",
+      "tag": "li",
+      "text": "调拨管理",
+      "width": "199px"
+    },
+    "n460": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "个",
+      "width": "14px"
+    },
+    "n461": {
+      "children": [
+        "n460"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n462": {
+      "children": [
+        "n461"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n463": {
+      "children": [
+        "n462"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n464": {
+      "children": [
+        "n463"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n465": {
+      "children": [
+        "n464"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-0A27gQ",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n466": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "三棵树",
+      "width": "42px"
+    },
+    "n467": {
+      "children": [
+        "n466"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n468": {
+      "children": [
+        "n467"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n469": {
+      "children": [
+        "n468"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n47": {
+      "height": "49px",
+      "originalClass": "ivu-menu-item",
+      "styleId": "style_23",
+      "tag": "li",
+      "text": "库存管理",
+      "width": "199px"
+    },
+    "n470": {
+      "children": [
+        "n469"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n471": {
+      "children": [
+        "n470"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-acKNjt",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n472": {
+      "height": "21px",
+      "styleId": "style_100",
+      "tag": "div",
+      "text": "20",
+      "width": "15.5781px"
+    },
+    "n473": {
+      "children": [
+        "n472"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_101",
+      "tag": "div",
+      "width": "15.5781px"
+    },
+    "n474": {
+      "children": [
+        "n473"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_102",
+      "tag": "div",
+      "width": "15.5781px"
+    },
+    "n475": {
+      "children": [
+        "n474"
+      ],
+      "height": "21.875px",
+      "styleId": "style_103",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n476": {
+      "children": [
+        "n475"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_104",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n477": {
+      "children": [
+        "n476"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-kOeYLG ivu-table-column-right",
+      "styleId": "style_105",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n478": {
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "text": "-",
+      "width": "138.094px"
+    },
+    "n479": {
+      "children": [
+        "n478"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n48": {
+      "height": "49px",
+      "originalClass": "ivu-menu-item",
+      "styleId": "style_23",
+      "tag": "li",
+      "text": "出库管理",
+      "width": "199px"
+    },
+    "n480": {
+      "children": [
+        "n479"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n481": {
+      "children": [
+        "n480"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "170.094px"
+    },
+    "n482": {
+      "children": [
+        "n481"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-CN9xqC ivu-table-column-center",
+      "styleId": "style_108",
+      "tag": "td",
+      "width": "170.094px"
+    },
+    "n483": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "山东振邦保安服务有限责任公司",
+      "width": "80.0625px"
+    },
+    "n484": {
+      "children": [
+        "n483"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n485": {
+      "children": [
+        "n484"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n486": {
+      "children": [
+        "n485"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n487": {
+      "children": [
+        "n486"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n488": {
+      "children": [
+        "n487"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-UggSSd",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n489": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "2026-01-26 11:39:33",
+      "width": "128.969px"
+    },
+    "n49": {
+      "height": "49px",
+      "originalClass": "ivu-menu-item",
+      "styleId": "style_23",
+      "tag": "li",
+      "text": "入库管理",
+      "width": "199px"
+    },
+    "n490": {
+      "children": [
+        "n489"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n491": {
+      "children": [
+        "n490"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n492": {
+      "children": [
+        "n491"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n493": {
+      "children": [
+        "n492"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n494": {
+      "children": [
+        "n493"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-T20R0S",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n495": {
+      "children": [
+        "n449",
+        "n453",
+        "n459",
+        "n465",
+        "n471",
+        "n477",
+        "n482",
+        "n488",
+        "n494"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1755px"
+    },
+    "n496": {
+      "height": "16px",
+      "styleId": "style_92",
+      "tag": "div",
+      "text": "速干春秋长袖执勤服-三棵树",
+      "width": "172.672px"
+    },
+    "n497": {
+      "children": [
+        "n496"
+      ],
+      "height": "16px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "172.672px"
+    },
+    "n498": {
+      "children": [
+        "n497"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "172.672px"
+    },
+    "n499": {
+      "children": [
+        "n498"
+      ],
+      "height": "21px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "320.188px"
+    },
+    "n5": {
+      "height": "30px",
+      "src": "assets/images/WHsF8L6mqE3gF4IETVDhGYeGHoAAPNCI0MSSXhIADhE4qAH7gdtH8GPAGs34EOa7QXRSuMHgR9-YNF-u5sfWqBTpERERERERERERERERERERERERERER.png",
+      "styleId": "style_5",
+      "tag": "img",
+      "width": "30px"
+    },
+    "n50": {
+      "children": [
+        "n44",
+        "n45",
+        "n46",
+        "n47",
+        "n48",
+        "n49"
+      ],
+      "height": "294px",
+      "originalClass": "ivu-menu",
+      "styleId": "style_24",
+      "tag": "ul",
+      "width": "199px"
+    },
+    "n500": {
+      "children": [
+        "n499"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "352.188px"
+    },
+    "n501": {
+      "children": [
+        "n500"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-eqcNjU",
+      "styleId": "style_109",
+      "tag": "td",
+      "width": "352.188px"
+    },
+    "n502": {
+      "height": "22px",
+      "originalClass": "ivu-switch ivu-switch-checked ivu-switch-default",
+      "styleId": "style_98",
+      "tag": "span",
+      "width": "44px"
+    },
+    "n503": {
+      "children": [
+        "n502"
+      ],
+      "height": "22.375px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "88.0625px"
+    },
+    "n504": {
+      "children": [
+        "n503"
+      ],
+      "height": "22.375px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "120.062px"
+    },
+    "n505": {
+      "children": [
+        "n504"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-1tO9Tp",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "120.062px"
+    },
+    "n506": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "速干执勤服",
+      "width": "70px"
+    },
+    "n507": {
+      "children": [
+        "n506"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n508": {
+      "children": [
+        "n507"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n509": {
+      "children": [
+        "n508"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n51": {
+      "children": [
+        "n43",
+        "n50"
+      ],
+      "height": "343px",
+      "originalClass": "ivu-menu-submenu ivu-menu-item-active ivu-menu-opened ivu-menu-child-item-active",
+      "styleId": "style_20",
+      "tag": "li",
+      "width": "199px"
+    },
+    "n510": {
+      "children": [
+        "n509"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n511": {
+      "children": [
+        "n510"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-yGVbdx",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n512": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "套",
+      "width": "14px"
+    },
+    "n513": {
+      "children": [
+        "n512"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n514": {
+      "children": [
+        "n513"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n515": {
+      "children": [
+        "n514"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n516": {
+      "children": [
+        "n515"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n517": {
+      "children": [
+        "n516"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-0A27gQ",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n518": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "三棵树",
+      "width": "42px"
+    },
+    "n519": {
+      "children": [
+        "n518"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n52": {
+      "children": [
+        "n51"
+      ],
+      "height": "343px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n520": {
+      "children": [
+        "n519"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n521": {
+      "children": [
+        "n520"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n522": {
+      "children": [
+        "n521"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n523": {
+      "children": [
+        "n522"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-acKNjt",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n524": {
+      "height": "21px",
+      "styleId": "style_100",
+      "tag": "div",
+      "text": "170",
+      "width": "23.3594px"
+    },
+    "n525": {
+      "children": [
+        "n524"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_101",
+      "tag": "div",
+      "width": "23.3594px"
+    },
+    "n526": {
+      "children": [
+        "n525"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_102",
+      "tag": "div",
+      "width": "23.3594px"
+    },
+    "n527": {
+      "children": [
+        "n526"
+      ],
+      "height": "21.875px",
+      "styleId": "style_103",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n528": {
+      "children": [
+        "n527"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_104",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n529": {
+      "children": [
+        "n528"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-kOeYLG ivu-table-column-right",
+      "styleId": "style_111",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n53": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-ios-calendar",
+      "styleId": "style_18",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n530": {
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "text": "-",
+      "width": "138.094px"
+    },
+    "n531": {
+      "children": [
+        "n530"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n532": {
+      "children": [
+        "n531"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n533": {
+      "children": [
+        "n532"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "170.094px"
+    },
+    "n534": {
+      "children": [
+        "n533"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-CN9xqC ivu-table-column-center",
+      "styleId": "style_112",
+      "tag": "td",
+      "width": "170.094px"
+    },
+    "n535": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "山东振邦保安服务有限责任公司",
+      "width": "80.0625px"
+    },
+    "n536": {
+      "children": [
+        "n535"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n537": {
+      "children": [
+        "n536"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n538": {
+      "children": [
+        "n537"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n539": {
+      "children": [
+        "n538"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n54": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon",
+      "styleId": "style_19",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n540": {
+      "children": [
+        "n539"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-UggSSd",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n541": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "2026-01-26 11:40:02",
+      "width": "128.969px"
+    },
+    "n542": {
+      "children": [
+        "n541"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n543": {
+      "children": [
+        "n542"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n544": {
+      "children": [
+        "n543"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n545": {
+      "children": [
+        "n544"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n546": {
+      "children": [
+        "n545"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-T20R0S",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n547": {
+      "children": [
+        "n501",
+        "n505",
+        "n511",
+        "n517",
+        "n523",
+        "n529",
+        "n534",
+        "n540",
+        "n546"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1755px"
+    },
+    "n548": {
+      "height": "16px",
+      "styleId": "style_92",
+      "tag": "div",
+      "text": "速干夏季短袖执勤服-三棵树",
+      "width": "172.672px"
+    },
+    "n549": {
+      "children": [
+        "n548"
+      ],
+      "height": "16px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "172.672px"
+    },
+    "n55": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-ios-calendar\" style=\"font-size: 17px;\"></i> 考勤管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+      "children": [
+        "n53",
+        "n54"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu-title",
+      "styleId": "style_16",
+      "tag": "div",
+      "text": "考勤管理",
+      "width": "199px"
+    },
+    "n550": {
+      "children": [
+        "n549"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "172.672px"
+    },
+    "n551": {
+      "children": [
+        "n550"
+      ],
+      "height": "21px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "320.188px"
+    },
+    "n552": {
+      "children": [
+        "n551"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "352.188px"
+    },
+    "n553": {
+      "children": [
+        "n552"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-eqcNjU",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "352.188px"
+    },
+    "n554": {
+      "height": "22px",
+      "originalClass": "ivu-switch ivu-switch-checked ivu-switch-default",
+      "styleId": "style_98",
+      "tag": "span",
+      "width": "44px"
+    },
+    "n555": {
+      "children": [
+        "n554"
+      ],
+      "height": "22.375px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "88.0625px"
+    },
+    "n556": {
+      "children": [
+        "n555"
+      ],
+      "height": "22.375px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "120.062px"
+    },
+    "n557": {
+      "children": [
+        "n556"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-1tO9Tp",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "120.062px"
+    },
+    "n558": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "速干执勤服",
+      "width": "70px"
+    },
+    "n559": {
+      "children": [
+        "n558"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n56": {
+      "children": [
+        "n55"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu",
+      "styleId": "style_20",
+      "tag": "li",
+      "width": "199px"
+    },
+    "n560": {
+      "children": [
+        "n559"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "70px"
+    },
+    "n561": {
+      "children": [
+        "n560"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n562": {
+      "children": [
+        "n561"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n563": {
+      "children": [
+        "n562"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-yGVbdx",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n564": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "套",
+      "width": "14px"
+    },
+    "n565": {
+      "children": [
+        "n564"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n566": {
+      "children": [
+        "n565"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n567": {
+      "children": [
+        "n566"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n568": {
+      "children": [
+        "n567"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n569": {
+      "children": [
+        "n568"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-0A27gQ",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n57": {
+      "children": [
+        "n56"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n570": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "三棵树",
+      "width": "42px"
+    },
+    "n571": {
+      "children": [
+        "n570"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n572": {
+      "children": [
+        "n571"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n573": {
+      "children": [
+        "n572"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n574": {
+      "children": [
+        "n573"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n575": {
+      "children": [
+        "n574"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-acKNjt",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n576": {
+      "height": "21px",
+      "styleId": "style_100",
+      "tag": "div",
+      "text": "160",
+      "width": "23.3594px"
+    },
+    "n577": {
+      "children": [
+        "n576"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_101",
+      "tag": "div",
+      "width": "23.3594px"
+    },
+    "n578": {
+      "children": [
+        "n577"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_102",
+      "tag": "div",
+      "width": "23.3594px"
+    },
+    "n579": {
+      "children": [
+        "n578"
+      ],
+      "height": "21.875px",
+      "styleId": "style_103",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n58": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-ios-flag",
+      "styleId": "style_18",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n580": {
+      "children": [
+        "n579"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_104",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n581": {
+      "children": [
+        "n580"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-kOeYLG ivu-table-column-right",
+      "styleId": "style_105",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n582": {
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "text": "-",
+      "width": "138.094px"
+    },
+    "n583": {
+      "children": [
+        "n582"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n584": {
+      "children": [
+        "n583"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n585": {
+      "children": [
+        "n584"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "170.094px"
+    },
+    "n586": {
+      "children": [
+        "n585"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-CN9xqC ivu-table-column-center",
+      "styleId": "style_108",
+      "tag": "td",
+      "width": "170.094px"
+    },
+    "n587": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "山东振邦保安服务有限责任公司",
+      "width": "80.0625px"
+    },
+    "n588": {
+      "children": [
+        "n587"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n589": {
+      "children": [
+        "n588"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n59": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon",
+      "styleId": "style_19",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n590": {
+      "children": [
+        "n589"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n591": {
+      "children": [
+        "n590"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n592": {
+      "children": [
+        "n591"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-UggSSd",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n593": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "2026-01-26 11:40:29",
+      "width": "128.969px"
+    },
+    "n594": {
+      "children": [
+        "n593"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n595": {
+      "children": [
+        "n594"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n596": {
+      "children": [
+        "n595"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n597": {
+      "children": [
+        "n596"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n598": {
+      "children": [
+        "n597"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-T20R0S",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n599": {
+      "children": [
+        "n553",
+        "n557",
+        "n563",
+        "n569",
+        "n575",
+        "n581",
+        "n586",
+        "n592",
+        "n598"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1755px"
+    },
+    "n6": {
+      "height": "30px",
+      "src": "assets/images/T8Vi6YcpJ4I9QAAAABJRU5ErkJggg.png",
+      "styleId": "style_6",
+      "tag": "img",
+      "width": "30px"
+    },
+    "n60": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-ios-flag\" style=\"font-size: 17px;\"></i> 督导管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+      "children": [
+        "n58",
+        "n59"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu-title",
+      "styleId": "style_16",
+      "tag": "div",
+      "text": "督导管理",
+      "width": "199px"
+    },
+    "n600": {
+      "height": "16px",
+      "styleId": "style_92",
+      "tag": "div",
+      "text": "作训帽子-安豹",
+      "width": "88.6719px"
+    },
+    "n601": {
+      "children": [
+        "n600"
+      ],
+      "height": "16px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "88.6719px"
+    },
+    "n602": {
+      "children": [
+        "n601"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "88.6719px"
+    },
+    "n603": {
+      "children": [
+        "n602"
+      ],
+      "height": "21px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "320.188px"
+    },
+    "n604": {
+      "children": [
+        "n603"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "352.188px"
+    },
+    "n605": {
+      "children": [
+        "n604"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-eqcNjU",
+      "styleId": "style_109",
+      "tag": "td",
+      "width": "352.188px"
+    },
+    "n606": {
+      "height": "22px",
+      "originalClass": "ivu-switch ivu-switch-checked ivu-switch-default",
+      "styleId": "style_98",
+      "tag": "span",
+      "width": "44px"
+    },
+    "n607": {
+      "children": [
+        "n606"
+      ],
+      "height": "22.375px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "88.0625px"
+    },
+    "n608": {
+      "children": [
+        "n607"
+      ],
+      "height": "22.375px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "120.062px"
+    },
+    "n609": {
+      "children": [
+        "n608"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-1tO9Tp",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "120.062px"
+    },
+    "n61": {
+      "children": [
+        "n60"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu",
+      "styleId": "style_20",
+      "tag": "li",
+      "width": "199px"
+    },
+    "n610": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "作训服",
+      "width": "42px"
+    },
+    "n611": {
+      "children": [
+        "n610"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n612": {
+      "children": [
+        "n611"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n613": {
+      "children": [
+        "n612"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n614": {
+      "children": [
+        "n613"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n615": {
+      "children": [
+        "n614"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-yGVbdx",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n616": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "个",
+      "width": "14px"
+    },
+    "n617": {
+      "children": [
+        "n616"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n618": {
+      "children": [
+        "n617"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n619": {
+      "children": [
+        "n618"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n62": {
+      "children": [
+        "n61"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n620": {
+      "children": [
+        "n619"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n621": {
+      "children": [
+        "n620"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-0A27gQ",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n622": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "安豹",
+      "width": "28px"
+    },
+    "n623": {
+      "children": [
+        "n622"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "28px"
+    },
+    "n624": {
+      "children": [
+        "n623"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "28px"
+    },
+    "n625": {
+      "children": [
+        "n624"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n626": {
+      "children": [
+        "n625"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n627": {
+      "children": [
+        "n626"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-acKNjt",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n628": {
+      "height": "21px",
+      "styleId": "style_100",
+      "tag": "div",
+      "text": "15",
+      "width": "15.5781px"
+    },
+    "n629": {
+      "children": [
+        "n628"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_101",
+      "tag": "div",
+      "width": "15.5781px"
+    },
+    "n63": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-md-people",
+      "styleId": "style_18",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n630": {
+      "children": [
+        "n629"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_102",
+      "tag": "div",
+      "width": "15.5781px"
+    },
+    "n631": {
+      "children": [
+        "n630"
+      ],
+      "height": "21.875px",
+      "styleId": "style_103",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n632": {
+      "children": [
+        "n631"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_104",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n633": {
+      "children": [
+        "n632"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-kOeYLG ivu-table-column-right",
+      "styleId": "style_111",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n634": {
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "text": "-",
+      "width": "138.094px"
+    },
+    "n635": {
+      "children": [
+        "n634"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n636": {
+      "children": [
+        "n635"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n637": {
+      "children": [
+        "n636"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "170.094px"
+    },
+    "n638": {
+      "children": [
+        "n637"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-CN9xqC ivu-table-column-center",
+      "styleId": "style_112",
+      "tag": "td",
+      "width": "170.094px"
+    },
+    "n639": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "山东振邦保安服务有限责任公司",
+      "width": "80.0625px"
+    },
+    "n64": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon",
+      "styleId": "style_19",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n640": {
+      "children": [
+        "n639"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n641": {
+      "children": [
+        "n640"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n642": {
+      "children": [
+        "n641"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n643": {
+      "children": [
+        "n642"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n644": {
+      "children": [
+        "n643"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-UggSSd",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n645": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "2026-01-26 11:40:56",
+      "width": "128.969px"
+    },
+    "n646": {
+      "children": [
+        "n645"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n647": {
+      "children": [
+        "n646"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n648": {
+      "children": [
+        "n647"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n649": {
+      "children": [
+        "n648"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n65": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-md-people\" style=\"font-size: 17px;\"></i> 客户管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+      "children": [
+        "n63",
+        "n64"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu-title",
+      "styleId": "style_16",
+      "tag": "div",
+      "text": "客户管理",
+      "width": "199px"
+    },
+    "n650": {
+      "children": [
+        "n649"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-T20R0S",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n651": {
+      "children": [
+        "n605",
+        "n609",
+        "n615",
+        "n621",
+        "n627",
+        "n633",
+        "n638",
+        "n644",
+        "n650"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1755px"
+    },
+    "n652": {
+      "height": "16px",
+      "styleId": "style_92",
+      "tag": "div",
+      "text": "作训棉衣-安豹",
+      "width": "88.6719px"
+    },
+    "n653": {
+      "children": [
+        "n652"
+      ],
+      "height": "16px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "88.6719px"
+    },
+    "n654": {
+      "children": [
+        "n653"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "88.6719px"
+    },
+    "n655": {
+      "children": [
+        "n654"
+      ],
+      "height": "21px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "320.188px"
+    },
+    "n656": {
+      "children": [
+        "n655"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "352.188px"
+    },
+    "n657": {
+      "children": [
+        "n656"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-eqcNjU",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "352.188px"
+    },
+    "n658": {
+      "height": "22px",
+      "originalClass": "ivu-switch ivu-switch-checked ivu-switch-default",
+      "styleId": "style_98",
+      "tag": "span",
+      "width": "44px"
+    },
+    "n659": {
+      "children": [
+        "n658"
+      ],
+      "height": "22.375px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "88.0625px"
+    },
+    "n66": {
+      "children": [
+        "n65"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu",
+      "styleId": "style_20",
+      "tag": "li",
+      "width": "199px"
+    },
+    "n660": {
+      "children": [
+        "n659"
+      ],
+      "height": "22.375px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "120.062px"
+    },
+    "n661": {
+      "children": [
+        "n660"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-1tO9Tp",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "120.062px"
+    },
+    "n662": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "作训服",
+      "width": "42px"
+    },
+    "n663": {
+      "children": [
+        "n662"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n664": {
+      "children": [
+        "n663"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n665": {
+      "children": [
+        "n664"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n666": {
+      "children": [
+        "n665"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n667": {
+      "children": [
+        "n666"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-yGVbdx",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n668": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "件",
+      "width": "14px"
+    },
+    "n669": {
+      "children": [
+        "n668"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n67": {
+      "children": [
+        "n66"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n670": {
+      "children": [
+        "n669"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n671": {
+      "children": [
+        "n670"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n672": {
+      "children": [
+        "n671"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n673": {
+      "children": [
+        "n672"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-0A27gQ",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n674": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "安豹",
+      "width": "28px"
+    },
+    "n675": {
+      "children": [
+        "n674"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "28px"
+    },
+    "n676": {
+      "children": [
+        "n675"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "28px"
+    },
+    "n677": {
+      "children": [
+        "n676"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n678": {
+      "children": [
+        "n677"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n679": {
+      "children": [
+        "n678"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-acKNjt",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n68": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-logo-usd",
+      "styleId": "style_18",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n680": {
+      "height": "21px",
+      "styleId": "style_100",
+      "tag": "div",
+      "text": "160",
+      "width": "23.3594px"
+    },
+    "n681": {
+      "children": [
+        "n680"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_101",
+      "tag": "div",
+      "width": "23.3594px"
+    },
+    "n682": {
+      "children": [
+        "n681"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_102",
+      "tag": "div",
+      "width": "23.3594px"
+    },
+    "n683": {
+      "children": [
+        "n682"
+      ],
+      "height": "21.875px",
+      "styleId": "style_103",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n684": {
+      "children": [
+        "n683"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_104",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n685": {
+      "children": [
+        "n684"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-kOeYLG ivu-table-column-right",
+      "styleId": "style_105",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n686": {
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "text": "-",
+      "width": "138.094px"
+    },
+    "n687": {
+      "children": [
+        "n686"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n688": {
+      "children": [
+        "n687"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n689": {
+      "children": [
+        "n688"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "170.094px"
+    },
+    "n69": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon",
+      "styleId": "style_19",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n690": {
+      "children": [
+        "n689"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-CN9xqC ivu-table-column-center",
+      "styleId": "style_108",
+      "tag": "td",
+      "width": "170.094px"
+    },
+    "n691": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "山东振邦保安服务有限责任公司",
+      "width": "80.0625px"
+    },
+    "n692": {
+      "children": [
+        "n691"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n693": {
+      "children": [
+        "n692"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n694": {
+      "children": [
+        "n693"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n695": {
+      "children": [
+        "n694"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n696": {
+      "children": [
+        "n695"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-UggSSd",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n697": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "2026-01-26 11:41:22",
+      "width": "128.969px"
+    },
+    "n698": {
+      "children": [
+        "n697"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n699": {
+      "children": [
+        "n698"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n7": {
+      "height": "64px",
+      "originalClass": "name",
+      "styleId": "style_7",
+      "tag": "span",
+      "text": "山东振邦保安服务有限责任公司",
+      "width": "196px"
+    },
+    "n70": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-logo-usd\" style=\"font-size: 17px;\"></i> 薪酬  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+      "children": [
+        "n68",
+        "n69"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu-title",
+      "styleId": "style_16",
+      "tag": "div",
+      "text": "薪酬",
+      "width": "199px"
+    },
+    "n700": {
+      "children": [
+        "n699"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n701": {
+      "children": [
+        "n700"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n702": {
+      "children": [
+        "n701"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-T20R0S",
+      "styleId": "style_97",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n703": {
+      "children": [
+        "n657",
+        "n661",
+        "n667",
+        "n673",
+        "n679",
+        "n685",
+        "n690",
+        "n696",
+        "n702"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1755px"
+    },
+    "n704": {
+      "height": "16px",
+      "styleId": "style_92",
+      "tag": "div",
+      "text": "春秋作训服-安豹",
+      "width": "102.672px"
+    },
+    "n705": {
+      "children": [
+        "n704"
+      ],
+      "height": "16px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "102.672px"
+    },
+    "n706": {
+      "children": [
+        "n705"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "102.672px"
+    },
+    "n707": {
+      "children": [
+        "n706"
+      ],
+      "height": "21px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "320.188px"
+    },
+    "n708": {
+      "children": [
+        "n707"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "352.188px"
+    },
+    "n709": {
+      "children": [
+        "n708"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-eqcNjU",
+      "styleId": "style_109",
+      "tag": "td",
+      "width": "352.188px"
+    },
+    "n71": {
+      "children": [
+        "n70"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu",
+      "styleId": "style_20",
+      "tag": "li",
+      "width": "199px"
+    },
+    "n710": {
+      "height": "22px",
+      "originalClass": "ivu-switch ivu-switch-checked ivu-switch-default",
+      "styleId": "style_98",
+      "tag": "span",
+      "width": "44px"
+    },
+    "n711": {
+      "children": [
+        "n710"
+      ],
+      "height": "22.375px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "88.0625px"
+    },
+    "n712": {
+      "children": [
+        "n711"
+      ],
+      "height": "22.375px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "120.062px"
+    },
+    "n713": {
+      "children": [
+        "n712"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-1tO9Tp",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "120.062px"
+    },
+    "n714": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "作训服",
+      "width": "42px"
+    },
+    "n715": {
+      "children": [
+        "n714"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n716": {
+      "children": [
+        "n715"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "42px"
+    },
+    "n717": {
+      "children": [
+        "n716"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n718": {
+      "children": [
+        "n717"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n719": {
+      "children": [
+        "n718"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-yGVbdx",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n72": {
+      "children": [
+        "n71"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n720": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "套",
+      "width": "14px"
+    },
+    "n721": {
+      "children": [
+        "n720"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n722": {
+      "children": [
+        "n721"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "14px"
+    },
+    "n723": {
+      "children": [
+        "n722"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n724": {
+      "children": [
+        "n723"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n725": {
+      "children": [
+        "n724"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-0A27gQ",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n726": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "安豹",
+      "width": "28px"
+    },
+    "n727": {
+      "children": [
+        "n726"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "28px"
+    },
+    "n728": {
+      "children": [
+        "n727"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "28px"
+    },
+    "n729": {
+      "children": [
+        "n728"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n73": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-md-person",
+      "styleId": "style_18",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n730": {
+      "children": [
+        "n729"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n731": {
+      "children": [
+        "n730"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-acKNjt",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n732": {
+      "height": "21px",
+      "styleId": "style_100",
+      "tag": "div",
+      "text": "140",
+      "width": "23.3594px"
+    },
+    "n733": {
+      "children": [
+        "n732"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_101",
+      "tag": "div",
+      "width": "23.3594px"
+    },
+    "n734": {
+      "children": [
+        "n733"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_102",
+      "tag": "div",
+      "width": "23.3594px"
+    },
+    "n735": {
+      "children": [
+        "n734"
+      ],
+      "height": "21.875px",
+      "styleId": "style_103",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n736": {
+      "children": [
+        "n735"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_104",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n737": {
+      "children": [
+        "n736"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-kOeYLG ivu-table-column-right",
+      "styleId": "style_111",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n738": {
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "text": "-",
+      "width": "138.094px"
+    },
+    "n739": {
+      "children": [
+        "n738"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n74": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon",
+      "styleId": "style_19",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n740": {
+      "children": [
+        "n739"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "138.094px"
+    },
+    "n741": {
+      "children": [
+        "n740"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "170.094px"
+    },
+    "n742": {
+      "children": [
+        "n741"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-CN9xqC ivu-table-column-center",
+      "styleId": "style_112",
+      "tag": "td",
+      "width": "170.094px"
+    },
+    "n743": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "山东振邦保安服务有限责任公司",
+      "width": "80.0625px"
+    },
+    "n744": {
+      "children": [
+        "n743"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n745": {
+      "children": [
+        "n744"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n746": {
+      "children": [
+        "n745"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "80.0625px"
+    },
+    "n747": {
+      "children": [
+        "n746"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "112.062px"
+    },
+    "n748": {
+      "children": [
+        "n747"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-UggSSd",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "112.062px"
+    },
+    "n749": {
+      "height": "21px",
+      "styleId": "style_99",
+      "tag": "div",
+      "text": "2026-01-26 11:41:43",
+      "width": "128.969px"
+    },
+    "n75": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-md-person\" style=\"font-size: 17px;\"></i> 人事管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+      "children": [
+        "n73",
+        "n74"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu-title",
+      "styleId": "style_16",
+      "tag": "div",
+      "text": "人事管理",
+      "width": "199px"
+    },
+    "n750": {
+      "children": [
+        "n749"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-tooltip-rel",
+      "styleId": "style_93",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n751": {
+      "children": [
+        "n750"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-tooltip",
+      "styleId": "style_94",
+      "tag": "div",
+      "width": "128.969px"
+    },
+    "n752": {
+      "children": [
+        "n751"
+      ],
+      "height": "21.875px",
+      "styleId": "style_95",
+      "tag": "div",
+      "width": "160.109px"
+    },
+    "n753": {
+      "children": [
+        "n752"
+      ],
+      "height": "21.875px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_96",
+      "tag": "div",
+      "width": "192.109px"
+    },
+    "n754": {
+      "children": [
+        "n753"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-T20R0S",
+      "styleId": "style_110",
+      "tag": "td",
+      "width": "192.109px"
+    },
+    "n755": {
+      "children": [
+        "n709",
+        "n713",
+        "n719",
+        "n725",
+        "n731",
+        "n737",
+        "n742",
+        "n748",
+        "n754"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1755px"
+    },
+    "n756": {
+      "children": [
+        "n287",
+        "n339",
+        "n391",
+        "n443",
+        "n495",
+        "n547",
+        "n599",
+        "n651",
+        "n703",
+        "n755"
+      ],
+      "height": "480px",
+      "originalClass": "ivu-table-tbody",
+      "styleId": "style_113",
+      "tag": "tbody",
+      "width": "1755px"
+    },
+    "n757": {
+      "children": [
+        "n235",
+        "n756"
+      ],
+      "height": "480px",
+      "styleId": "style_90",
+      "tag": "table",
+      "width": "1755px"
+    },
+    "n758": {
+      "children": [
+        "n757"
+      ],
+      "height": "490px",
+      "originalClass": "ivu-table-body ivu-table-overflowX",
+      "styleId": "style_114",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n759": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "120px"
+    },
+    "n76": {
+      "children": [
+        "n75"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu",
+      "styleId": "style_20",
+      "tag": "li",
+      "width": "199px"
+    },
+    "n760": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "352px"
+    },
+    "n761": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "120px"
+    },
+    "n762": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192px"
+    },
+    "n763": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192px"
+    },
+    "n764": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192px"
+    },
+    "n765": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "112px"
+    },
+    "n766": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "170px"
+    },
+    "n767": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "112px"
+    },
+    "n768": {
+      "height": "37.875px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192px"
+    },
+    "n769": {
+      "children": [
+        "n759",
+        "n760",
+        "n761",
+        "n762",
+        "n763",
+        "n764",
+        "n765",
+        "n766",
+        "n767",
+        "n768"
+      ],
+      "height": "37.875px",
+      "styleId": "style_78",
+      "tag": "colgroup",
+      "width": "1754px"
+    },
+    "n77": {
+      "children": [
+        "n76"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n770": {
+      "styleId": "style_85",
+      "tag": "span",
+      "text": "操作"
+    },
+    "n771": {
+      "children": [
+        "n770"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_86",
+      "tag": "div",
+      "width": "64px"
+    },
+    "n772": {
+      "children": [
+        "n771"
+      ],
+      "height": "37.875px",
+      "originalClass": "ivu-table-column-Q9sPgE ivu-table-column-center",
+      "styleId": "style_87",
+      "tag": "th",
+      "width": "120px"
+    },
+    "n773": {
+      "children": [
+        "n772"
+      ],
+      "height": "37.875px",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1754px"
+    },
+    "n774": {
+      "children": [
+        "n773"
+      ],
+      "height": "37.875px",
+      "styleId": "style_89",
+      "tag": "thead",
+      "width": "1754px"
+    },
+    "n775": {
+      "children": [
+        "n769",
+        "n774"
+      ],
+      "height": "37.875px",
+      "styleId": "style_115",
+      "tag": "table",
+      "width": "1754px"
+    },
+    "n776": {
+      "children": [
+        "n775"
+      ],
+      "height": "37.875px",
+      "originalClass": "ivu-table-fixed-header",
+      "styleId": "style_91",
+      "tag": "div",
+      "width": "120px"
+    },
+    "n777": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "120px"
+    },
+    "n778": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "352px"
+    },
+    "n779": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "120px"
+    },
+    "n78": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-ios-construct",
+      "styleId": "style_18",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n780": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192px"
+    },
+    "n781": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192px"
+    },
+    "n782": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192px"
+    },
+    "n783": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "112px"
+    },
+    "n784": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "170px"
+    },
+    "n785": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "112px"
+    },
+    "n786": {
+      "height": "480px",
+      "styleId": "style_77",
+      "tag": "col",
+      "width": "192px"
+    },
+    "n787": {
+      "children": [
+        "n777",
+        "n778",
+        "n779",
+        "n780",
+        "n781",
+        "n782",
+        "n783",
+        "n784",
+        "n785",
+        "n786"
+      ],
+      "height": "480px",
+      "styleId": "style_78",
+      "tag": "colgroup",
+      "width": "1754px"
+    },
+    "n788": {
+      "styleId": "style_116",
+      "tag": "span",
+      "text": "编辑"
+    },
+    "n789": {
+      "styleId": "style_117",
+      "tag": "span",
+      "text": "删除"
+    },
+    "n79": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon",
+      "styleId": "style_19",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n790": {
+      "children": [
+        "n788",
+        "n789"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n791": {
+      "children": [
+        "n790"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n792": {
+      "children": [
+        "n791"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n793": {
+      "children": [
+        "n792"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "120px"
+    },
+    "n794": {
+      "children": [
+        "n793"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-Q9sPgE ivu-table-column-center",
+      "styleId": "style_108",
+      "tag": "td",
+      "width": "120px"
+    },
+    "n795": {
+      "children": [
+        "n794"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1754px"
+    },
+    "n796": {
+      "styleId": "style_116",
+      "tag": "span",
+      "text": "编辑"
+    },
+    "n797": {
+      "styleId": "style_117",
+      "tag": "span",
+      "text": "删除"
+    },
+    "n798": {
+      "children": [
+        "n796",
+        "n797"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n799": {
+      "children": [
+        "n798"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n8": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down",
+      "styleId": "style_8",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n80": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-ios-construct\" style=\"font-size: 17px;\"></i> 组织架构管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+      "children": [
+        "n78",
+        "n79"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu-title",
+      "styleId": "style_16",
+      "tag": "div",
+      "text": "组织架构管理",
+      "width": "199px"
+    },
+    "n800": {
+      "children": [
+        "n799"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n801": {
+      "children": [
+        "n800"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "120px"
+    },
+    "n802": {
+      "children": [
+        "n801"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-Q9sPgE ivu-table-column-center",
+      "styleId": "style_118",
+      "tag": "td",
+      "width": "120px"
+    },
+    "n803": {
+      "children": [
+        "n802"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1754px"
+    },
+    "n804": {
+      "styleId": "style_116",
+      "tag": "span",
+      "text": "编辑"
+    },
+    "n805": {
+      "styleId": "style_117",
+      "tag": "span",
+      "text": "删除"
+    },
+    "n806": {
+      "children": [
+        "n804",
+        "n805"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n807": {
+      "children": [
+        "n806"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n808": {
+      "children": [
+        "n807"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n809": {
+      "children": [
+        "n808"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "120px"
+    },
+    "n81": {
+      "children": [
+        "n80"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu",
+      "styleId": "style_20",
+      "tag": "li",
+      "width": "199px"
+    },
+    "n810": {
+      "children": [
+        "n809"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-Q9sPgE ivu-table-column-center",
+      "styleId": "style_108",
+      "tag": "td",
+      "width": "120px"
+    },
+    "n811": {
+      "children": [
+        "n810"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1754px"
+    },
+    "n812": {
+      "styleId": "style_116",
+      "tag": "span",
+      "text": "编辑"
+    },
+    "n813": {
+      "styleId": "style_117",
+      "tag": "span",
+      "text": "删除"
+    },
+    "n814": {
+      "children": [
+        "n812",
+        "n813"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n815": {
+      "children": [
+        "n814"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n816": {
+      "children": [
+        "n815"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n817": {
+      "children": [
+        "n816"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "120px"
+    },
+    "n818": {
+      "children": [
+        "n817"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-Q9sPgE ivu-table-column-center",
+      "styleId": "style_118",
+      "tag": "td",
+      "width": "120px"
+    },
+    "n819": {
+      "children": [
+        "n818"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1754px"
+    },
+    "n82": {
+      "children": [
+        "n81"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n820": {
+      "styleId": "style_116",
+      "tag": "span",
+      "text": "编辑"
+    },
+    "n821": {
+      "styleId": "style_117",
+      "tag": "span",
+      "text": "删除"
+    },
+    "n822": {
+      "children": [
+        "n820",
+        "n821"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n823": {
+      "children": [
+        "n822"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n824": {
+      "children": [
+        "n823"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n825": {
+      "children": [
+        "n824"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "120px"
+    },
+    "n826": {
+      "children": [
+        "n825"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-Q9sPgE ivu-table-column-center",
+      "styleId": "style_108",
+      "tag": "td",
+      "width": "120px"
+    },
+    "n827": {
+      "children": [
+        "n826"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1754px"
+    },
+    "n828": {
+      "styleId": "style_116",
+      "tag": "span",
+      "text": "编辑"
+    },
+    "n829": {
+      "styleId": "style_117",
+      "tag": "span",
+      "text": "删除"
+    },
+    "n83": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-md-clipboard",
+      "styleId": "style_18",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n830": {
+      "children": [
+        "n828",
+        "n829"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n831": {
+      "children": [
+        "n830"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n832": {
+      "children": [
+        "n831"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n833": {
+      "children": [
+        "n832"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "120px"
+    },
+    "n834": {
+      "children": [
+        "n833"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-Q9sPgE ivu-table-column-center",
+      "styleId": "style_118",
+      "tag": "td",
+      "width": "120px"
+    },
+    "n835": {
+      "children": [
+        "n834"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1754px"
+    },
+    "n836": {
+      "styleId": "style_116",
+      "tag": "span",
+      "text": "编辑"
+    },
+    "n837": {
+      "styleId": "style_117",
+      "tag": "span",
+      "text": "删除"
+    },
+    "n838": {
+      "children": [
+        "n836",
+        "n837"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n839": {
+      "children": [
+        "n838"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n84": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon",
+      "styleId": "style_19",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n840": {
+      "children": [
+        "n839"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n841": {
+      "children": [
+        "n840"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "120px"
+    },
+    "n842": {
+      "children": [
+        "n841"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-Q9sPgE ivu-table-column-center",
+      "styleId": "style_108",
+      "tag": "td",
+      "width": "120px"
+    },
+    "n843": {
+      "children": [
+        "n842"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1754px"
+    },
+    "n844": {
+      "styleId": "style_116",
+      "tag": "span",
+      "text": "编辑"
+    },
+    "n845": {
+      "styleId": "style_117",
+      "tag": "span",
+      "text": "删除"
+    },
+    "n846": {
+      "children": [
+        "n844",
+        "n845"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n847": {
+      "children": [
+        "n846"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n848": {
+      "children": [
+        "n847"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n849": {
+      "children": [
+        "n848"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "120px"
+    },
+    "n85": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-md-clipboard\" style=\"font-size: 17px;\"></i> 服务管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+      "children": [
+        "n83",
+        "n84"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu-title",
+      "styleId": "style_16",
+      "tag": "div",
+      "text": "服务管理",
+      "width": "199px"
+    },
+    "n850": {
+      "children": [
+        "n849"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-Q9sPgE ivu-table-column-center",
+      "styleId": "style_118",
+      "tag": "td",
+      "width": "120px"
+    },
+    "n851": {
+      "children": [
+        "n850"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1754px"
+    },
+    "n852": {
+      "styleId": "style_116",
+      "tag": "span",
+      "text": "编辑"
+    },
+    "n853": {
+      "styleId": "style_117",
+      "tag": "span",
+      "text": "删除"
+    },
+    "n854": {
+      "children": [
+        "n852",
+        "n853"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n855": {
+      "children": [
+        "n854"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n856": {
+      "children": [
+        "n855"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n857": {
+      "children": [
+        "n856"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "120px"
+    },
+    "n858": {
+      "children": [
+        "n857"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-Q9sPgE ivu-table-column-center",
+      "styleId": "style_108",
+      "tag": "td",
+      "width": "120px"
+    },
+    "n859": {
+      "children": [
+        "n858"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1754px"
+    },
+    "n86": {
+      "children": [
+        "n85"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu",
+      "styleId": "style_20",
+      "tag": "li",
+      "width": "199px"
+    },
+    "n860": {
+      "styleId": "style_116",
+      "tag": "span",
+      "text": "编辑"
+    },
+    "n861": {
+      "styleId": "style_117",
+      "tag": "span",
+      "text": "删除"
+    },
+    "n862": {
+      "children": [
+        "n860",
+        "n861"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n863": {
+      "children": [
+        "n862"
+      ],
+      "height": "21px",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n864": {
+      "children": [
+        "n863"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell-slot",
+      "styleId": "style_106",
+      "tag": "div",
+      "width": "88px"
+    },
+    "n865": {
+      "children": [
+        "n864"
+      ],
+      "height": "21px",
+      "originalClass": "ivu-table-cell",
+      "styleId": "style_107",
+      "tag": "div",
+      "width": "120px"
+    },
+    "n866": {
+      "children": [
+        "n865"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-column-Q9sPgE ivu-table-column-center",
+      "styleId": "style_118",
+      "tag": "td",
+      "width": "120px"
+    },
+    "n867": {
+      "children": [
+        "n866"
+      ],
+      "height": "48px",
+      "originalClass": "ivu-table-row",
+      "styleId": "style_88",
+      "tag": "tr",
+      "width": "1754px"
+    },
+    "n868": {
+      "children": [
+        "n795",
+        "n803",
+        "n811",
+        "n819",
+        "n827",
+        "n835",
+        "n843",
+        "n851",
+        "n859",
+        "n867"
+      ],
+      "height": "480px",
+      "originalClass": "ivu-table-tbody",
+      "styleId": "style_113",
+      "tag": "tbody",
+      "width": "1754px"
+    },
+    "n869": {
+      "children": [
+        "n787",
+        "n868"
+      ],
+      "height": "480px",
+      "styleId": "style_115",
+      "tag": "table",
+      "width": "1754px"
+    },
+    "n87": {
+      "children": [
+        "n86"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n870": {
+      "children": [
+        "n869"
+      ],
+      "height": "480px",
+      "originalClass": "ivu-table-fixed-body",
+      "styleId": "style_119",
+      "tag": "div",
+      "width": "120px"
+    },
+    "n871": {
+      "children": [
+        "n776",
+        "n870"
+      ],
+      "height": "527.875px",
+      "originalClass": "ivu-table-fixed-right ivu-table-fixed-shadow",
+      "styleId": "style_120",
+      "tag": "div",
+      "width": "120px"
+    },
+    "n872": {
+      "height": "39px",
+      "originalClass": "ivu-table-fixed-right-header",
+      "styleId": "style_121",
+      "tag": "div",
+      "width": "0px"
+    },
+    "n873": {
+      "children": [
+        "n224",
+        "n758",
+        "n871",
+        "n872"
+      ],
+      "height": "527.875px",
+      "originalClass": "ivu-table ivu-table-default ivu-table-stripe",
+      "styleId": "style_122",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n874": {
+      "height": "527.875px",
+      "styleId": "style_123",
+      "tag": "object",
+      "width": "1672px"
+    },
+    "n875": {
+      "children": [
+        "n873",
+        "n874"
+      ],
+      "height": "527.875px",
+      "originalClass": "ivu-table-wrapper",
+      "styleId": "style_42",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n876": {
+      "height": "32px",
+      "originalClass": "ivu-page-total",
+      "styleId": "style_124",
+      "tag": "span",
+      "text": "共 103 条",
+      "width": "59.1406px"
+    },
+    "n877": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-back",
+      "styleId": "style_125",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n878": {
+      "children": [
+        "n877"
+      ],
+      "styleId": "style_126",
+      "tag": "a"
+    },
+    "n879": {
+      "children": [
+        "n878"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-page-prev",
+      "styleId": "style_127",
+      "tag": "li",
+      "width": "32px"
+    },
+    "n88": {
+      "height": "17px",
+      "originalClass": "ivu-icon ivu-icon-ios-settings",
+      "styleId": "style_18",
+      "tag": "i",
+      "width": "17px"
+    },
+    "n880": {
+      "styleId": "style_128",
+      "tag": "a",
+      "text": "1"
+    },
+    "n881": {
+      "children": [
+        "n880"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-page-item",
+      "styleId": "style_129",
+      "tag": "li",
+      "width": "32px"
+    },
+    "n882": {
+      "styleId": "style_128",
+      "tag": "a",
+      "text": "2"
+    },
+    "n883": {
+      "children": [
+        "n882"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-page-item",
+      "styleId": "style_129",
+      "tag": "li",
+      "width": "32px"
+    },
+    "n884": {
+      "styleId": "style_130",
+      "tag": "a",
+      "text": "3"
+    },
+    "n885": {
+      "children": [
+        "n884"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-page-item ivu-page-item-active",
+      "styleId": "style_131",
+      "tag": "li",
+      "width": "32px"
+    },
+    "n886": {
+      "styleId": "style_128",
+      "tag": "a",
+      "text": "4"
+    },
+    "n887": {
+      "children": [
+        "n886"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-page-item",
+      "styleId": "style_129",
+      "tag": "li",
+      "width": "32px"
+    },
+    "n888": {
+      "styleId": "style_128",
+      "tag": "a",
+      "text": "5"
+    },
+    "n889": {
+      "children": [
+        "n888"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-page-item",
+      "styleId": "style_129",
+      "tag": "li",
+      "width": "32px"
+    },
+    "n89": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon",
+      "styleId": "style_19",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n890": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-more",
+      "styleId": "style_132",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n891": {
+      "children": [
+        "n890"
+      ],
+      "styleId": "style_133",
+      "tag": "a"
+    },
+    "n892": {
+      "children": [
+        "n891"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-page-item-jump-next",
+      "styleId": "style_134",
+      "tag": "li",
+      "width": "32px"
+    },
+    "n893": {
+      "styleId": "style_128",
+      "tag": "a",
+      "text": "11"
+    },
+    "n894": {
+      "children": [
+        "n893"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-page-item",
+      "styleId": "style_129",
+      "tag": "li",
+      "width": "32px"
+    },
+    "n895": {
+      "height": "14px",
+      "originalClass": "ivu-icon ivu-icon-ios-arrow-forward",
+      "styleId": "style_125",
+      "tag": "i",
+      "width": "14px"
+    },
+    "n896": {
+      "children": [
+        "n895"
+      ],
+      "styleId": "style_126",
+      "tag": "a"
+    },
+    "n897": {
+      "children": [
+        "n896"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-page-next",
+      "styleId": "style_135",
+      "tag": "li",
+      "width": "32px"
+    },
+    "n898": {
+      "children": [
+        "n876",
+        "n879",
+        "n881",
+        "n883",
+        "n885",
+        "n887",
+        "n889",
+        "n892",
+        "n894",
+        "n897"
+      ],
+      "height": "33.375px",
+      "originalClass": "ivu-page",
+      "styleId": "style_136",
+      "tag": "ul",
+      "width": "1672px"
+    },
+    "n899": {
+      "children": [
+        "n898"
+      ],
+      "height": "33.375px",
+      "originalClass": "pages",
+      "styleId": "style_137",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n9": {
+      "children": [
+        "n6",
+        "n7",
+        "n8"
+      ],
+      "height": "64px",
+      "originalClass": "btn",
+      "styleId": "style_9",
+      "tag": "div",
+      "width": "245px"
+    },
+    "n90": {
+      "_innerHTML": "<i data-v-56441e02=\"\" class=\"ivu-icon ivu-icon-ios-settings\" style=\"font-size: 17px;\"></i> 系统管理  <i class=\"ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon\"></i>",
+      "children": [
+        "n88",
+        "n89"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu-title",
+      "styleId": "style_16",
+      "tag": "div",
+      "text": "系统管理",
+      "width": "199px"
+    },
+    "n900": {
+      "children": [
+        "n182",
+        "n875",
+        "n899"
+      ],
+      "height": "581.25px",
+      "originalClass": "scope-box",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n901": {
+      "children": [
+        "n900"
+      ],
+      "height": "581.25px",
+      "originalClass": "demo-spin-article",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n902": {
+      "children": [
+        "n169",
+        "n181",
+        "n901"
+      ],
+      "height": "755.25px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n903": {
+      "height": "0px",
+      "originalClass": "sms-modal-box",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n904": {
+      "height": "0px",
+      "originalClass": "sms-modal-box",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n905": {
+      "children": [
+        "n904"
+      ],
+      "height": "0px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "1672px"
+    },
+    "n906": {
+      "children": [
+        "n902",
+        "n903",
+        "n905"
+      ],
+      "height": "798.25px",
+      "originalClass": "new-big-box",
+      "styleId": "style_138",
+      "tag": "div",
+      "width": "1712px"
+    },
+    "n907": {
+      "children": [
+        "n906"
+      ],
+      "height": "832px",
+      "originalClass": "content-box ivu-layout-content",
+      "styleId": "style_139",
+      "tag": "div",
+      "width": "1712px"
+    },
+    "n908": {
+      "children": [
+        "n116",
+        "n907"
+      ],
+      "height": "880px",
+      "id": "myScroll",
+      "originalClass": "ivu-layout",
+      "styleId": "style_140",
+      "tag": "div",
+      "width": "1712px"
+    },
+    "n909": {
+      "children": [
+        "n96",
+        "n908"
+      ],
+      "height": "880px",
+      "originalClass": "ivu-layout ivu-layout-has-sider",
+      "styleId": "style_141",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n91": {
+      "children": [
+        "n90"
+      ],
+      "height": "49px",
+      "originalClass": "ivu-menu-submenu",
+      "styleId": "style_20",
+      "tag": "li",
+      "width": "199px"
+    },
+    "n910": {
+      "children": [
+        "n15",
+        "n909"
+      ],
+      "height": "944px",
+      "originalClass": "layout",
+      "styleId": "style_142",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n911": {
+      "children": [
+        "n910"
+      ],
+      "height": "944px",
+      "originalClass": "main",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n912": {
+      "children": [
+        "n911"
+      ],
+      "height": "944px",
+      "id": "app",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n913": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n914": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n915": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n916": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n917": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n918": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n919": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n92": {
+      "children": [
+        "n91"
+      ],
+      "height": "49px",
+      "styleId": "style_17",
+      "tag": "div",
+      "width": "199px"
+    },
+    "n920": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n921": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n922": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n923": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n924": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n925": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n926": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n927": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n928": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n929": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n93": {
+      "children": [
+        "n18",
+        "n20",
+        "n25",
+        "n30",
+        "n35",
+        "n40",
+        "n52",
+        "n57",
+        "n62",
+        "n67",
+        "n72",
+        "n77",
+        "n82",
+        "n87",
+        "n92"
+      ],
+      "height": "1029px",
+      "originalClass": "ivu-menu ivu-menu-light ivu-menu-vertical",
+      "styleId": "style_25",
+      "tag": "ul",
+      "width": "199px"
+    },
+    "n930": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n931": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n932": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n933": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n934": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n935": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n936": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n937": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n938": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n939": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n94": {
+      "children": [
+        "n93"
+      ],
+      "height": "879.906px",
+      "originalClass": "menu-box",
+      "styleId": "style_26",
+      "tag": "div",
+      "width": "200px"
+    },
+    "n940": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n941": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n942": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n943": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n944": {
+      "height": "0px",
+      "originalClass": "v-transfer-dom",
+      "styleId": "style_143",
+      "tag": "div",
+      "width": "1912px"
+    },
+    "n945": {
+      "children": [
+        "n912",
+        "n913",
+        "n914",
+        "n915",
+        "n916",
+        "n917",
+        "n918",
+        "n919",
+        "n920",
+        "n921",
+        "n922",
+        "n923",
+        "n924",
+        "n925",
+        "n926",
+        "n927",
+        "n928",
+        "n929",
+        "n930",
+        "n931",
+        "n932",
+        "n933",
+        "n934",
+        "n935",
+        "n936",
+        "n937",
+        "n938",
+        "n939",
+        "n940",
+        "n941",
+        "n942",
+        "n943",
+        "n944"
+      ],
+      "height": "944px",
+      "styleId": "style_144",
+      "tag": "body",
+      "width": "1912px"
+    },
+    "n946": {
+      "children": [
+        "n945"
+      ],
+      "tag": "root"
+    },
+    "n95": {
+      "children": [
+        "n94"
+      ],
+      "height": "880px",
+      "originalClass": "ivu-layout-sider-children",
+      "styleId": "style_27",
+      "tag": "div",
+      "width": "200px"
+    },
+    "n96": {
+      "children": [
+        "n95"
+      ],
+      "height": "880px",
+      "originalClass": "ivu-layout-sider",
+      "styleId": "style_28",
+      "tag": "div",
+      "width": "200px"
+    },
+    "n97": {
+      "height": "31px",
+      "originalClass": "ivu-tabs-tab",
+      "styleId": "style_29",
+      "tag": "div",
+      "text": "首页",
+      "width": "62px"
+    },
+    "n98": {
+      "height": "22px",
+      "originalClass": "ivu-icon ivu-icon-ios-close ivu-tabs-close",
+      "styleId": "style_30",
+      "tag": "i",
+      "width": "22px"
+    },
+    "n99": {
+      "_innerHTML": "<!----> 装备档案管理 <i class=\"ivu-icon ivu-icon-ios-close ivu-tabs-close\"></i>",
+      "children": [
+        "n98"
+      ],
+      "height": "32px",
+      "originalClass": "ivu-tabs-tab ivu-tabs-tab-active ivu-tabs-tab-focused",
+      "styleId": "style_31",
+      "tag": "div",
+      "text": "装备档案管理",
+      "width": "137.891px"
+    }
+  },
+  "root": "n946"
+}

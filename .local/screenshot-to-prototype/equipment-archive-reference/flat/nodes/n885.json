@@ -1,0 +1,12 @@
+{
+  "children": [
+    "n884"
+  ],
+  "height": "32px",
+  "nodeId": "n885",
+  "originalClass": "ivu-page-item ivu-page-item-active",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(10) > td.ivu-table-column-1tO9Tp:nth-of-type(2) > div.ivu-table-cell > div > span.ivu-switch.ivu-switch-checked > span.ivu-switch-inner",
+  "styleId": "style_131",
+  "tag": "li",
+  "width": "32px"
+}

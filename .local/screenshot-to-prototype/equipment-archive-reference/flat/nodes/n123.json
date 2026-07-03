@@ -1,0 +1,11 @@
+{
+  "children": [
+    "n122"
+  ],
+  "nodeId": "n123",
+  "originalClass": "inp-show-2",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(12) > li.ivu-menu-submenu > ul.ivu-menu",
+  "styleId": "style_43",
+  "tag": "div",
+  "width": "480px"
+}

@@ -1,0 +1,20 @@
+{
+  "_innerHTML": "<img data-v-399c9855=\"\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAASFJREFUWEftl/0NgkAMxd/bQEdwEnUDR9AJ1AnUDXQC3UBG0E3cQDeo1AC5EC7hjgoS6Z8E2t+9Hv0gOjZ2HB8FgIisU5g9gJEx1ITkw+fTBRDjwLm7YIALgLshTELyFaLAiqRCtGJVKegPgIjsALxInmLlilZARBYArlngOclbDEQTgCWAcxY0Om3/BSAihWokP4dvVYH+AYiI9gW97VU2BaCSqvmqp/6iSf5xsAIpwBGANqkmtiWpfhADoN1Ri00TK37RYICMeuaJrs9zOF8KHm6BigLwHd11BqBWIRoABgWsFQhux6YATmFB3RHOHCC0OvUGwHosd4UqGljVPPD8wlbky5J2yXF5INlktd16NStD6JJyyDvk7yynoTfa6v03NOEtMAZ0/UQAAAAASUVORK5CYII=\" alt=\"\" class=\"add-btn-img\"> 分类管理 ",
+  "bbox": {
+    "height": 0,
+    "left": 5336,
+    "top": 112,
+    "width": 1712
+  },
+  "children": [
+    "n175"
+  ],
+  "height": "16px",
+  "nodeId": "n176",
+  "originalClass": "btn-middle",
+  "selector": "div.ivu-tabs.ivu-tabs-card > div.ivu-tabs-content.ivu-tabs-content-animated:nth-of-type(2) > div.ivu-tabs-tabpane:nth-of-type(5)",
+  "styleId": "style_73",
+  "tag": "div",
+  "text": "分类管理",
+  "width": "84px"
+}

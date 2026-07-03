@@ -1,0 +1,16 @@
+{
+  "bbox": {
+    "height": 49,
+    "left": 0,
+    "top": 946,
+    "width": 199
+  },
+  "height": "32px",
+  "nodeId": "n117",
+  "originalClass": "title",
+  "selector": "ul.ivu-menu.ivu-menu-light > div:nth-of-type(13) > li.ivu-menu-submenu > div.ivu-menu-submenu-title",
+  "styleId": "style_44",
+  "tag": "div",
+  "text": "装备名称：",
+  "width": "70px"
+}

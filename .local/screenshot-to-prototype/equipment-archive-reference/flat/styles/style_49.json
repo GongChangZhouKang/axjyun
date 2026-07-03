@@ -1,0 +1,18 @@
+{
+  "custom": {
+    "border": "0px none rgb(81, 90, 110)",
+    "borderColor": "rgb(81, 90, 110)",
+    "color": "rgb(81, 90, 110)",
+    "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+    "fontSize": "14px",
+    "margin": "0px 10px 10px 0px",
+    "marginBlockEnd": "10px",
+    "marginInlineEnd": "10px",
+    "minHeight": "0px",
+    "minWidth": "0px",
+    "textAlign": "start",
+    "textOverflow": "clip"
+  },
+  "styleId": "style_49",
+  "tw": "flex static justify-end items-center font-normal leading-tight border-0 visible mt-0 mr-2.5 mb-2.5 ml-0 p-0 overflow-visible"
+}

@@ -1,0 +1,21 @@
+{
+  "custom": {
+    "border": "0px none rgb(153, 153, 153)",
+    "borderColor": "rgb(153, 153, 153)",
+    "bottom": "1px",
+    "color": "rgb(153, 153, 153)",
+    "fontFamily": "Ionicons",
+    "fontSize": "22px",
+    "insetBlockEnd": "1px",
+    "insetBlockStart": "-1px",
+    "left": "0px",
+    "minHeight": "0px",
+    "minWidth": "0px",
+    "right": "0px",
+    "textOverflow": "clip",
+    "top": "-1px",
+    "transition": "0.3s ease-in-out"
+  },
+  "styleId": "style_32",
+  "tw": "inline-block relative font-normal leading-snug text-right whitespace-nowrap border-0 visible cursor-pointer m-0 p-0 overflow-hidden"
+}

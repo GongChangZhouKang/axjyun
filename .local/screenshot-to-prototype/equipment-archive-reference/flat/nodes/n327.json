@@ -1,0 +1,15 @@
+{
+  "bbox": {
+    "height": 22,
+    "left": 588,
+    "top": 360,
+    "width": 44
+  },
+  "height": "21px",
+  "nodeId": "n327",
+  "selector": "div.ivu-table-body.ivu-table-overflowX > table > tbody.ivu-table-tbody > tr.ivu-table-row:nth-of-type(1) > td.ivu-table-column-1tO9Tp:nth-of-type(2) > div.ivu-table-cell > div > span.ivu-switch.ivu-switch-checked",
+  "styleId": "style_99",
+  "tag": "div",
+  "text": "山东振邦保安服务有限责任公司",
+  "width": "80.0625px"
+}

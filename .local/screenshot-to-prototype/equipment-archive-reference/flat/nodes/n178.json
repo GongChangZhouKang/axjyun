@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 0,
+    "left": 1912,
+    "top": 112,
+    "width": 1712
+  },
+  "children": [
+    "n177"
+  ],
+  "height": "32px",
+  "nodeId": "n178",
+  "originalClass": "ivu-btn ivu-btn-primary",
+  "selector": "div.ivu-tabs.ivu-tabs-card > div.ivu-tabs-content.ivu-tabs-content-animated:nth-of-type(2) > div.ivu-tabs-tabpane:nth-of-type(3)",
+  "styleId": "style_74",
+  "tag": "button",
+  "width": "114px"
+}

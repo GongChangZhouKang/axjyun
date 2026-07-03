@@ -1,0 +1,19 @@
+{
+  "custom": {
+    "border": "0px none rgb(0, 0, 0)",
+    "borderColor": "rgb(0, 0, 0)",
+    "bottom": "0px",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "Avenir, Helvetica, Arial, sans-serif",
+    "fontSize": "14px",
+    "left": "0px",
+    "minHeight": "0px",
+    "minWidth": "0px",
+    "right": "0px",
+    "textAlign": "start",
+    "textOverflow": "clip",
+    "top": "0px"
+  },
+  "styleId": "style_59",
+  "tw": "block absolute z-0 font-normal leading-none whitespace-nowrap border-0 opacity-0 visible cursor-pointer m-0 p-0 overflow-visible"
+}

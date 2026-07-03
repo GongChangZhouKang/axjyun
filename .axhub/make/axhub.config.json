@@ -13,8 +13,8 @@
   },
   "cloudPublishing": {
     "vercel": {
-      "token": "",
-      "projectName": "",
+      "token": "vcp_052lyMHCLR3MPQPjTZdqBd7jq3gEHDy6qdQZae9gYV1RfXcHBJ0T2YPC",
+      "projectName": "axj-zhuangbei07",
       "teamId": ""
     },
     "cloudflarePages": {
@@ -38,7 +38,11 @@
       "sourceDirectory": "/"
     },
     "publishSettings": {
-      "includeSource": true
+      "includeSource": false,
+      "visibleTargets": [
+        "axhub",
+        "vercel"
+      ]
     }
   }
 }

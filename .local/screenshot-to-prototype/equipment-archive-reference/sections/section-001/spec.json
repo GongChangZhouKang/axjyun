@@ -1,0 +1,23 @@
+{
+  "bbox": {
+    "height": 897,
+    "left": 0,
+    "top": 0,
+    "width": 1912
+  },
+  "contentSummary": "智慧安保管理平台 v 1.8.96 2026-07-01 01:26:46 山东振邦保安服务有限责任公司 可视化调度 智慧安检数据大屏 安保数据 审批管理 合同管理 项目管理 装备管理 装备档案管理 采购管理 调拨管理 库存管理 出库管理 入库管理 考勤管理 督导管理 客户管理 薪酬 人事管理 组织架构管理 服务管理 系统管理 首页装备档案管理 采购管理 可视化调度 人防项目 装备名称： 装备分类",
+  "dominantStyle": {
+    "backgroundImage": false
+  },
+  "hasMedia": true,
+  "hasText": true,
+  "id": "section-001",
+  "interactionHints": [
+    "cta",
+    "form"
+  ],
+  "name": "features",
+  "nodeCount": 895,
+  "selector": "#app",
+  "tagHint": "div"
+}

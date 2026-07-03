@@ -1,0 +1,14 @@
+{
+  "children": [
+    "n182",
+    "n875",
+    "n899"
+  ],
+  "height": "581.25px",
+  "nodeId": "n900",
+  "originalClass": "scope-box",
+  "selector": "div.ivu-tabs.ivu-tabs-card > div.ivu-tabs-context-menu:nth-of-type(3) > div.ivu-dropdown > div.ivu-dropdown-rel",
+  "styleId": "style_17",
+  "tag": "div",
+  "width": "1672px"
+}

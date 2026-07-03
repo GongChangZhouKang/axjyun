@@ -1,0 +1,15 @@
+{
+  "bbox": {
+    "height": 48,
+    "left": 200,
+    "top": 64,
+    "width": 1712
+  },
+  "height": "16px",
+  "nodeId": "n148",
+  "originalClass": "ivu-radio-inner",
+  "selector": "div.ivu-tabs.ivu-tabs-card",
+  "styleId": "style_63",
+  "tag": "span",
+  "width": "16px"
+}

@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 833,
+    "left": 0,
+    "top": 64,
+    "width": 1912
+  },
+  "children": [
+    "n95"
+  ],
+  "height": "880px",
+  "nodeId": "n96",
+  "originalClass": "ivu-layout-sider",
+  "selector": "div.ivu-layout.ivu-layout-has-sider",
+  "styleId": "style_28",
+  "tag": "div",
+  "width": "200px"
+}

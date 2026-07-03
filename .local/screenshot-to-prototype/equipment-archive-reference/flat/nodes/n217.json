@@ -1,0 +1,18 @@
+{
+  "bbox": {
+    "height": 32,
+    "left": 287,
+    "top": 207,
+    "width": 429
+  },
+  "children": [
+    "n216"
+  ],
+  "height": "37.875px",
+  "nodeId": "n217",
+  "originalClass": "ivu-table-column-UggSSd",
+  "selector": "div.check-box-block.ivu-radio-group",
+  "styleId": "style_81",
+  "tag": "th",
+  "width": "112.062px"
+}

@@ -1,0 +1,17 @@
+{
+  "fixedLayers": [],
+  "pageHeight": 901,
+  "pageWidth": 1912,
+  "scrollContainer": "div.menu-box",
+  "sections": [
+    {
+      "id": "section-001",
+      "interactionModel": "click-driven",
+      "isFixed": false,
+      "isSticky": false,
+      "name": "features",
+      "order": 0,
+      "zIndex": 0
+    }
+  ]
+}
