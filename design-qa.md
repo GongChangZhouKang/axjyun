@@ -60,3 +60,43 @@
 - [x] 同视口视觉对照
 
 final result: passed
+
+---
+
+# 库存盘点所属仓库选择器｜Design QA
+
+- source visual truth path: `C:/Users/Axj/AppData/Local/Packages/45479liulios.17062D84F7C46_p7pnf6hceqser/LocalState/history/temp/Snipaste_2026-07-02_14-05-44.png`
+- implementation screenshot path: `.local/product-design-audit/inventory-check-warehouse-open.png`
+- combined comparison evidence: `.local/product-design-audit/inventory-check-warehouse-comparison.png`
+- viewport: 1280 × 720
+- state: 库存盘点页，所属仓库下拉菜单展开，默认选中“山东振邦保安服务有限责任公司”
+
+## Full-view comparison evidence
+
+- 库存盘点页左上角已增加独立的“所属仓库”选择器，位置、控件高度、蓝色聚焦边框、文字截断和下拉浮层延续库存管理现有组件。
+- 当前预览为独立页面，因此不包含源截图中的平台顶部标签；该差异属于预览容器差异，不影响目标组件。
+
+## Focused region comparison evidence
+
+- 同屏对照图显示：标签文案、默认公司名称、选项顺序、白色浮层、蓝色选中态及滚动区域均与参考一致。
+- 已实际切换到“历下分公司”，确认选中值更新；随后恢复默认公司并重新展开完成截图。
+
+## Findings
+
+- 无 P0/P1/P2 问题。
+- [P3] Element Plus 当前版本的下拉项行高和浮层阴影较源系统有轻微渲染差异，属于组件版本差异，不影响一致性或操作。
+
+## Required fidelity surfaces
+
+- Fonts and typography: 复用现有系统字体栈、14px 正文与单行截断。
+- Spacing and layout rhythm: 选择框宽 202px、高 34px，与参考控件尺寸一致。
+- Colors and visual tokens: 复用现有 Element Plus 聚焦蓝、选中蓝、白色浮层和灰色边框。
+- Image quality and asset fidelity: 本次无图片资产；未使用占位图或自绘图形。
+- Copy and content: 六个仓库选项与截图逐项一致，并与库存管理共用同一组选项数据。
+
+## Patches made since previous QA pass
+
+- 在库存盘点页增加所属仓库选择器。
+- 库存管理和库存盘点统一为同一默认值、同一组选项和同一控件宽度。
+
+final result: passed

@@ -25,9 +25,11 @@ import {
     UserRound,
     Warehouse,
 } from 'lucide-react';
+import { useHashPage } from '../../common/useHashPage';
+import { equipmentPageRoute, isEquipmentPage, type EquipmentPage } from './pages';
 import './style.css';
 
-type Page = 'home' | 'flow' | 'transfer' | 'stocktake' | 'project-check';
+type Page = EquipmentPage;
 type Role = 'keeper' | 'leader';
 type FlowMode = 'inbound' | 'outbound';
 type CheckScope = 'project' | 'client';
@@ -754,7 +756,8 @@ function Toast({ text }: { text: string }) {
 }
 
 export default function MobileEquipmentManagement() {
-    const [page, setPage] = useState<Page>('home');
+    const { page: routePage, setPage } = useHashPage(equipmentPageRoute);
+    const page: Page = isEquipmentPage(routePage) ? routePage : 'home';
     const [role, setRole] = useState<Role>('keeper');
     const [toast, setToast] = useState('');
 

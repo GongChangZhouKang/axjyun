@@ -1,23 +1,17 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T01:14:21.774Z",
+  "updatedAt": "2026-07-03T02:31:55.622Z",
   "prototypes": [
     {
-      "id": "item-prototypes-equipment-archive-exact",
+      "id": "item:prototypes:equipment-archive-exact",
       "kind": "item",
-      "title": "equipment archive exact",
+      "title": "安保管理平台装备档案管理（高精度还原）",
       "itemKey": "prototypes/equipment-archive-exact"
-    },
-    {
-      "id": "item:prototypes:untitled-4",
-      "kind": "item",
-      "title": "装备管理7月迭代",
-      "itemKey": "prototypes/untitled-4"
     },
     {
       "id": "item:prototypes:untitled-copy",
       "kind": "item",
-      "title": "装备管理",
+      "title": "装备管理-采购+成本",
       "itemKey": "prototypes/untitled-copy"
     },
     {
@@ -43,6 +37,12 @@
       "kind": "item",
       "title": "批注演示",
       "itemKey": "prototypes/touch-and-talk-annotation-demo"
+    },
+    {
+      "id": "item:prototypes:beginner-guide",
+      "kind": "item",
+      "title": "新手指导",
+      "itemKey": "prototypes/beginner-guide"
     }
   ],
   "docs": [],

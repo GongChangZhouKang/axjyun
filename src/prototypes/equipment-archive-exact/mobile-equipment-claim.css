@@ -1,0 +1,72 @@
+.claim-stage { min-height: 100vh; padding: 18px; background: #eef1f5; display: grid; place-items: start center; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: #222; }
+.claim-phone { position: relative; width: 375px; height: 812px; overflow: hidden; background: #f6f6f6; border: 1px solid #c8c8c8; box-shadow: 0 18px 48px #26324326; }
+.claim-header, .scanner-screen header { height: 52px; display: grid; grid-template-columns: 48px 1fr 48px; align-items: center; text-align: center; background: #fff; border-bottom: 1px solid #f1f1f1; font-size: 17px; }
+.claim-header button, .scanner-screen header button { border: 0; background: transparent; font-size: 36px; line-height: 1; font-weight: 200; text-align: left; padding-left: 14px; cursor: pointer; }
+.claim-content { position: absolute; inset: 52px 0 0; box-sizing: border-box; overflow-y: auto; padding: 16px 15px 105px; scrollbar-width: none; }
+.claim-card { background: #fff; border-radius: 6px; box-shadow: 0 1px 5px #00000005; }
+.claim-fields label { display: block; min-height: 76px; padding: 14px 15px 10px; border-bottom: 1px solid #f0f0f0; }
+.claim-fields label > span, .equipment-field > span, .attachment > span { display: block; color: #666; font-size: 16px; }
+.claim-fields b, .equipment-field b { color: #f24949; }
+.claim-fields label > div { margin-top: 7px; display: flex; align-items: center; justify-content: space-between; font-size: 16px; }
+.claim-fields em { color: #676767; font-style: normal; font-size: 29px; font-weight: 200; }
+.plain-value { padding: 0; border: 0; background: transparent; color: #222; font: inherit; }
+.equipment-field { padding: 14px 15px 8px; border-bottom: 1px solid #f0f0f0; }
+.empty-equipment { width: 100%; margin-top: 6px; padding: 0; border: 0; background: transparent; color: #bbb; text-align: left; font-size: 16px; display: flex; justify-content: space-between; align-items: center; }
+.equipment-list { margin-top: 10px; padding-right: 18px; }
+.equipment-item { position: relative; margin-bottom: 8px; padding: 10px 12px 7px; border: 1px solid #d7d7d7; }
+.equipment-title, .equipment-meta { display: flex; align-items: center; justify-content: space-between; line-height: 24px; color: #777; }
+.equipment-title strong { color: #333; font-size: 16px; }
+.equipment-title span { padding-right: 1px; }
+.equipment-meta { padding-right: 36px; }
+.stepper { position: absolute; top: 34px; right: 10px; display: grid; grid-template-columns: 28px 34px 28px; height: 28px; background: #f6f7fa; }
+.stepper button, .stepper b { border: 0; background: transparent; display: grid; place-items: center; color: #667; font-size: 16px; }
+.stepper b { color: #333; font-weight: 400; border-inline: 1px solid #eceef2; }
+.equipment-item .remove { position: absolute; z-index: 2; right: -30px; top: 50%; width: 22px; height: 22px; padding: 0; display: grid; transform: translateY(-50%); place-items: center; border: 2px solid #fff; border-radius: 50%; background: #f20d19; color: white; font: 400 17px/1 Arial, sans-serif; box-shadow: 0 1px 3px #0002; }
+.equipment-actions { display: flex; justify-content: space-between; padding: 2px 0 5px; }
+.equipment-actions button { border: 0; background: transparent; color: #079cf5; font-size: 16px; padding: 0; }
+.equipment-actions button:last-child { display: inline-flex; align-items: center; gap: 6px; }
+.equipment-actions b { box-sizing: border-box; width: 20px; height: 20px; display: inline-flex; align-items: center; justify-content: center; padding: 0 0 1px; border-radius: 50%; background: #139df3; color: #fff; font: 400 17px/20px Arial, sans-serif; }
+.claim-fields .remark { min-height: 112px; }
+.remark textarea { width: 100%; height: 58px; margin-top: 8px; padding: 0; resize: none; border: 0; outline: none; font: inherit; color: #333; }
+.remark textarea::placeholder { color: #c2c2c2; }
+.attachment { padding: 14px 15px; }
+.attachment small { margin-left: 10px; color: #aaa; font-weight: 400; }
+.attachment button { width: 56px; height: 56px; margin-top: 13px; border: 0; border-radius: 3px; background: #fafafa; color: #aaa; font-size: 31px; font-weight: 200; }
+.process { margin-top: 13px; padding: 14px 16px 20px; }
+.process h3 { margin: 0 0 14px; padding-left: 9px; border-left: 4px solid #269ffc; font-size: 17px; }
+.process div { display: flex; gap: 10px; align-items: center; padding: 7px 10px; border-left: 1px solid #ddd; }
+.process i { width: 7px; height: 7px; border-radius: 50%; background: #1c9df5; }
+.process span { margin-left: auto; color: #999; }
+.claim-submit { position: absolute; z-index: 4; left: 56px; right: 56px; bottom: 47px; height: 44px; border: 0; border-radius: 24px; background: #169df5; color: white; font-size: 17px; box-shadow: 0 4px 12px #169df53b; }
+.home-indicator { position: absolute; z-index: 9; left: 120px; right: 120px; bottom: 6px; height: 5px; border-radius: 5px; background: #111; }
+.sheet-mask { position: absolute; z-index: 10; inset: 0; background: #0006; }
+.claim-sheet { position: absolute; z-index: 11; right: 0; bottom: 0; left: 0; overflow: hidden; border-radius: 15px 15px 0 0; background: #fff; }
+.claim-sheet h3 { position: relative; height: 52px; margin: 0; display: grid; place-items: center; border-bottom: 1px solid #eee; font-size: 16px; font-weight: 400; }
+.claim-sheet h3 .sheet-close { position: absolute; right: 10px; top: 8px; width: 36px; height: 36px; min-height: 0; padding: 0; border: 0; border-radius: 50%; background: transparent; color: #222; font: 300 28px/34px Arial, sans-serif; text-align: center; }
+.claim-sheet h3 .sheet-close:active { background: #f2f3f5; }
+.claim-sheet > button { width: 100%; min-height: 58px; border: 0; border-bottom: 1px solid #f1f1f1; background: white; font-size: 17px; }
+.claim-sheet .cancel { border-top: 6px solid #f5f6f8; }
+.claim-toast { position: absolute; z-index: 20; left: 50%; top: 48%; transform: translate(-50%, -50%); padding: 10px 16px; border-radius: 6px; background: #000b; color: white; white-space: nowrap; font-size: 14px; }
+.scanner-stage { box-sizing: border-box; padding: 0; place-items: center; }
+.scanner-screen { background: #080b10; color: white; }
+.scanner-screen header { background: #11151b; color: white; border-color: #222; }
+.scanner-camera { height: 700px; display: grid; place-content: center; justify-items: center; background: radial-gradient(circle at 50% 42%, #273139, #080b10 70%); }
+.scan-frame { position: relative; width: 245px; height: 245px; }
+.scan-frame i { position: absolute; width: 42px; height: 42px; border-color: #29aaf8; border-style: solid; }
+.scan-frame i:nth-child(1) { left: 0; top: 0; border-width: 4px 0 0 4px; }.scan-frame i:nth-child(2) { right: 0; top: 0; border-width: 4px 4px 0 0; }.scan-frame i:nth-child(3) { left: 0; bottom: 0; border-width: 0 0 4px 4px; }.scan-frame i:nth-child(4) { right: 0; bottom: 0; border-width: 0 4px 4px 0; }
+.scan-frame span { position: absolute; left: 10px; right: 10px; top: 50%; height: 2px; background: #24a8fa; box-shadow: 0 0 12px #24a8fa; animation: scan-line 2s ease-in-out infinite alternate; }
+.scanner-camera p { margin-top: 28px; color: #d4d7db; }
+.scan-demo { position: absolute; left: 68px; right: 68px; bottom: 58px; height: 44px; border: 1px solid #31aaf5; border-radius: 24px; background: #129bf2; color: white; font-size: 16px; }
+.manual-picker { background: #f5f6f8; }
+.manual-picker .picker-confirm { padding: 0 14px 0 0; color: #129bf2; font-size: 15px; text-align: right; }
+.picker-search { height: 38px; margin: 12px 15px; padding: 0 12px; display: flex; align-items: center; border-radius: 5px; background: #fff; color: #aaa; font-size: 14px; }
+.picker-list { margin: 0 15px; overflow: hidden; border-radius: 6px; background: #fff; }
+.picker-row { width: 100%; min-height: 74px; padding: 12px 14px; display: flex; gap: 12px; align-items: center; border: 0; border-bottom: 1px solid #eee; background: #fff; text-align: left; }
+.picker-row i { box-sizing: border-box; width: 21px; height: 21px; display: grid; flex: 0 0 21px; place-items: center; border: 1px solid #c7cbd1; border-radius: 3px; color: #fff; font-style: normal; font-size: 14px; }
+.picker-row i.checked { border-color: #129bf2; background: #129bf2; }
+.picker-row span { min-width: 0; }
+.picker-row strong { display: block; color: #333; font-size: 16px; font-weight: 500; }
+.picker-row small { display: block; margin-top: 7px; color: #999; font-size: 13px; }
+.picker-summary { position: absolute; right: 0; bottom: 0; left: 0; height: 58px; display: grid; place-items: center; border-top: 1px solid #e9eaec; background: #fff; color: #129bf2; font-size: 15px; }
+@keyframes scan-line { from { transform: translateY(-98px); } to { transform: translateY(98px); } }
+@media (max-width: 430px) { .claim-stage { padding: 0; background: #fff; } .claim-phone { width: 100vw; height: 100vh; border: 0; box-shadow: none; } }
