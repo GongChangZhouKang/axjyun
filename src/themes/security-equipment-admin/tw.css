@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-equipment-primary: #129bff;
+  --color-equipment-link: #2d8cf0;
+  --color-equipment-ink: #515a6e;
+  --color-equipment-muted: #808695;
+  --color-equipment-border: #dcdee2;
+  --color-equipment-canvas: #f5f7f9;
+  --color-equipment-filter: #f5f7fb;
+  --radius-equipment-control: 4px;
+  --radius-equipment-panel: 6px;
+  --font-equipment-sans: "Helvetica Neue", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+}
+

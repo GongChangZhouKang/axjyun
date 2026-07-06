@@ -1,0 +1,97 @@
+- generic [ref=e1]:
+  - main [ref=e3]:
+    - main [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - button "库存管理" [ref=e9] [cursor=pointer]
+          - button "月库存统计" [ref=e10] [cursor=pointer]
+          - button "装备领用汇总" [ref=e11] [cursor=pointer]
+          - button "装备领用明细" [ref=e12] [cursor=pointer]
+        - generic [ref=e14]:
+          - generic [ref=e15]: 所属仓库：
+          - generic [ref=e17] [cursor=pointer]:
+            - generic:
+              - combobox "所属仓库： 山东振邦保安服务有限责任公司" [ref=e19]
+              - generic [ref=e20]: 山东振邦保安服务有限责任公司
+            - img [ref=e23]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: 月份：
+            - generic [ref=e29]:
+              - img [ref=e31]
+              - combobox "月份： - 2026-06" [ref=e33]: 2026-05
+              - generic [ref=e34]: "-"
+              - combobox "结束月份" [ref=e35]: 2026-06
+          - generic [ref=e36]:
+            - generic [ref=e37]: 装备名称：
+            - textbox "装备名称：" [ref=e40]:
+              - /placeholder: 请输入装备名称
+          - generic [ref=e42]:
+            - generic [ref=e43]: 分类：
+            - generic [ref=e45] [cursor=pointer]:
+              - generic:
+                - combobox "分类： 分类" [ref=e47]
+                - generic [ref=e48]: 分类
+              - img [ref=e51]
+          - generic [ref=e53]:
+            - generic [ref=e54]: 供应商：
+            - generic [ref=e56] [cursor=pointer]:
+              - generic:
+                - combobox "供应商： 安豹" [ref=e438]
+                - generic [ref=e59]: 安豹
+              - img [ref=e446]
+          - generic [ref=e301]:
+            - generic [ref=e302]: 部门：
+            - generic [ref=e304] [cursor=pointer]:
+              - generic:
+                - combobox "部门： 全部下一级部门" [ref=e306]
+                - generic [ref=e307]: 全部下一级部门
+              - img [ref=e310]
+          - generic [ref=e64]:
+            - button "查询" [active] [ref=e65] [cursor=pointer]:
+              - generic [ref=e66]: 查询
+            - button "重置" [ref=e67] [cursor=pointer]:
+              - generic [ref=e68]: 重置
+        - generic [ref=e69]:
+          - button "导出" [ref=e70] [cursor=pointer]:
+            - generic [ref=e71]:
+              - img [ref=e73]
+              - text: 导出
+          - generic [ref=e75]: 按领用部门汇总各装备领用数量
+        - generic [ref=e76]:
+          - generic [ref=e313]:
+            - table [ref=e315]:
+              - rowgroup [ref=e324]:
+                - row "部门 领用总量 卫宏标志6件套 城管标志 城管帽子 夏季保安服 秋季保安服" [ref=e325]:
+                  - columnheader "部门" [ref=e326]:
+                    - generic [ref=e327]: 部门
+                  - columnheader "领用总量" [ref=e328]:
+                    - generic [ref=e329]: 领用总量
+                  - columnheader "卫宏标志6件套" [ref=e330]:
+                    - generic [ref=e331]: 卫宏标志6件套
+                  - columnheader "城管标志" [ref=e332]:
+                    - generic [ref=e333]: 城管标志
+                  - columnheader "城管帽子" [ref=e334]:
+                    - generic [ref=e335]: 城管帽子
+                  - columnheader "夏季保安服" [ref=e336]:
+                    - generic [ref=e337]: 夏季保安服
+                  - columnheader "秋季保安服" [ref=e338]:
+                    - generic [ref=e339]: 秋季保安服
+            - generic [ref=e343]:
+              - table:
+                - rowgroup
+              - generic [ref=e444]: 暂无统计数据
+          - generic [ref=e294]:
+            - generic [ref=e295]: 共 0 条
+            - generic [ref=e296]:
+              - button "Go to previous page" [disabled] [ref=e297]:
+                - generic:
+                  - img
+              - list [ref=e298]:
+                - listitem "page 1" [ref=e299]: "1"
+              - button "Go to next page" [disabled] [ref=e300]:
+                - generic:
+                  - img
+  - alert [ref=e448]:
+    - img [ref=e450]
+    - paragraph [ref=e452]: 已查询到 0 条统计数据

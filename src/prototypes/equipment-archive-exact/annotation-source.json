@@ -62,7 +62,7 @@
           "path": []
         },
         "aiPrompt": "说明装备编码规则和列表操作。",
-        "annotationText": "列表新增装备编码列。编码按末级分类编码追加三位流水号自动生成，例如腰带分类 FZ-YD 对应装备编码 FZ-YD-001。",
+        "annotationText": "列表展示系统自动生成的装备编码。编码统一采用“ZB + 5位流水号”，例如 ZB00001、ZB00002；流水号在全系统范围内递增，编码全局唯一且生成后不可修改。",
         "hasMarkdown": false,
         "color": "#D97706",
         "images": [],
@@ -82,7 +82,7 @@
           "path": []
         },
         "aiPrompt": "说明多级分类的维护规则。",
-        "annotationText": "分类表格支持展开多级结构、唯一分类编码、新增下级、编辑和受限删除；存在子分类或关联装备时不可删除。",
+        "annotationText": "分类表格支持展开多级结构、新增下级、编辑和受限删除；分类不再设置分类编码，调整分类不会影响装备编码；存在子分类或关联装备时不可删除。",
         "hasMarkdown": false,
         "color": "#7C3AED",
         "images": [],
@@ -220,7 +220,7 @@
           "path": []
         },
         "aiPrompt": "说明库存不足的判断和单件设置入口。",
-        "annotationText": "预警数量大于 0 时，0＜库存数量≤预警数量显示库存不足；库存为 0 显示无货；预警数量为 0 时不启用预警。每行通过“设置预警”单独维护预警数量。",
+        "annotationText": "预警数量为 0 时不启用预警，预警状态显示“—”；预警数量大于 0 时，当前库存大于预警数量显示正常，0＜当前库存≤预警数量显示库存不足，当前库存为 0 显示缺货。每行通过“设置预警”单独维护预警数量。",
         "hasMarkdown": false,
         "color": "#DC2626",
         "images": [],
@@ -890,6 +890,46 @@
         "images": [],
         "createdAt": 1782993600000,
         "updatedAt": 1782993600000
+      },
+      {
+        "id": "one-code-entry-page",
+        "index": 41,
+        "title": "连续添加一物一码",
+        "pageId": "one-code-entry",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"one-code-entry-page\"]"
+          ],
+          "fingerprint": "section|data-annotation-id=one-code-entry-page",
+          "path": []
+        },
+        "aiPrompt": "说明一物一码连续录入的扫码效率和校验规则。",
+        "annotationText": "输入框默认聚焦，扫码枪回车后物码即时加入列表并继续保持焦点。空码、超过10位、重复码或已被其他装备占用的物码不会重复加入；重复扫码会高亮原记录，确认后批量添加本次待确认物码。",
+        "hasMarkdown": false,
+        "color": "#2563EB",
+        "images": [],
+        "createdAt": 1783306800000,
+        "updatedAt": 1783306800000
+      },
+      {
+        "id": "inventory-check-code-relation-list",
+        "index": 42,
+        "title": "盘点物码与库内关系",
+        "pageId": "inventory-check-code-entry",
+        "locator": {
+          "selectors": [
+            "[data-annotation-id=\"inventory-check-code-relation-list\"]"
+          ],
+          "fingerprint": "div|data-annotation-id=inventory-check-code-relation-list",
+          "path": []
+        },
+        "aiPrompt": "说明库内匹配、本次新增和冲突阻断三种关系。",
+        "annotationText": "属于当前装备、当前盘点仓库且状态为在库的物码显示绿色库内已有并计入实盘；库中无记录的物码显示本次新增，暂存为待建档并计入实盘；已有但装备、仓库或状态不匹配的物码显示冲突阻断，保留真实归属但不计数。",
+        "hasMarkdown": false,
+        "color": "#059669",
+        "images": [],
+        "createdAt": 1783306800000,
+        "updatedAt": 1783306800000
       }
     ],
     "updatedAt": 1782963952654
@@ -931,6 +971,12 @@
             "route": "inventory-statistics"
           },
           {
+            "type": "route",
+            "id": "route-one-code-entry",
+            "title": "添加一物一码",
+            "route": "one-code-entry"
+          },
+          {
             "type": "folder",
             "id": "inventory-check-directory",
             "title": "库存盘点",
@@ -953,6 +999,12 @@
                 "id": "route-inventory-check-entry",
                 "title": "盘点录入",
                 "route": "inventory-check-entry"
+              },
+              {
+                "type": "route",
+                "id": "route-inventory-check-code-entry",
+                "title": "一物一码核对",
+                "route": "inventory-check-code-entry"
               },
               {
                 "type": "markdown",
@@ -1060,7 +1112,7 @@
             "type": "markdown",
             "id": "equipment-code-rule",
             "title": "说明｜装备编码规则",
-            "markdown": "# 装备编码规则\n\n装备编码由末级分类编码与三位流水号组成。\n\n- 示例分类：腰带 `FZ-YD`\n- 首件装备：`FZ-YD-001`\n- 后续装备依次递增，编码由系统生成且不可手工修改。"
+            "markdown": "# 装备编码规则\n\n装备编码与分类完全解耦，由系统按全局流水自动生成。\n\n- 统一格式：`ZB + 5位流水号`\n- 示例：`ZB00001`、`ZB00002`\n- `ZB` 仅标识装备编码，流水号在全系统范围内递增\n- 编码全局唯一，生成后不可修改\n- 分类不设置分类编码，分类调整不影响装备编码"
           }
         ]
       }

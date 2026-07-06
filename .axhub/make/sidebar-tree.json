@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T02:31:55.622Z",
+  "updatedAt": "2026-07-03T07:33:24.297Z",
   "prototypes": [
     {
       "id": "item:prototypes:equipment-archive-exact",
@@ -47,6 +47,12 @@
   ],
   "docs": [],
   "themesTree": [
+    {
+      "id": "item-themes-security-equipment-admin",
+      "kind": "item",
+      "title": "security equipment admin",
+      "itemKey": "themes/security-equipment-admin"
+    },
     {
       "id": "item-themes-contract-detail",
       "kind": "item",

@@ -1,0 +1,196 @@
+- main [ref=f2e3]:
+  - main [ref=f2e604]:
+    - generic [ref=f2e605]:
+      - generic [ref=f2e606]:
+        - button "库存管理" [ref=f2e607] [cursor=pointer]
+        - button "月库存统计" [ref=f2e608] [cursor=pointer]
+        - button "装备领用汇总" [active] [ref=f2e609] [cursor=pointer]
+        - button "装备领用明细" [ref=f2e610] [cursor=pointer]
+      - generic [ref=f2e612]:
+        - generic [ref=f2e613]: 所属仓库：
+        - generic [ref=f2e615] [cursor=pointer]:
+          - generic:
+            - combobox "所属仓库： 山东振邦保安服务有限责任公司" [ref=f2e617]
+            - generic [ref=f2e618]: 山东振邦保安服务有限责任公司
+          - img [ref=f2e621]
+      - generic [ref=f2e624]:
+        - generic [ref=f2e625]:
+          - generic [ref=f2e626]: 月份：
+          - generic [ref=f2e627]:
+            - img [ref=f2e629]
+            - combobox "月份： - 2026-06" [ref=f2e631]: 2026-05
+            - generic [ref=f2e632]: "-"
+            - combobox "结束月份" [ref=f2e633]: 2026-06
+        - generic [ref=f2e634]:
+          - generic [ref=f2e635]: 装备名称：
+          - textbox "装备名称：" [ref=f2e638]:
+            - /placeholder: 请输入装备名称
+        - generic [ref=f2e640]:
+          - generic [ref=f2e641]: 分类：
+          - generic [ref=f2e643] [cursor=pointer]:
+            - generic:
+              - combobox "分类： 分类" [ref=f2e645]
+              - generic [ref=f2e646]: 分类
+            - img [ref=f2e649]
+        - generic [ref=f2e651]:
+          - generic [ref=f2e652]: 供应商：
+          - generic [ref=f2e654] [cursor=pointer]:
+            - generic:
+              - combobox "供应商： 供应商" [ref=f2e656]
+              - generic [ref=f2e657]: 供应商
+            - img [ref=f2e660]
+        - generic [ref=f2e899]:
+          - generic [ref=f2e900]: 部门：
+          - generic [ref=f2e902] [cursor=pointer]:
+            - generic:
+              - combobox "部门： 全部下一级部门" [ref=f2e904]
+              - generic [ref=f2e905]: 全部下一级部门
+            - img [ref=f2e908]
+        - generic [ref=f2e662]:
+          - button "查询" [ref=f2e663] [cursor=pointer]:
+            - generic [ref=f2e664]: 查询
+          - button "重置" [ref=f2e665] [cursor=pointer]:
+            - generic [ref=f2e666]: 重置
+      - generic [ref=f2e667]:
+        - button "导出" [ref=f2e668] [cursor=pointer]:
+          - generic [ref=f2e669]:
+            - img [ref=f2e671]
+            - text: 导出
+        - generic [ref=f2e673]: 按领用部门汇总各装备领用数量
+      - generic [ref=f2e674]:
+        - generic [ref=f2e911]:
+          - table [ref=f2e913]:
+            - rowgroup [ref=f2e922]:
+              - row "部门 领用总量 卫宏标志6件套 城管标志 城管帽子 夏季保安服 秋季保安服" [ref=f2e923]:
+                - columnheader "部门" [ref=f2e924]:
+                  - generic [ref=f2e925]: 部门
+                - columnheader "领用总量" [ref=f2e926]:
+                  - generic [ref=f2e927]: 领用总量
+                - columnheader "卫宏标志6件套" [ref=f2e928]:
+                  - generic [ref=f2e929]: 卫宏标志6件套
+                - columnheader "城管标志" [ref=f2e930]:
+                  - generic [ref=f2e931]: 城管标志
+                - columnheader "城管帽子" [ref=f2e932]:
+                  - generic [ref=f2e933]: 城管帽子
+                - columnheader "夏季保安服" [ref=f2e934]:
+                  - generic [ref=f2e935]: 夏季保安服
+                - columnheader "秋季保安服" [ref=f2e936]:
+                  - generic [ref=f2e937]: 秋季保安服
+          - table [ref=f2e942]:
+            - rowgroup [ref=f2e951]:
+              - row "直属分公司 查看直属分公司全部领用明细 查看直属分公司卫宏标志6件套领用明细 查看直属分公司城管标志领用明细 查看直属分公司城管帽子领用明细 查看直属分公司夏季保安服领用明细 查看直属分公司秋季保安服领用明细" [ref=f2e952]:
+                - cell "直属分公司" [ref=f2e953]:
+                  - generic [ref=f2e954]: 直属分公司
+                - cell "查看直属分公司全部领用明细" [ref=f2e955]:
+                  - generic "查看直属分公司全部领用明细" [ref=f2e957] [cursor=pointer]:
+                    - generic [ref=f2e958]: "42"
+                - cell "查看直属分公司卫宏标志6件套领用明细" [ref=f2e959]:
+                  - generic "查看直属分公司卫宏标志6件套领用明细" [ref=f2e961] [cursor=pointer]:
+                    - generic [ref=f2e962]: "8"
+                - cell "查看直属分公司城管标志领用明细" [ref=f2e963]:
+                  - generic "查看直属分公司城管标志领用明细" [ref=f2e965] [cursor=pointer]:
+                    - generic [ref=f2e966]: "7"
+                - cell "查看直属分公司城管帽子领用明细" [ref=f2e967]:
+                  - generic "查看直属分公司城管帽子领用明细" [ref=f2e969] [cursor=pointer]:
+                    - generic [ref=f2e970]: "9"
+                - cell "查看直属分公司夏季保安服领用明细" [ref=f2e971]:
+                  - generic "查看直属分公司夏季保安服领用明细" [ref=f2e973] [cursor=pointer]:
+                    - generic [ref=f2e974]: "10"
+                - cell "查看直属分公司秋季保安服领用明细" [ref=f2e975]:
+                  - generic "查看直属分公司秋季保安服领用明细" [ref=f2e977] [cursor=pointer]:
+                    - generic [ref=f2e978]: "8"
+              - row "历城分公司 查看历城分公司全部领用明细 查看历城分公司卫宏标志6件套领用明细 查看历城分公司城管标志领用明细 查看历城分公司城管帽子领用明细 查看历城分公司夏季保安服领用明细 查看历城分公司秋季保安服领用明细" [ref=f2e979]:
+                - cell "历城分公司" [ref=f2e980]:
+                  - generic [ref=f2e981]: 历城分公司
+                - cell "查看历城分公司全部领用明细" [ref=f2e982]:
+                  - generic "查看历城分公司全部领用明细" [ref=f2e984] [cursor=pointer]:
+                    - generic [ref=f2e985]: "46"
+                - cell "查看历城分公司卫宏标志6件套领用明细" [ref=f2e986]:
+                  - generic "查看历城分公司卫宏标志6件套领用明细" [ref=f2e988] [cursor=pointer]:
+                    - generic [ref=f2e989]: "9"
+                - cell "查看历城分公司城管标志领用明细" [ref=f2e990]:
+                  - generic "查看历城分公司城管标志领用明细" [ref=f2e992] [cursor=pointer]:
+                    - generic [ref=f2e993]: "8"
+                - cell "查看历城分公司城管帽子领用明细" [ref=f2e994]:
+                  - generic "查看历城分公司城管帽子领用明细" [ref=f2e996] [cursor=pointer]:
+                    - generic [ref=f2e997]: "9"
+                - cell "查看历城分公司夏季保安服领用明细" [ref=f2e998]:
+                  - generic "查看历城分公司夏季保安服领用明细" [ref=f2e1000] [cursor=pointer]:
+                    - generic [ref=f2e1001]: "11"
+                - cell "查看历城分公司秋季保安服领用明细" [ref=f2e1002]:
+                  - generic "查看历城分公司秋季保安服领用明细" [ref=f2e1004] [cursor=pointer]:
+                    - generic [ref=f2e1005]: "8"
+              - row "历下分公司 查看历下分公司全部领用明细 查看历下分公司卫宏标志6件套领用明细 查看历下分公司城管标志领用明细 查看历下分公司城管帽子领用明细 查看历下分公司夏季保安服领用明细 查看历下分公司秋季保安服领用明细" [ref=f2e1006]:
+                - cell "历下分公司" [ref=f2e1007]:
+                  - generic [ref=f2e1008]: 历下分公司
+                - cell "查看历下分公司全部领用明细" [ref=f2e1009]:
+                  - generic "查看历下分公司全部领用明细" [ref=f2e1011] [cursor=pointer]:
+                    - generic [ref=f2e1012]: "50"
+                - cell "查看历下分公司卫宏标志6件套领用明细" [ref=f2e1013]:
+                  - generic "查看历下分公司卫宏标志6件套领用明细" [ref=f2e1015] [cursor=pointer]:
+                    - generic [ref=f2e1016]: "10"
+                - cell "查看历下分公司城管标志领用明细" [ref=f2e1017]:
+                  - generic "查看历下分公司城管标志领用明细" [ref=f2e1019] [cursor=pointer]:
+                    - generic [ref=f2e1020]: "9"
+                - cell "查看历下分公司城管帽子领用明细" [ref=f2e1021]:
+                  - generic "查看历下分公司城管帽子领用明细" [ref=f2e1023] [cursor=pointer]:
+                    - generic [ref=f2e1024]: "9"
+                - cell "查看历下分公司夏季保安服领用明细" [ref=f2e1025]:
+                  - generic "查看历下分公司夏季保安服领用明细" [ref=f2e1027] [cursor=pointer]:
+                    - generic [ref=f2e1028]: "12"
+                - cell "查看历下分公司秋季保安服领用明细" [ref=f2e1029]:
+                  - generic "查看历下分公司秋季保安服领用明细" [ref=f2e1031] [cursor=pointer]:
+                    - generic [ref=f2e1032]: "8"
+              - row "天桥分公司 查看天桥分公司全部领用明细 查看天桥分公司卫宏标志6件套领用明细 查看天桥分公司城管标志领用明细 查看天桥分公司城管帽子领用明细 查看天桥分公司夏季保安服领用明细 查看天桥分公司秋季保安服领用明细" [ref=f2e1033]:
+                - cell "天桥分公司" [ref=f2e1034]:
+                  - generic [ref=f2e1035]: 天桥分公司
+                - cell "查看天桥分公司全部领用明细" [ref=f2e1036]:
+                  - generic "查看天桥分公司全部领用明细" [ref=f2e1038] [cursor=pointer]:
+                    - generic [ref=f2e1039]: "54"
+                - cell "查看天桥分公司卫宏标志6件套领用明细" [ref=f2e1040]:
+                  - generic "查看天桥分公司卫宏标志6件套领用明细" [ref=f2e1042] [cursor=pointer]:
+                    - generic [ref=f2e1043]: "11"
+                - cell "查看天桥分公司城管标志领用明细" [ref=f2e1044]:
+                  - generic "查看天桥分公司城管标志领用明细" [ref=f2e1046] [cursor=pointer]:
+                    - generic [ref=f2e1047]: "10"
+                - cell "查看天桥分公司城管帽子领用明细" [ref=f2e1048]:
+                  - generic "查看天桥分公司城管帽子领用明细" [ref=f2e1050] [cursor=pointer]:
+                    - generic [ref=f2e1051]: "9"
+                - cell "查看天桥分公司夏季保安服领用明细" [ref=f2e1052]:
+                  - generic "查看天桥分公司夏季保安服领用明细" [ref=f2e1054] [cursor=pointer]:
+                    - generic [ref=f2e1055]: "13"
+                - cell "查看天桥分公司秋季保安服领用明细" [ref=f2e1056]:
+                  - generic "查看天桥分公司秋季保安服领用明细" [ref=f2e1058] [cursor=pointer]:
+                    - generic [ref=f2e1059]: "8"
+              - row "槐荫分公司 查看槐荫分公司全部领用明细 查看槐荫分公司卫宏标志6件套领用明细 查看槐荫分公司城管标志领用明细 查看槐荫分公司城管帽子领用明细 查看槐荫分公司夏季保安服领用明细 查看槐荫分公司秋季保安服领用明细" [ref=f2e1060]:
+                - cell "槐荫分公司" [ref=f2e1061]:
+                  - generic [ref=f2e1062]: 槐荫分公司
+                - cell "查看槐荫分公司全部领用明细" [ref=f2e1063]:
+                  - generic "查看槐荫分公司全部领用明细" [ref=f2e1065] [cursor=pointer]:
+                    - generic [ref=f2e1066]: "58"
+                - cell "查看槐荫分公司卫宏标志6件套领用明细" [ref=f2e1067]:
+                  - generic "查看槐荫分公司卫宏标志6件套领用明细" [ref=f2e1069] [cursor=pointer]:
+                    - generic [ref=f2e1070]: "12"
+                - cell "查看槐荫分公司城管标志领用明细" [ref=f2e1071]:
+                  - generic "查看槐荫分公司城管标志领用明细" [ref=f2e1073] [cursor=pointer]:
+                    - generic [ref=f2e1074]: "11"
+                - cell "查看槐荫分公司城管帽子领用明细" [ref=f2e1075]:
+                  - generic "查看槐荫分公司城管帽子领用明细" [ref=f2e1077] [cursor=pointer]:
+                    - generic [ref=f2e1078]: "9"
+                - cell "查看槐荫分公司夏季保安服领用明细" [ref=f2e1079]:
+                  - generic "查看槐荫分公司夏季保安服领用明细" [ref=f2e1081] [cursor=pointer]:
+                    - generic [ref=f2e1082]: "14"
+                - cell "查看槐荫分公司秋季保安服领用明细" [ref=f2e1083]:
+                  - generic "查看槐荫分公司秋季保安服领用明细" [ref=f2e1085] [cursor=pointer]:
+                    - generic [ref=f2e1086]: "8"
+        - generic [ref=f2e892]:
+          - generic [ref=f2e893]: 共 5 条
+          - generic [ref=f2e894]:
+            - button "Go to previous page" [disabled] [ref=f2e895]:
+              - generic:
+                - img
+            - list [ref=f2e896]:
+              - listitem "page 1" [ref=f2e897]: "1"
+            - button "Go to next page" [disabled] [ref=f2e898]:
+              - generic:
+                - img

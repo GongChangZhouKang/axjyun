@@ -1,0 +1,202 @@
+- main [ref=f2e3]:
+  - main [ref=f2e604]:
+    - generic [ref=f2e605]:
+      - generic [ref=f2e606]:
+        - button "库存管理" [ref=f2e607] [cursor=pointer]
+        - button "月库存统计" [ref=f2e608] [cursor=pointer]
+        - button "装备领用汇总" [ref=f2e609] [cursor=pointer]
+        - button "装备领用明细" [ref=f2e610] [cursor=pointer]
+      - generic [ref=f2e612]:
+        - generic [ref=f2e613]: 所属仓库：
+        - generic [ref=f2e615] [cursor=pointer]:
+          - generic:
+            - combobox "所属仓库： 山东振邦保安服务有限责任公司" [ref=f2e617]
+            - generic [ref=f2e618]: 山东振邦保安服务有限责任公司
+          - img [ref=f2e621]
+      - generic [ref=f2e624]:
+        - generic [ref=f2e625]:
+          - generic [ref=f2e626]: 月份：
+          - generic [ref=f2e627]:
+            - img [ref=f2e629]
+            - combobox "月份： - 2026-06" [ref=f2e631]: 2026-05
+            - generic [ref=f2e632]: "-"
+            - combobox "结束月份" [ref=f2e633]: 2026-06
+        - generic [ref=f2e634]:
+          - generic [ref=f2e635]: 装备名称：
+          - textbox "装备名称：" [ref=f2e638]:
+            - /placeholder: 请输入装备名称
+        - generic [ref=f2e640]:
+          - generic [ref=f2e641]: 分类：
+          - generic [ref=f2e643] [cursor=pointer]:
+            - generic:
+              - combobox "分类： 分类" [ref=f2e645]
+              - generic [ref=f2e646]: 分类
+            - img [ref=f2e649]
+        - generic [ref=f2e651]:
+          - generic [ref=f2e652]: 供应商：
+          - generic [ref=f2e654] [cursor=pointer]:
+            - generic:
+              - combobox "供应商： 供应商" [ref=f2e656]
+              - generic [ref=f2e657]: 供应商
+            - img [ref=f2e660]
+        - generic [ref=f2e899]:
+          - generic [ref=f2e900]: 部门：
+          - generic [ref=f2e902] [cursor=pointer]:
+            - generic:
+              - combobox "部门： 直属分公司" [ref=f2e1087]
+              - generic [ref=f2e905]: 直属分公司
+            - img [ref=f2e908]
+        - generic [ref=f2e662]:
+          - button "查询" [ref=f2e663] [cursor=pointer]:
+            - generic [ref=f2e664]: 查询
+          - button "重置" [ref=f2e665] [cursor=pointer]:
+            - generic [ref=f2e666]: 重置
+      - generic [ref=f2e667]:
+        - button "导出" [ref=f2e668] [cursor=pointer]:
+          - generic [ref=f2e669]:
+            - img [ref=f2e671]
+            - text: 导出
+        - generic [ref=f2e673]: 逐笔展示装备领用出库记录
+      - generic [ref=f2e674]:
+        - generic [ref=f2e1089]:
+          - table [ref=f2e1091]:
+            - rowgroup [ref=f2e1103]:
+              - row "出库单号 申请人 申请部门 所属项目 分类 领用数量 装备名称 供应商 单价 时间" [ref=f2e1104]:
+                - columnheader "出库单号" [ref=f2e1105]:
+                  - generic [ref=f2e1106]: 出库单号
+                - columnheader "申请人" [ref=f2e1107]:
+                  - generic [ref=f2e1108]: 申请人
+                - columnheader "申请部门" [ref=f2e1109]:
+                  - generic [ref=f2e1110]: 申请部门
+                - columnheader "所属项目" [ref=f2e1111]:
+                  - generic [ref=f2e1112]: 所属项目
+                - columnheader "分类" [ref=f2e1113]:
+                  - generic [ref=f2e1114]: 分类
+                - columnheader "领用数量" [ref=f2e1115]:
+                  - generic [ref=f2e1116]: 领用数量
+                - columnheader "装备名称" [ref=f2e1117]:
+                  - generic [ref=f2e1118]: 装备名称
+                - columnheader "供应商" [ref=f2e1119]:
+                  - generic [ref=f2e1120]: 供应商
+                - columnheader "单价" [ref=f2e1121]:
+                  - generic [ref=f2e1122]: 单价
+                - columnheader "时间" [ref=f2e1123]:
+                  - generic [ref=f2e1124]: 时间
+          - table [ref=f2e1129]:
+            - rowgroup [ref=f2e1141]:
+              - row "CK202605220001 张三 直属分公司 华山湿地公园 服装标志 8 卫宏标志6件套 三棵树 45 2026-05-20 10:10:10" [ref=f2e1142]:
+                - cell "CK202605220001" [ref=f2e1143]:
+                  - generic [ref=f2e1146] [cursor=pointer]: CK202605220001
+                - cell "张三" [ref=f2e1147]:
+                  - generic [ref=f2e1148]: 张三
+                - cell "直属分公司" [ref=f2e1149]:
+                  - generic [ref=f2e1150]: 直属分公司
+                - cell "华山湿地公园" [ref=f2e1151]:
+                  - generic [ref=f2e1152]: 华山湿地公园
+                - cell "服装标志" [ref=f2e1153]:
+                  - generic [ref=f2e1154]: 服装标志
+                - cell "8" [ref=f2e1155]:
+                  - generic [ref=f2e1156]: "8"
+                - cell "卫宏标志6件套" [ref=f2e1157]:
+                  - generic [ref=f2e1158]: 卫宏标志6件套
+                - cell "三棵树" [ref=f2e1159]:
+                  - generic [ref=f2e1160]: 三棵树
+                - cell "45" [ref=f2e1161]:
+                  - generic [ref=f2e1162]: "45"
+                - cell "2026-05-20 10:10:10" [ref=f2e1163]:
+                  - generic [ref=f2e1164]: 2026-05-20 10:10:10
+              - row "CK202605220002 李四 直属分公司 华山湿地公园 服装标志 7 城管标志 安豹 12 2026-05-20 10:11:10" [ref=f2e1165]:
+                - cell "CK202605220002" [ref=f2e1166]:
+                  - generic [ref=f2e1169] [cursor=pointer]: CK202605220002
+                - cell "李四" [ref=f2e1170]:
+                  - generic [ref=f2e1171]: 李四
+                - cell "直属分公司" [ref=f2e1172]:
+                  - generic [ref=f2e1173]: 直属分公司
+                - cell "华山湿地公园" [ref=f2e1174]:
+                  - generic [ref=f2e1175]: 华山湿地公园
+                - cell "服装标志" [ref=f2e1176]:
+                  - generic [ref=f2e1177]: 服装标志
+                - cell "7" [ref=f2e1178]:
+                  - generic [ref=f2e1179]: "7"
+                - cell "城管标志" [ref=f2e1180]:
+                  - generic [ref=f2e1181]: 城管标志
+                - cell "安豹" [ref=f2e1182]:
+                  - generic [ref=f2e1183]: 安豹
+                - cell "12" [ref=f2e1184]:
+                  - generic [ref=f2e1185]: "12"
+                - cell "2026-05-20 10:11:10" [ref=f2e1186]:
+                  - generic [ref=f2e1187]: 2026-05-20 10:11:10
+              - row "CK202605220003 王五 直属分公司 华山湿地公园 服装标志 9 城管帽子 安豹 15 2026-05-20 10:12:10" [ref=f2e1188]:
+                - cell "CK202605220003" [ref=f2e1189]:
+                  - generic [ref=f2e1192] [cursor=pointer]: CK202605220003
+                - cell "王五" [ref=f2e1193]:
+                  - generic [ref=f2e1194]: 王五
+                - cell "直属分公司" [ref=f2e1195]:
+                  - generic [ref=f2e1196]: 直属分公司
+                - cell "华山湿地公园" [ref=f2e1197]:
+                  - generic [ref=f2e1198]: 华山湿地公园
+                - cell "服装标志" [ref=f2e1199]:
+                  - generic [ref=f2e1200]: 服装标志
+                - cell "9" [ref=f2e1201]:
+                  - generic [ref=f2e1202]: "9"
+                - cell "城管帽子" [ref=f2e1203]:
+                  - generic [ref=f2e1204]: 城管帽子
+                - cell "安豹" [ref=f2e1205]:
+                  - generic [ref=f2e1206]: 安豹
+                - cell "15" [ref=f2e1207]:
+                  - generic [ref=f2e1208]: "15"
+                - cell "2026-05-20 10:12:10" [ref=f2e1209]:
+                  - generic [ref=f2e1210]: 2026-05-20 10:12:10
+              - row "CK202605220004 赵六 直属分公司 华山湿地公园 服装标志 10 夏季保安服 三棵树 68 2026-05-20 10:13:10" [ref=f2e1211]:
+                - cell "CK202605220004" [ref=f2e1212]:
+                  - generic [ref=f2e1215] [cursor=pointer]: CK202605220004
+                - cell "赵六" [ref=f2e1216]:
+                  - generic [ref=f2e1217]: 赵六
+                - cell "直属分公司" [ref=f2e1218]:
+                  - generic [ref=f2e1219]: 直属分公司
+                - cell "华山湿地公园" [ref=f2e1220]:
+                  - generic [ref=f2e1221]: 华山湿地公园
+                - cell "服装标志" [ref=f2e1222]:
+                  - generic [ref=f2e1223]: 服装标志
+                - cell "10" [ref=f2e1224]:
+                  - generic [ref=f2e1225]: "10"
+                - cell "夏季保安服" [ref=f2e1226]:
+                  - generic [ref=f2e1227]: 夏季保安服
+                - cell "三棵树" [ref=f2e1228]:
+                  - generic [ref=f2e1229]: 三棵树
+                - cell "68" [ref=f2e1230]:
+                  - generic [ref=f2e1231]: "68"
+                - cell "2026-05-20 10:13:10" [ref=f2e1232]:
+                  - generic [ref=f2e1233]: 2026-05-20 10:13:10
+              - row "CK202605220005 孙七 直属分公司 华山湿地公园 服装标志 8 秋季保安服 三棵树 86 2026-05-20 10:14:10" [ref=f2e1234]:
+                - cell "CK202605220005" [ref=f2e1235]:
+                  - generic [ref=f2e1238] [cursor=pointer]: CK202605220005
+                - cell "孙七" [ref=f2e1239]:
+                  - generic [ref=f2e1240]: 孙七
+                - cell "直属分公司" [ref=f2e1241]:
+                  - generic [ref=f2e1242]: 直属分公司
+                - cell "华山湿地公园" [ref=f2e1243]:
+                  - generic [ref=f2e1244]: 华山湿地公园
+                - cell "服装标志" [ref=f2e1245]:
+                  - generic [ref=f2e1246]: 服装标志
+                - cell "8" [ref=f2e1247]:
+                  - generic [ref=f2e1248]: "8"
+                - cell "秋季保安服" [ref=f2e1249]:
+                  - generic [ref=f2e1250]: 秋季保安服
+                - cell "三棵树" [ref=f2e1251]:
+                  - generic [ref=f2e1252]: 三棵树
+                - cell "86" [ref=f2e1253]:
+                  - generic [ref=f2e1254]: "86"
+                - cell "2026-05-20 10:14:10" [ref=f2e1255]:
+                  - generic [ref=f2e1256]: 2026-05-20 10:14:10
+        - generic [ref=f2e892]:
+          - generic [ref=f2e893]: 共 5 条
+          - generic [ref=f2e894]:
+            - button "Go to previous page" [disabled] [ref=f2e895]:
+              - generic:
+                - img
+            - list [ref=f2e896]:
+              - listitem "page 1" [ref=f2e897]: "1"
+            - button "Go to next page" [disabled] [ref=f2e898]:
+              - generic:
+                - img

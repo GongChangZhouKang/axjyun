@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "sourceName": "local-prototype",
+    "originalDetailUrl": "/prototypes/equipment-archive-exact",
+    "websiteUrl": "/prototypes/equipment-archive-exact"
+  },
+  "identity": {
+    "id": "security-equipment-admin",
+    "slug": "security-equipment-admin",
+    "brand": "安保装备管理",
+    "titleZh": "安保装备管理主题",
+    "titleEn": "Security Equipment Admin",
+    "descriptionZh": "面向装备档案、库存、盘点与出入库场景的专业高密度后台主题。",
+    "descriptionEn": "A compact and reliable admin theme for security equipment operations."
+  },
+  "tags": {
+    "sourceTags": ["平台框架", "装备档案"],
+    "generatedTags": ["admin", "data-table", "operations"],
+    "designTags": ["light", "compact", "professional"],
+    "distributionTags": ["安保管理", "装备管理", "后台系统", "数据表格", "B2B 产品", "专业工具"]
+  },
+  "assets": {
+    "designMd": { "path": "DESIGN.md", "sourcePath": "src/prototypes/equipment-archive-exact/DESIGN.md" },
+    "tailwind": { "path": "tw.css", "sourcePath": "DESIGN.md" },
+    "tokens": { "path": "assets/tokens.json", "method": "derived_from_local_design_md" },
+    "cover": { "type": "local-preview", "path": "assets/source-preview.svg" },
+    "previewHtml": {
+      "type": "local-preview",
+      "path": "assets/source-preview.svg",
+      "publicPath": "assets/source-preview.svg",
+      "importPath": "./assets/source-preview.svg?url",
+      "sourcePath": "assets/source-preview.svg"
+    }
+  },
+  "tokens": {
+    "palette": ["#129BFF", "#2D8CF0", "#515A6E", "#30384B", "#808695", "#DCDEE2", "#F5F7F9", "#F5F7FB", "#F4F5F7", "#FFFFFF", "#52C41A", "#F5A623", "#F52C2C"],
+    "typography": {
+      "display": "Helvetica Neue",
+      "body": "PingFang SC",
+      "mono": "Consolas",
+      "hints": ["Helvetica Neue", "PingFang SC", "Microsoft YaHei", "Arial", "Consolas"]
+    },
+    "radius": { "control": "4px", "card": "6px", "dialog": "8px", "pill": "9999px", "source": "design-md" },
+    "spacing": { "xxs": "4px", "xs": "8px", "sm": "12px", "md": "16px", "content": "20px", "lg": "24px", "xl": "32px", "xxl": "40px", "source": "design-md" }
+  },
+  "previewImages": [{ "type": "local-preview", "path": "assets/source-preview.svg" }],
+  "display": {
+    "brand": "安保装备管理主题",
+    "brandAlias": "Security Equipment Admin",
+    "description": "专业、克制、高信息密度的装备管理后台主题；框架与业务页面分离复用。",
+    "descriptionEn": "Compact security equipment operations with a reusable shell and page-level content modules.",
+    "variant": "enterprise-admin",
+    "distributionTags": ["安保管理", "装备管理", "后台系统", "数据表格", "B2B 产品", "专业工具"],
+    "fontStylesheets": [],
+    "palette": [
+      { "color": "#129BFF", "labelZh": "主色", "labelEn": "Primary", "textColor": "#FFFFFF" },
+      { "color": "#2D8CF0", "labelZh": "链接色", "labelEn": "Link", "textColor": "#FFFFFF" },
+      { "color": "#515A6E", "labelZh": "正文", "labelEn": "Body Ink", "textColor": "#FFFFFF" },
+      { "color": "#30384B", "labelZh": "标题", "labelEn": "Strong Ink", "textColor": "#FFFFFF" },
+      { "color": "#808695", "labelZh": "辅助文字", "labelEn": "Muted", "textColor": "#FFFFFF" },
+      { "color": "#DCDEE2", "labelZh": "边框", "labelEn": "Border", "textColor": "#30384B" },
+      { "color": "#F5F7F9", "labelZh": "画布", "labelEn": "Canvas", "textColor": "#30384B" },
+      { "color": "#F5F7FB", "labelZh": "筛选区", "labelEn": "Filter Surface", "textColor": "#30384B" },
+      { "color": "#F4F5F7", "labelZh": "表头", "labelEn": "Table Head", "textColor": "#30384B" },
+      { "color": "#FFFFFF", "labelZh": "表面", "labelEn": "Surface", "textColor": "#30384B" },
+      { "color": "#52C41A", "labelZh": "成功", "labelEn": "Success", "textColor": "#FFFFFF" },
+      { "color": "#F5A623", "labelZh": "警告", "labelEn": "Warning", "textColor": "#30384B" },
+      { "color": "#F52C2C", "labelZh": "危险", "labelEn": "Danger", "textColor": "#FFFFFF" }
+    ],
+    "shadows": [
+      { "label": "顶部栏", "value": "0 1px 6px rgba(0,0,0,.16)", "cssValue": "0 1px 6px rgba(0,0,0,.16)", "description": "仅用于固定平台顶栏。" },
+      { "label": "弹窗", "value": "0 12px 32px rgba(23,35,61,.16)", "cssValue": "0 12px 32px rgba(23,35,61,.16)", "description": "用于弹窗与浮层。" }
+    ],
+    "borders": [
+      { "label": "默认边框", "value": "#DCDEE2", "cssValue": "1px solid #DCDEE2", "description": "控件、分隔线和数据表格。" },
+      { "label": "焦点边框", "value": "#129BFF", "cssValue": "1px solid #129BFF", "description": "键盘焦点和活动控件。" }
+    ],
+    "typography": ["Helvetica Neue", "PingFang SC", "Microsoft YaHei", "Arial", "Consolas"],
+    "previewImages": [{ "type": "local-preview", "path": "assets/source-preview.svg" }],
+    "panels": [
+      { "eyebrow": "框架", "title": "一次搭建，持续复用", "body": "顶部栏、侧边栏和页签作为平台框架，只实例化一次。" },
+      { "eyebrow": "页面", "title": "业务内容独立生成", "body": "装备档案、库存、盘点与出入库只替换内容区域。" },
+      { "eyebrow": "组件", "title": "高密度数据操作", "body": "统一筛选器、表格、表单、状态、弹窗和固定操作栏。" }
+    ],
+    "usageGuidance": {
+      "do": [
+        "复用已有平台框架，新页面只生成业务内容区。",
+        "使用 34px 控件、38px 表头和 48px 数据行维持紧凑节奏。",
+        "状态必须同时使用文字和颜色提示。",
+        "让复杂表格充分使用横向空间，并在窄屏支持横向滚动。",
+        "将主色集中用于主操作、当前导航和焦点反馈。"
+      ],
+      "dont": [
+        "不要为每个业务页面重复生成顶部栏和侧边栏。",
+        "不要加入营销式大标题、渐变背景或卡片墙。",
+        "不要用大圆角和厚重阴影削弱后台的专业感。",
+        "不要仅靠颜色表达状态或风险。",
+        "不要混入移动端装备领用样式。"
+      ]
+    },
+    "radius": { "control": "4px", "card": "6px", "preview": "8px", "pill": "9999px", "source": "design-md" },
+    "spacing": { "xxs": "4px", "xs": "8px", "sm": "12px", "md": "16px", "content": "20px", "lg": "24px", "xl": "32px", "xxl": "40px", "source": "design-md" }
+  },
+  "status": { "displayPage": "done", "collectionErrors": [] }
+}
+

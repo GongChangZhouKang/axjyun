@@ -6,9 +6,9 @@ type Equipment = { id: string; code: string; name: string; stock: number; unit: 
 type AddMode = 'closed' | 'choose' | 'manual' | 'scanner';
 
 const catalog: Equipment[] = [
-  { id: 'uniform', code: 'FZ-BAF-001', name: '保安服', stock: 998, unit: '套', supplier: '—', quantity: 1 },
-  { id: 'coded', code: 'ZQ-YWYM-001', name: '一物一码设备', stock: 2, unit: '台', supplier: '—', quantity: 1 },
-  { id: 'custom', code: 'ZQ-DZJ-001', name: '测试定制机', stock: 2, unit: '台', supplier: '—', quantity: 1 },
+  { id: 'uniform', code: 'ZB00001', name: '保安服', stock: 998, unit: '套', supplier: '—', quantity: 1 },
+  { id: 'coded', code: 'ZB00002', name: '一物一码设备', stock: 2, unit: '台', supplier: '—', quantity: 1 },
+  { id: 'custom', code: 'ZB00003', name: '测试定制机', stock: 2, unit: '台', supplier: '—', quantity: 1 },
 ];
 
 function qrDataUrl(rows: Equipment[]) {

@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.dmb-page {
+  --dmb-accent: #129bff;
+  --dmb-accent-contrast: #ffffff;
+  --dmb-link: #2d8cf0;
+  --dmb-muted: #f5f7fb;
+  --dmb-bg: #f5f7f9;
+  --dmb-ink: #30384b;
+  --dmb-ink-muted: #515a6e;
+  --dmb-ink-subtle: #808695;
+  --dmb-radius-xs: 3px;
+  --dmb-radius-control: 4px;
+  --dmb-radius-card: 6px;
+  --dmb-radius-preview: 8px;
+  --dmb-radius-pill: 9999px;
+  --dmb-border: #dcdee2;
+  --dmb-border-sample-bg: #ffffff;
+  --dmb-spacing-xxs: 4px;
+  --dmb-spacing-xs: 8px;
+  --dmb-spacing-sm: 12px;
+  --dmb-spacing-md: 16px;
+  --dmb-spacing-lg: 24px;
+  --dmb-spacing-xl: 32px;
+  --dmb-spacing-xxl: 40px;
+  --dmb-spacing-section: 64px;
+  --dmb-font-display: "Helvetica Neue", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  --dmb-font-body: "Helvetica Neue", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  --dmb-font-mono: Consolas, "Liberation Mono", monospace;
+}
+

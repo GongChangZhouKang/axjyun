@@ -1,5 +1,6 @@
 /**
  * @name 平台框架
+ * @mode axure
  */
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
@@ -21,10 +22,11 @@ const pageRoute = defineHashPageRoute([
     { id: 'platform-framework', title: '平台框架' },
     { id: 'equipment-archive', title: '装备档案管理' },
     { id: 'inventory-management', title: '库存管理' },
-    { id: 'inventory-statistics', title: '库存统计' },
     { id: 'inventory-check', title: '库存盘点' },
     { id: 'inventory-check-form', title: '新增盘点' },
     { id: 'inventory-check-entry', title: '盘点录入' },
+    { id: 'one-code-entry', title: '添加一物一码' },
+    { id: 'inventory-check-code-entry', title: '盘点一物一码核对' },
     { id: 'outbound-create', title: '新增出库' },
     { id: 'mobile-equipment-claim', title: 'APP 装备领用' },
     { id: 'mobile-inventory-home', title: 'APP 功能中心' },
@@ -34,10 +36,10 @@ const pageRoute = defineHashPageRoute([
     { id: 'mobile-project-check', title: 'APP 项目装备盘点' },
 ], { defaultPageId: 'platform-framework' });
 
-export default function EquipmentArchiveExactPrototype() {
+function Component() {
     const mountRef = useRef<HTMLDivElement | null>(null);
     const { page, setPage } = useHashPage(pageRoute);
-    const initialModule = page === 'inventory-management' ? 'inventory' : page === 'inventory-statistics' ? 'inventory-statistics' : page.startsWith('inventory-check') ? page : page === 'outbound-create' ? 'outbound-create' : page.startsWith('mobile-inventory-') || page === 'mobile-equipment-claim' ? page : page === 'mobile-project-check' ? 'project-check-home' : 'archive';
+    const initialModule = page === 'inventory-management' ? 'inventory' : page === 'inventory-statistics' ? 'inventory-statistics' : page === 'one-code-entry' ? 'one-code-entry' : page.startsWith('inventory-check') ? page : page === 'outbound-create' ? 'outbound-create' : page.startsWith('mobile-inventory-') || page === 'mobile-equipment-claim' ? page : page === 'mobile-project-check' ? 'project-check-home' : 'archive';
     const [moduleId, setModuleId] = useState<string>(initialModule);
 
     useEffect(() => {
@@ -60,7 +62,7 @@ export default function EquipmentArchiveExactPrototype() {
         toolbarEdge: 'right',
         onDirectoryRoute: (node: AnnotationDirectoryRouteNode) => {
             const route = node.route;
-            if (!route || !['archive', 'categories', 'inventory', 'inventory-statistics', 'inventory-check', 'inventory-check-form', 'inventory-check-entry', 'outbound-create', 'mobile-equipment-claim', 'mobile-inventory-home', 'mobile-inventory-check', 'mobile-inventory-check-form', 'mobile-inventory-check-entry', 'project-check-home', 'project-check-list', 'project-check-create', 'project-check-entry', 'project-check-result', 'project-check-picker', 'project-check-client-add', 'project-check-location'].includes(route)) return;
+            if (!route || !['archive', 'categories', 'inventory', 'inventory-statistics', 'inventory-check', 'inventory-check-form', 'inventory-check-entry', 'one-code-entry', 'inventory-check-code-entry', 'outbound-create', 'mobile-equipment-claim', 'mobile-inventory-home', 'mobile-inventory-check', 'mobile-inventory-check-form', 'mobile-inventory-check-entry', 'project-check-home', 'project-check-list', 'project-check-create', 'project-check-entry', 'project-check-result', 'project-check-picker', 'project-check-client-add', 'project-check-location'].includes(route)) return;
             if (route === 'mobile-equipment-claim' || route.startsWith('mobile-inventory-')) {
                 setPage(route);
                 setModuleId(route);
@@ -72,7 +74,7 @@ export default function EquipmentArchiveExactPrototype() {
                 setModuleId(route);
                 return;
             }
-            setPage(route === 'inventory' ? 'inventory-management' : route === 'inventory-statistics' ? 'inventory-statistics' : route.startsWith('inventory-check') || route === 'outbound-create' ? route : 'equipment-archive');
+            setPage(route === 'inventory' || route === 'inventory-statistics' ? 'inventory-management' : route === 'one-code-entry' || route.startsWith('inventory-check') || route === 'outbound-create' ? route : 'equipment-archive');
             window.dispatchEvent(new CustomEvent('equipment-archive-module', { detail: route }));
             setModuleId(route);
         },
@@ -91,4 +93,6 @@ export default function EquipmentArchiveExactPrototype() {
         </main>
     );
 }
+
+export default Component;
 

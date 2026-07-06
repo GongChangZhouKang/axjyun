@@ -1,0 +1,172 @@
+- generic [ref=e1]:
+  - main [ref=e3]:
+    - main [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - button "库存管理" [ref=e9] [cursor=pointer]
+          - button "月库存统计" [ref=e10] [cursor=pointer]
+          - button "装备领用汇总" [ref=e11] [cursor=pointer]
+          - button "装备领用明细" [ref=e12] [cursor=pointer]
+        - generic [ref=e14]:
+          - generic [ref=e15]: 所属仓库：
+          - generic [ref=e17] [cursor=pointer]:
+            - generic:
+              - combobox "所属仓库： 山东振邦保安服务有限责任公司" [ref=e19]
+              - generic [ref=e20]: 山东振邦保安服务有限责任公司
+            - img [ref=e23]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: 月份：
+            - generic [ref=e29]:
+              - img [ref=e31]
+              - combobox "月份： - 2026-06" [ref=e33]: 2026-05
+              - generic [ref=e34]: "-"
+              - combobox "结束月份" [ref=e35]: 2026-06
+          - generic [ref=e36]:
+            - generic [ref=e37]: 装备名称：
+            - textbox "装备名称：" [ref=e40]:
+              - /placeholder: 请输入装备名称
+          - generic [ref=e42]:
+            - generic [ref=e43]: 分类：
+            - generic [ref=e45] [cursor=pointer]:
+              - generic:
+                - combobox "分类： 分类" [ref=e47]
+                - generic [ref=e48]: 分类
+              - img [ref=e51]
+          - generic [ref=e53]:
+            - generic [ref=e54]: 供应商：
+            - generic [ref=e56] [cursor=pointer]:
+              - generic:
+                - combobox "供应商： 供应商" [expanded] [active] [ref=e58]
+                - generic [ref=e59]: 供应商
+              - img [ref=e62]
+          - generic [ref=e301]:
+            - generic [ref=e302]: 部门：
+            - generic [ref=e304] [cursor=pointer]:
+              - generic:
+                - combobox "部门： 全部下一级部门" [ref=e306]
+                - generic [ref=e307]: 全部下一级部门
+              - img [ref=e310]
+          - generic [ref=e64]:
+            - button "查询" [ref=e65] [cursor=pointer]:
+              - generic [ref=e66]: 查询
+            - button "重置" [ref=e67] [cursor=pointer]:
+              - generic [ref=e68]: 重置
+        - generic [ref=e69]:
+          - button "导出" [ref=e70] [cursor=pointer]:
+            - generic [ref=e71]:
+              - img [ref=e73]
+              - text: 导出
+          - generic [ref=e75]: 按领用部门汇总各装备领用数量
+        - generic [ref=e76]:
+          - generic [ref=e313]:
+            - table [ref=e315]:
+              - rowgroup [ref=e324]:
+                - row "部门 领用总量 卫宏标志6件套 城管标志 城管帽子 夏季保安服 秋季保安服" [ref=e325]:
+                  - columnheader "部门" [ref=e326]:
+                    - generic [ref=e327]: 部门
+                  - columnheader "领用总量" [ref=e328]:
+                    - generic [ref=e329]: 领用总量
+                  - columnheader "卫宏标志6件套" [ref=e330]:
+                    - generic [ref=e331]: 卫宏标志6件套
+                  - columnheader "城管标志" [ref=e332]:
+                    - generic [ref=e333]: 城管标志
+                  - columnheader "城管帽子" [ref=e334]:
+                    - generic [ref=e335]: 城管帽子
+                  - columnheader "夏季保安服" [ref=e336]:
+                    - generic [ref=e337]: 夏季保安服
+                  - columnheader "秋季保安服" [ref=e338]:
+                    - generic [ref=e339]: 秋季保安服
+            - table [ref=e344]:
+              - rowgroup [ref=e353]:
+                - row "直属分公司 42 8 7 9 10 8" [ref=e354]:
+                  - cell "直属分公司" [ref=e355]:
+                    - generic [ref=e356]: 直属分公司
+                  - cell "42" [ref=e357]:
+                    - generic [ref=e358]: "42"
+                  - cell "8" [ref=e359]:
+                    - generic [ref=e360]: "8"
+                  - cell "7" [ref=e361]:
+                    - generic [ref=e362]: "7"
+                  - cell "9" [ref=e363]:
+                    - generic [ref=e364]: "9"
+                  - cell "10" [ref=e365]:
+                    - generic [ref=e366]: "10"
+                  - cell "8" [ref=e367]:
+                    - generic [ref=e368]: "8"
+                - row "历城分公司 46 9 8 9 11 8" [ref=e369]:
+                  - cell "历城分公司" [ref=e370]:
+                    - generic [ref=e371]: 历城分公司
+                  - cell "46" [ref=e372]:
+                    - generic [ref=e373]: "46"
+                  - cell "9" [ref=e374]:
+                    - generic [ref=e375]: "9"
+                  - cell "8" [ref=e376]:
+                    - generic [ref=e377]: "8"
+                  - cell "9" [ref=e378]:
+                    - generic [ref=e379]: "9"
+                  - cell "11" [ref=e380]:
+                    - generic [ref=e381]: "11"
+                  - cell "8" [ref=e382]:
+                    - generic [ref=e383]: "8"
+                - row "历下分公司 50 10 9 9 12 8" [ref=e384]:
+                  - cell "历下分公司" [ref=e385]:
+                    - generic [ref=e386]: 历下分公司
+                  - cell "50" [ref=e387]:
+                    - generic [ref=e388]: "50"
+                  - cell "10" [ref=e389]:
+                    - generic [ref=e390]: "10"
+                  - cell "9" [ref=e391]:
+                    - generic [ref=e392]: "9"
+                  - cell "9" [ref=e393]:
+                    - generic [ref=e394]: "9"
+                  - cell "12" [ref=e395]:
+                    - generic [ref=e396]: "12"
+                  - cell "8" [ref=e397]:
+                    - generic [ref=e398]: "8"
+                - row "天桥分公司 54 11 10 9 13 8" [ref=e399]:
+                  - cell "天桥分公司" [ref=e400]:
+                    - generic [ref=e401]: 天桥分公司
+                  - cell "54" [ref=e402]:
+                    - generic [ref=e403]: "54"
+                  - cell "11" [ref=e404]:
+                    - generic [ref=e405]: "11"
+                  - cell "10" [ref=e406]:
+                    - generic [ref=e407]: "10"
+                  - cell "9" [ref=e408]:
+                    - generic [ref=e409]: "9"
+                  - cell "13" [ref=e410]:
+                    - generic [ref=e411]: "13"
+                  - cell "8" [ref=e412]:
+                    - generic [ref=e413]: "8"
+                - row "槐荫分公司 58 12 11 9 14 8" [ref=e414]:
+                  - cell "槐荫分公司" [ref=e415]:
+                    - generic [ref=e416]: 槐荫分公司
+                  - cell "58" [ref=e417]:
+                    - generic [ref=e418]: "58"
+                  - cell "12" [ref=e419]:
+                    - generic [ref=e420]: "12"
+                  - cell "11" [ref=e421]:
+                    - generic [ref=e422]: "11"
+                  - cell "9" [ref=e423]:
+                    - generic [ref=e424]: "9"
+                  - cell "14" [ref=e425]:
+                    - generic [ref=e426]: "14"
+                  - cell "8" [ref=e427]:
+                    - generic [ref=e428]: "8"
+          - generic [ref=e294]:
+            - generic [ref=e295]: 共 5 条
+            - generic [ref=e296]:
+              - button "Go to previous page" [disabled] [ref=e297]:
+                - generic:
+                  - img
+              - list [ref=e298]:
+                - listitem "page 1" [ref=e299]: "1"
+              - button "Go to next page" [disabled] [ref=e300]:
+                - generic:
+                  - img
+  - tooltip [ref=e429]:
+    - listbox [ref=e433]:
+      - option "三棵树" [ref=e434] [cursor=pointer]
+      - option "安豹" [ref=e435] [cursor=pointer]
+      - option "易安通设备" [ref=e436] [cursor=pointer]

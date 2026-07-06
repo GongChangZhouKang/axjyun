@@ -1,0 +1,236 @@
+- main [ref=e3]:
+  - main [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - button "库存管理" [ref=e9] [cursor=pointer]
+        - button "月库存统计" [ref=e10] [cursor=pointer]
+        - button "装备领用汇总" [ref=e11] [cursor=pointer]
+        - button "装备领用明细" [ref=e12] [cursor=pointer]
+      - generic [ref=e14]:
+        - generic [ref=e15]: 所属仓库：
+        - generic [ref=e17] [cursor=pointer]:
+          - generic:
+            - combobox "所属仓库： 山东振邦保安服务有限责任公司" [ref=e19]
+            - generic [ref=e20]: 山东振邦保安服务有限责任公司
+          - img [ref=e23]
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: 月份：
+          - generic [ref=e29]:
+            - img [ref=e31]
+            - combobox "月份： - 2026-06" [ref=e33]: 2026-05
+            - generic [ref=e34]: "-"
+            - combobox "结束月份" [ref=e35]: 2026-06
+        - generic [ref=e36]:
+          - generic [ref=e37]: 装备名称：
+          - textbox "装备名称：" [ref=e40]:
+            - /placeholder: 请输入装备名称
+        - generic [ref=e42]:
+          - generic [ref=e43]: 分类：
+          - generic [ref=e45] [cursor=pointer]:
+            - generic:
+              - combobox "分类： 分类" [ref=e47]
+              - generic [ref=e48]: 分类
+            - img [ref=e51]
+        - generic [ref=e53]:
+          - generic [ref=e54]: 供应商：
+          - generic [ref=e56] [cursor=pointer]:
+            - generic:
+              - combobox "供应商： 供应商" [ref=e58]
+              - generic [ref=e59]: 供应商
+            - img [ref=e62]
+        - generic [ref=e64]:
+          - button "查询" [ref=e65] [cursor=pointer]:
+            - generic [ref=e66]: 查询
+          - button "重置" [ref=e67] [cursor=pointer]:
+            - generic [ref=e68]: 重置
+      - generic [ref=e69]:
+        - button "导出" [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]:
+            - img [ref=e73]
+            - text: 导出
+        - generic [ref=e75]: 统计所选月份内各装备的期初、出入库与期末库存
+      - generic [ref=e76]:
+        - generic [ref=e78]:
+          - table [ref=e80]:
+            - rowgroup [ref=e95]:
+              - row "装备名称 分类 供应商 单位 月初库存 入库数量 出库数量 月末库存" [ref=e96]:
+                - columnheader "装备名称" [ref=e97]:
+                  - generic [ref=e98]: 装备名称
+                - columnheader "分类" [ref=e99]:
+                  - generic [ref=e100]: 分类
+                - columnheader "供应商" [ref=e101]:
+                  - generic [ref=e102]: 供应商
+                - columnheader "单位" [ref=e103]:
+                  - generic [ref=e104]: 单位
+                - columnheader "月初库存" [ref=e105]:
+                  - generic [ref=e106]: 月初库存
+                - columnheader "入库数量" [ref=e107]:
+                  - generic [ref=e108]: 入库数量
+                - columnheader "出库数量" [ref=e109]:
+                  - generic [ref=e110]: 出库数量
+                - columnheader "月末库存" [ref=e111]:
+                  - generic [ref=e112]: 月末库存
+              - row "归还入库 采购入库 调拨入库 其他入库 领用出库 调拨出库 其他出库" [ref=e113]:
+                - columnheader "归还入库" [ref=e114]:
+                  - generic [ref=e115]: 归还入库
+                - columnheader "采购入库" [ref=e116]:
+                  - generic [ref=e117]: 采购入库
+                - columnheader "调拨入库" [ref=e118]:
+                  - generic [ref=e119]: 调拨入库
+                - columnheader "其他入库" [ref=e120]:
+                  - generic [ref=e121]: 其他入库
+                - columnheader "领用出库" [ref=e122]:
+                  - generic [ref=e123]: 领用出库
+                - columnheader "调拨出库" [ref=e124]:
+                  - generic [ref=e125]: 调拨出库
+                - columnheader "其他出库" [ref=e126]:
+                  - generic [ref=e127]: 其他出库
+          - table [ref=e132]:
+            - rowgroup [ref=e147]:
+              - row "卫宏标志6件套 服装标志 三棵树 套 120 8 50 0 2 36 4 0 140" [ref=e148]:
+                - cell "卫宏标志6件套" [ref=e149]:
+                  - generic [ref=e152] [cursor=pointer]: 卫宏标志6件套
+                - cell "服装标志" [ref=e153]:
+                  - generic [ref=e154]: 服装标志
+                - cell "三棵树" [ref=e155]:
+                  - generic [ref=e156]: 三棵树
+                - cell "套" [ref=e157]:
+                  - generic [ref=e158]: 套
+                - cell "120" [ref=e159]:
+                  - generic [ref=e160]: "120"
+                - cell "8" [ref=e161]:
+                  - generic [ref=e162]: "8"
+                - cell "50" [ref=e163]:
+                  - generic [ref=e164]: "50"
+                - cell "0" [ref=e165]:
+                  - generic [ref=e166]: "0"
+                - cell "2" [ref=e167]:
+                  - generic [ref=e168]: "2"
+                - cell "36" [ref=e169]:
+                  - generic [ref=e170]: "36"
+                - cell "4" [ref=e171]:
+                  - generic [ref=e172]: "4"
+                - cell "0" [ref=e173]:
+                  - generic [ref=e174]: "0"
+                - cell "140" [ref=e175]:
+                  - generic [ref=e176]: "140"
+              - row "城管标志 服装标志 安豹 套 86 6 20 10 0 28 2 0 92" [ref=e177]:
+                - cell "城管标志" [ref=e178]:
+                  - generic [ref=e181] [cursor=pointer]: 城管标志
+                - cell "服装标志" [ref=e182]:
+                  - generic [ref=e183]: 服装标志
+                - cell "安豹" [ref=e184]:
+                  - generic [ref=e185]: 安豹
+                - cell "套" [ref=e186]:
+                  - generic [ref=e187]: 套
+                - cell "86" [ref=e188]:
+                  - generic [ref=e189]: "86"
+                - cell "6" [ref=e190]:
+                  - generic [ref=e191]: "6"
+                - cell "20" [ref=e192]:
+                  - generic [ref=e193]: "20"
+                - cell "10" [ref=e194]:
+                  - generic [ref=e195]: "10"
+                - cell "0" [ref=e196]:
+                  - generic [ref=e197]: "0"
+                - cell "28" [ref=e198]:
+                  - generic [ref=e199]: "28"
+                - cell "2" [ref=e200]:
+                  - generic [ref=e201]: "2"
+                - cell "0" [ref=e202]:
+                  - generic [ref=e203]: "0"
+                - cell "92" [ref=e204]:
+                  - generic [ref=e205]: "92"
+              - row "城管帽子 服装标志 安豹 顶 75 3 30 0 0 25 5 0 78" [ref=e206]:
+                - cell "城管帽子" [ref=e207]:
+                  - generic [ref=e210] [cursor=pointer]: 城管帽子
+                - cell "服装标志" [ref=e211]:
+                  - generic [ref=e212]: 服装标志
+                - cell "安豹" [ref=e213]:
+                  - generic [ref=e214]: 安豹
+                - cell "顶" [ref=e215]:
+                  - generic [ref=e216]: 顶
+                - cell "75" [ref=e217]:
+                  - generic [ref=e218]: "75"
+                - cell "3" [ref=e219]:
+                  - generic [ref=e220]: "3"
+                - cell "30" [ref=e221]:
+                  - generic [ref=e222]: "30"
+                - cell "0" [ref=e223]:
+                  - generic [ref=e224]: "0"
+                - cell "0" [ref=e225]:
+                  - generic [ref=e226]: "0"
+                - cell "25" [ref=e227]:
+                  - generic [ref=e228]: "25"
+                - cell "5" [ref=e229]:
+                  - generic [ref=e230]: "5"
+                - cell "0" [ref=e231]:
+                  - generic [ref=e232]: "0"
+                - cell "78" [ref=e233]:
+                  - generic [ref=e234]: "78"
+              - row "夏季保安服 服装标志 三棵树 套 210 12 80 10 0 95 8 1 208" [ref=e235]:
+                - cell "夏季保安服" [ref=e236]:
+                  - generic [ref=e239] [cursor=pointer]: 夏季保安服
+                - cell "服装标志" [ref=e240]:
+                  - generic [ref=e241]: 服装标志
+                - cell "三棵树" [ref=e242]:
+                  - generic [ref=e243]: 三棵树
+                - cell "套" [ref=e244]:
+                  - generic [ref=e245]: 套
+                - cell "210" [ref=e246]:
+                  - generic [ref=e247]: "210"
+                - cell "12" [ref=e248]:
+                  - generic [ref=e249]: "12"
+                - cell "80" [ref=e250]:
+                  - generic [ref=e251]: "80"
+                - cell "10" [ref=e252]:
+                  - generic [ref=e253]: "10"
+                - cell "0" [ref=e254]:
+                  - generic [ref=e255]: "0"
+                - cell "95" [ref=e256]:
+                  - generic [ref=e257]: "95"
+                - cell "8" [ref=e258]:
+                  - generic [ref=e259]: "8"
+                - cell "1" [ref=e260]:
+                  - generic [ref=e261]: "1"
+                - cell "208" [ref=e262]:
+                  - generic [ref=e263]: "208"
+              - row "防刺服 被动防护装备 易安通设备 件 42 5 10 0 0 8 3 0 46" [ref=e264]:
+                - cell "防刺服" [ref=e265]:
+                  - generic [ref=e268] [cursor=pointer]: 防刺服
+                - cell "被动防护装备" [ref=e269]:
+                  - generic [ref=e270]: 被动防护装备
+                - cell "易安通设备" [ref=e271]:
+                  - generic [ref=e272]: 易安通设备
+                - cell "件" [ref=e273]:
+                  - generic [ref=e274]: 件
+                - cell "42" [ref=e275]:
+                  - generic [ref=e276]: "42"
+                - cell "5" [ref=e277]:
+                  - generic [ref=e278]: "5"
+                - cell "10" [ref=e279]:
+                  - generic [ref=e280]: "10"
+                - cell "0" [ref=e281]:
+                  - generic [ref=e282]: "0"
+                - cell "0" [ref=e283]:
+                  - generic [ref=e284]: "0"
+                - cell "8" [ref=e285]:
+                  - generic [ref=e286]: "8"
+                - cell "3" [ref=e287]:
+                  - generic [ref=e288]: "3"
+                - cell "0" [ref=e289]:
+                  - generic [ref=e290]: "0"
+                - cell "46" [ref=e291]:
+                  - generic [ref=e292]: "46"
+        - generic [ref=e294]:
+          - generic [ref=e295]: 共 5 条
+          - generic [ref=e296]:
+            - button "Go to previous page" [disabled] [ref=e297]:
+              - generic:
+                - img
+            - list [ref=e298]:
+              - listitem "page 1" [ref=e299]: "1"
+            - button "Go to next page" [disabled] [ref=e300]:
+              - generic:
+                - img

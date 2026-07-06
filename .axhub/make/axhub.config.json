@@ -13,9 +13,9 @@
   },
   "cloudPublishing": {
     "vercel": {
-      "token": "vcp_052lyMHCLR3MPQPjTZdqBd7jq3gEHDy6qdQZae9gYV1RfXcHBJ0T2YPC",
+      "token": "",
       "projectName": "axj-zhuangbei07",
-      "teamId": ""
+      "teamId": "team_eGLAzyOpVSHMsYgMZXaIirLs"
     },
     "cloudflarePages": {
       "apiToken": "",
@@ -35,7 +35,8 @@
     "githubPages": {
       "repository": "GongChangZhouKang/axjyun",
       "branch": "gh-pages",
-      "sourceDirectory": "/"
+      "sourceDirectory": "/",
+      "pathPrefix": ""
     },
     "publishSettings": {
       "includeSource": false,
@@ -43,6 +44,12 @@
         "axhub",
         "vercel"
       ]
+    }
+  },
+  "versionCollaboration": {
+    "remote": {
+      "url": "https://github.com/GongChangZhouKang/axjyun.git",
+      "defaultBranch": "main"
     }
   }
 }
